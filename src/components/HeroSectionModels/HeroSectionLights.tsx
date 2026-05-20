@@ -1,13 +1,12 @@
 "use client";
 
+import { useMemo } from "react";
 import * as THREE from "three";
-import { useMemo, useEffect } from "react";
 import { RectAreaLightUniformsLib } from "three/examples/jsm/lights/RectAreaLightUniformsLib.js";
 
+RectAreaLightUniformsLib.init();
+
 const HeroSectionLights = () => {
-  useEffect(() => {
-    RectAreaLightUniformsLib.init();
-  }, []);
 
   const rectLight = useMemo(
     () => new THREE.RectAreaLight("#a259ff", 8, 3, 2),
