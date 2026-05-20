@@ -1,0 +1,62 @@
+"use client";
+
+import { OrbitControls } from "@react-three/drei";
+import { Canvas } from "@react-three/fiber";
+import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
+import { BlendFunction } from "postprocessing";
+import { useMediaQuery } from "react-responsive";
+import { useRef } from "react";
+import * as THREE from "three";
+import { Room } from "./Room";
+import HeroSectionLights from "./HeroSectionLights";
+
+const HeroSectionExperienceModel = () => {
+  const screensRef = useRef<THREE.Mesh>(null!);
+
+  const isMobile = useMediaQuery(
+    { query: "(max-width: 768px)" },
+    undefined,
+    () => false,
+  );
+
+  const isTablet = useMediaQuery(
+    { query: "(max-width: 1024px)" },
+    undefined,
+    () => false,
+  );
+
+  return (
+    <Canvas camera={{ position: [0, 0, 15], fov: 45 }}>
+      <EffectComposer>
+        <SelectiveBloom
+          selection={screensRef}
+          intensity={1.5}
+          luminanceThreshold={0.2}
+          luminanceSmoothing={0.9}
+          blendFunction={BlendFunction.ADD}
+        />
+      </EffectComposer>
+
+      <OrbitControls
+        enablePan={false}
+        enableZoom={!isTablet}
+        maxDistance={20}
+        minDistance={5}
+        minPolarAngle={Math.PI / 5}
+        maxPolarAngle={Math.PI / 2}
+      />
+
+      <HeroSectionLights />
+
+      <group
+        scale={isMobile ? 0.7 : 1}
+        position={[0, -3.5, 0]}
+        rotation={[0, -Math.PI / 4, 0]}
+      >
+        <Room screensRef={screensRef} />
+      </group>
+    </Canvas>
+  );
+};
+
+export default HeroSectionExperienceModel;
