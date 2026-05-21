@@ -1,5 +1,6 @@
 "use client";
 
+import Particles from './Particles';
 import { OrbitControls } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
@@ -47,6 +48,8 @@ const HeroSectionExperienceModel = () => {
       />
 
       <HeroSectionLights />
+
+      <Particles count={100} />
 
       <group
         scale={isMobile ? 0.7 : 1}
