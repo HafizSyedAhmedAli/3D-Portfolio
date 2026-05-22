@@ -52,36 +52,47 @@ const counterItems: CounterItem[] = [
 const logoIconsList: LogoIcon[] = [
   {
     imgPath: "/images/logos/company-logo-1.png",
+    width: 280
   },
   {
     imgPath: "/images/logos/company-logo-2.png",
+    width: 336
   },
   {
     imgPath: "/images/logos/company-logo-3.png",
+    width: 310
   },
   {
     imgPath: "/images/logos/company-logo-4.png",
+    width: 290
   },
   {
     imgPath: "/images/logos/company-logo-5.png",
+    width: 320
   },
   {
     imgPath: "/images/logos/company-logo-6.png",
+    width: 280
   },
   {
     imgPath: "/images/logos/company-logo-7.png",
+    width: 320
   },
   {
     imgPath: "/images/logos/company-logo-8.png",
+    width: 320
   },
   {
     imgPath: "/images/logos/company-logo-9.png",
+    width: 280
   },
   {
     imgPath: "/images/logos/company-logo-10.png",
+    width: 280
   },
   {
     imgPath: "/images/logos/company-logo-11.png",
+    width: 244
   },
 ];
 
