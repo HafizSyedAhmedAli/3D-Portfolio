@@ -68,10 +68,10 @@ const ExperienceSection = () => {
 
         <div className="mt-32 relative">
           <div className="relative z-50 xl:space-y-32 space-y-10">
-            {expCards.map((card) => (
+            {expCards.map((card, index) => (
               <div key={card.title} className="exp-card-wrapper">
                 <div className="xl:w-2/6">
-                  <GlowCard card={card}>
+                  <GlowCard card={card} index={index}>
                     <div>
                       <Image
                         src={card.imgPath}
@@ -92,13 +92,18 @@ const ExperienceSection = () => {
 
                     <div className="expText flex xl:gap-20 md:gap-10 gap-5 relative z-20">
                       <div className="timeline-logo">
-                        <img src={card.logoPath} alt="logo" />
+                        <Image
+                          src={card.logoPath}
+                          alt="logo"
+                          width={50}
+                          height={50}
+                        />
                       </div>
 
                       <div>
                         <h1 className="font-semibold text-3xl">{card.title}</h1>
                         <p className="my-5 text-white-50">📅 {card.date}</p>
-                        <p className="text-blue-50 italic">Responsibilites</p>
+                        <p className="text-blue-50 italic">Responsibilities</p>
                         <ul className="list-disc ms-5 mt-5  flex flex-col gap-5 text-white-50">
                           {card.responsibilities.map((responsibility) => (
                             <li key={responsibility} className="text-lg">

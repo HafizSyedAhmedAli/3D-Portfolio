@@ -1,25 +1,12 @@
+import { ExpCard, Testimonial } from "@/types";
 import Image from "next/image";
 import { useRef, type MouseEvent, type ReactElement } from "react";
 
 type Props = {
-  card?: {
-    review: string;
-    imgPath: string;
-    logoPath: string;
-    title: string;
-    date: string;
-    responsibilities: string[];
-  };
-
-  testimonial?: {
-    name: string;
-    mentions: string;
-    review: string;
-    imgPath: string;
-  };
-
+  card?: ExpCard;
+  testimonial?: Testimonial;
   children: ReactElement;
-  index?: number;
+  index: number;
 };
 
 const GlowCard = ({ card, testimonial, children, index }: Props) => {
@@ -47,9 +34,9 @@ const GlowCard = ({ card, testimonial, children, index }: Props) => {
   return (
     <div
       ref={(e) => {
-        cardRefs.current[index!] = e;
+        cardRefs.current[index] = e;
       }}
-      onMouseMove={handleMouseMove(index!)}
+      onMouseMove={handleMouseMove(index)}
       className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column"
     >
       <div className="glow"></div>
