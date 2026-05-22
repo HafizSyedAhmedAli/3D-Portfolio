@@ -15,7 +15,7 @@ const TestimonialSection = () => {
         <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
           {testimonials.map((testimonial, index) => (
             <GlowCard
-              key={testimonial.name}
+              key={`${index}-${testimonial.name}`}
               testimonial={testimonial}
               index={index}
             >
