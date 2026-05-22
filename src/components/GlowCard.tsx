@@ -1,3 +1,5 @@
+"use client";
+
 import { ExpCard, Testimonial } from "@/types";
 import Image from "next/image";
 import { useRef, type MouseEvent, type ReactElement } from "react";
