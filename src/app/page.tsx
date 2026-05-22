@@ -1,17 +1,18 @@
-import Navbar from "@/components/Navbar";
-import ShowcaseSection from "@/sections/ShowcaseSection";
-import HeroSection from "@/sections/HeroSection";
-import FeatureCardSection from "@/sections/FeatureCardSection";
+import ContactSection from "@/sections/ContactSection";
 import ExperienceSection from "@/sections/ExperienceSection";
+import FeatureCardSection from "@/sections/FeatureCardSection";
+import FooterSection from "@/sections/FooterSection";
+import HeroSection from "@/sections/HeroSection";
+import NavbarSection from "@/sections/NavbarSection";
+import ShowcaseSection from "@/sections/ShowcaseSection";
 import TechStackSection from "@/sections/TechStackSection";
 import TestimonialSection from "@/sections/TestimonialSection";
-import ContactSection from "@/sections/ContactSection";
 // import LogoSection from "@/sections/LogoSection";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <NavbarSection />
       <HeroSection />
       <ShowcaseSection />
       {/* <LogoSection /> */}
@@ -20,6 +21,7 @@ export default function Home() {
       <TechStackSection />
       <TestimonialSection />
       <ContactSection />
+      <FooterSection />
     </>
   );
 }

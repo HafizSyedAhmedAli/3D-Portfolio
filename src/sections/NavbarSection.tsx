@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 import { navLinks } from "../constants";
 
-const Navbar = () => {
+const NavbarSection = () => {
   const [scrolled, setScrolled] = useState<boolean>(false);
 
   useEffect(() => {
@@ -56,4 +56,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default NavbarSection;
