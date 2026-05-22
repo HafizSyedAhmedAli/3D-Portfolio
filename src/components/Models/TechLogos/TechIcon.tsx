@@ -87,7 +87,7 @@ const ModelFallback = ({ error }: { error: Error | null }) => {
 // Rendered during the initial download phase. Uses Drei's <Html> wrapper
 // to render a clean CSS/Tailwind spinner directly centered inside the WebGL viewport.
 
-const CanvasLoader = () => {
+export const CanvasLoader = () => {
   return (
     <Html center>
       <div className="flex flex-col items-center justify-center gap-3 select-none pointer-events-none w-32">

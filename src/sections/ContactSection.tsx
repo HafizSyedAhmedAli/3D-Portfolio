@@ -1,20 +1,18 @@
 "use client";
 
-import {
-  SubmitEvent,
-  useRef,
-  useState,
-  type ChangeEvent,
-  type FormEvent,
-} from "react";
 import emailjs from "@emailjs/browser";
 import Image from "next/image";
+import { SubmitEvent, useRef, useState, type ChangeEvent } from "react";
 
-import TitleHeader from "../components/TitleHeader";
 import ContactExperience from "@/components/Models/TechLogos/contact/ContactExperience";
+import TitleHeader from "../components/TitleHeader";
 
 const ContactSection = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
+  const [feedback, setFeedback] = useState<{
+    type: "success" | "error";
+    message: string;
+  } | null>(null);
   const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
@@ -31,23 +29,39 @@ const ContactSection = () => {
 
   const handleSubmit = async (e: SubmitEvent) => {
     e.preventDefault();
-    setLoading(true);
 
     if (!formRef.current) return;
 
+    setLoading(true);
+
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+    if (!serviceId || !templateId || !publicKey) {
+      console.error("Missing EmailJS configuration");
+      return;
+    }
+
     try {
-      await emailjs.sendForm(
-        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-        formRef.current,
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
-      );
+      await emailjs.sendForm(serviceId, templateId, formRef.current, publicKey);
 
       setForm({ name: "", email: "", message: "" });
+      setFeedback({
+        type: "success",
+        message: "Message sent successfully! 🎉",
+      });
     } catch (error) {
       console.error("EmailJS Error:", error);
+      setFeedback({
+        type: "error",
+        message: "Failed to send message. Please try again.",
+      });
     } finally {
       setLoading(false);
+      setTimeout(() => {
+        setFeedback(null);
+      }, 5_000);
     }
   };
 
@@ -104,6 +118,14 @@ const ContactSection = () => {
                     required
                   />
                 </div>
+
+                {feedback && (
+                  <div
+                    className={`p-4 rounded ${feedback.type === "success" ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}`}
+                  >
+                    {feedback.message}
+                  </div>
+                )}
 
                 <button type="submit">
                   <div className="cta-button group">
