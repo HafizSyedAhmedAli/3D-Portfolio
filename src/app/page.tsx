@@ -1,7 +1,8 @@
 import Navbar from "@/components/Navbar";
 import ShowcaseSection from "@/sections/ShowcaseSection";
 import HeroSection from "@/sections/HeroSection";
-import LogoSection from "@/sections/LogoSection";
+import FeatureCardSection from "@/sections/FeatureCardSection";
+// import LogoSection from "@/sections/LogoSection";
 
 export default function Home() {
   return (
@@ -9,7 +10,8 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <ShowcaseSection />
-      <LogoSection />
+      {/* <LogoSection /> */}
+      <FeatureCardSection />
     </>
   );
 }
