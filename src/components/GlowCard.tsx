@@ -1,0 +1,79 @@
+import Image from "next/image";
+import { useRef, type MouseEvent, type ReactElement } from "react";
+
+type Props = {
+  card?: {
+    review: string;
+    imgPath: string;
+    logoPath: string;
+    title: string;
+    date: string;
+    responsibilities: string[];
+  };
+
+  testimonial?: {
+    name: string;
+    mentions: string;
+    review: string;
+    imgPath: string;
+  };
+
+  children: ReactElement;
+  index?: number;
+};
+
+const GlowCard = ({ card, testimonial, children, index }: Props) => {
+  const cardRefs = useRef<Array<HTMLDivElement | null>>([]);
+
+  const handleMouseMove =
+    (index: number) => (e: MouseEvent<HTMLDivElement>) => {
+      const card = cardRefs.current[index];
+
+      if (!card) return;
+
+      // Get the mouse position relative to the card
+      const rect = card.getBoundingClientRect();
+      const mouseX = e.clientX - rect.left - rect.width / 2;
+      const mouseY = e.clientY - rect.top - rect.height / 2;
+
+      // Calculate the angle from the center of the card
+      let angle = Math.atan2(mouseY, mouseX) * (180 / Math.PI);
+
+      angle = (angle + 360) % 360;
+
+      card.style.setProperty("--start", (angle + 60).toString());
+    };
+
+  return (
+    <div
+      ref={(e) => {
+        cardRefs.current[index!] = e;
+      }}
+      onMouseMove={handleMouseMove(index!)}
+      className="card card-border timeline-card rounded-xl p-10 mb-5 break-inside-avoid-column"
+    >
+      <div className="glow"></div>
+
+      <div className="flex items-center gap-1 mb-5">
+        {Array.from({ length: 5 }, (_, i) => (
+          <Image
+            src="/images/star.png"
+            alt="star"
+            key={i}
+            width={20}
+            height={20}
+          />
+        ))}
+      </div>
+
+      <div className="mb-5">
+        <p className="text-white-50 text-lg">
+          {card?.review ?? testimonial?.review}
+        </p>
+      </div>
+      {children}
+    </div>
+  );
+};
+
+export default GlowCard;

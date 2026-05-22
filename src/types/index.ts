@@ -40,6 +40,8 @@ export type TechStackIcon = {
 export type ExpCard = {
   review: string;
   imgPath: string;
+  width: number;
+  height: number;
   logoPath: string;
   title: string;
   date: string;
