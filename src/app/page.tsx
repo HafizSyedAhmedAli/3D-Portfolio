@@ -5,6 +5,7 @@ import FeatureCardSection from "@/sections/FeatureCardSection";
 import ExperienceSection from "@/sections/ExperienceSection";
 import TechStackSection from "@/sections/TechStackSection";
 import TestimonialSection from "@/sections/TestimonialSection";
+import ContactSection from "@/sections/ContactSection";
 // import LogoSection from "@/sections/LogoSection";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <ExperienceSection />
       <TechStackSection />
       <TestimonialSection />
+      <ContactSection />
     </>
   );
 }
