@@ -118,22 +118,32 @@ const techStackImgs: TechStackImg[] = [
   {
     name: "React Developer",
     imgPath: "/images/logos/react.png",
+    width: 141,
+    height: 129
   },
   {
     name: "Python Developer",
     imgPath: "/images/logos/python.svg",
+    width: 111,
+    height: 135
   },
   {
     name: "Backend Developer",
     imgPath: "/images/logos/node.png",
+    width: 139,
+    height: 145
   },
   {
     name: "Interactive Developer",
     imgPath: "/images/logos/three.png",
+    width: 129,
+    height: 129
   },
   {
     name: "Project Manager",
     imgPath: "/images/logos/git.svg",
+    width: 155,
+    height: 155
   },
 ];
 

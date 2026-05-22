@@ -28,6 +28,8 @@ export type Ability = {
 export type TechStackImg = {
   name: string;
   imgPath: string;
+  width: number;
+  height: number;
 };
 
 export type TechStackIcon = {
