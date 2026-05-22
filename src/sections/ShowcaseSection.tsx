@@ -6,6 +6,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const ShowcaseSection = () => {
   const sectionRef = useRef<HTMLDivElement>(null);
   const project1Ref = useRef<HTMLDivElement>(null);
@@ -13,7 +15,6 @@ const ShowcaseSection = () => {
   const project3Ref = useRef<HTMLDivElement>(null);
 
   useGSAP(() => {
-    gsap.registerPlugin(ScrollTrigger);
     const projects = [
       project1Ref.current,
       project2Ref.current,
@@ -32,6 +33,7 @@ const ShowcaseSection = () => {
     );
 
     projects.forEach((project, index) => {
+      if (!project) return;
       gsap.fromTo(
         project,
         {

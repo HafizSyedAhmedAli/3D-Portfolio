@@ -1,12 +1,8 @@
 import Image from "next/image";
 import { logoIconsList } from "../constants";
+import type { LogoIcon } from "@/types";
 
-type Props = {
-  imgPath: string;
-  width: number;
-};
-
-const LogoIcon = ({ imgPath, width }: Props) => {
+const LogoIcon = ({ imgPath, width }: LogoIcon) => {
   return (
     <div className="flex-none flex-center marquee-item">
       {/* Next.js Image requires width and height. Adjust these to match your actual logo sizes */}
