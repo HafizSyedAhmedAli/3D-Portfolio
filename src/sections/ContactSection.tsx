@@ -133,7 +133,7 @@ const ContactSection = () => {
                     <p className="text">
                       {loading ? "Sending..." : "Send Message"}
                     </p>
-                    <div className="arrow-wrapper relative w-6 h-6">
+                    <div className="arrow-wrapper md:pl-0 pl-6">
                       <Image
                         src="/images/arrow-down.svg"
                         alt="arrow"
