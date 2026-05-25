@@ -91,11 +91,11 @@ const HeroSection = () => {
 
             {/* Headline */}
             <div className="hero-headline flex flex-col gap-1">
-              <h1 className="md:text-[58px] text-[34px] font-bold leading-[1.1] tracking-tight text-white">
+              <h1 className="md:text-6xl text-2xl font-bold leading-[1.1] tracking-tight text-white">
                 Full-Stack Developer
               </h1>
-              <h1 className="md:text-[58px] text-[34px] font-bold leading-[1.1] tracking-tight text-emerald-400">
-                building for the web.
+              <h1 className="md:text-4xl text-xl font-bold leading-[1.1] tracking-tight text-emerald-400 max-w-3xl">
+                shipping AI-powered products.
               </h1>
               <div className="flex items-center gap-1 mt-1">
                 <span className="w-8 h-[2px] bg-emerald-500/40 rounded-full" />
@@ -107,7 +107,7 @@ const HeroSection = () => {
 
             {/* Subtext */}
             <p className="hero-sub text-white/60 md:text-lg text-base max-w-lg leading-relaxed">
-              I build production-ready web apps and AI-powered SaaS products 
+              I build production-ready web apps and AI-powered SaaS products
               from database schema to deployed UI.
             </p>
 
@@ -167,9 +167,9 @@ const HeroSection = () => {
 
         {/* RIGHT: 3D MODEL */}
         <figure>
-          <div className="hero-3d-layout cursor-grab active:cursor-grabbing">
-            <HeroSectionExperienceModel />
-          </div>
+          <div className="absolute top-0 right-0 w-[55%] h-full rounded-l-3xl overflow-hidden cursor-grab active:cursor-grabbing">
+  <HeroSectionExperienceModel />
+</div>
         </figure>
       </div>
     </section>

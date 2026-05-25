@@ -1,49 +1,73 @@
-"use client";
-
-import { useMemo } from "react";
-import * as THREE from "three";
-import { RectAreaLightUniformsLib } from "three/examples/jsm/lights/RectAreaLightUniformsLib.js";
-
-RectAreaLightUniformsLib.init();
-
 const HeroSectionLights = () => {
-
-  const rectLight = useMemo(
-    () => new THREE.RectAreaLight("#a259ff", 8, 3, 2),
-    [],
-  );
-
   return (
     <>
+      <hemisphereLight args={["#1a3a4a", "#0a1a20", 2]} />
+      <ambientLight intensity={0.8} color="#1a2d3a" />
+
+      {/* Key light */}
       <spotLight
-        position={[2, 5, 6]}
-        angle={0.15}
-        intensity={100}
-        penumbra={0.2}
-        color="white"
-      />
-      <spotLight
-        position={[4, 5, 4]}
-        angle={0.3}
-        intensity={40}
+        position={[0, 8, 10]}
+        angle={0.5}
+        intensity={300}
         penumbra={0.5}
-        color="#4cc9f0"
+        color="#d8f0ff"
+        castShadow
       />
+
+      {/* ✅ Wall wash light — hits the back wall so it glows visibly */}
       <spotLight
-        position={[-3, 5, 5]}
-        angle={0.4}
-        intensity={60}
+        position={[0, 6, -2]}
+        angle={0.8}
+        intensity={120}
         penumbra={1}
-        color="#9d4edd"
+        color="#1a6080"
+        target-position={[0, 0, -7]}
       />
-      <primitive
-        object={rectLight}
-        position={[1, 3, 4]}
-        intensity={15}
-        rotation={[-Math.PI / 4, Math.PI / 4, 0]}
+
+      {/* ✅ Floor wash — creates contrast between floor and wall */}
+      <spotLight
+        position={[2, 2, 4]}
+        angle={0.6}
+        intensity={80}
+        penumbra={1}
+        color="#0d3040"
       />
-      <pointLight position={[0, 1, 0]} intensity={10} color="#7209b7" />
-      <pointLight position={[1, 2, -2]} intensity={10} color="#0d00a4" />
+
+      {/* Left blue fill */}
+      <spotLight
+        position={[-5, 3, 6]}
+        angle={0.6}
+        intensity={200}
+        penumbra={1}
+        color="#4a90d9"
+      />
+
+      {/* Right fill */}
+      <spotLight
+        position={[5, 3, 6]}
+        angle={0.6}
+        intensity={160}
+        penumbra={1}
+        color="#7ac8d8"
+      />
+
+      {/* Under fill */}
+      <pointLight
+        position={[0, 0, 8]}
+        intensity={100}
+        color="#4a8aaa"
+        distance={15}
+        decay={1.5}
+      />
+
+      {/* Screen glow */}
+      <pointLight
+        position={[3, 2, 3]}
+        intensity={25}
+        color="#2dd4bf"
+        distance={8}
+        decay={2}
+      />
     </>
   );
 };

@@ -1,223 +1,81 @@
-import { useGLTF, useTexture } from "@react-three/drei";
-import { JSX, RefObject, useMemo } from "react";
+import { useGLTF } from "@react-three/drei";
+import { useMemo, type ComponentProps, type RefObject } from "react";
 import * as THREE from "three";
 import { type GLTF } from "three-stdlib";
 
-type GLTFAction = THREE.AnimationClip;
-
 type GLTFResult = GLTF & {
   nodes: {
-    _________6_blinn1_0: THREE.Mesh;
-    body1_blinn1_0: THREE.Mesh;
-    cabin_blinn1_0: THREE.Mesh;
-    chair_body_blinn1_0: THREE.Mesh;
-    comp_blinn1_0: THREE.Mesh;
-    emis_lambert1_0: THREE.Mesh;
-    handls_blinn1_0: THREE.Mesh;
-    keyboard_blinn1_0: THREE.Mesh;
-    kovrik_blinn1_0: THREE.Mesh;
-    lamp_bl_blinn1_0: THREE.Mesh;
-    lamp_white_blinn1_0: THREE.Mesh;
-    miuse_blinn1_0: THREE.Mesh;
-    monitor2_blinn1_0: THREE.Mesh;
-    monitor3_blinn1_0: THREE.Mesh;
-    pCylinder5_blinn1_0: THREE.Mesh;
-    pillows_blinn1_0: THREE.Mesh;
-    polySurface53_blinn1_0: THREE.Mesh;
-    radiator_blinn1_0: THREE.Mesh;
-    radiator_blinn1_0001: THREE.Mesh;
-    railing_blinn1_0: THREE.Mesh;
-    red_bttns_blinn1_0: THREE.Mesh;
-    red_vac_blinn1_0: THREE.Mesh;
-    stylus_blinn1_0: THREE.Mesh;
-    table_blinn1_0: THREE.Mesh;
-    tablet_blinn1_0: THREE.Mesh;
-    triangle_blinn1_0: THREE.Mesh;
-    vac_black_blinn1_0: THREE.Mesh;
-    vacuum1_blinn1_0: THREE.Mesh;
-    vacuumgrey_blinn1_0: THREE.Mesh;
-    vires_blinn1_0: THREE.Mesh;
-    window_blinn1_0: THREE.Mesh;
-    window4_phong1_0: THREE.Mesh;
+    Stoo1_Stoo1_0: THREE.Mesh;
+    sit_sit_0: THREE.Mesh;
+    pc_pc_0: THREE.Mesh;
   };
   materials: {
-    blinn1: THREE.MeshStandardMaterial;
-    lambert1: THREE.MeshStandardMaterial;
-    phong1: THREE.MeshStandardMaterial;
+    Stoo1: THREE.MeshStandardMaterial;
+    material: THREE.MeshStandardMaterial;
+    material_2: THREE.MeshStandardMaterial;
   };
-  animations: GLTFAction[];
 };
 
-// ✅ Added screensRef to props
-type Props = JSX.IntrinsicElements['group'] & {
-   screensRef: RefObject<THREE.Mesh>;
+type Props = ComponentProps<"group"> & {
+  screensRef: RefObject<THREE.Mesh>;
 };
 
+// Room.tsx — just use original materials, no emissive override
 export function Room({ screensRef, ...props }: Props) {
   const { nodes, materials } = useGLTF(
-    "/models/optimized-room.glb",
+    "/models/gaming_setup-transformed.glb",
   ) as unknown as GLTFResult;
 
-  const matcapTexture = useTexture("/images/textures/mat1.png");
+  // Just tweak surface properties, never override color or emissive
+  const chairFrameMaterial = useMemo(() => {
+    const mat = materials.Stoo1.clone();
+    mat.roughness = 0.4;
+    mat.metalness = 0.3;
+    return mat;
+  }, [materials.Stoo1]);
 
-  // ✅ All materials memoized so they don't recreate every render
-  const curtainMaterial = useMemo(
-    () => new THREE.MeshPhongMaterial({ color: "#d90429" }),
-    [],
-  );
+  const chairCushionMaterial = useMemo(() => {
+    const mat = materials.material.clone();
+    mat.roughness = 0.6;
+    mat.metalness = 0.1;
+    return mat;
+  }, [materials.material]);
 
-  const bodyMaterial = useMemo(
-    () => new THREE.MeshPhongMaterial({ map: matcapTexture }),
-    [matcapTexture],
-  );
-
-  const tableMaterial = useMemo(
-    () => new THREE.MeshPhongMaterial({ color: "#582f0e" }),
-    [],
-  );
-
-  const radiatorMaterial = useMemo(
-    () => new THREE.MeshPhongMaterial({ color: "#fff" }),
-    [],
-  );
-
-  const compMaterial = useMemo(
-    () => new THREE.MeshStandardMaterial({ color: "#fff" }),
-    [],
-  );
-
-  const pillowMaterial = useMemo(
-    () => new THREE.MeshPhongMaterial({ color: "#8338ec" }),
-    [],
-  );
-
-  const chairMaterial = useMemo(
-    () => new THREE.MeshPhongMaterial({ color: "#000" }),
-    [],
-  );
+  const deskMaterial = useMemo(() => {
+    const mat = materials.material_2.clone();
+    // ✅ Keep ALL original colors and emissive — don't touch them
+    // Just improve surface quality
+    mat.roughness = 0.3;
+    mat.metalness = 0.4;
+    return mat;
+  }, [materials.material_2]);
 
   return (
     <group {...props} dispose={null}>
       <mesh
-        geometry={nodes._________6_blinn1_0.geometry}
-        material={curtainMaterial}
+        castShadow
+        receiveShadow
+        geometry={nodes.Stoo1_Stoo1_0.geometry}
+        material={chairFrameMaterial}
+        scale={0.3}
       />
-      <mesh geometry={nodes.body1_blinn1_0.geometry} material={bodyMaterial} />
-      <mesh geometry={nodes.cabin_blinn1_0.geometry} material={tableMaterial} />
       <mesh
-        geometry={nodes.chair_body_blinn1_0.geometry}
-        material={chairMaterial}
+        castShadow
+        receiveShadow
+        geometry={nodes.sit_sit_0.geometry}
+        material={chairCushionMaterial}
+        scale={0.3}
       />
-      <mesh geometry={nodes.comp_blinn1_0.geometry} material={compMaterial} />
-      {/* ✅ screensRef passed down from parent for SelectiveBloom */}
       <mesh
         ref={screensRef}
-        geometry={nodes.emis_lambert1_0.geometry}
-        material={materials.lambert1}
-      />
-      <mesh
-        geometry={nodes.handls_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.keyboard_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.kovrik_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.lamp_bl_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.lamp_white_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.miuse_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.monitor2_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.monitor3_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.pCylinder5_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.pillows_blinn1_0.geometry}
-        material={pillowMaterial}
-      />
-      <mesh
-        geometry={nodes.polySurface53_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.radiator_blinn1_0.geometry}
-        material={radiatorMaterial}
-      />
-      <mesh
-        geometry={nodes.radiator_blinn1_0001.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.railing_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.red_bttns_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.red_vac_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.stylus_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh geometry={nodes.table_blinn1_0.geometry} material={tableMaterial} />
-      <mesh
-        geometry={nodes.tablet_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.triangle_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.vac_black_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.vacuum1_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.vacuumgrey_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.vires_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.window_blinn1_0.geometry}
-        material={materials.blinn1}
-      />
-      <mesh
-        geometry={nodes.window4_phong1_0.geometry}
-        material={materials.phong1}
+        castShadow
+        receiveShadow
+        geometry={nodes.pc_pc_0.geometry}
+        material={deskMaterial}
+        scale={0.3}
       />
     </group>
   );
 }
 
-useGLTF.preload("/models/optimized-room.glb");
+useGLTF.preload("/models/gaming_setup-transformed.glb");
