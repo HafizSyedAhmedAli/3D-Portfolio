@@ -48,7 +48,7 @@ const TechStackSection = () => {
             >
               <div className="tech-card-animated-bg" />
               <div className="tech-card-content">
-                <div className="tech-icon-wrapper">
+                <div className="tech-icon-wrapper active:cursor-grabbing">
                   <TechIcon model={icon} />
                 </div>
 
