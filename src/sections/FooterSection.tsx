@@ -18,7 +18,13 @@ const FooterSection = () => {
               rel="noopener noreferrer"
               key={img.url}
             >
-              <Image src={img.imgPath} alt={img.name} width={20} height={20} />
+              <Image
+                src={img.imgPath}
+                alt={img.name}
+                width={20}
+                height={20}
+                className="brightness-0 invert"
+              />
             </a>
           ))}
         </div>

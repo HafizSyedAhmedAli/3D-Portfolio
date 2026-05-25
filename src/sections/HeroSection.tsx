@@ -5,7 +5,7 @@ import Button from "../components/Button";
 import HeroSectionExperienceModel from "../components/HeroSectionModels/HeroSectionExperienceModel";
 import { words } from "../constants";
 import { gsap } from "gsap";
-import AnimatedCounter from "../components/AnimatedCounter";
+// import AnimatedCounter from "../components/AnimatedCounter";
 import Image from "next/image";
 
 const HeroSection = () => {
@@ -63,9 +63,8 @@ const HeroSection = () => {
               <h1>that Deliver Results</h1>
             </div>
 
-            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none">
-              Hi, I'm Syed Ahmed Ali, a developer based in Pakistan with a
-              passion for code.
+            <p className="text-white-50 md:text-xl relative z-10 pointer-events-none max-w-2xl">
+              Hi, I'm Syed Ahmed Ali, a full-stack developer building production-ready web apps and AI-powered SaaS products.
             </p>
 
             <Button
@@ -78,13 +77,13 @@ const HeroSection = () => {
         {/* RIGHT: 3D MODEL */}
 
         <figure>
-          <div className="hero-3d-layout">
+          <div className="hero-3d-layout cursor-grab active:cursor-grabbing">
             <HeroSectionExperienceModel />
           </div>
         </figure>
       </div>
 
-      <AnimatedCounter />
+      {/* <AnimatedCounter /> */}
     </section>
   );
 };

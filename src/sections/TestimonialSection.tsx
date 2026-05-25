@@ -8,8 +8,8 @@ const TestimonialSection = () => {
     <section id="testimonials" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
-          title="What People Say About Me?"
-          sub="⭐ Client Feedback Highlights"
+          title="What Clients & Peers Say"
+          sub="💬 Honest Feedback"
         />
 
         <div className="lg:columns-3 md:columns-2 columns-1 mt-16">
@@ -26,6 +26,7 @@ const TestimonialSection = () => {
                     alt={testimonial.name}
                     width={46}
                     height={46}
+                    className="rounded-full"
                   />
                 </div>
 

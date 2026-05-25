@@ -10,16 +10,17 @@ const Button = ({ className, id, text }: Props) => {
    const handleClick = (e: MouseEvent) => {
       e.preventDefault();
 
-      const target = document.getElementById('counter');
+      // const target = document.getElementById('counter');
+      const target = document.getElementById('work');
 
-      if (target && id) {
+      // if (target && id) {
          const offset = window.innerHeight * 0.15;
 
          const top =
-            target.getBoundingClientRect().top + window.scrollY - offset;
+            target!.getBoundingClientRect().top + window.scrollY; //- offset;
 
          window.scrollTo({ top, behavior: 'smooth' });
-      }
+      // }
    };
 
    return (

@@ -32,7 +32,7 @@ const ExperienceSection = () => {
       scrollTrigger: {
         trigger: ".timeline",
         start: "top center",
-        end: "70% center",
+        end: "65% center",
         onUpdate: (self) => {
           gsap.to(".timeline", {
             scaleY: 1 - self.progress,
@@ -62,8 +62,8 @@ const ExperienceSection = () => {
     >
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
-          title="Professional Work Experience"
-          sub="💼 My Career Overview"
+          title="Experience That Shaped My Stack"
+          sub="🧩 Where I've Built"
         />
 
         <div className="mt-32 relative">

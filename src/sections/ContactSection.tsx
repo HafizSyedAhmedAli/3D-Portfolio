@@ -69,8 +69,8 @@ const ContactSection = () => {
     <section id="contact" className="flex-center section-padding">
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
-          title="Get in Touch – Let’s Connect"
-          sub="💬 Have questions or ideas? Let’s talk! 🚀"
+          title="Let's Build Something Together"
+          sub="📬 Open to Opportunities"
         />
         <div className="grid-12-cols mt-16">
           <div className="xl:col-span-5">
@@ -113,7 +113,7 @@ const ContactSection = () => {
                     name="message"
                     value={form.message}
                     onChange={handleChange}
-                    placeholder="How can I help you?"
+                    placeholder="Tell me about your project..."
                     rows={5}
                     required
                   />

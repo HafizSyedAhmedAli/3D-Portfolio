@@ -61,16 +61,14 @@ const ShowcaseSection = () => {
           {/* LEFT */}
           <div className="first-project-wrapper" ref={project1Ref}>
             <div className="image-wrapper">
-              <Image src="/images/project1.png" alt="Ryde" fill />
+              <Image src="/images/project1.png" alt="Flacron Gamezone" fill />
             </div>
             <div className="text-content">
               <h2>
-                On-Demand Rides made simple with a Powerful, User-Friendly App
-                called Ryde
+                Your Ultimate Football Stats Platform, called Flacron Gamezone
               </h2>
               <p className="text-white-50 md:text-xl">
-                An app built with React Native, Expo & TailwindCSS for a fast,
-                user-friendly experience.
+                A full-stack web platform for live match coverage, league standings, and real-time football stats, built with Next.js, Express.js, and PostgreSQL.
               </p>
             </div>
           </div>
@@ -86,7 +84,7 @@ const ShowcaseSection = () => {
                   height={645}
                 />
               </div>
-              <h2>Library Management Platform</h2>
+              <h2>Relay - AI-Powered Customer Support SaaS</h2>
             </div>
 
             <div className="project" ref={project3Ref}>
@@ -98,7 +96,7 @@ const ShowcaseSection = () => {
                   height={645}
                 />
               </div>
-              <h2>YC Directory - A Startup Showcase App</h2>
+              <h2>GreenCart – Full-Stack Grocery E-Commerce Platform</h2>
             </div>
           </div>
         </div>
