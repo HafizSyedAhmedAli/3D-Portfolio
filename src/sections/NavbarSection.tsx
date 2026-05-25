@@ -30,7 +30,7 @@ const NavbarSection = () => {
     <header className={`navbar ${scrolled ? "scrolled" : "not-scrolled"}`}>
       <div className="inner">
         <a href="#hero" className="logo">
-          Ahmed | Ali
+          Ahmed | <span className="text-emerald-400">Ali</span> 
         </a>
 
         <nav className="desktop">
@@ -47,7 +47,7 @@ const NavbarSection = () => {
         </nav>
 
         <a href="#contact" className="contact-btn group">
-          <div className="inner">
+          <div className="px-5 py-2 rounded-lg border border-emerald-500/50 bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500 hover:text-black transition-all duration-300 text-sm font-medium">
             <span>Contact me</span>
           </div>
         </a>

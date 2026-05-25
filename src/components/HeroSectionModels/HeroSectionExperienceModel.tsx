@@ -52,7 +52,7 @@ const HeroSectionExperienceModel = () => {
       <Particles count={100} />
 
       <group
-        scale={isMobile ? 0.7 : 1}
+        scale={isMobile ? 0.6 : 0.9}
         position={[0, -3.5, 0]}
         rotation={[0, -Math.PI / 4, 0]}
       >
