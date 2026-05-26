@@ -88,9 +88,7 @@ const ShowcaseSection = () => {
       id="work"
       className="w-full md:mt-20 mt-10 md:px-20 px-5 pb-20 scroll-mt-28 md:scroll-mt-20"
     >
-      <div className="flex items-end justify-between">
-        <TitleHeader sub="Selected Work" title="What I've Built" />
-      </div>
+      <TitleHeader sub="Selected Work" title="What I've Built" />
 
       {/* Featured project */}
       <div className="project-card group relative w-full rounded-2xl overflow-hidden border border-white/5 bg-white/2 hover:border-emerald-500/30 transition-all duration-500 mb-6">
