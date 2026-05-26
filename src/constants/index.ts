@@ -5,6 +5,7 @@ import type {
   ExpLogo,
   LogoIcon,
   NavLink,
+  Project,
   SocialImg,
   TechStackIcon,
   TechStackImg,
@@ -266,7 +267,39 @@ const socialImgs: SocialImg[] = [
     url: "https://github.com/HafizSyedAhmedAli",
     imgPath: "/images/github.svg",
   },
-  
+];
+
+const projects: Project[] = [
+  {
+    id: 1,
+    title: "Flacron Gamezone",
+    liveLink: "https://flacrongamezone.com",
+    githubLink: "https://github.com/HafizSyedAhmedAli/Flacron-Gamezone-Local",
+    desc: "Live football match discovery platform with real-time scores, league standings, Stripe subscriptions, and role-based auth.",
+    tags: ["Next.js", "Express.js", "PostgreSQL", "Redis", "Stripe"],
+    img: "/images/project1.png",
+    featured: true,
+  },
+  {
+    id: 2,
+    title: "Relay",
+    liveLink: "https://relay-demo-web.vercel.app",
+    githubLink: "https://github.com/HafizSyedAhmedAli/Relay-Demo",
+    desc: "A multi-tenant B2B customer support SaaS featuring embeddable AI chat widgets and real-time voice agents to automate enterprise customer service.",
+    tags: ["Next.js", "Convex", "VAPI"],
+    img: "/images/project2.png",
+    featured: false,
+  },
+  {
+    id: 3,
+    title: "GreenCart",
+    liveLink: "https://greencart-frontend-ebon.vercel.app/",
+    githubLink: "https://github.com/HafizSyedAhmedAli/Greencart-FULL-STACK",
+    desc: "A high-performance full-stack marketplace optimized for seamless product discovery, secure checkout, and efficient data synchronization.",
+    tags: ["React", "Express.js", "MongoDB"],
+    img: "/images/project3.png",
+    featured: false,
+  },
 ];
 
 export {
@@ -281,4 +314,5 @@ export {
   techStackIcons,
   techStackImgs,
   navLinks,
+  projects,
 };

@@ -67,3 +67,14 @@ export type SocialImg = {
   url: string;
   imgPath: string;
 };
+
+export type Project = {
+  id: number;
+  title: string;
+  desc: string;
+  tags: string[];
+  img: string;
+  liveLink?: string;
+  githubLink?: string;
+  featured: boolean;
+};
