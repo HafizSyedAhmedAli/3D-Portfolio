@@ -78,3 +78,17 @@ export type Project = {
   githubLink?: string;
   featured: boolean;
 };
+
+export type PerformanceMetric = {
+  label: string;
+  metric: string;
+  value: number;
+  color: `bg-${string}`;
+};
+
+export type TechTag =
+  | "Swagger"
+  | "Zod schemas"
+  | "Git flow"
+  | "REST"
+  | "Postman";

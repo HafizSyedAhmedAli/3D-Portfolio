@@ -6,6 +6,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { projects } from "@/constants";
+import TitleHeader from "@/components/TitleHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,16 +88,8 @@ const ShowcaseSection = () => {
       id="work"
       className="w-full md:mt-20 mt-10 md:px-20 px-5 pb-20 scroll-mt-28 md:scroll-mt-20"
     >
-      {/* Header */}
-      <div className="flex items-end justify-between mb-12">
-        <div>
-          <p className="text-emerald-400 font-mono text-sm tracking-widest uppercase mb-2">
-            Selected Work
-          </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-white">
-            What I've Built
-          </h2>
-        </div>
+      <div className="flex items-end justify-between">
+        <TitleHeader sub="Selected Work" title="What I've Built" />
       </div>
 
       {/* Featured project */}

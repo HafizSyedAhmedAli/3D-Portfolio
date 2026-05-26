@@ -5,10 +5,12 @@ import type {
   ExpLogo,
   LogoIcon,
   NavLink,
+  PerformanceMetric,
   Project,
   SocialImg,
   TechStackIcon,
   TechStackImg,
+  TechTag,
   Testimonial,
   Word,
 } from "../types/index";
@@ -17,6 +19,10 @@ const navLinks: NavLink[] = [
   {
     name: "Work",
     link: "#work",
+  },
+  {
+    name: "Approach",
+    link: "#approach"
   },
   {
     name: "Experience",
@@ -101,7 +107,7 @@ const abilities: Ability[] = [
   {
     imgPath: "/images/server-solid.png",
     title: "Scalable Architecture",
-    desc: "Designing clean, maintainable systems using industry standard design patterns and robust server side logic.",
+    desc: "Designing clean, maintainable systems using industry-standard design patterns. Decoupling code into distinct controller, service, and repository layers ensures independent testing, easy maintenance, and seamless scaling.",
   },
   {
     imgPath: "/images/code-solid.png",
@@ -302,6 +308,35 @@ const projects: Project[] = [
   },
 ];
 
+const performanceMetrics: PerformanceMetric[] = [
+  {
+    label: "Redis",
+    metric: "99.4% Hit",
+    value: 99,
+    color: "bg-emerald-400",
+  },
+  {
+    label: "DB",
+    metric: "0.8ms Index",
+    value: 85,
+    color: "bg-indigo-400",
+  },
+  {
+    label: "API",
+    metric: "< 150ms P99",
+    value: 95,
+    color: "bg-amber-400",
+  },
+];
+
+const techTags: TechTag[] = [
+  "Swagger",
+  "Zod schemas",
+  "Git flow",
+  "REST",
+  "Postman",
+];
+
 export {
   words,
   abilities,
@@ -315,4 +350,6 @@ export {
   techStackImgs,
   navLinks,
   projects,
+  performanceMetrics,
+  techTags
 };
