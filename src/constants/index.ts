@@ -293,7 +293,7 @@ const projects: Project[] = [
   {
     id: 3,
     title: "GreenCart",
-    liveLink: "https://greencart-frontend-ebon.vercel.app/",
+    liveLink: "https://greencart-frontend-ebon.vercel.app",
     githubLink: "https://github.com/HafizSyedAhmedAli/Greencart-FULL-STACK",
     desc: "A high-performance full-stack marketplace optimized for seamless product discovery, secure checkout, and efficient data synchronization.",
     tags: ["React", "Express.js", "MongoDB"],

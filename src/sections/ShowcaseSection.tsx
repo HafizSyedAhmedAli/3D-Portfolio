@@ -155,7 +155,7 @@ const ShowcaseSection = () => {
             key={project.id}
             className="project-card group relative rounded-2xl overflow-hidden border border-white/5 bg-white/2 hover:border-emerald-500/30 transition-all duration-500"
           >
-            <div className="h-52 md:h-84 relative overflow-hidden">
+            <div className="h-52 md:h-96 relative overflow-hidden">
               <Image
                 src={project.img}
                 alt={project.title}
