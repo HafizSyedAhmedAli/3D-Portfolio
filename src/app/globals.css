@@ -32,6 +32,7 @@ section {
   --color-blue-50: #839cb5;
   --color-blue-100: #2d2d38;
 
+  --color-emerald-300: #86efc7;
   --color-emerald-400: #34d399;
   --color-emerald-500: #10b981;
   --color-emerald-600: #059669;
@@ -98,7 +99,7 @@ section {
       @apply size-8 md:size-10 object-contain;
     }
     .slide {
-      @apply absolute pt-0 px-2 md:px-5 py-7.5 h-12 md:h-19.5 md:translate-y-1 translate-y-0 overflow-hidden;
+      @apply absolute pt-0 px-2 md:px-5 py-7 h-12 md:h-20 md:translate-y-1 translate-y-0 overflow-hidden;
     }
   }
 

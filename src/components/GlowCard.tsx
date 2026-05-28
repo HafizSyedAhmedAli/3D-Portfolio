@@ -14,27 +14,42 @@ type Props = {
 
 const GlowCard = ({ children, index, className }: Props) => {
   const cardRefs = useRef<Array<HTMLDivElement | null>>([]);
+  const rotationSetters = useRef<
+    Array<((rotateX: number, rotateY: number) => void) | null>
+  >([]);
+
+  const initQuickSetter = (card: HTMLDivElement, index: number) => {
+    if (rotationSetters.current[index]) return;
+
+    gsap.set(card, {
+      transformPerspective: 1000,
+      transformStyle: "preserve-3d",
+    });
+
+    const setRotateX = gsap.quickSetter(card, "rotateX", "deg");
+    const setRotateY = gsap.quickSetter(card, "rotateY", "deg");
+
+    rotationSetters.current[index] = (rotateX: number, rotateY: number) => {
+      setRotateX(rotateX);
+      setRotateY(rotateY);
+    };
+  };
 
   const handleMouseMove =
     (index: number) => (e: MouseEvent<HTMLDivElement>) => {
       const card = cardRefs.current[index];
       if (!card) return;
 
-      const rect = card.getBoundingClientRect();
+      initQuickSetter(card, index);
 
+      const rect = card.getBoundingClientRect();
       const mouseX = e.clientX - rect.left;
       const mouseY = e.clientY - rect.top;
 
       const rotateY = ((mouseX - rect.width / 2) / rect.width) * 10;
       const rotateX = -((mouseY - rect.height / 2) / rect.height) * 10;
 
-      gsap.to(card, {
-        rotateX,
-        rotateY,
-        transformPerspective: 1000,
-        duration: 0.4,
-        ease: "power2.out",
-      });
+      rotationSetters.current[index]?.(rotateX, rotateY);
 
       card.style.setProperty("--mouse-x", `${mouseX}px`);
       card.style.setProperty("--mouse-y", `${mouseY}px`);
@@ -59,7 +74,9 @@ const GlowCard = ({ children, index, className }: Props) => {
       }}
       onMouseMove={handleMouseMove(index)}
       onMouseLeave={handleMouseLeave(index)}
-      className={`card card-border timeline-card rounded-3xl p-8 md:p-10 relative overflow-hidden border border-white/10 bg-black-100/80 backdrop-blur-xl ${className ?? ""}`}
+      className={`card card-border timeline-card rounded-3xl p-8 md:p-10 relative overflow-hidden border border-white/10 bg-black-100/80 backdrop-blur-xl ${
+        className ?? ""
+      }`}
     >
       <div className="glow" />
       <div className="absolute inset-0 opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none">
