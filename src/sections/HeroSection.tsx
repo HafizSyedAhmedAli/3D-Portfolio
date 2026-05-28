@@ -53,8 +53,9 @@ const HeroSection = () => {
   const handleScrollToWork = () => {
     const target = document.getElementById("work");
     if (target) {
-      const top = target.getBoundingClientRect().top + window.scrollY;
-      window.scrollTo({ top, behavior: "smooth" });
+      target.scrollIntoView({
+        behavior: "smooth",
+      });
     }
   };
 
@@ -168,8 +169,8 @@ const HeroSection = () => {
         {/* RIGHT: 3D MODEL */}
         <figure>
           <div className="absolute top-0 right-0 w-[55%] h-full rounded-l-3xl overflow-hidden cursor-grab active:cursor-grabbing">
-  <HeroSectionExperienceModel />
-</div>
+            <HeroSectionExperienceModel />
+          </div>
         </figure>
       </div>
     </section>
