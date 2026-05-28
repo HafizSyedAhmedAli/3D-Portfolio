@@ -16,11 +16,12 @@ type RatingDotsProps = {
 
 const RatingDots = ({ count = 5 }: RatingDotsProps) => {
   return (
-    <div className="flex gap-2" aria-label={`Rating: ${count} stars`}>
+    <div className="flex gap-2" role="img" aria-label={`Rating: ${count} stars`}>
       {[...Array(count)].map((_, i) => (
         <span
           key={i}
           className="rating-dot size-2 rounded-full bg-emerald-400"
+          aria-hidden="true"
         />
       ))}
     </div>

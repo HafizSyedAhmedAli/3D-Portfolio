@@ -62,7 +62,7 @@ export type Testimonial = {
   mentions: string;
   review: string;
   imgPath: string;
-  logo: {
+  logo?: {
     src: string;
     width: number;
     height: number;

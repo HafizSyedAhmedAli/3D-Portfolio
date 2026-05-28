@@ -50,11 +50,12 @@ const TitleHeader = ({ title, sub }: Props) => {
         {sub}
       </p>
 
-      <h2 className="text-3xl md:text-5xl leading-[1.2] md:leading-[1.15] font-bold text-white flex flex-wrap">
+      <h2 className="text-3xl md:text-5xl leading-[1.2] md:leading-[1.15] font-bold text-white flex flex-wrap" aria-label={title}>
         {title.split("").map((char, index) => (
           <span
             key={index}
             className="title-letter inline-block will-change-transform"
+            aria-hidden="true"
           >
             {char === " " ? "\u00A0" : char}
           </span>
