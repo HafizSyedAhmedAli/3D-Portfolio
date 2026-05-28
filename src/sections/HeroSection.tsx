@@ -6,8 +6,15 @@ import { gsap } from "gsap";
 import Image from "next/image";
 
 const techChips = ["Next.js", "Node.js", "PostgreSQL", "Redis", "TypeScript"];
+import { useMediaQuery } from "react-responsive";
 
 const HeroSection = () => {
+  const isMobile = useMediaQuery(
+    { query: "(max-width: 768px)" },
+    undefined,
+    () => false,
+  );
+
   useGSAP(() => {
     gsap.fromTo(
       ".hero-badge-pill",
@@ -167,12 +174,22 @@ const HeroSection = () => {
         </header>
 
         {/* RIGHT: 3D MODEL */}
+        {!isMobile && (
+          <figure>
+            <div className="absolute top-0 right-0 w-[55%] h-full rounded-l-3xl overflow-hidden cursor-grab active:cursor-grabbing">
+              <HeroSectionExperienceModel />
+            </div>
+          </figure>
+        )}
+      </div>
+
+      {isMobile && (
         <figure>
-          <div className="absolute top-0 right-0 w-[55%] h-full rounded-l-3xl overflow-hidden cursor-grab active:cursor-grabbing">
+          <div className="w-full h-full  rounded-l-3xl overflow-hidden cursor-grab active:cursor-grabbing">
             <HeroSectionExperienceModel />
           </div>
         </figure>
-      </div>
+      )}
     </section>
   );
 };

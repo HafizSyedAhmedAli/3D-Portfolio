@@ -56,12 +56,12 @@ const HeroSectionExperienceModel = () => {
       <Particles count={60} />
 
       <mesh receiveShadow rotation={[-Math.PI / 2, 0, 0]} position={[-1, -3.5, 0]}>
-        <planeGeometry args={[14, 15]} />
+        <planeGeometry args={isMobile ? [24, 15] : [14, 15]} />
         <meshStandardMaterial color="#091520" />
       </mesh>
 
       <group
-        scale={isMobile ? 0.8 : 1.8} // ✅ slightly larger (1.6→1.8)
+        scale={1.8} // ✅ slightly larger (1.6→1.8)
         position={[1, -3.3, 0]} // ✅ higher up (-5 → -3.5) so legs aren't cut off
         rotation={[0, Math.PI / 9, 0]}
       >
