@@ -1,19 +1,15 @@
 import type {
-  Ability,
-  CounterItem,
-  ExpCard,
-  ExpLogo,
-  LogoIcon,
-  NavLink,
-  PerformanceMetric,
-  Project,
-  SocialImg,
-  TechName,
-  TechStackIcon,
-  TechStackImg,
-  TechTag,
-  Testimonial,
-  Word,
+    Ability,
+    CounterItem,
+    ExpCard,
+    NavLink,
+    PerformanceMetric,
+    Project,
+    SocialImg,
+    TechName,
+    TechStackIcon,
+    TechTag,
+    Testimonial
 } from "../types/index";
 
 const navLinks: NavLink[] = [
@@ -39,69 +35,11 @@ const navLinks: NavLink[] = [
   },
 ];
 
-const words: Word[] = [
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-  { text: "Ideas", imgPath: "/images/ideas.svg" },
-  { text: "Concepts", imgPath: "/images/concepts.svg" },
-  { text: "Designs", imgPath: "/images/designs.svg" },
-  { text: "Code", imgPath: "/images/code.svg" },
-];
-
 const counterItems: CounterItem[] = [
   { value: 15, suffix: "+", label: "Years of Experience" },
   { value: 200, suffix: "+", label: "Satisfied Clients" },
   { value: 108, suffix: "+", label: "Completed Projects" },
   { value: 90, suffix: "%", label: "Client Retention Rate" },
-];
-
-const logoIconsList: LogoIcon[] = [
-  {
-    imgPath: "/images/logos/company-logo-1.png",
-    width: 280,
-  },
-  {
-    imgPath: "/images/logos/company-logo-2.png",
-    width: 336,
-  },
-  {
-    imgPath: "/images/logos/company-logo-3.png",
-    width: 310,
-  },
-  {
-    imgPath: "/images/logos/company-logo-4.png",
-    width: 290,
-  },
-  {
-    imgPath: "/images/logos/company-logo-5.png",
-    width: 320,
-  },
-  {
-    imgPath: "/images/logos/company-logo-6.png",
-    width: 280,
-  },
-  {
-    imgPath: "/images/logos/company-logo-7.png",
-    width: 320,
-  },
-  {
-    imgPath: "/images/logos/company-logo-8.png",
-    width: 320,
-  },
-  {
-    imgPath: "/images/logos/company-logo-9.png",
-    width: 280,
-  },
-  {
-    imgPath: "/images/logos/company-logo-10.png",
-    width: 280,
-  },
-  {
-    imgPath: "/images/logos/company-logo-11.png",
-    width: 244,
-  },
 ];
 
 const abilities: Ability[] = [
@@ -122,38 +60,38 @@ const abilities: Ability[] = [
   },
 ];
 
-const techStackImgs: TechStackImg[] = [
-  {
-    name: "React Developer",
-    imgPath: "/images/logos/react.png",
-    width: 141,
-    height: 129,
-  },
-  {
-    name: "Python Developer",
-    imgPath: "/images/logos/python.svg",
-    width: 111,
-    height: 135,
-  },
-  {
-    name: "Backend Developer",
-    imgPath: "/images/logos/node.png",
-    width: 139,
-    height: 145,
-  },
-  {
-    name: "Interactive Developer",
-    imgPath: "/images/logos/three.png",
-    width: 129,
-    height: 129,
-  },
-  {
-    name: "Project Manager",
-    imgPath: "/images/logos/git.svg",
-    width: 155,
-    height: 155,
-  },
-];
+// const techStackImgs: TechStackImg[] = [
+//   {
+//     name: "React Developer",
+//     imgPath: "/images/logos/react.png",
+//     width: 141,
+//     height: 129,
+//   },
+//   {
+//     name: "Python Developer",
+//     imgPath: "/images/logos/python.svg",
+//     width: 111,
+//     height: 135,
+//   },
+//   {
+//     name: "Backend Developer",
+//     imgPath: "/images/logos/node.png",
+//     width: 139,
+//     height: 145,
+//   },
+//   {
+//     name: "Interactive Developer",
+//     imgPath: "/images/logos/three.png",
+//     width: 129,
+//     height: 129,
+//   },
+//   {
+//     name: "Project Manager",
+//     imgPath: "/images/logos/git.svg",
+//     width: 155,
+//     height: 155,
+//   },
+// ];
 
 const techStackIcons: readonly TechStackIcon[] = [
   {
@@ -226,21 +164,6 @@ const expCards: ExpCard[] = [
       "Worked with MS SQL Server for database design and query optimization.",
       "Collaborated with senior engineers in a production development environment",
     ],
-  },
-];
-
-const expLogos: ExpLogo[] = [
-  {
-    name: "logo1",
-    imgPath: "/images/logo1.png",
-  },
-  {
-    name: "logo2",
-    imgPath: "/images/logo2.png",
-  },
-  {
-    name: "logo3",
-    imgPath: "/images/logo3.png",
   },
 ];
 
@@ -359,19 +282,16 @@ const techTags: TechTag[] = [
 ];
 
 export {
-  words,
-  abilities,
-  logoIconsList,
-  counterItems,
-  expCards,
-  expLogos,
-  testimonials,
-  socialImgs,
-  techStackIcons,
-  techStackImgs,
-  navLinks,
-  projects,
-  performanceMetrics,
-  techTags,
-  techMeta,
+    abilities,
+    counterItems,
+    expCards,
+    // techStackImgs,
+    navLinks,
+    performanceMetrics,
+    projects,
+    socialImgs,
+    techMeta,
+    techStackIcons,
+    techTags,
+    testimonials
 };

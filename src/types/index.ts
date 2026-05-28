@@ -5,33 +5,16 @@ export type NavLink = {
   link: string;
 };
 
-export type Word = {
-  text: string;
-  imgPath: string;
-};
-
 export type CounterItem = {
   value: number;
   suffix: string;
   label: string;
 };
 
-export type LogoIcon = {
-  imgPath: string;
-  width: number;
-};
-
 export type Ability = {
   imgPath: string;
   title: string;
   desc: string;
-};
-
-export type TechStackImg = {
-  name: string;
-  imgPath: string;
-  width: number;
-  height: number;
 };
 
 export type TechStackIcon = {
