@@ -30,7 +30,7 @@ const TechStackSection = () => {
   }, []);
 
   return (
-    <section id="skills" className="w-full section-padding md:px-20 px-5">
+    <section id="skills" className="w-full section-padding md:px-20 px-5 scroll-mt-28">
       <TitleHeader title="My Core Tech Stack" sub="⚡ What I Build With" />
 
       <div className="grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-4">
@@ -39,10 +39,10 @@ const TechStackSection = () => {
           return (
             <div
               key={icon.name}
-              className="tech-card-new group relative rounded-2xl border border-white/8 bg-white/[0.02] hover:border-emerald-500/40 hover:bg-emerald-500/[0.03] transition-all duration-500 overflow-hidden"
+              className="tech-card-new group relative rounded-2xl border border-white/8 bg-white/2 hover:border-emerald-500/40 hover:bg-emerald-500/3 transition-all duration-500 overflow-hidden"
             >
               {/* Top bar accent */}
-              <div className="h-px w-0 group-hover:w-full bg-gradient-to-r from-emerald-500/80 via-emerald-400/50 to-transparent transition-all duration-700 ease-out" />
+              <div className="h-px w-0 group-hover:w-full bg-linear-to-r from-emerald-500/80 via-emerald-400/50 to-transparent transition-all duration-700 ease-out" />
 
               {/* 3D Model */}
               <div className="h-52 w-full cursor-grab active:cursor-grabbing">

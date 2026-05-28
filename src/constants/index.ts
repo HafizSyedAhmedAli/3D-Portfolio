@@ -8,6 +8,7 @@ import type {
   PerformanceMetric,
   Project,
   SocialImg,
+  TechName,
   TechStackIcon,
   TechStackImg,
   TechTag,
@@ -154,7 +155,7 @@ const techStackImgs: TechStackImg[] = [
   },
 ];
 
-const techStackIcons: TechStackIcon[] = [
+const techStackIcons: readonly TechStackIcon[] = [
   {
     name: "React",
     modelPath: "/models/react_logo-transformed.glb",
@@ -187,7 +188,7 @@ const techStackIcons: TechStackIcon[] = [
   },
 ] as const;
 
-const techMeta: Record<string, { label: string; color: string }> = {
+const techMeta: Record<TechName, { label: string; color: string }> = {
   React: { label: "UI Layer", color: "text-cyan-400" },
   "Next.js": { label: "Frontend Framework", color: "text-zinc-400" },
   "Node.js": { label: "JavaScript Runtime", color: "text-green-400" },
@@ -200,8 +201,8 @@ const expCards: ExpCard[] = [
     review:
       "The platform was delivered on time and worked exactly as we described. Our users can follow live matches smoothly and the subscription system just works. Very professional to work with.",
     imgPath: "/images/exp2.png",
-    width: 100,
-    height: 100,
+    width: 80,
+    height: 80,
     logoPath: "/images/logo2.png",
     title: "Full-Stack Developer",
     date: "Apr 2026 - May 2026",
@@ -215,8 +216,8 @@ const expCards: ExpCard[] = [
     review:
       "Mr. Syed Ahmed Ali contributed to development tasks and performed his responsibilities diligently and was an active team member throughout the internship.",
     imgPath: "/images/exp1.png",
-    width: 150,
-    height: 56,
+    width: 94,
+    height: 35,
     logoPath: "/images/logo1.png",
     title: "Backend Intern",
     date: "May 2025 - August 2025",
@@ -250,6 +251,12 @@ const testimonials: Testimonial[] = [
     review:
       "The platform was delivered on time and worked exactly as we described. Our users can follow live matches smoothly and the subscription system just works. Very professional to work with.",
     imgPath: "/images/client1.png",
+    logo: {
+      src: "/images/exp2.png",
+      width: 75,
+      height: 28,
+      alt: "Flacron Gamezone",
+    },
   },
   {
     name: "Ayza Noor",
@@ -257,6 +264,12 @@ const testimonials: Testimonial[] = [
     review:
       "Syed Ahmed Ali contributed to development tasks and performed his responsibilities diligently and was an active team member throughout the internship.",
     imgPath: "/images/client2.png",
+    logo: {
+      src: "/images/exp1.png",
+      width: 94,
+      height: 35,
+      alt: "Fortify Technologies",
+    },
   },
 ];
 
@@ -360,5 +373,5 @@ export {
   projects,
   performanceMetrics,
   techTags,
-  techMeta
+  techMeta,
 };

@@ -1,3 +1,5 @@
+import { techStackIcons } from "@/constants";
+
 export type NavLink = {
   name: string;
   link: string;
@@ -60,6 +62,12 @@ export type Testimonial = {
   mentions: string;
   review: string;
   imgPath: string;
+  logo: {
+    src: string;
+    width: number;
+    height: number;
+    alt: string;
+  };
 };
 
 export type SocialImg = {
@@ -92,3 +100,5 @@ export type TechTag =
   | "Git flow"
   | "REST"
   | "Postman";
+
+export type TechName = (typeof techStackIcons)[number]["name"];
