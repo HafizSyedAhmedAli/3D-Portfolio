@@ -1,89 +1,76 @@
 "use client";
 
+import { techMeta, techStackIcons } from "@/constants";
 import { useGSAP } from "@gsap/react";
-import TechIcon from "../components/Models/TechLogos/TechIcon";
-import TitleHeader from "../components/TitleHeader";
-import { techStackIcons, techStackImgs } from "../constants";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Image from "next/image";
+import TechIcon from "../components/Models/TechLogos/TechIcon";
+import TitleHeader from "../components/TitleHeader";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const TechStackSection = () => {
   useGSAP(() => {
     gsap.fromTo(
-      ".tech-card",
-      {
-        y: 50,
-        opacity: 0,
-      },
+      ".tech-card-new",
+      { y: 40, opacity: 0, scale: 0.97 },
       {
         y: 0,
         opacity: 1,
-        duration: 1,
-        ease: "power2.inOut",
-        stagger: 0.2,
+        scale: 1,
+        duration: 0.7,
+        ease: "power3.out",
+        stagger: 0.1,
         scrollTrigger: {
           trigger: "#skills",
-          start: "top center",
+          start: "top 70%",
         },
       },
     );
   }, []);
 
   return (
-    <div id="skills" className="flex-center section-padding">
-      <div className="w-full h-full md:px-10 px-5">
-        <TitleHeader
-          title="My Core Tech Stack"
-          sub="⚡ What I Build With"
-        />
+    <section id="skills" className="w-full section-padding md:px-20 px-5">
+      <TitleHeader title="My Core Tech Stack" sub="⚡ What I Build With" />
 
-        <div className="tech-grid">
-          {techStackIcons.map((icon) => (
+      <div className="grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-4">
+        {techStackIcons.map((icon, index) => {
+          const meta = techMeta[icon.name];
+          return (
             <div
               key={icon.name}
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
+              className="tech-card-new group relative rounded-2xl border border-white/8 bg-white/[0.02] hover:border-emerald-500/40 hover:bg-emerald-500/[0.03] transition-all duration-500 overflow-hidden"
             >
-              <div className="tech-card-animated-bg" />
-              <div className="tech-card-content">
-                <div className="tech-icon-wrapper active:cursor-grabbing">
-                  <TechIcon model={icon} />
-                </div>
+              {/* Top bar accent */}
+              <div className="h-px w-0 group-hover:w-full bg-gradient-to-r from-emerald-500/80 via-emerald-400/50 to-transparent transition-all duration-700 ease-out" />
 
-                <div className="padding-x w-full">
-                  <p>{icon.name}</p>
-                </div>
+              {/* 3D Model */}
+              <div className="h-52 w-full cursor-grab active:cursor-grabbing">
+                <TechIcon model={icon} />
               </div>
-            </div>
-          ))}
 
-          {/* {techStackImgs.map((icon) => (
-            <div
-              key={icon.name}
-              className="card-border tech-card overflow-hidden group xl:rounded-full rounded-lg"
-            >
-              <div className="tech-card-animated-bg" />
-              <div className="tech-card-content">
-                <div className="tech-icon-wrapper">
-                  <Image
-                    src={icon.imgPath}
-                    alt={icon.name}
-                    width={icon.width}
-                    height={icon.height}
-                  />
-                </div>
-
-                <div className="padding-x w-full">
-                  <p>{icon.name}</p>
-                </div>
+              {/* Info */}
+              <div className="px-5 pb-5 pt-1 border-t border-white/5">
+                {/* Clean rendered text without hacking string replacements */}
+                <p className="text-white font-semibold text-base tracking-tight">
+                  {icon.name}
+                </p>
+                {meta && (
+                  <p className={`text-xs font-mono mt-1 ${meta.color}`}>
+                    {meta.label}
+                  </p>
+                )}
               </div>
+
+              {/* Corner number using map index */}
+              <span className="absolute top-3 right-3 font-mono text-[10px] text-white/20">
+                {String(index + 1).padStart(2, "0")}
+              </span>
             </div>
-          ))} */}
-        </div>
+          );
+        })}
       </div>
-    </div>
+    </section>
   );
 };
 

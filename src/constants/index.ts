@@ -22,7 +22,7 @@ const navLinks: NavLink[] = [
   },
   {
     name: "Approach",
-    link: "#approach"
+    link: "#approach",
   },
   {
     name: "Experience",
@@ -154,38 +154,46 @@ const techStackImgs: TechStackImg[] = [
   },
 ];
 
-const techStackIcons: readonly TechStackIcon[] = [
+const techStackIcons: TechStackIcon[] = [
   {
-    name: "React Developer",
+    name: "React",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
   },
   {
-    name: "Next.js Developer",
+    name: "Next.js",
     modelPath: "/models/nextjs-icon-transformed.glb",
     scale: 0.3,
     rotation: [0, 0, 0],
   },
   {
-    name: "Backend Developer",
+    name: "Node.js",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
   },
   {
-    name: "Database Engineer",
+    name: "PostgreSQL",
     modelPath: "/models/postgresql-transformed.glb",
     scale: 3,
     rotation: [0, 0, 0],
   },
   {
-    name: "NoSQL Developer",
+    name: "MongoDB",
     modelPath: "/models/mongodb-icon-transformed.glb",
     scale: 0.4,
     rotation: [0, 0, 0],
   },
 ] as const;
+
+const techMeta: Record<string, { label: string; color: string }> = {
+  React: { label: "UI Layer", color: "text-cyan-400" },
+  "Next.js": { label: "Frontend Framework", color: "text-zinc-400" },
+  "Node.js": { label: "JavaScript Runtime", color: "text-green-400" },
+  PostgreSQL: { label: "Relational DB", color: "text-blue-400" },
+  MongoDB: { label: "Document DB", color: "text-emerald-400" },
+};
 
 const expCards: ExpCard[] = [
   {
@@ -351,5 +359,6 @@ export {
   navLinks,
   projects,
   performanceMetrics,
-  techTags
+  techTags,
+  techMeta
 };
