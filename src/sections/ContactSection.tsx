@@ -1,37 +1,134 @@
 "use client";
 
 import emailjs from "@emailjs/browser";
-import Image from "next/image";
-import { SubmitEvent, useRef, useState, type ChangeEvent } from "react";
-
-import ContactExperience from "@/components/Models/TechLogos/contact/ContactExperience";
+import {
+  useEffect,
+  useRef,
+  useState,
+  type ChangeEvent,
+  type FormEvent,
+} from "react";
 import TitleHeader from "../components/TitleHeader";
+import ContactExperience from "@/components/Models/TechLogos/contact/ContactExperience";
 
+/* ─── availability meta ─── */
+const AVAILABILITY = [
+  { label: "Status", value: "Open to work", dot: true },
+  { label: "Location", value: "Pakistan", dot: false },
+  { label: "Timezone", value: "PKT — UTC +5", dot: false },
+  { label: "Response", value: "Within 24 hrs", dot: false },
+];
+
+/* ─── floating label input ─── */
+type FloatInputProps = {
+  id: string;
+  name: string;
+  label: string;
+  type?: string;
+  value: string;
+  onChange: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
+  multiline?: boolean;
+  required?: boolean;
+  disabled: boolean;
+};
+
+const FloatInput = ({
+  id,
+  name,
+  label,
+  type = "text",
+  value,
+  onChange,
+  multiline,
+  required,
+  disabled,
+}: FloatInputProps) => {
+  const [focused, setFocused] = useState(false);
+  const lifted = focused || value.length > 0;
+
+  const inputClass = `
+    w-full bg-white/[0.03] border border-white/8
+    hover:border-white/15 focus:border-emerald-500/60
+    rounded-lg pl-5 pr-4 text-sm text-white
+    outline-none transition-colors duration-300
+    disabled:opacity-50 disabled:cursor-not-allowed
+  `;
+
+  return (
+    <div className="relative group">
+      <span className="absolute left-0 top-0 h-full w-px bg-emerald-400 scale-y-0 group-focus-within:scale-y-100 transition-transform duration-300 origin-top rounded-full" />
+
+      {multiline ? (
+        <textarea
+          id={id}
+          name={name}
+          value={value}
+          onChange={onChange}
+          rows={5}
+          required={required}
+          disabled={disabled}
+          placeholder=" "
+          onFocus={() => setFocused(true)}
+          onBlur={() => setFocused(false)}
+          className={`${inputClass} pt-7 pb-3 resize-none`}
+        />
+      ) : (
+        <input
+          id={id}
+          name={name}
+          type={type}
+          value={value}
+          onChange={onChange}
+          required={required}
+          disabled={disabled}
+          placeholder=" "
+          onFocus={() => setFocused(true)}
+          onBlur={() => setFocused(false)}
+          className={`${inputClass} pt-7 pb-2 h-14`}
+        />
+      )}
+
+      <label
+        htmlFor={id}
+        className={`absolute left-5 pointer-events-none transition-all duration-200 ${
+          lifted
+            ? "top-2 text-[10px] tracking-widest uppercase text-emerald-400/70"
+            : "top-4 text-sm text-white/40"
+        }`}
+      >
+        {label}
+      </label>
+    </div>
+  );
+};
+
+/* ─── section ─── */
 const ContactSection = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
   const [feedback, setFeedback] = useState<{
     type: "success" | "error";
     message: string;
   } | null>(null);
+  const feedbackTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [loading, setLoading] = useState(false);
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [form, setForm] = useState({ name: "", email: "", message: "" });
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
-    setForm({ ...form, [name]: value });
+    setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: SubmitEvent) => {
+  useEffect(() => {
+    return () => {
+      if (feedbackTimer.current) clearTimeout(feedbackTimer.current);
+    };
+  }, []);
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-
     if (!formRef.current) return;
-
     setLoading(true);
 
     const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
@@ -39,117 +136,183 @@ const ContactSection = () => {
     const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
     if (!serviceId || !templateId || !publicKey) {
-      console.error("Missing EmailJS configuration");
+      console.error("Missing EmailJS config");
+      setLoading(false);
       return;
     }
 
     try {
       await emailjs.sendForm(serviceId, templateId, formRef.current, publicKey);
-
       setForm({ name: "", email: "", message: "" });
       setFeedback({
         type: "success",
-        message: "Message sent successfully! 🎉",
+        message: "Message delivered. I'll be in touch soon.",
       });
-    } catch (error) {
-      console.error("EmailJS Error:", error);
+    } catch (err) {
+      console.error("EmailJS Error:", err);
       setFeedback({
         type: "error",
-        message: "Failed to send message. Please try again.",
+        message: "Delivery failed — try reaching me directly.",
       });
     } finally {
       setLoading(false);
-      setTimeout(() => {
+      if (feedbackTimer.current) clearTimeout(feedbackTimer.current);
+      feedbackTimer.current = setTimeout(() => {
         setFeedback(null);
-      }, 5_000);
+      }, 6000);
     }
   };
 
   return (
-    <section id="contact" className="flex-center section-padding">
-      <div className="w-full h-full md:px-10 px-5">
-        <TitleHeader
-          title="Let's Build Something Together"
-          sub="📬 Open to Opportunities"
-        />
-        <div className="grid-12-cols mt-16">
-          <div className="xl:col-span-5">
-            <div className="flex-center card-border rounded-xl p-10">
-              <form
-                ref={formRef}
-                onSubmit={handleSubmit}
-                className="w-full flex flex-col gap-7"
-              >
-                <div>
-                  <label htmlFor="name">Your name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={form.name}
-                    onChange={handleChange}
-                    placeholder="What’s your good name?"
-                    required
-                  />
-                </div>
+    <section
+      id="contact"
+      className="w-full section-padding md:px-20 px-5 scroll-mt-20"
+    >
+      <TitleHeader
+        title="Let's Build Something Together"
+        sub="📬 Open to Opportunities"
+      />
 
-                <div>
-                  <label htmlFor="email">Your Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={form.email}
-                    onChange={handleChange}
-                    placeholder="What’s your email address?"
-                    required
-                  />
-                </div>
+      <div className="mt-16 grid grid-cols-1 xl:grid-cols-[1fr_420px] gap-8 items-start">
+        {/* ── form ── */}
+        <div className="relative rounded-2xl border border-white/8 bg-white/2 overflow-hidden">
+          {/* dot-grid texture */}
+          <div
+            className="absolute inset-0 pointer-events-none opacity-20"
+            style={{
+              backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px)`,
+              backgroundSize: "22px 22px",
+            }}
+          />
 
-                <div>
-                  <label htmlFor="message">Your Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={form.message}
-                    onChange={handleChange}
-                    placeholder="Tell me about your project..."
-                    rows={5}
-                    required
-                  />
-                </div>
-
-                {feedback && (
-                  <div
-                    className={`p-4 rounded ${feedback.type === "success" ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"}`}
-                  >
-                    {feedback.message}
-                  </div>
-                )}
-
-                <button type="submit">
-                  <div className="cta-button group">
-                    <div className="bg-circle" />
-                    <p className="text">
-                      {loading ? "Sending..." : "Send Message"}
-                    </p>
-                    <div className="arrow-wrapper md:pl-0 pl-6">
-                      <Image
-                        src="/images/arrow-down.svg"
-                        alt="arrow"
-                        width={20}
-                        height={20}
-                      />
-                    </div>
-                  </div>
-                </button>
-              </form>
-            </div>
+          {/* terminal bar */}
+          <div className="relative flex items-center gap-2 px-6 py-4 border-b border-white/6">
+            <span className="size-2.5 rounded-full bg-red-500/70" />
+            <span className="size-2.5 rounded-full bg-yellow-400/70" />
+            <span className="size-2.5 rounded-full bg-emerald-400/70" />
+            <span className="ml-4 text-[11px] font-mono text-white/25 tracking-widest">
+              new_message.tsx
+            </span>
           </div>
-          <div className="xl:col-span-7 min-h-96">
-            <div className="bg-[#cd7c2e] w-full h-full hover:cursor-grab rounded-3xl overflow-hidden cursor-grab active:cursor-grabbing">
-              <ContactExperience />
+
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="relative p-8 flex flex-col gap-5"
+          >
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+              <FloatInput
+                id="name"
+                name="name"
+                label="Your name"
+                value={form.name}
+                onChange={handleChange}
+                required
+                disabled={loading}
+              />
+              <FloatInput
+                id="email"
+                name="email"
+                label="Your email"
+                type="email"
+                value={form.email}
+                onChange={handleChange}
+                required
+                disabled={loading}
+              />
             </div>
+
+            <FloatInput
+              id="message"
+              name="message"
+              label="Tell me about your project…"
+              value={form.message}
+              onChange={handleChange}
+              multiline
+              required
+              disabled={loading}
+            />
+
+            {feedback && (
+              <div
+                className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-mono
+                ${
+                  feedback.type === "success"
+                    ? "bg-emerald-500/10 border border-emerald-500/30 text-emerald-300"
+                    : "bg-red-500/10 border border-red-500/30 text-red-300"
+                }`}
+              >
+                <span>{feedback.type === "success" ? "✓" : "✗"}</span>
+                <span>{feedback.message}</span>
+              </div>
+            )}
+
+            <div className="flex items-center justify-between pt-2 border-t border-white/6 mt-1">
+              <span className="font-mono text-[11px] text-white/20 hidden md:block">
+                {`> ready_to_send`}
+              </span>
+              <button
+                type="submit"
+                disabled={loading}
+                className="group relative flex items-center gap-3 px-8 py-3.5
+                  rounded-xl bg-emerald-500 hover:bg-emerald-400
+                  disabled:opacity-50 disabled:cursor-not-allowed
+                  transition-all duration-300 font-semibold text-black text-sm
+                  tracking-wide overflow-hidden cursor-pointer"
+              >
+                <span className="relative z-10">
+                  {loading ? "Sending…" : "Send Message"}
+                </span>
+                {!loading && (
+                  <svg
+                    className="relative z-10 size-4 group-hover:translate-x-1 transition-transform duration-300"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2.5}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                )}
+                <span className="absolute inset-0 -translate-x-full group-hover:translate-x-full transition-transform duration-500 bg-linear-to-r from-transparent via-white/20 to-transparent skew-x-12" />
+              </button>
+            </div>
+          </form>
+        </div>
+
+        {/* ── right panel ── */}
+        <div className="flex flex-col gap-5">
+          {/* 3D orb */}
+          <div className="rounded-2xl border border-white/8 bg-white/2 overflow-hidden cursor-grab active:cursor-grabbing h-72">
+            <ContactExperience />
+          </div>
+
+          {/* availability */}
+          <div className="rounded-2xl border border-white/8 bg-white/2 p-7 flex flex-col gap-4">
+            <p className="text-xs font-mono tracking-widest uppercase text-emerald-400/70">
+              Current Status
+            </p>
+            {AVAILABILITY.map(({ label, value, dot }) => (
+              <div key={label} className="flex items-center justify-between">
+                <span className="text-sm text-white/40">{label}</span>
+                <span
+                  className={`text-sm font-medium flex items-center gap-2
+                  ${dot ? "text-emerald-400" : "text-white/75"}`}
+                >
+                  {dot && (
+                    <span className="relative flex size-1.5">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
+                      <span className="relative inline-flex rounded-full size-1.5 bg-emerald-400" />
+                    </span>
+                  )}
+                  {value}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       </div>
