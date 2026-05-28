@@ -1,15 +1,16 @@
 import type {
-    Ability,
-    CounterItem,
-    ExpCard,
-    NavLink,
-    PerformanceMetric,
-    Project,
-    SocialImg,
-    TechName,
-    TechStackIcon,
-    TechTag,
-    Testimonial
+  Ability,
+  Availability,
+  // CounterItem,
+  ExpCard,
+  NavLink,
+  PerformanceMetric,
+  Project,
+  SocialImg,
+  TechName,
+  TechStackIcon,
+  TechTag,
+  Testimonial,
 } from "../types/index";
 
 const navLinks: NavLink[] = [
@@ -35,12 +36,12 @@ const navLinks: NavLink[] = [
   },
 ];
 
-const counterItems: CounterItem[] = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
-];
+// const counterItems: CounterItem[] = [
+//   { value: 15, suffix: "+", label: "Years of Experience" },
+//   { value: 200, suffix: "+", label: "Satisfied Clients" },
+//   { value: 108, suffix: "+", label: "Completed Projects" },
+//   { value: 90, suffix: "%", label: "Client Retention Rate" },
+// ];
 
 const abilities: Ability[] = [
   {
@@ -281,17 +282,25 @@ const techTags: TechTag[] = [
   "Postman",
 ];
 
+const availability: Availability[] = [
+  { label: "Status", value: "Open to work", dot: true },
+  { label: "Location", value: "Pakistan", dot: false },
+  { label: "Timezone", value: "PKT — UTC +5", dot: false },
+  { label: "Response", value: "Within 24 hrs", dot: false },
+];
+
 export {
-    abilities,
-    counterItems,
-    expCards,
-    // techStackImgs,
-    navLinks,
-    performanceMetrics,
-    projects,
-    socialImgs,
-    techMeta,
-    techStackIcons,
-    techTags,
-    testimonials
+  abilities,
+  // counterItems,
+  expCards,
+  // techStackImgs,
+  navLinks,
+  performanceMetrics,
+  projects,
+  socialImgs,
+  techMeta,
+  techStackIcons,
+  techTags,
+  testimonials,
+  availability,
 };

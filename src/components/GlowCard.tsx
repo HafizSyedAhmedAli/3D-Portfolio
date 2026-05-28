@@ -1,12 +1,9 @@
 "use client";
 
-import { ExpCard, Testimonial } from "@/types";
-import { useRef, type MouseEvent, type ReactNode } from "react";
 import gsap from "gsap";
+import { useRef, type MouseEvent, type ReactNode } from "react";
 
 type Props = {
-  card?: ExpCard;
-  testimonial?: Testimonial;
   children: ReactNode;
   index: number;
   className?: string;

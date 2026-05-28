@@ -5,12 +5,6 @@ export type NavLink = {
   link: string;
 };
 
-export type CounterItem = {
-  value: number;
-  suffix: string;
-  label: string;
-};
-
 export type Ability = {
   imgPath: string;
   title: string;
@@ -33,11 +27,6 @@ export type ExpCard = {
   title: string;
   date: string;
   responsibilities: string[];
-};
-
-export type ExpLogo = {
-  name: string;
-  imgPath: string;
 };
 
 export type Testimonial = {
@@ -85,3 +74,9 @@ export type TechTag =
   | "Postman";
 
 export type TechName = (typeof techStackIcons)[number]["name"];
+
+export type Availability = {
+  label: string;
+  value: string;
+  dot: boolean;
+};

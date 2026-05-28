@@ -1,106 +1,18 @@
 "use client";
 
+import FloatInput from "@/components/FloatInput";
+import ContactExperience from "@/components/Models/TechLogos/contact/ContactExperience";
 import emailjs from "@emailjs/browser";
 import {
-  useEffect,
-  useRef,
-  useState,
-  type ChangeEvent,
-  type FormEvent,
+    useEffect,
+    useRef,
+    useState,
+    type ChangeEvent,
+    type FormEvent,
 } from "react";
 import TitleHeader from "../components/TitleHeader";
-import ContactExperience from "@/components/Models/TechLogos/contact/ContactExperience";
+import { availability } from "@/constants";
 
-/* ─── availability meta ─── */
-const AVAILABILITY = [
-  { label: "Status", value: "Open to work", dot: true },
-  { label: "Location", value: "Pakistan", dot: false },
-  { label: "Timezone", value: "PKT — UTC +5", dot: false },
-  { label: "Response", value: "Within 24 hrs", dot: false },
-];
-
-/* ─── floating label input ─── */
-type FloatInputProps = {
-  id: string;
-  name: string;
-  label: string;
-  type?: string;
-  value: string;
-  onChange: (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => void;
-  multiline?: boolean;
-  required?: boolean;
-  disabled: boolean;
-};
-
-const FloatInput = ({
-  id,
-  name,
-  label,
-  type = "text",
-  value,
-  onChange,
-  multiline,
-  required,
-  disabled,
-}: FloatInputProps) => {
-  const [focused, setFocused] = useState(false);
-  const lifted = focused || value.length > 0;
-
-  const inputClass = `
-    w-full bg-white/[0.03] border border-white/8
-    hover:border-white/15 focus:border-emerald-500/60
-    rounded-lg pl-5 pr-4 text-sm text-white
-    outline-none transition-colors duration-300
-    disabled:opacity-50 disabled:cursor-not-allowed
-  `;
-
-  return (
-    <div className="relative group">
-      <span className="absolute left-0 top-0 h-full w-px bg-emerald-400 scale-y-0 group-focus-within:scale-y-100 transition-transform duration-300 origin-top rounded-full" />
-
-      {multiline ? (
-        <textarea
-          id={id}
-          name={name}
-          value={value}
-          onChange={onChange}
-          rows={5}
-          required={required}
-          disabled={disabled}
-          placeholder=" "
-          onFocus={() => setFocused(true)}
-          onBlur={() => setFocused(false)}
-          className={`${inputClass} pt-7 pb-3 resize-none`}
-        />
-      ) : (
-        <input
-          id={id}
-          name={name}
-          type={type}
-          value={value}
-          onChange={onChange}
-          required={required}
-          disabled={disabled}
-          placeholder=" "
-          onFocus={() => setFocused(true)}
-          onBlur={() => setFocused(false)}
-          className={`${inputClass} pt-7 pb-2 h-14`}
-        />
-      )}
-
-      <label
-        htmlFor={id}
-        className={`absolute left-5 pointer-events-none transition-all duration-200 ${
-          lifted
-            ? "top-2 text-[10px] tracking-widest uppercase text-emerald-400/70"
-            : "top-4 text-sm text-white/40"
-        }`}
-      >
-        {label}
-      </label>
-    </div>
-  );
-};
 
 /* ─── section ─── */
 const ContactSection = () => {
@@ -296,7 +208,7 @@ const ContactSection = () => {
             <p className="text-xs font-mono tracking-widest uppercase text-emerald-400/70">
               Current Status
             </p>
-            {AVAILABILITY.map(({ label, value, dot }) => (
+            {availability.map(({ label, value, dot }) => (
               <div key={label} className="flex items-center justify-between">
                 <span className="text-sm text-white/40">{label}</span>
                 <span
