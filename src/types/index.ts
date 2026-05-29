@@ -86,3 +86,8 @@ export type CounterItem = {
   suffix: string;
   label: string;
 }
+
+export type LogoIcon = {
+  imgPath: string;
+  width: number;
+};

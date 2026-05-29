@@ -3,6 +3,7 @@ import type {
   Availability,
   CounterItem,
   ExpCard,
+  LogoIcon,
   NavLink,
   PerformanceMetric,
   Project,
@@ -289,6 +290,53 @@ const availability: Availability[] = [
   { label: "Response", value: "Within 24 hrs", dot: false },
 ];
 
+const logoIconsList: LogoIcon[] = [
+  {
+    imgPath: "/images/logos/company-logo-1.png",
+    width: 50,
+  },
+  {
+    imgPath: "/images/logos/company-logo-2.png",
+    width: 50,
+  },
+  {
+    imgPath: "/images/logos/company-logo-3.png",
+    width: 50,
+  },
+  {
+    imgPath: "/images/logos/company-logo-4.png",
+    width: 50,
+  },
+  {
+    imgPath: "/images/logos/company-logo-5.png",
+    width: 50,
+  },
+  {
+    imgPath: "/images/logos/company-logo-6.png",
+    width: 50,
+  },
+  {
+    imgPath: "/images/logos/company-logo-7.png",
+    width: 50,
+  },
+  {
+    imgPath: "/images/logos/company-logo-8.png",
+    width: 50,
+  },
+  {
+    imgPath: "/images/logos/company-logo-9.png",
+    width: 50,
+  },
+  {
+    imgPath: "/images/logos/company-logo-10.png",
+    width: 50,
+  },
+  {
+    imgPath: "/images/logos/company-logo-11.png",
+    width: 50,
+  },
+];
+
 export {
   abilities,
   counterItems,
@@ -303,4 +351,5 @@ export {
   techTags,
   testimonials,
   availability,
+  logoIconsList
 };
