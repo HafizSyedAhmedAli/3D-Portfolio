@@ -1,115 +1,16 @@
-"use client";
-
-import { useGSAP } from "@gsap/react";
 import GlowCard from "../components/GlowCard";
 import TitleHeader from "../components/TitleHeader";
 import { expCards } from "../constants";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
-
-gsap.registerPlugin(ScrollTrigger);
+import ExperienceAnimator from "@/components/animators/ExperienceAnimator";
 
 const ExperienceSection = () => {
-  useGSAP(() => {
-    gsap.set(".exp-reveal", {
-      opacity: 0,
-      y: 80,
-      scale: 0.96,
-      filter: "blur(10px)",
-    });
-
-    const cards = gsap.utils.toArray<HTMLElement>(".exp-reveal");
-
-    cards.forEach((card) => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: card,
-          start: "top 82%",
-        },
-      });
-
-      tl.to(card, {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        filter: "blur(0px)",
-        duration: 1.1,
-        ease: "power3.out",
-      });
-
-      tl.from(
-        card.querySelectorAll(".animate-item"),
-        {
-          opacity: 0,
-          y: 20,
-          stagger: 0.08,
-          duration: 0.6,
-          ease: "power2.out",
-        },
-        "-=0.7",
-      );
-    });
-
-    gsap.utils.toArray<HTMLElement>(".experience-node").forEach((node) => {
-      gsap.to(node, {
-        scale: 1.15,
-        boxShadow: "0px 0px 30px rgba(16,185,129,0.9)",
-        repeat: -1,
-        yoyo: true,
-        duration: 1.8,
-        ease: "sine.inOut",
-      });
-    });
-
-    gsap.utils.toArray<HTMLElement>(".floating-card").forEach((card, i) => {
-      gsap.to(card, {
-        y: i % 2 === 0 ? -12 : -18,
-        duration: 3 + i,
-        repeat: -1,
-        yoyo: true,
-        ease: "sine.inOut",
-      });
-    });
-
-    gsap.utils.toArray<HTMLElement>(".parallax-card").forEach((card) => {
-      gsap.to(card, {
-        yPercent: -10,
-        ease: "none",
-        scrollTrigger: {
-          trigger: card,
-          scrub: true,
-        },
-      });
-    });
-
-    gsap.set(".experience-line-active", { height: 0 });
-
-    gsap.to(".experience-line-active", {
-      height: "100%",
-      ease: "none",
-      scrollTrigger: {
-        trigger: "#experience",
-        start: "top 70%",
-        end: "bottom bottom",
-        scrub: true,
-      },
-    });
-
-    gsap.to(".experience-line-active", {
-      boxShadow: "0px 0px 12px rgba(16,185,129,0.9)",
-      repeat: -1,
-      yoyo: true,
-      duration: 1.5,
-      ease: "sine.inOut",
-    });
-  }, []);
-
   return (
     <section
       id="experience"
       className="w-full md:mt-40 mt-20 section-padding xl:px-0 scroll-mt-20"
     >
+      <ExperienceAnimator />
       <div className="w-full h-full md:px-20 px-5">
         <TitleHeader
           title="Experience That Shaped My Stack"
@@ -117,7 +18,6 @@ const ExperienceSection = () => {
         />
 
         <div className="mt-16 md:mt-24 relative">
-          {/* Timeline vertical line */}
           <div className="experience-line absolute left-4 md:left-8 top-0 bottom-0 w-px bg-emerald-400/20 origin-top" />
           <div className="experience-line-active absolute left-4 md:left-8 top-0 w-px bg-linear-to-b from-emerald-300 via-emerald-400 to-transparent origin-top" />
 
@@ -127,13 +27,11 @@ const ExperienceSection = () => {
                 key={card.title}
                 className="exp-reveal parallax-card grid grid-cols-1 xl:grid-cols-[120px_1fr] gap-6 items-start"
               >
-                {/* Node — desktop only */}
                 <div className="hidden xl:flex justify-center pt-2">
                   <div className="experience-node" />
                 </div>
 
                 <div className="grid grid-cols-1 xl:grid-cols-[0.95fr_1.05fr] gap-6 xl:gap-10 items-start">
-                  {/* Glow card */}
                   <GlowCard index={index} className="floating-card">
                     <div className="animate-item flex items-center justify-between gap-4 mb-6 flex-wrap">
                       <div className="inline-flex items-center gap-2 rounded-full border border-emerald-400/20 bg-emerald-400/10 px-4 py-2 text-sm text-emerald-300">
@@ -171,7 +69,6 @@ const ExperienceSection = () => {
                     </div>
                   </GlowCard>
 
-                  {/* Text content */}
                   <div className="expText pl-6">
                     <div className="flex items-center gap-4 mb-6 animate-item">
                       <div className="h-px w-10 bg-emerald-400/60" />

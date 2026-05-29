@@ -1,14 +1,8 @@
-"use client";
-
 import Image from "next/image";
-import { useGSAP } from "@gsap/react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useRef } from "react";
 import { projects } from "@/constants";
 import TitleHeader from "@/components/TitleHeader";
-
-gsap.registerPlugin(ScrollTrigger);
+import ShowcaseAnimator from "@/components/animators/ShowcaseAnimator";
+import Link from "next/link";
 
 const ArrowIcon = () => (
   <svg
@@ -59,38 +53,17 @@ const ProjectLinks = ({ liveLink, githubLink }: ProjectLinksProps) => (
 );
 
 const ShowcaseSection = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
-
-  useGSAP(() => {
-    gsap.fromTo(
-      ".project-card",
-      { y: 60, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.8,
-        ease: "power2.out",
-        stagger: 0.15,
-        scrollTrigger: {
-          trigger: sectionRef.current,
-          start: "top 75%",
-        },
-      },
-    );
-  }, []);
-
   const featured = projects.find((p) => p.featured)!;
   const rest = projects.filter((p) => !p.featured);
 
   return (
     <section
-      ref={sectionRef}
       id="work"
       className="w-full md:mt-20 mt-10 md:px-20 px-5 pb-20 scroll-mt-28 md:scroll-mt-20"
     >
+      <ShowcaseAnimator />
       <TitleHeader sub="Selected Work" title="What I've Built" />
 
-      {/* Featured project */}
       <div className="project-card group relative w-full rounded-2xl overflow-hidden border border-white/5 bg-white/2 hover:border-emerald-500/30 transition-all duration-500 mb-6">
         <div className="flex flex-col xl:flex-row">
           <div className="xl:w-3/5 h-64 md:h-96 xl:h-auto relative overflow-hidden">
@@ -139,9 +112,8 @@ const ShowcaseSection = () => {
         </div>
       </div>
 
-      {/* Rest of projects */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
-        {rest.map((project, i) => (
+        {rest.map((project) => (
           <div
             key={project.id}
             className="project-card group relative rounded-2xl overflow-hidden border border-white/5 bg-white/2 hover:border-emerald-500/30 transition-all duration-500"

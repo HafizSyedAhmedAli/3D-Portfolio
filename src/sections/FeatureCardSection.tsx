@@ -1,139 +1,21 @@
-"use client";
-
-import { useRef } from "react";
-import { useGSAP } from "@gsap/react";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import { abilities, performanceMetrics, techTags } from "../constants";
 import TitleHeader from "@/components/TitleHeader";
-
-gsap.registerPlugin(ScrollTrigger);
+import FeatureAnimator from "@/components/animators/FeatureAnimator";
 
 const FeatureCardSection = () => {
-  const sectionRef = useRef<HTMLElement | null>(null);
-
-  useGSAP(
-    () => {
-      const cards = gsap.utils.toArray<HTMLElement>(".feature-card");
-      const titles = gsap.utils.toArray<HTMLElement>(".feature-title");
-      const texts = gsap.utils.toArray<HTMLElement>(".feature-text");
-      const tags = gsap.utils.toArray<HTMLElement>(".feature-tag");
-      const bars = gsap.utils.toArray<HTMLElement>(".metric-bar");
-
-      gsap.fromTo(
-        ".feature-section-title",
-        { y: 30, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.8,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 80%",
-          },
-        },
-      );
-
-      gsap.fromTo(
-        cards,
-        { y: 40, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.9,
-          stagger: 0.12,
-          ease: "power3.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 75%",
-          },
-        },
-      );
-
-      gsap.fromTo(
-        titles,
-        { y: 16, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.6,
-          stagger: 0.08,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 75%",
-          },
-        },
-      );
-
-      gsap.fromTo(
-        texts,
-        { y: 12, opacity: 0 },
-        {
-          y: 0,
-          opacity: 1,
-          duration: 0.55,
-          stagger: 0.08,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 75%",
-          },
-        },
-      );
-
-      gsap.fromTo(
-        tags,
-        { y: 10, opacity: 0, scale: 0.96 },
-        {
-          y: 0,
-          opacity: 1,
-          scale: 1,
-          duration: 0.45,
-          stagger: 0.05,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 70%",
-          },
-        },
-      );
-
-      gsap.fromTo(
-        bars,
-        { width: "0%" },
-        {
-          width: (i, el) => `${el.getAttribute("data-value")}%`,
-          duration: 1,
-          stagger: 0.08,
-          ease: "power2.out",
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: "top 70%",
-          },
-        },
-      );
-    },
-    { scope: sectionRef },
-  );
-
   return (
     <section
-      ref={sectionRef}
       id="approach"
       className="w-full md:px-20 px-5 md:mt-20 mt-10 scroll-mt-20"
     >
-      <div className="feature-section-title">
-        <TitleHeader
-          sub="Engineering Principles"
-          title="How I Approach Every Build"
-        />
-      </div>
+      <FeatureAnimator />
+      <TitleHeader
+        sub="Engineering Principles"
+        title="How I Approach Every Build"
+      />
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
-        {/* Card 1 — Scalable Architecture */}
         <div className="feature-card md:col-span-2 border border-white/10 bg-white/4 hover:border-emerald-500/30 transition-all duration-500 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-start">
           <div className="flex-1 flex flex-col gap-4 min-w-0">
             <div className="flex items-center gap-3">
@@ -151,8 +33,6 @@ const FeatureCardSection = () => {
               {abilities[0].desc}
             </p>
           </div>
-
-          {/* Code snippet — scrollable on very small screens */}
           <code className="w-full md:w-auto overflow-x-auto border border-white/10 bg-black/40 rounded-xl p-4 font-mono text-xs md:shrink-0 pb-6">
             <p className="text-emerald-400 mb-2 whitespace-nowrap">
               router.post(&apos;/api/v1/users&apos;)
@@ -167,7 +47,6 @@ const FeatureCardSection = () => {
           </code>
         </div>
 
-        {/* Card 2 — Performance */}
         <div className="feature-card border border-white/10 bg-white/4 hover:border-emerald-500/30 transition-all duration-500 rounded-2xl p-6 md:p-8 flex flex-col justify-between gap-6">
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-3">
@@ -185,7 +64,6 @@ const FeatureCardSection = () => {
               {abilities[2].desc}
             </p>
           </div>
-
           <div className="flex flex-col gap-3">
             {performanceMetrics.map(({ label, metric, value, color }) => (
               <div key={label} className="flex items-center gap-3">
@@ -207,7 +85,6 @@ const FeatureCardSection = () => {
           </div>
         </div>
 
-        {/* Card 3 — Strategic Collaboration */}
         <div className="feature-card border border-white/10 bg-white/4 hover:border-emerald-500/30 transition-all duration-500 rounded-2xl p-6 md:p-8 flex flex-col gap-4">
           <div className="flex items-center gap-3">
             <Image
@@ -220,11 +97,9 @@ const FeatureCardSection = () => {
               {abilities[1].title}
             </h3>
           </div>
-
           <p className="feature-text text-white/60 text-base leading-relaxed">
             {abilities[1].desc}
           </p>
-
           <div className="flex flex-wrap gap-2 mt-auto pt-2">
             {techTags.map((tag) => (
               <span
@@ -237,7 +112,6 @@ const FeatureCardSection = () => {
           </div>
         </div>
 
-        {/* Card 4 — Ship-Ready */}
         <div className="feature-card md:col-span-2 border border-white/10 bg-white/4 hover:border-emerald-500/30 transition-all duration-500 rounded-2xl p-6 md:p-8 flex flex-col gap-4">
           <div className="flex items-center gap-3">
             <Image
@@ -250,7 +124,6 @@ const FeatureCardSection = () => {
               Ship-Ready by Default
             </h3>
           </div>
-
           <div className="flex flex-col md:flex-row md:items-center justify-between gap-5">
             <p className="feature-text text-white/60 text-base leading-relaxed max-w-lg">
               Every project ships with type-safe environment configurations,
@@ -258,7 +131,6 @@ const FeatureCardSection = () => {
               Building scalable, production-ready stability into the system from
               commit one.
             </p>
-
             <div className="flex gap-3 flex-wrap md:flex-nowrap md:shrink-0">
               <span className="feature-tag text-xs px-3 py-1.5 rounded-md border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 whitespace-nowrap">
                 Production-ready

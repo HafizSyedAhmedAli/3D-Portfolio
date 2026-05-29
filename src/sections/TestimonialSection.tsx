@@ -1,76 +1,28 @@
-"use client";
-
 import Image from "next/image";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 import GlowCard from "../components/GlowCard";
 import { testimonials } from "../constants";
 import TitleHeader from "@/components/TitleHeader";
+import TestimonialAnimator from "@/components/animators/TestimonialAnimator";
 
-gsap.registerPlugin(ScrollTrigger);
-
-type RatingDotsProps = {
-  count?: number;
-};
-
-const RatingDots = ({ count = 5 }: RatingDotsProps) => {
-  return (
-    <div
-      className="flex gap-2"
-      role="img"
-      aria-label={`Rating: ${count} stars`}
-    >
-      {[...Array(count)].map((_, i) => (
-        <span
-          key={i}
-          className="rating-dot size-2 rounded-full bg-emerald-400"
-          aria-hidden="true"
-        />
-      ))}
-    </div>
-  );
-};
+const RatingDots = ({ count = 5 }: { count?: number }) => (
+  <div className="flex gap-2" role="img" aria-label={`Rating: ${count} stars`}>
+    {[...Array(count)].map((_, i) => (
+      <span
+        key={i}
+        className="size-2 rounded-full bg-emerald-400"
+        aria-hidden="true"
+      />
+    ))}
+  </div>
+);
 
 const TestimonialSection = () => {
-  useGSAP(() => {
-    gsap.from(".testimonial-sub", {
-      opacity: 0,
-      y: 18,
-      duration: 0.7,
-      ease: "power2.out",
-      scrollTrigger: {
-        trigger: "#testimonials",
-        start: "top 82%",
-      },
-    });
-
-    gsap.utils
-      .toArray<HTMLElement>(".testimonial-item")
-      .forEach((card, index) => {
-        gsap.fromTo(
-          card,
-          { opacity: 0, y: 30 },
-          {
-            opacity: 1,
-            y: 0,
-            duration: 0.7,
-            delay: index * 0.08,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: card,
-              start: "top 88%",
-            },
-          },
-        );
-      });
-  }, []);
-
   return (
     <section
       id="testimonials"
       className="flex-center section-padding scroll-mt-20"
     >
+      <TestimonialAnimator />
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="What Clients & Peers Say"
@@ -100,17 +52,13 @@ const TestimonialSection = () => {
                         </p>
                       </div>
                     </div>
-
                     <div className="w-14 h-px bg-emerald-400/60 my-6" />
-
                     <p className="text-xl leading-10 text-white/75">
-                      “{testimonials[0].review}”
+                      "{testimonials[0].review}"
                     </p>
                   </div>
-
                   <div className="flex items-center justify-between mt-8">
                     <RatingDots />
-
                     {testimonials[0].logo && (
                       <div className="flex items-center justify-center max-w-30 h-8 relative select-none">
                         <Image
@@ -147,22 +95,19 @@ const TestimonialSection = () => {
                         <p className="font-semibold text-xl">
                           {testimonial.name}
                         </p>
+                        name
                         <p className="text-emerald-300 text-sm">
                           {testimonial.mentions}
                         </p>
                       </div>
                     </div>
-
                     <div className="w-12 h-px bg-emerald-400/60 my-5" />
-
                     <p className="text-white/70 leading-8 text-lg">
-                      “{testimonial.review}”
+                      "{testimonial.review}"
                     </p>
                   </div>
-
                   <div className="flex justify-between items-center mt-6">
                     <RatingDots />
-
                     {testimonial.logo && (
                       <div className="flex items-center justify-center max-w-27.5 h-7 relative select-none">
                         <Image
