@@ -153,7 +153,7 @@ const FeatureCardSection = () => {
           </div>
 
           {/* Code snippet — scrollable on very small screens */}
-          <div className="w-full md:w-auto overflow-x-auto border border-white/10 bg-black/40 rounded-xl p-4 font-mono text-xs md:shrink-0 pb-6">
+          <code className="w-full md:w-auto overflow-x-auto border border-white/10 bg-black/40 rounded-xl p-4 font-mono text-xs md:shrink-0 pb-6">
             <p className="text-emerald-400 mb-2 whitespace-nowrap">
               router.post(&apos;/api/v1/users&apos;)
             </p>
@@ -164,7 +164,7 @@ const FeatureCardSection = () => {
             <p className="pl-4 text-white/50 whitespace-nowrap">→ service</p>
             <p className="pl-4 text-white/50 whitespace-nowrap">→ repository</p>
             <p className="pl-4 text-white/50 whitespace-nowrap">→ Database</p>
-          </div>
+          </code>
         </div>
 
         {/* Card 2 — Performance */}

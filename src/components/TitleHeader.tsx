@@ -54,22 +54,25 @@ const TitleHeader = ({ title, sub }: Props) => {
         className="text-3xl md:text-5xl leading-[1.2] md:leading-[1.15] font-bold text-white"
         aria-label={title}
       >
-        {title.split(" ").map((word, wordIndex) => (
-          <span
-            key={wordIndex}
-            className="inline-block mr-[0.25em] whitespace-nowrap"
-          >
-            {word.split("").map((char, charIndex) => (
-              <span
-                key={charIndex}
-                className="title-letter inline-block will-change-transform"
-                aria-hidden="true"
-              >
-                {char}
-              </span>
-            ))}
-          </span>
-        ))}
+        {title
+          .split(" ")
+          .filter((word) => word.length > 0)
+          .map((word, wordIndex) => (
+            <span
+              key={wordIndex}
+              className="inline-block mr-[0.25em] whitespace-nowrap"
+            >
+              {word.split("").map((char, charIndex) => (
+                <span
+                  key={charIndex}
+                  className="title-letter inline-block will-change-transform"
+                  aria-hidden="true"
+                >
+                  {char}
+                </span>
+              ))}
+            </span>
+          ))}
       </h2>
     </div>
   );

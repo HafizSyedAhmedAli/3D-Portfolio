@@ -67,7 +67,7 @@ const TechStackSection = () => {
               </div>
 
               {/* Corner index */}
-              <span className="absolute top-3 right-3 font-mono text-[10px] text-white/20">
+              <span className="absolute top-3 right-3 font-mono text-[10px] text-white/40">
                 {String(index + 1).padStart(2, "0")}
               </span>
             </div>

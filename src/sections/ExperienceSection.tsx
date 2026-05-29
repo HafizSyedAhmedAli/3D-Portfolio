@@ -195,9 +195,9 @@ const ExperienceSection = () => {
                     </p>
 
                     <div className="mt-8 md:mt-10 space-y-5 md:space-y-6">
-                      {card.responsibilities.map((responsibility) => (
+                      {card.responsibilities.map((responsibility, idx) => (
                         <div
-                          key={responsibility}
+                          key={`${card.title}-${idx}`}
                           className="animate-item flex items-start gap-4 group"
                         >
                           <div className="mt-2.5 size-2 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(16,185,129,0.9)] group-hover:scale-125 transition-transform duration-300 flex-shrink-0" />
