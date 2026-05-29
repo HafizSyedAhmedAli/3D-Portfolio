@@ -85,9 +85,19 @@ export type CounterItem = {
   value: number;
   suffix: string;
   label: string;
-}
+};
 
 export type LogoIcon = {
   imgPath: string;
   width: number;
+};
+
+export type SiteMetadata = {
+  title: string;
+  description: string;
+  url: string;
+  siteName: string;
+  ogImage: string;
+  ogImageAlt: string;
+  twitterCard: "summary" | "summary_large_image" | "app" | "player";
 };

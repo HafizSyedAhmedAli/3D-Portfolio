@@ -7,6 +7,7 @@ import type {
   NavLink,
   PerformanceMetric,
   Project,
+  SiteMetadata,
   SocialImg,
   TechName,
   TechStackIcon,
@@ -337,10 +338,10 @@ const logoIconsList: LogoIcon[] = [
   },
 ];
 
-const siteMetadata = {
+const siteMetadata: SiteMetadata = {
   title: "Ahmed Ali | Full-Stack Developer",
   description:
-    "Full-Stack Developer shipping AI-powered products — from database schema to deployed UI. Based in Karachi, Pakistan.",
+    "Full-Stack Developer shipping AI-powered products from database schema to deployed UI. Based in Karachi, Pakistan.",
   url: "https://syedahmedali.com",
   siteName: "Ahmed Ali",
   ogImage: "/opengraph-image.png",
@@ -350,18 +351,18 @@ const siteMetadata = {
 
 export {
   abilities,
+  availability,
   counterItems,
   expCards,
+  logoIconsList,
   // techStackImgs,
   navLinks,
   performanceMetrics,
   projects,
+  siteMetadata,
   socialImgs,
   techMeta,
   techStackIcons,
   techTags,
   testimonials,
-  availability,
-  logoIconsList,
-  siteMetadata,
 };

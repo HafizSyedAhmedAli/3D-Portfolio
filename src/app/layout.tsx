@@ -10,6 +10,7 @@ const monaSans = Mona_Sans({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(meta.url),
   title: meta.title,
   description: meta.description,
   openGraph: {
