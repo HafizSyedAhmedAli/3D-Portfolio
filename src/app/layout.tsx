@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Mona_Sans } from "next/font/google";
 import "./globals.css";
+import { siteMetadata as meta } from "@/constants";
 
 const monaSans = Mona_Sans({
   subsets: ["latin"],
@@ -9,9 +10,29 @@ const monaSans = Mona_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Ahmed Ali | Full-Stack Developer",
-  description:
-    "Full-Stack Developer shipping AI-powered products — from database schema to deployed UI. Based in Karachi, Pakistan.",
+  title: meta.title,
+  description: meta.description,
+  openGraph: {
+    title: meta.title,
+    description: meta.description,
+    url: meta.url,
+    siteName: meta.siteName,
+    images: [
+      {
+        url: meta.ogImage,
+        width: 1200,
+        height: 630,
+        alt: meta.ogImageAlt,
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: meta.twitterCard,
+    title: meta.title,
+    description: meta.description,
+    images: [meta.ogImage],
+  },
 };
 
 export default function RootLayout({

@@ -337,6 +337,17 @@ const logoIconsList: LogoIcon[] = [
   },
 ];
 
+const siteMetadata = {
+  title: "Ahmed Ali | Full-Stack Developer",
+  description:
+    "Full-Stack Developer shipping AI-powered products — from database schema to deployed UI. Based in Karachi, Pakistan.",
+  url: "https://syedahmedali.com",
+  siteName: "Ahmed Ali",
+  ogImage: "/opengraph-image.png",
+  ogImageAlt: "Ahmed Ali | Full-Stack Developer",
+  twitterCard: "summary_large_image" as const,
+};
+
 export {
   abilities,
   counterItems,
@@ -351,5 +362,6 @@ export {
   techTags,
   testimonials,
   availability,
-  logoIconsList
+  logoIconsList,
+  siteMetadata,
 };
