@@ -37,7 +37,9 @@ const HeroSectionExperienceModel = () => {
         powerPreference: "high-performance",
         antialias: !isMobile,
       }}
-      dpr={isMobile ? 1 : isTablet ? 1 : [1, 2]}
+      // Before: dpr={isMobile ? 1 : ...} — rendered at 1x on a 3x screen = blurry
+      // Now: cap at 2 on all devices — sharp on retina without going to expensive 3x
+      dpr={[1, 2]}
       style={{ width: "100%", height: "100%" }}
     >
       {!skipBloom && (
@@ -74,15 +76,12 @@ const HeroSectionExperienceModel = () => {
         <meshStandardMaterial color="#091520" />
       </mesh>
 
-      {/*
-        Suspense belongs HERE — inside the Canvas context.
-        useGLTF in Room throws a promise while the GLB downloads.
-        Catching it here with CanvasLoader (which uses R3F Html)
-        keeps the Canvas mounted and shows a spinner inside it
-        instead of killing the whole Canvas from outside.
-      */}
       <Suspense fallback={<CanvasLoader />}>
-        <group scale={1.8} position={[1, -3.3, 0]} rotation={[0, Math.PI / 9, 0]}>
+        <group
+          scale={1.8}
+          position={[1, -3.3, 0]}
+          rotation={[0, Math.PI / 9, 0]}
+        >
           <Room screensRef={screensRef} />
         </group>
       </Suspense>
