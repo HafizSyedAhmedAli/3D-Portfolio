@@ -1,19 +1,23 @@
 "use client";
 
 import { useGSAP } from "@gsap/react";
-import HeroSectionExperienceModel from "../components/HeroSectionModels/HeroSectionExperienceModel";
 import { gsap } from "gsap";
 import Image from "next/image";
-import { useMediaQuery } from "react-responsive";
+import { useEffect, useState } from "react";
+import HeroSectionExperienceModel from "../components/HeroSectionModels/HeroSectionExperienceModel";
 
 const techChips = ["Next.js", "Node.js", "PostgreSQL", "Redis", "TypeScript"];
 
 const HeroSection = () => {
-  const isMobile = useMediaQuery(
-    { query: "(max-width: 768px)" },
-    undefined,
-    () => false,
-  );
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 768px)");
+    setIsMobile(mq.matches);
+    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
+    mq.addEventListener("change", handler);
+    return () => mq.removeEventListener("change", handler);
+  }, []);
 
   useGSAP(() => {
     gsap.fromTo(
@@ -181,7 +185,7 @@ const HeroSection = () => {
       */}
       {isMobile && (
         <figure className="w-full">
-          <div className="w-full h-72 cursor-grab active:cursor-grabbing">
+          <div className="w-full h-64 cursor-grab active:cursor-grabbing">
             <HeroSectionExperienceModel />
           </div>
         </figure>

@@ -1,7 +1,9 @@
 "use client";
 
 import FloatInput from "@/components/FloatInput";
+import LazyCanvas from "@/components/LazyCanvas";
 import ContactExperience from "@/components/Models/TechLogos/contact/ContactExperience";
+import { availability } from "@/constants";
 import emailjs from "@emailjs/browser";
 import {
     useEffect,
@@ -11,8 +13,6 @@ import {
     type FormEvent,
 } from "react";
 import TitleHeader from "../components/TitleHeader";
-import { availability } from "@/constants";
-
 
 /* ─── section ─── */
 const ContactSection = () => {
@@ -200,7 +200,9 @@ const ContactSection = () => {
         <div className="flex flex-col gap-5">
           {/* 3D orb */}
           <div className="rounded-2xl border border-white/8 bg-white/2 overflow-hidden cursor-grab active:cursor-grabbing h-72">
-            <ContactExperience />
+            <LazyCanvas className="w-full h-full">
+              <ContactExperience />
+            </LazyCanvas>
           </div>
 
           {/* availability */}

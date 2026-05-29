@@ -1,19 +1,12 @@
 "use client";
 
 import { TechStackIcon } from "@/types";
-import {
-  Environment,
-  Float,
-  OrbitControls,
-  useGLTF,
-  Html,
-} from "@react-three/drei"; // Added Html
+import { Float, OrbitControls, useGLTF, Html } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { Component, useEffect, Suspense, useMemo } from "react";
 import type { ErrorInfo, ReactNode } from "react";
+import { useMediaQuery } from "react-responsive";
 import * as THREE from "three";
-
-// ─── Types ────────────────────────────────────────────────────────────────────
 
 type TechStack = {
   model: TechStackIcon;
@@ -45,7 +38,6 @@ class ModelErrorBoundary extends Component<
 
   componentDidCatch(error: Error, info: ErrorInfo): void {
     this.props.onError?.(error, info);
-
     if (process.env.NODE_ENV !== "production") {
       console.error(
         "[ModelErrorBoundary] Failed to load 3-D model:",
@@ -63,13 +55,8 @@ class ModelErrorBoundary extends Component<
   }
 }
 
-// ─── ModelFallback ────────────────────────────────────────────────────────────
-// Rendered when the model completely fails to load. Displays a neutral
-// 3D wireframe block instead of disappearing into a void.
-
 const ModelFallback = ({ error }: { error: Error | null }) => {
   const isDev = process.env.NODE_ENV !== "production";
-
   return (
     <group>
       {isDev && error && (
@@ -83,25 +70,16 @@ const ModelFallback = ({ error }: { error: Error | null }) => {
   );
 };
 
-// ─── CanvasLoader ─────────────────────────────────────────────────────────────
-// Rendered during the initial download phase. Uses Drei's <Html> wrapper
-// to render a clean CSS/Tailwind spinner directly centered inside the WebGL viewport.
-
-export const CanvasLoader = () => {
-  return (
-    <Html center>
-      <div className="flex flex-col items-center justify-center gap-3 select-none pointer-events-none w-32">
-        {/* Tailwind spinning loader circle */}
-        <div className="w-6 h-6 border-2 border-blue-500 border-t-transparent rounded-full animate-spin" />
-        <p className="text-[10px] text-white/40 font-mono tracking-widest uppercase">
-          Loading
-        </p>
-      </div>
-    </Html>
-  );
-};
-
-// ─── Model ────────────────────────────────────────────────────────────────────
+export const CanvasLoader = () => (
+  <Html center>
+    <div className="flex flex-col items-center justify-center gap-3 select-none pointer-events-none w-32">
+      <div className="w-6 h-6 border-2 border-emerald-400 border-t-transparent rounded-full animate-spin" />
+      <p className="text-[10px] text-white/40 font-mono tracking-widest uppercase">
+        Loading
+      </p>
+    </div>
+  </Html>
+);
 
 const Model = ({ model }: TechStack) => {
   const { scene } = useGLTF(model.modelPath);
@@ -109,24 +87,18 @@ const Model = ({ model }: TechStack) => {
 
   useEffect(() => {
     if (model.name !== "Interactive Developer") return;
-
     const newMaterials: THREE.MeshStandardMaterial[] = [];
-
     clonedScene.traverse((child) => {
       const mesh = child as THREE.Mesh;
       if (mesh.isMesh && child.name === "Object_5") {
-        if (mesh.material instanceof THREE.Material) {
-          mesh.material.dispose();
-        } else if (Array.isArray(mesh.material)) {
+        if (mesh.material instanceof THREE.Material) mesh.material.dispose();
+        else if (Array.isArray(mesh.material))
           mesh.material.forEach((m) => m.dispose());
-        }
-
         const mat = new THREE.MeshStandardMaterial({ color: "white" });
         mesh.material = mat;
         newMaterials.push(mat);
       }
     });
-
     return () => {
       newMaterials.forEach((m) => m.dispose());
     };
@@ -141,23 +113,50 @@ const Model = ({ model }: TechStack) => {
   );
 };
 
-// ─── TechIcon ─────────────────────────────────────────────────────────────────
-
 const TechIcon = ({ model }: TechStack) => {
-  return (
-    <Canvas>
-      <ambientLight intensity={0.3} />
-      <directionalLight position={[5, 5, 5]} intensity={1} />
+  const isMobile = useMediaQuery(
+    { query: "(max-width: 768px)" },
+    undefined,
+    () => false,
+  );
 
-      <Environment preset="city" />
+  return (
+    <Canvas
+      /*
+        Mobile: no antialias (expensive), DPR capped at device ratio max 2.
+        Same pattern as the hero — sharp but not burning GPU memory at 3x.
+        Desktop: antialias on, DPR up to 2.
+      */
+      gl={{
+        antialias: !isMobile,
+        powerPreference: "high-performance",
+      }}
+      dpr={[1, 2]}
+    >
+      {/*
+        No Environment / HDR texture — replaced with manual lights.
+        Each Environment was loading a full HDR map per canvas instance,
+        which was the single biggest memory cost across 5 canvases.
+      */}
+      <ambientLight intensity={0.7} />
+      <directionalLight position={[5, 5, 5]} intensity={1.5} />
+      <directionalLight
+        position={[-4, -2, -3]}
+        intensity={0.5}
+        color="#4a90d9"
+      />
+      <pointLight
+        position={[0, 4, 3]}
+        intensity={0.8}
+        color="#34d399"
+        distance={10}
+      />
+
       <OrbitControls enableZoom={false} />
 
       <ModelErrorBoundary
-        onError={(err) => {
-          console.error("Model load error:", err);
-        }}
+        onError={(err) => console.error("Model load error:", err)}
       >
-        {/* Swapped null for our clean CanvasLoader component */}
         <Suspense fallback={<CanvasLoader />}>
           <Model model={model} />
         </Suspense>
