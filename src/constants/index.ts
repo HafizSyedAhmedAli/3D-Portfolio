@@ -1,7 +1,7 @@
 import type {
   Ability,
   Availability,
-  // CounterItem,
+  CounterItem,
   ExpCard,
   NavLink,
   PerformanceMetric,
@@ -36,12 +36,12 @@ const navLinks: NavLink[] = [
   },
 ];
 
-// const counterItems: CounterItem[] = [
-//   { value: 15, suffix: "+", label: "Years of Experience" },
-//   { value: 200, suffix: "+", label: "Satisfied Clients" },
-//   { value: 108, suffix: "+", label: "Completed Projects" },
-//   { value: 90, suffix: "%", label: "Client Retention Rate" },
-// ];
+const counterItems: CounterItem[] = [
+  { value: 15, suffix: "+", label: "Years of Experience" },
+  { value: 200, suffix: "+", label: "Satisfied Clients" },
+  { value: 108, suffix: "+", label: "Completed Projects" },
+  { value: 90, suffix: "%", label: "Client Retention Rate" },
+];
 
 const abilities: Ability[] = [
   {
@@ -291,7 +291,7 @@ const availability: Availability[] = [
 
 export {
   abilities,
-  // counterItems,
+  counterItems,
   expCards,
   // techStackImgs,
   navLinks,

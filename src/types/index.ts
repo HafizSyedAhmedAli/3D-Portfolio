@@ -80,3 +80,9 @@ export type Availability = {
   value: string;
   dot: boolean;
 };
+
+export type CounterItem = {
+  value: number;
+  suffix: string;
+  label: string;
+}
