@@ -6,15 +6,13 @@ import { Canvas } from "@react-three/fiber";
 import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
 import { useMediaQuery } from "react-responsive";
-import { useRef, Suspense } from "react";
+import { Suspense, useState } from "react";
 import * as THREE from "three";
 import HeroSectionLights from "./HeroSectionLights";
 import { Room } from "./Room";
 import { CanvasLoader } from "../Models/TechLogos/TechIcon";
 
 const HeroSectionExperienceModel = () => {
-  const screensRef = useRef<THREE.Mesh>(null!);
-
   const isMobile = useMediaQuery(
     { query: "(max-width: 768px)" },
     undefined,
@@ -29,6 +27,13 @@ const HeroSectionExperienceModel = () => {
 
   const skipBloom = isMobile || isTablet;
 
+  /*
+    useState instead of useRef — when Room mounts and calls setScreensMesh,
+    React re-renders this component and SelectiveBloom receives the real mesh.
+    useRef never triggers a re-render so SelectiveBloom always saw null.
+  */
+  const [screensMesh, setScreensMesh] = useState<THREE.Mesh | null>(null);
+
   return (
     <Canvas
       camera={{ position: [0, 2, 22], fov: 38 }}
@@ -37,15 +42,17 @@ const HeroSectionExperienceModel = () => {
         powerPreference: "high-performance",
         antialias: !isMobile,
       }}
-      // Before: dpr={isMobile ? 1 : ...} — rendered at 1x on a 3x screen = blurry
-      // Now: cap at 2 on all devices — sharp on retina without going to expensive 3x
       dpr={[1, 2]}
       style={{ width: "100%", height: "100%" }}
     >
-      {!skipBloom && (
+      {/*
+        Only mount SelectiveBloom once screensMesh is non-null —
+        if selection is null Three.js crashes reading .layers on it
+      */}
+      {!skipBloom && screensMesh && (
         <EffectComposer>
           <SelectiveBloom
-            selection={screensRef}
+            selection={[screensMesh]}
             intensity={0.6}
             luminanceThreshold={0.4}
             luminanceSmoothing={0.9}
@@ -77,12 +84,9 @@ const HeroSectionExperienceModel = () => {
       </mesh>
 
       <Suspense fallback={<CanvasLoader />}>
-        <group
-          scale={1.8}
-          position={[1, -3.3, 0]}
-          rotation={[0, Math.PI / 9, 0]}
-        >
-          <Room screensRef={screensRef} />
+        <group scale={1.8} position={[1, -3.3, 0]} rotation={[0, Math.PI / 9, 0]}>
+          {/* onMount fires once the mesh is in the scene — sets state, triggers re-render */}
+          <Room onScreensMounted={setScreensMesh} />
         </group>
       </Suspense>
     </Canvas>

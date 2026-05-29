@@ -1,5 +1,5 @@
 import { useGLTF } from "@react-three/drei";
-import { useMemo, type ComponentProps, type RefObject } from "react";
+import { useEffect, useMemo, type ComponentProps } from "react";
 import * as THREE from "three";
 import { type GLTF } from "three-stdlib";
 
@@ -17,16 +17,20 @@ type GLTFResult = GLTF & {
 };
 
 type Props = ComponentProps<"group"> & {
-  screensRef: RefObject<THREE.Mesh>;
+  /*
+    Callback instead of a ref — parent passes its state setter here.
+    When the mesh mounts, we call it with the real THREE.Mesh instance,
+    which triggers a re-render in the parent so SelectiveBloom gets
+    a non-null selection immediately.
+  */
+  onScreensMounted?: (mesh: THREE.Mesh) => void;
 };
 
-// Room.tsx — just use original materials, no emissive override
-export function Room({ screensRef, ...props }: Props) {
+export function Room({ onScreensMounted, ...props }: Props) {
   const { nodes, materials } = useGLTF(
     "/models/gaming_setup-transformed.glb",
   ) as unknown as GLTFResult;
 
-  // Just tweak surface properties, never override color or emissive
   const chairFrameMaterial = useMemo(() => {
     const mat = materials.Stoo1.clone();
     mat.roughness = 0.4;
@@ -43,12 +47,20 @@ export function Room({ screensRef, ...props }: Props) {
 
   const deskMaterial = useMemo(() => {
     const mat = materials.material_2.clone();
-    // ✅ Keep ALL original colors and emissive — don't touch them
-    // Just improve surface quality
     mat.roughness = 0.3;
     mat.metalness = 0.4;
     return mat;
   }, [materials.material_2]);
+
+  // pc_pc_0 is the screens mesh — notify parent once it exists
+  const screensMesh = useMemo(
+    () => new THREE.Mesh(nodes.pc_pc_0.geometry, deskMaterial),
+    [nodes.pc_pc_0.geometry, deskMaterial],
+  );
+
+  useEffect(() => {
+    if (onScreensMounted) onScreensMounted(screensMesh);
+  }, [screensMesh, onScreensMounted]);
 
   return (
     <group {...props} dispose={null}>
@@ -67,7 +79,6 @@ export function Room({ screensRef, ...props }: Props) {
         scale={0.3}
       />
       <mesh
-        ref={screensRef}
         castShadow
         receiveShadow
         geometry={nodes.pc_pc_0.geometry}
