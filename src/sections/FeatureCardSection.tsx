@@ -132,9 +132,10 @@ const FeatureCardSection = () => {
         />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
-        <div className="feature-card md:col-span-2 border border-white/10 bg-white/4 hover:border-emerald-500/30 transition-all duration-500 rounded-2xl p-8 flex flex-col md:flex-row gap-8 items-start">
-          <div className="flex-1 flex flex-col gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-5">
+        {/* Card 1 — Scalable Architecture */}
+        <div className="feature-card md:col-span-2 border border-white/10 bg-white/4 hover:border-emerald-500/30 transition-all duration-500 rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-6 md:gap-8 items-start">
+          <div className="flex-1 flex flex-col gap-4 min-w-0">
             <div className="flex items-center gap-3">
               <Image
                 src={abilities[0].imgPath}
@@ -151,19 +152,23 @@ const FeatureCardSection = () => {
             </p>
           </div>
 
-          <div className="border border-white/10 bg-black/40 rounded-xl p-4 font-mono text-xs shrink-0 pb-6">
-            <p className="text-emerald-400 mb-2">
+          {/* Code snippet — scrollable on very small screens */}
+          <div className="w-full md:w-auto overflow-x-auto border border-white/10 bg-black/40 rounded-xl p-4 font-mono text-xs md:shrink-0 pb-6">
+            <p className="text-emerald-400 mb-2 whitespace-nowrap">
               router.post(&apos;/api/v1/users&apos;)
             </p>
-            <p className="pl-4 text-white/50">→ authMiddleware</p>
-            <p className="pl-4 text-white/50">→ controller</p>
-            <p className="pl-4 text-white/50">→ service</p>
-            <p className="pl-4 text-white/50">→ repository</p>
-            <p className="pl-4 text-white/50">→ Database</p>
+            <p className="pl-4 text-white/50 whitespace-nowrap">
+              → authMiddleware
+            </p>
+            <p className="pl-4 text-white/50 whitespace-nowrap">→ controller</p>
+            <p className="pl-4 text-white/50 whitespace-nowrap">→ service</p>
+            <p className="pl-4 text-white/50 whitespace-nowrap">→ repository</p>
+            <p className="pl-4 text-white/50 whitespace-nowrap">→ Database</p>
           </div>
         </div>
 
-        <div className="feature-card border border-white/10 bg-white/4 hover:border-emerald-500/30 transition-all duration-500 rounded-2xl p-8 flex flex-col justify-between gap-6">
+        {/* Card 2 — Performance */}
+        <div className="feature-card border border-white/10 bg-white/4 hover:border-emerald-500/30 transition-all duration-500 rounded-2xl p-6 md:p-8 flex flex-col justify-between gap-6">
           <div className="flex flex-col gap-3">
             <div className="flex items-center gap-3">
               <Image
@@ -187,7 +192,6 @@ const FeatureCardSection = () => {
                 <span className="text-white/50 text-xs w-10 shrink-0">
                   {label}
                 </span>
-
                 <div className="flex-1 h-1.5 bg-white/10 rounded-full overflow-hidden">
                   <div
                     data-value={value}
@@ -195,8 +199,7 @@ const FeatureCardSection = () => {
                     style={{ width: "0%" }}
                   />
                 </div>
-
-                <span className="text-white/50 text-xs w-24 text-right font-mono shrink-0">
+                <span className="text-white/50 text-xs w-20 md:w-24 text-right font-mono shrink-0">
                   {metric}
                 </span>
               </div>
@@ -204,7 +207,8 @@ const FeatureCardSection = () => {
           </div>
         </div>
 
-        <div className="feature-card border border-white/10 bg-white/4 hover:border-emerald-500/30 transition-all duration-500 rounded-2xl p-8 flex flex-col gap-4">
+        {/* Card 3 — Strategic Collaboration */}
+        <div className="feature-card border border-white/10 bg-white/4 hover:border-emerald-500/30 transition-all duration-500 rounded-2xl p-6 md:p-8 flex flex-col gap-4">
           <div className="flex items-center gap-3">
             <Image
               src={abilities[1].imgPath}
@@ -233,7 +237,8 @@ const FeatureCardSection = () => {
           </div>
         </div>
 
-        <div className="feature-card md:col-span-2 border border-white/10 bg-white/4 hover:border-emerald-500/30 transition-all duration-500 rounded-2xl p-8 flex flex-col gap-4">
+        {/* Card 4 — Ship-Ready */}
+        <div className="feature-card md:col-span-2 border border-white/10 bg-white/4 hover:border-emerald-500/30 transition-all duration-500 rounded-2xl p-6 md:p-8 flex flex-col gap-4">
           <div className="flex items-center gap-3">
             <Image
               src="/images/rocket-solid.png"
@@ -254,11 +259,11 @@ const FeatureCardSection = () => {
               commit one.
             </p>
 
-            <div className="flex gap-3 shrink-0">
-              <span className="feature-tag text-xs px-3 py-1.5 rounded-md border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-nowrap">
+            <div className="flex gap-3 flex-wrap md:flex-nowrap md:shrink-0">
+              <span className="feature-tag text-xs px-3 py-1.5 rounded-md border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 whitespace-nowrap">
                 Production-ready
               </span>
-              <span className="feature-tag text-xs px-3 py-1.5 rounded-md border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 text-nowrap">
+              <span className="feature-tag text-xs px-3 py-1.5 rounded-md border border-indigo-500/30 bg-indigo-500/10 text-indigo-400 whitespace-nowrap">
                 Type-safe
               </span>
             </div>

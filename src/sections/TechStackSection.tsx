@@ -30,10 +30,13 @@ const TechStackSection = () => {
   }, []);
 
   return (
-    <section id="skills" className="w-full section-padding md:px-20 px-5 scroll-mt-28">
+    <section
+      id="skills"
+      className="w-full section-padding md:px-20 px-5 scroll-mt-28"
+    >
       <TitleHeader title="My Core Tech Stack" sub="⚡ What I Build With" />
 
-      <div className="grid xl:grid-cols-5 md:grid-cols-3 grid-cols-1 gap-4">
+      <div className="grid xl:grid-cols-5 md:grid-cols-3 grid-cols-2 gap-3 md:gap-4">
         {techStackIcons.map((icon, index) => {
           const meta = techMeta[icon.name];
           return (
@@ -45,24 +48,25 @@ const TechStackSection = () => {
               <div className="h-px w-0 group-hover:w-full bg-linear-to-r from-emerald-500/80 via-emerald-400/50 to-transparent transition-all duration-700 ease-out" />
 
               {/* 3D Model */}
-              <div className="h-52 w-full cursor-grab active:cursor-grabbing">
+              <div className="h-40 sm:h-48 md:h-52 w-full cursor-grab active:cursor-grabbing">
                 <TechIcon model={icon} />
               </div>
 
               {/* Info */}
-              <div className="px-5 pb-5 pt-1 border-t border-white/5">
-                {/* Clean rendered text without hacking string replacements */}
-                <p className="text-white font-semibold text-base tracking-tight">
+              <div className="px-4 md:px-5 pb-4 md:pb-5 pt-1 border-t border-white/5">
+                <p className="text-white font-semibold text-sm md:text-base tracking-tight">
                   {icon.name}
                 </p>
                 {meta && (
-                  <p className={`text-xs font-mono mt-1 ${meta.color}`}>
+                  <p
+                    className={`text-[10px] md:text-xs font-mono mt-0.5 md:mt-1 ${meta.color}`}
+                  >
                     {meta.label}
                   </p>
                 )}
               </div>
 
-              {/* Corner number using map index */}
+              {/* Corner index */}
               <span className="absolute top-3 right-3 font-mono text-[10px] text-white/20">
                 {String(index + 1).padStart(2, "0")}
               </span>

@@ -4,9 +4,9 @@ import { useGSAP } from "@gsap/react";
 import HeroSectionExperienceModel from "../components/HeroSectionModels/HeroSectionExperienceModel";
 import { gsap } from "gsap";
 import Image from "next/image";
+import { useMediaQuery } from "react-responsive";
 
 const techChips = ["Next.js", "Node.js", "PostgreSQL", "Redis", "TypeScript"];
-import { useMediaQuery } from "react-responsive";
 
 const HeroSection = () => {
   const isMobile = useMediaQuery(
@@ -59,11 +59,7 @@ const HeroSection = () => {
 
   const handleScrollToWork = () => {
     const target = document.getElementById("work");
-    if (target) {
-      target.scrollIntoView({
-        behavior: "smooth",
-      });
-    }
+    if (target) target.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -77,15 +73,15 @@ const HeroSection = () => {
         }}
       />
 
-      {/* bg corner image from original */}
+      {/* Corner bg image */}
       <div className="absolute top-0 left-0 z-10 opacity-30">
         <Image src="/images/bg.png" alt="background" width={418} height={327} />
       </div>
 
       <div className="hero-layout">
-        {/* LEFT CONTENT */}
-        <header className="flex flex-col justify-center md:w-full w-screen md:px-20 px-5 relative z-20 pointer-events-none">
-          <div className="flex flex-col gap-6">
+        {/* ── Left content ── */}
+        <header className="flex flex-col justify-center md:w-full w-full md:px-20 px-5 relative z-20 pointer-events-none">
+          <div className="flex flex-col gap-5 md:gap-6">
             {/* Availability badge */}
             <div className="hero-badge-pill flex items-center gap-2 w-fit px-4 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 backdrop-blur-sm">
               <span className="relative flex size-2">
@@ -99,7 +95,7 @@ const HeroSection = () => {
 
             {/* Headline */}
             <div className="hero-headline flex flex-col gap-1">
-              <h1 className="md:text-6xl text-2xl font-bold leading-[1.1] tracking-tight text-white">
+              <h1 className="md:text-6xl text-3xl font-bold leading-[1.1] tracking-tight text-white">
                 Full-Stack Developer
               </h1>
               <h1 className="md:text-4xl text-xl font-bold leading-[1.1] tracking-tight text-emerald-400 max-w-3xl">
@@ -107,14 +103,14 @@ const HeroSection = () => {
               </h1>
               <div className="flex items-center gap-1 mt-1">
                 <span className="w-8 h-[2px] bg-emerald-500/40 rounded-full" />
-                <h2 className="md:text-xl text-base text-white/40 font-medium tracking-widest uppercase text-nowrap">
+                <h2 className="md:text-xl text-sm text-white/40 font-medium tracking-widest uppercase">
                   Based in Pakistan
                 </h2>
               </div>
             </div>
 
             {/* Subtext */}
-            <p className="hero-sub text-white/60 md:text-lg text-base max-w-lg leading-relaxed">
+            <p className="hero-sub text-white/60 md:text-lg text-sm max-w-lg leading-relaxed">
               I build production-ready web apps and AI-powered SaaS products
               from database schema to deployed UI.
             </p>
@@ -132,10 +128,10 @@ const HeroSection = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="hero-cta flex items-center gap-4 mt-2 pointer-events-auto">
+            <div className="hero-cta flex items-center gap-3 mt-1 pointer-events-auto flex-wrap">
               <button
                 onClick={handleScrollToWork}
-                className="group relative flex items-center gap-3 px-7 py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 transition-all duration-300 font-semibold text-black text-sm tracking-wide overflow-hidden cursor-pointer"
+                className="group relative flex items-center gap-3 px-6 py-3.5 md:px-7 md:py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 transition-all duration-300 font-semibold text-black text-sm tracking-wide overflow-hidden cursor-pointer"
               >
                 <span className="relative z-10">See My Work</span>
                 <svg
@@ -158,7 +154,7 @@ const HeroSection = () => {
                 href="https://github.com/HafizSyedAhmedAli"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-4 rounded-xl border border-white/10 hover:border-white/30 bg-white/5 hover:bg-white/10 transition-all duration-300 text-white/70 hover:text-white text-sm font-medium"
+                className="flex items-center gap-2 px-5 py-3.5 md:py-4 rounded-xl border border-white/10 hover:border-white/30 bg-white/5 hover:bg-white/10 transition-all duration-300 text-white/70 hover:text-white text-sm font-medium"
               >
                 <Image
                   src="/images/github.svg"
@@ -173,7 +169,7 @@ const HeroSection = () => {
           </div>
         </header>
 
-        {/* RIGHT: 3D MODEL */}
+        {/* ── Desktop 3D model (absolute inside hero-layout) ── */}
         {!isMobile && (
           <figure>
             <div className="absolute top-0 right-0 w-[55%] h-full rounded-l-3xl overflow-hidden cursor-grab active:cursor-grabbing">
@@ -183,9 +179,10 @@ const HeroSection = () => {
         )}
       </div>
 
+      {/* ── Mobile 3D model (below hero text, with explicit height) ── */}
       {isMobile && (
-        <figure>
-          <div className="w-full h-full  rounded-l-3xl overflow-hidden cursor-grab active:cursor-grabbing">
+        <figure className="w-full">
+          <div className="w-full h-72 overflow-hidden cursor-grab active:cursor-grabbing">
             <HeroSectionExperienceModel />
           </div>
         </figure>

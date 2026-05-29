@@ -50,14 +50,24 @@ const TitleHeader = ({ title, sub }: Props) => {
         {sub}
       </p>
 
-      <h2 className="text-3xl md:text-5xl leading-[1.2] md:leading-[1.15] font-bold text-white flex flex-wrap" aria-label={title}>
-        {title.split("").map((char, index) => (
+      <h2
+        className="text-3xl md:text-5xl leading-[1.2] md:leading-[1.15] font-bold text-white"
+        aria-label={title}
+      >
+        {title.split(" ").map((word, wordIndex) => (
           <span
-            key={index}
-            className="title-letter inline-block will-change-transform"
-            aria-hidden="true"
+            key={wordIndex}
+            className="inline-block mr-[0.25em] whitespace-nowrap"
           >
-            {char === " " ? "\u00A0" : char}
+            {word.split("").map((char, charIndex) => (
+              <span
+                key={charIndex}
+                className="title-letter inline-block will-change-transform"
+                aria-hidden="true"
+              >
+                {char}
+              </span>
+            ))}
           </span>
         ))}
       </h2>
