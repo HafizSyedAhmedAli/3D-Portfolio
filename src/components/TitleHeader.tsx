@@ -28,13 +28,11 @@ const TitleHeader = ({ title, sub }: Props) => {
         },
       });
 
-      gsap.from(".title-letter", {
+      gsap.from(".title-heading", {
         opacity: 0,
-        y: 80,
-        rotateX: -90,
-        stagger: 0.03,
-        duration: 1,
-        ease: "power4.out",
+        y: 40,
+        duration: 0.9,
+        ease: "power3.out",
         scrollTrigger: {
           trigger: container.current,
           start: "top 85%",
@@ -50,29 +48,8 @@ const TitleHeader = ({ title, sub }: Props) => {
         {sub}
       </p>
 
-      <h2
-        className="text-3xl md:text-5xl leading-[1.2] md:leading-[1.15] font-bold text-white"
-        aria-label={title}
-      >
-        {title
-          .split(" ")
-          .filter((word) => word.length > 0)
-          .map((word, wordIndex) => (
-            <span
-              key={wordIndex}
-              className="inline-block mr-[0.25em] whitespace-nowrap"
-            >
-              {word.split("").map((char, charIndex) => (
-                <span
-                  key={charIndex}
-                  className="title-letter inline-block will-change-transform"
-                  aria-hidden="true"
-                >
-                  {char}
-                </span>
-              ))}
-            </span>
-          ))}
+      <h2 className="title-heading text-3xl md:text-5xl leading-[1.2] md:leading-[1.15] font-bold text-white">
+        {title}
       </h2>
     </div>
   );

@@ -16,7 +16,11 @@ type RatingDotsProps = {
 
 const RatingDots = ({ count = 5 }: RatingDotsProps) => {
   return (
-    <div className="flex gap-2" role="img" aria-label={`Rating: ${count} stars`}>
+    <div
+      className="flex gap-2"
+      role="img"
+      aria-label={`Rating: ${count} stars`}
+    >
       {[...Array(count)].map((_, i) => (
         <span
           key={i}
@@ -30,26 +34,6 @@ const RatingDots = ({ count = 5 }: RatingDotsProps) => {
 
 const TestimonialSection = () => {
   useGSAP(() => {
-    gsap.set(".split-letter", {
-      opacity: 0,
-      y: 24,
-      rotateX: -45,
-      transformOrigin: "50% 50%",
-    });
-
-    gsap.to(".split-letter", {
-      opacity: 1,
-      y: 0,
-      rotateX: 0,
-      duration: 0.8,
-      stagger: 0.03,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: "#testimonials",
-        start: "top 80%",
-      },
-    });
-
     gsap.from(".testimonial-sub", {
       opacity: 0,
       y: 18,
@@ -66,43 +50,27 @@ const TestimonialSection = () => {
       .forEach((card, index) => {
         gsap.fromTo(
           card,
-          {
-            opacity: 0,
-            y: 40,
-            scale: 0.98,
-            filter: "blur(8px)",
-          },
+          { opacity: 0, y: 30 },
           {
             opacity: 1,
             y: 0,
-            scale: 1,
-            filter: "blur(0px)",
-            duration: 0.9,
-            delay: index * 0.06,
-            ease: "power3.out",
+            duration: 0.7,
+            delay: index * 0.08,
+            ease: "power2.out",
             scrollTrigger: {
               trigger: card,
-              start: "top 86%",
+              start: "top 88%",
             },
           },
         );
       });
-
-    gsap.utils.toArray<HTMLElement>(".rating-dot").forEach((dot, i) => {
-      gsap.to(dot, {
-        scale: 1.25,
-        opacity: 0.75,
-        repeat: -1,
-        yoyo: true,
-        duration: 1.05,
-        delay: i * 0.08,
-        ease: "sine.inOut",
-      });
-    });
   }, []);
 
   return (
-    <section id="testimonials" className="flex-center section-padding scroll-mt-20">
+    <section
+      id="testimonials"
+      className="flex-center section-padding scroll-mt-20"
+    >
       <div className="w-full h-full md:px-10 px-5">
         <TitleHeader
           title="What Clients & Peers Say"
@@ -112,10 +80,7 @@ const TestimonialSection = () => {
         <div className="mt-16 [column-fill:balance] md:columns-2 gap-8 space-y-8 w-full">
           {testimonials[0] && (
             <div className="break-inside-avoid group">
-              <GlowCard
-                index={0}
-                className="testimonial-item"
-              >
+              <GlowCard index={0} className="testimonial-item">
                 <div className="flex flex-col h-full justify-between min-h-100">
                   <div>
                     <div className="flex items-center gap-4">
@@ -167,10 +132,7 @@ const TestimonialSection = () => {
               key={`${index}-${testimonial.name}`}
               className="break-inside-avoid group"
             >
-              <GlowCard
-                index={index + 1}
-                className="testimonial-item"
-              >
+              <GlowCard index={index + 1} className="testimonial-item">
                 <div className="flex flex-col h-full justify-between min-h-55">
                   <div>
                     <div className="flex items-center gap-4">

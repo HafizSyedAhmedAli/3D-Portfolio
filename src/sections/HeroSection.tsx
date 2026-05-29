@@ -22,42 +22,45 @@ const HeroSection = () => {
   useGSAP(() => {
     gsap.fromTo(
       ".hero-badge-pill",
-      { y: -20, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.6, ease: "power2.out" },
+      { y: -16, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" },
     );
+
     gsap.fromTo(
       ".hero-headline > *",
-      { y: 40, opacity: 0 },
+      { y: 24, opacity: 0 },
       {
         y: 0,
         opacity: 1,
-        stagger: 0.15,
-        duration: 0.8,
-        ease: "power3.out",
-        delay: 0.2,
+        stagger: 0.1,
+        duration: 0.6,
+        ease: "power2.out",
+        delay: 0.15,
       },
     );
+
     gsap.fromTo(
       ".hero-sub",
-      { y: 20, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.7, ease: "power2.out", delay: 0.65 },
+      { opacity: 0 },
+      { opacity: 1, duration: 0.5, ease: "power2.out", delay: 0.4 },
     );
+
     gsap.fromTo(
       ".hero-chips > *",
-      { y: 15, opacity: 0 },
+      { opacity: 0 },
       {
-        y: 0,
         opacity: 1,
-        stagger: 0.08,
-        duration: 0.5,
+        stagger: 0.06,
+        duration: 0.4,
         ease: "power2.out",
-        delay: 0.85,
+        delay: 0.55,
       },
     );
+
     gsap.fromTo(
       ".hero-cta",
-      { y: 20, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.6, ease: "power2.out", delay: 1.1 },
+      { opacity: 0 },
+      { opacity: 1, duration: 0.4, ease: "power2.out", delay: 0.7 },
     );
   });
 
