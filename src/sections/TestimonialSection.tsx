@@ -113,7 +113,6 @@ const TestimonialSection = () => {
           {testimonials[0] && (
             <div className="break-inside-avoid group">
               <GlowCard
-                testimonial={testimonials[0]}
                 index={0}
                 className="testimonial-item"
               >
@@ -169,7 +168,6 @@ const TestimonialSection = () => {
               className="break-inside-avoid group"
             >
               <GlowCard
-                testimonial={testimonial}
                 index={index + 1}
                 className="testimonial-item"
               >
