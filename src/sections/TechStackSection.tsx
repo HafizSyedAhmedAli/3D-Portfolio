@@ -1,6 +1,6 @@
+import DynamicTechStackAnimator from "@/components/DynamicTechStackAnimator";
+import DynamicTechStackGrid from "@/components/DynamicTechStackGrid";
 import TitleHeader from "../components/TitleHeader";
-import TechStackAnimator from "@/components/animators/TechStackAnimator";
-import TechStackGrid from "@/components/TechStackGrid";
 
 const TechStackSection = () => {
   return (
@@ -9,8 +9,8 @@ const TechStackSection = () => {
       className="w-full section-padding md:px-20 px-5 scroll-mt-28"
     >
       <TitleHeader title="My Core Tech Stack" sub="⚡ What I Build With" />
-      <TechStackAnimator />
-      <TechStackGrid />
+      <DynamicTechStackAnimator />
+      <DynamicTechStackGrid />
     </section>
   );
 };

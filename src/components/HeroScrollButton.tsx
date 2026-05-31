@@ -6,6 +6,7 @@ const HeroScrollButton = () => {
       onClick={() =>
         document.getElementById("work")?.scrollIntoView({ behavior: "smooth" })
       }
+      aria-label="Scroll to work section"
       className="group relative flex items-center gap-3 px-6 py-3.5 md:px-7 md:py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 transition-all duration-300 font-semibold text-black text-sm tracking-wide overflow-hidden cursor-pointer"
     >
       <span className="relative z-10">See My Work</span>

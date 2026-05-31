@@ -1,16 +1,16 @@
 "use client";
 
+import DynamicContactExperience from "@/components/DynamicContactExperience";
 import FloatInput from "@/components/FloatInput";
 import LazyCanvas from "@/components/LazyCanvas";
-import ContactExperience from "@/components/Models/TechLogos/contact/ContactExperience";
 import { availability } from "@/constants";
 import emailjs from "@emailjs/browser";
 import {
-    useEffect,
-    useRef,
-    useState,
-    type ChangeEvent,
-    type FormEvent,
+  useEffect,
+  useRef,
+  useState,
+  type ChangeEvent,
+  type FormEvent,
 } from "react";
 import TitleHeader from "../components/TitleHeader";
 
@@ -111,6 +111,8 @@ const ContactSection = () => {
             ref={formRef}
             onSubmit={handleSubmit}
             className="relative p-8 flex flex-col gap-5"
+            noValidate
+            aria-label="Contact form"
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
               <FloatInput
@@ -146,17 +148,21 @@ const ContactSection = () => {
             />
 
             {feedback && (
-              <div
+              <output
+                role="status"
+                aria-live="polite"
                 className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-mono
-                ${
-                  feedback.type === "success"
-                    ? "bg-emerald-500/10 border border-emerald-500/30 text-emerald-300"
-                    : "bg-red-500/10 border border-red-500/30 text-red-300"
-                }`}
+    ${
+      feedback.type === "success"
+        ? "bg-emerald-500/10 border border-emerald-500/30 text-emerald-300"
+        : "bg-red-500/10 border border-red-500/30 text-red-300"
+    }`}
               >
-                <span>{feedback.type === "success" ? "✓" : "✗"}</span>
+                <span aria-hidden="true">
+                  {feedback.type === "success" ? "✓" : "✗"}
+                </span>
                 <span>{feedback.message}</span>
-              </div>
+              </output>
             )}
 
             <div className="flex items-center justify-between pt-2 border-t border-white/6 mt-1">
@@ -201,7 +207,7 @@ const ContactSection = () => {
           {/* 3D orb */}
           <div className="rounded-2xl border border-white/8 bg-white/2 overflow-hidden cursor-grab active:cursor-grabbing h-72">
             <LazyCanvas className="w-full h-full">
-              <ContactExperience />
+              <DynamicContactExperience />
             </LazyCanvas>
           </div>
 
@@ -212,7 +218,7 @@ const ContactSection = () => {
             </p>
             {availability.map(({ label, value, dot }) => (
               <div key={label} className="flex items-center justify-between">
-                <span className="text-sm text-white/40">{label}</span>
+                <span className="text-sm text-white/50">{label}</span>
                 <span
                   className={`text-sm font-medium flex items-center gap-2
                   ${dot ? "text-emerald-400" : "text-white/75"}`}

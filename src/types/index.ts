@@ -109,9 +109,9 @@ export type SiteMetadata = {
       index: boolean;
       follow: boolean;
       "max-snippet": number;
-      "max-image-preview": "large";
+      "max-image-preview": "none" | "standard" | "large";
       "max-video-preview": number;
     };
   };
-  canonical: string
+  canonical: string;
 };
