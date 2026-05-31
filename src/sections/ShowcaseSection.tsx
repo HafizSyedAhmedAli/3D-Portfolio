@@ -1,8 +1,7 @@
-import Image from "next/image";
-import { projects } from "@/constants";
 import TitleHeader from "@/components/TitleHeader";
 import ShowcaseAnimator from "@/components/animators/ShowcaseAnimator";
-import Link from "next/link";
+import { projects } from "@/constants";
+import Image from "next/image";
 
 const ArrowIcon = () => (
   <svg

@@ -327,7 +327,28 @@ const siteMetadata: SiteMetadata = {
   ogImage: "/opengraph-image.png",
   ogImageAlt: "Ahmed Ali | Full-Stack Developer",
   twitterCard: "summary_large_image" as const,
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large" as const,
+      "max-video-preview": -1,
+    },
+  },
+  canonical: "https://syedahmedali.com",
 };
+
+const techChips: string[] = [
+  "Next.js",
+  "Node.js",
+  "PostgreSQL",
+  "Redis",
+  "TypeScript",
+];
 
 export {
   abilities,
@@ -344,4 +365,5 @@ export {
   techStackIcons,
   techTags,
   testimonials,
+  techChips,
 };

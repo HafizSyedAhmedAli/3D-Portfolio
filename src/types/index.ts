@@ -101,4 +101,17 @@ export type SiteMetadata = {
   ogImage: string;
   ogImageAlt: string;
   twitterCard: "summary" | "summary_large_image" | "app" | "player";
+  robots: {
+    index: boolean;
+    follow: boolean;
+    nocache: boolean;
+    googleBot: {
+      index: boolean;
+      follow: boolean;
+      "max-snippet": number;
+      "max-image-preview": "large";
+      "max-video-preview": number;
+    };
+  };
+  canonical: string
 };

@@ -1,75 +1,14 @@
-"use client";
-
-import { useGSAP } from "@gsap/react";
-import { gsap } from "gsap";
 import Image from "next/image";
-import { useEffect, useState } from "react";
-import HeroSectionExperienceModel from "../components/HeroSectionModels/HeroSectionExperienceModel";
-
-const techChips = ["Next.js", "Node.js", "PostgreSQL", "Redis", "TypeScript"];
+import HeroScrollButton from "@/components/HeroScrollButton";
+import HeroModel from "@/components/HeroModel";
+import HeroAnimator from "@/components/animators/HeroAnimator";
+import { techChips } from "@/constants";
 
 const HeroSection = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(max-width: 768px)");
-    setIsMobile(mq.matches);
-    const handler = (e: MediaQueryListEvent) => setIsMobile(e.matches);
-    mq.addEventListener("change", handler);
-    return () => mq.removeEventListener("change", handler);
-  }, []);
-
-  useGSAP(() => {
-    gsap.fromTo(
-      ".hero-badge-pill",
-      { y: -16, opacity: 0 },
-      { y: 0, opacity: 1, duration: 0.5, ease: "power2.out" },
-    );
-
-    gsap.fromTo(
-      ".hero-headline > *",
-      { y: 24, opacity: 0 },
-      {
-        y: 0,
-        opacity: 1,
-        stagger: 0.1,
-        duration: 0.6,
-        ease: "power2.out",
-        delay: 0.15,
-      },
-    );
-
-    gsap.fromTo(
-      ".hero-sub",
-      { opacity: 0 },
-      { opacity: 1, duration: 0.5, ease: "power2.out", delay: 0.4 },
-    );
-
-    gsap.fromTo(
-      ".hero-chips > *",
-      { opacity: 0 },
-      {
-        opacity: 1,
-        stagger: 0.06,
-        duration: 0.4,
-        ease: "power2.out",
-        delay: 0.55,
-      },
-    );
-
-    gsap.fromTo(
-      ".hero-cta",
-      { opacity: 0 },
-      { opacity: 1, duration: 0.4, ease: "power2.out", delay: 0.7 },
-    );
-  });
-
-  const handleScrollToWork = () => {
-    document.getElementById("work")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section id="hero" className="relative overflow-hidden min-h-screen">
+      <HeroAnimator />
+
       {/* Dot grid */}
       <div
         className="absolute inset-0 z-0"
@@ -84,7 +23,6 @@ const HeroSection = () => {
       </div>
 
       <div className="hero-layout">
-        {/* ── Left: text content ── */}
         <header className="flex flex-col justify-center md:w-full w-full md:px-20 px-5 relative z-20 pointer-events-none">
           <div className="flex flex-col gap-5 md:gap-6">
             <div className="hero-badge-pill flex items-center gap-2 w-fit px-4 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 backdrop-blur-sm">
@@ -129,27 +67,7 @@ const HeroSection = () => {
             </div>
 
             <div className="hero-cta flex items-center gap-3 mt-1 pointer-events-auto flex-wrap">
-              <button
-                onClick={handleScrollToWork}
-                className="group relative flex items-center gap-3 px-6 py-3.5 md:px-7 md:py-4 rounded-xl bg-emerald-500 hover:bg-emerald-400 transition-all duration-300 font-semibold text-black text-sm tracking-wide overflow-hidden cursor-pointer"
-              >
-                <span className="relative z-10">See My Work</span>
-                <svg
-                  className="relative z-10 size-4 group-hover:translate-x-1 transition-transform duration-300"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2.5}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-                <span className="absolute inset-0 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-500 bg-gradient-to-r from-transparent via-white/20 to-transparent skew-x-12" />
-              </button>
-
+              <HeroScrollButton />
               <a
                 href="https://github.com/HafizSyedAhmedAli"
                 target="_blank"
@@ -169,30 +87,12 @@ const HeroSection = () => {
           </div>
         </header>
 
-        {/* ── Desktop: absolutely positioned on the right ── */}
-        {!isMobile && (
-          <figure>
-            <div className="absolute top-0 right-0 w-[55%] h-full rounded-l-3xl overflow-hidden cursor-grab active:cursor-grabbing">
-              <HeroSectionExperienceModel />
-            </div>
-          </figure>
-        )}
+        {/* Desktop model — absolutely positioned, lives here so it doesn't affect flow */}
+        <HeroModel desktop />
       </div>
 
-      {/*
-        Mobile: rendered below the text as a full-width strip.
-        No outer Suspense needed — HeroSectionExperienceModel now
-        handles its own Suspense inside the Canvas where it belongs.
-        h-72 gives the Canvas a real height to fill — without an
-        explicit height the Canvas collapses to 0px and shows nothing.
-      */}
-      {isMobile && (
-        <figure className="w-full">
-          <div className="w-full h-64 cursor-grab active:cursor-grabbing">
-            <HeroSectionExperienceModel />
-          </div>
-        </figure>
-      )}
+      {/* Mobile model — in normal flow, appears below the hero-layout */}
+      <HeroModel mobile />
     </section>
   );
 };

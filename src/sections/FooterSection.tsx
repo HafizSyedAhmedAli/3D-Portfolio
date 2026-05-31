@@ -2,16 +2,15 @@ import Image from "next/image";
 import { socialImgs } from "../constants";
 
 const SOCIAL_LABELS: Record<string, string> = {
-  wa:       "WhatsApp",
-  email:    "Email",
+  wa: "WhatsApp",
+  email: "Email",
   linkedin: "LinkedIn",
-  github:   "GitHub",
+  github: "GitHub",
 };
 
 const FooterSection = () => {
   return (
     <footer className="w-full md:px-20 px-5 pt-20 pb-10 relative overflow-hidden">
-
       {/* background glow */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-150 h-75 bg-emerald-500/5 rounded-full blur-3xl pointer-events-none" />
 
@@ -26,18 +25,21 @@ const FooterSection = () => {
 
       {/* signature centerpiece */}
       <div className="flex flex-col items-center gap-6 relative z-10">
-
         {/* big name */}
         <div className="relative inline-block">
-  <span className="absolute top-1/2 -translate-y-1/2 -left-6 text-emerald-400/30 text-3xl font-mono">[</span>
-  <span className="absolute top-1/2 -translate-y-1/2 -right-6 text-emerald-400/30 text-3xl font-mono">]</span>
+          <span className="absolute top-1/2 -translate-y-1/2 -left-6 text-emerald-400/30 text-3xl font-mono">
+            [
+          </span>
+          <span className="absolute top-1/2 -translate-y-1/2 -right-6 text-emerald-400/30 text-3xl font-mono">
+            ]
+          </span>
 
-  <h2 className="text-5xl md:text-7xl font-bold tracking-tight text-center">
-    <span className="text-white">Ahmed</span>
-    <span className="text-white/10 mx-3">|</span>
-    <span className="text-emerald-400">Ali</span>
-  </h2>
-</div>
+          <h2 className="text-5xl md:text-7xl font-bold tracking-tight text-center">
+            <span className="text-white">Ahmed</span>
+            <span className="text-white/10 mx-3">|</span>
+            <span className="text-emerald-400">Ali</span>
+          </h2>
+        </div>
 
         {/* tagline with decorative dashes */}
         <div className="flex items-center gap-3">
@@ -85,7 +87,6 @@ const FooterSection = () => {
             &copy; {new Date().getFullYear()} Ahmed | Ali. All rights reserved.
           </p>
         </div>
-
       </div>
     </footer>
   );

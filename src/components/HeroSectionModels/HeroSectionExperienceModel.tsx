@@ -6,13 +6,32 @@ import { Canvas } from "@react-three/fiber";
 import { EffectComposer, SelectiveBloom } from "@react-three/postprocessing";
 import { BlendFunction } from "postprocessing";
 import { useMediaQuery } from "react-responsive";
-import { Suspense, useState } from "react";
+import { Suspense, useState, useEffect } from "react";
 import * as THREE from "three";
 import HeroSectionLights from "./HeroSectionLights";
 import { Room } from "./Room";
 import { CanvasLoader } from "../Models/TechLogos/TechIcon";
 
+const usePatchPointerCapture = () => {
+  useEffect(() => {
+    const original = Element.prototype.releasePointerCapture;
+    Element.prototype.releasePointerCapture = function (pointerId: number) {
+      try {
+        original.call(this, pointerId);
+      } catch {
+        // three-stdlib OrbitControls calls this with an already-released
+        // pointer ID when the finger leaves the canvas — safe to ignore
+      }
+    };
+    return () => {
+      Element.prototype.releasePointerCapture = original;
+    };
+  }, []);
+};
+
 const HeroSectionExperienceModel = () => {
+  usePatchPointerCapture();
+
   const isMobile = useMediaQuery(
     { query: "(max-width: 768px)" },
     undefined,
@@ -27,11 +46,6 @@ const HeroSectionExperienceModel = () => {
 
   const skipBloom = isMobile || isTablet;
 
-  /*
-    useState instead of useRef — when Room mounts and calls setScreensMesh,
-    React re-renders this component and SelectiveBloom receives the real mesh.
-    useRef never triggers a re-render so SelectiveBloom always saw null.
-  */
   const [screensMesh, setScreensMesh] = useState<THREE.Mesh | null>(null);
 
   return (
@@ -45,10 +59,6 @@ const HeroSectionExperienceModel = () => {
       dpr={[1, 2]}
       style={{ width: "100%", height: "100%" }}
     >
-      {/*
-        Only mount SelectiveBloom once screensMesh is non-null —
-        if selection is null Three.js crashes reading .layers on it
-      */}
       {!skipBloom && screensMesh && (
         <EffectComposer>
           <SelectiveBloom
@@ -63,7 +73,7 @@ const HeroSectionExperienceModel = () => {
 
       <OrbitControls
         enablePan={false}
-        enableZoom={!isTablet}
+        enableZoom={true}
         maxDistance={22}
         minDistance={10}
         minPolarAngle={Math.PI / 5}
@@ -84,8 +94,11 @@ const HeroSectionExperienceModel = () => {
       </mesh>
 
       <Suspense fallback={<CanvasLoader />}>
-        <group scale={1.8} position={[1, -3.3, 0]} rotation={[0, Math.PI / 9, 0]}>
-          {/* onMount fires once the mesh is in the scene — sets state, triggers re-render */}
+        <group
+          scale={1.8}
+          position={[1, -3.3, 0]}
+          rotation={[0, Math.PI / 9, 0]}
+        >
           <Room onScreensMounted={setScreensMesh} />
         </group>
       </Suspense>
