@@ -43,31 +43,6 @@ const AustinContact = () => {
             LinkedIn
           </a>
         </div>
-
-        <div className="inline-flex flex-col items-start gap-3 rounded-2xl border border-white/8 bg-white/2 p-6 text-left">
-          {austinAvailability.map(({ label, value, dot }) => (
-            <div
-              key={label}
-              className="flex items-center justify-between gap-16 w-full"
-              aria-label="Current Availability"
-            >
-              <span className="text-sm text-white/50">{label}</span>
-              <span
-                className={`text-sm font-medium flex items-center gap-2 ${
-                  dot ? "text-emerald-400" : "text-white/75"
-                }`}
-              >
-                {dot && (
-                  <span className="relative flex size-1.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                    <span className="relative inline-flex rounded-full size-1.5 bg-emerald-400" />
-                  </span>
-                )}
-                {value}
-              </span>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   );

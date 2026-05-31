@@ -1,4 +1,5 @@
 import { techStackIcons } from "@/constants";
+import { services } from "@/constants/austin";
 
 export type NavLink = {
   name: string;
@@ -168,3 +169,5 @@ export type CityPageCityLink = {
 };
 
 export type CityPageAvailability = Availability;
+
+export type Service = (typeof services)[number];

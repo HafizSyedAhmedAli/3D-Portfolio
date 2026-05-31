@@ -12,11 +12,6 @@ import type {
 
 export const AUSTIN_KEYWORD = "web developer austin tx" as const;
 
-export const austinStats: CityPageStat[] = [
-  { value: "3+", label: "Live Projects" },
-  { value: "100%", label: "On-Time Delivery" },
-];
-
 export const austinSkillTags: CityPageSkillTag[] = [
   "Next.js",
   "Node.js",
@@ -156,6 +151,28 @@ export const austinCityLinks: CityPageCityLink[] = [
 export const austinAvailability: CityPageAvailability[] = [
   { label: "Status", value: "Open to work", dot: true },
   { label: "Response time", value: "Within 24 hours", dot: false },
-  { label: "Timezone", value: "PKT — UTC +5", dot: false },
+  { label: "Consultation", value: "Free 30 min call", dot: false },
   { label: "Availability", value: "Immediate start", dot: false },
 ];
+
+export const bulletPoints: string[] = [
+  "Production-ready Next.js, Node.js & PostgreSQL apps",
+  "AI-powered SaaS platforms with real users",
+  "Clean architecture — controller, service, repository layers",
+  "On-time delivery with transparent communication",
+];
+
+export const austinStats: CityPageStat[] = [
+  { label: "Response Time", value: "< 24hrs" },
+  { label: "Projects Live", value: "3+" },
+  { label: "On-Time Rate", value: "100%" },
+];
+
+export const services = [
+  "Full-Stack Development",
+  "Web Development",
+  "AI-Powered SaaS",
+  "API Engineering",
+  "Database Architecture",
+  "Stripe & Subscriptions",
+] as const;
