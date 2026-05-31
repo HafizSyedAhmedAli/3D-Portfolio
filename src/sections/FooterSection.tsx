@@ -51,7 +51,9 @@ const FooterSection = () => {
         </div>
 
         <a
-          href="/"
+          href="https://medium.com/@hafizsyedahmedali"
+          target="_blank"
+          rel="noopener noreferrer"
           className="text-white/30 hover:text-emerald-400 text-xs font-mono tracking-wide transition-colors duration-300"
         >
           → Visit my Blog
