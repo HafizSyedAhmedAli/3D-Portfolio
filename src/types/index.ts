@@ -115,3 +115,60 @@ export type SiteMetadata = {
   };
   canonical: string;
 };
+
+// ── City Landing Page Types ──────────────────────────────────────────────────
+
+export type CityPageProject = {
+  title: string;
+  tags: string[];
+  desc: string;
+  live: string;
+  gh: string;
+};
+
+export type CityPageTestimonial = {
+  name: string;
+  handle: string;
+  review: string;
+  service: string;
+};
+
+export type CityPageStat = {
+  value: string;
+  label: string;
+};
+
+export type CityPageSkillTag =
+  | "Next.js"
+  | "Node.js"
+  | "PostgreSQL"
+  | "Redis"
+  | "TypeScript"
+  | "AI/SaaS";
+
+export type CityPageAbilityCard = {
+  icon: string;
+  title: string;
+  desc: string;
+};
+
+export type CityPageWhyCard = {
+  title: string;
+  desc: string;
+};
+
+export type CityPageService = {
+  title: string;
+  desc: string;
+};
+
+export type CityPageCityLink = {
+  city: string;
+  href: string;
+};
+
+export type CityPageAvailability = {
+  label: string;
+  value: string;
+  dot: boolean;
+};
