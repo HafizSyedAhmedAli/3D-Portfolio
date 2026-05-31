@@ -72,7 +72,8 @@ const TestimonialSection = () => {
                     {testimonials[0].logo && (
                       <Image
                         src={testimonials[0].logo.src}
-                        alt={testimonials[0].logo.alt}
+                        alt=""
+                        aria-hidden="true"
                         width={testimonials[0].logo.width}
                         height={testimonials[0].logo.height}
                       />
@@ -123,7 +124,8 @@ const TestimonialSection = () => {
                     {testimonial.logo && (
                       <Image
                         src={testimonial.logo.src}
-                        alt={testimonial.logo.alt}
+                        alt=""
+                        aria-hidden="true"
                         width={testimonial.logo.width}
                         height={testimonial.logo.height}
                       />

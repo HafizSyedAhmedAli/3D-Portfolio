@@ -143,7 +143,7 @@ const ShowcaseSection = () => {
                   alt={`Screenshot of ${project.title}`}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="group-hover:scale-105 transition-transform duration-700"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <div
                   className="absolute inset-0 bg-linear-to-t from-black/70 to-transparent"
