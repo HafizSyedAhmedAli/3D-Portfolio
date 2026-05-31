@@ -167,8 +167,4 @@ export type CityPageCityLink = {
   href: string;
 };
 
-export type CityPageAvailability = {
-  label: string;
-  value: string;
-  dot: boolean;
-};
+export type CityPageAvailability = Availability;

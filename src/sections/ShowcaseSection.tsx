@@ -77,7 +77,7 @@ const ShowcaseSection = () => {
           <div className="xl:w-3/5 h-64 md:h-96 xl:h-auto relative overflow-hidden">
             <Image
               src={featured.img}
-              alt={`Flacron Gamezone live football platform built with Next.js and Redis`}
+              alt={`Flacron Gamezone live football platform built with Next.js, Express.js, PostgreSQL, Redis`}
               fill
               sizes="(max-width: 768px) 100vw, 60vw"
               className="object-cover group-hover:scale-105 transition-transform duration-700"

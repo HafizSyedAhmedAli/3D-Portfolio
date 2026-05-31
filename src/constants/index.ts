@@ -319,7 +319,7 @@ const logoIconsList: LogoIcon[] = [
 ];
 
 const siteMetadata: SiteMetadata = {
-  title: "Ahmed Ali | Full-Stack Developer — Next.js, Node.js, Pakistan",
+  title: "Ahmed Ali | Full-Stack Dev — Next.js, Node.js, Pakistan",
   description:
     "Full-Stack Developer shipping AI-powered products from database schema to deployed UI. Based in Karachi, Pakistan.",
   url: "https://syedahmedali.com",

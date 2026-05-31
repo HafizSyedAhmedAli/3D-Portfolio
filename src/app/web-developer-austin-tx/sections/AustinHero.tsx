@@ -27,16 +27,16 @@ const AustinHero = () => {
 
           {/* H1 — exact keyword here, this is the most important place */}
           <h1 className="text-4xl md:text-6xl font-bold leading-[1.1] tracking-tight mb-6">
-            <span className="text-emerald-400">Web Developer Austin TX</span>
-            {" "}– Full-Stack & AI-Powered Apps
+            <span className="text-emerald-400">Web Developer Austin TX</span> –
+            Full-Stack & AI-Powered Apps
           </h1>
 
           <p className="text-white/60 text-lg leading-relaxed mb-8 max-w-xl">
             Hi, I&apos;m Ahmed Ali — a{" "}
             <strong className="text-white">web developer in austin tx,</strong>{" "}
-            clients trust for production-ready Next.js, Node.js, PostgreSQL,
-            and Redis applications. From SaaS platforms to AI-powered tools,
-            I ship clean code that works.
+            clients trust for production-ready Next.js, Node.js, PostgreSQL, and
+            Redis applications. From SaaS platforms to AI-powered tools, I ship
+            clean code that works.
           </p>
 
           <div className="flex flex-wrap gap-6 mb-8">
@@ -68,9 +68,12 @@ const AustinHero = () => {
           <div className="rounded-2xl border border-white/10 bg-white/2 p-8 backdrop-blur-sm">
             <div className="flex items-center gap-5 mb-6">
               <div className="size-20 rounded-2xl border border-emerald-500/30 bg-emerald-500/10 flex items-center justify-center overflow-hidden flex-shrink-0">
-                {/* swap with <Image src="/images/your-photo.jpg" ... /> */}
-                {/* <span className="text-3xl font-bold text-emerald-400">AA</span> */}
-                <Image src="/images/my-photo.jpeg" alt="My Photo" width={273} height={313} />
+                <Image
+                  src="/images/my-photo.jpeg"
+                  alt="Ahmed Ali, Full-Stack Web Developer in Austin TX"
+                  width={273}
+                  height={313}
+                />
               </div>
               <div>
                 <p className="text-xl font-bold text-white">Ahmed Ali</p>
@@ -79,7 +82,10 @@ const AustinHero = () => {
                 </p>
                 <div className="flex gap-1 mt-1">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <span key={i} className="size-2 rounded-full bg-emerald-400" />
+                    <span
+                      key={i}
+                      className="size-2 rounded-full bg-emerald-400"
+                    />
                   ))}
                 </div>
               </div>

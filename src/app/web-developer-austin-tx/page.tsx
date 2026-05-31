@@ -9,6 +9,7 @@ import AustinCityContent from "./sections/AustinCityContent";
 import AustinContact from "./sections/AustinContact";
 import AustinFooter from "./sections/AustinFooter";
 import AustinNavbar from "./sections/AustinNavbar";
+import Script from "next/script";
 
 export const metadata: Metadata = {
   title: "Web Developer Austin TX – Full-Stack & AI-Powered Apps | Ahmed Ali",
@@ -30,6 +31,21 @@ export const metadata: Metadata = {
       "Looking for a web developer austin tx? Ahmed Ali builds production-ready Next.js, Node.js & AI apps. Fast delivery, real results.",
     url: "https://syedahmedali.com/web-developer-austin-tx",
     type: "website",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Web Developer Austin TX – Ahmed Ali",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Web Developer Austin TX – Full-Stack & AI-Powered Apps | Ahmed Ali",
+    description:
+      "Looking for a web developer in austin tx? Ahmed Ali builds production-ready Next.js, Node.js & AI apps. Fast delivery, real results.",
+    images: ["/opengraph-image.png"],
   },
   alternates: {
     canonical: "https://syedahmedali.com/web-developer-austin-tx",
@@ -59,7 +75,8 @@ const structuredData = {
 export default function WebDeveloperAustinTX() {
   return (
     <>
-      <script
+      <Script
+        id="structured-data"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />

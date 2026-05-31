@@ -12,9 +12,9 @@ const AustinTestimonials = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {austinTestimonials.map((t, i) => (
+          {austinTestimonials.map((t) => (
             <div
-              key={i}
+              key={`${t.name}-${t.handle}`}
               className="rounded-2xl border border-white/8 bg-white/2 p-8"
             >
               <div className="flex gap-1 mb-4">
@@ -30,7 +30,7 @@ const AustinTestimonials = () => {
               </blockquote>
               <div className="flex items-center gap-3 pt-4 border-t border-white/5">
                 <div className="size-10 rounded-full bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold text-sm flex-shrink-0">
-                  {t.name[0]}
+                  {t.name[0] || "?"}
                 </div>
                 <div>
                   <p className="text-white font-semibold text-sm">{t.name}</p>

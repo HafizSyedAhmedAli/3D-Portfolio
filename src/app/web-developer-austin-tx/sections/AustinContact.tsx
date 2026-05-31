@@ -49,6 +49,7 @@ const AustinContact = () => {
             <div
               key={label}
               className="flex items-center justify-between gap-16 w-full"
+              aria-label="Current Availability"
             >
               <span className="text-sm text-white/50">{label}</span>
               <span

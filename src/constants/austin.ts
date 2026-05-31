@@ -14,7 +14,6 @@ export const AUSTIN_KEYWORD = "web developer austin tx" as const;
 
 export const austinStats: CityPageStat[] = [
   { value: "3+", label: "Live Projects" },
-  { value: "$38", label: "Avg. CPC Value" },
   { value: "100%", label: "On-Time Delivery" },
 ];
 
