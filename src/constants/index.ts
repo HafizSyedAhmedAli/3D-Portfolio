@@ -63,69 +63,48 @@ const abilities: Ability[] = [
   },
 ];
 
-// const techStackImgs: TechStackImg[] = [
-//   {
-//     name: "React Developer",
-//     imgPath: "/images/logos/react.png",
-//     width: 141,
-//     height: 129,
-//   },
-//   {
-//     name: "Python Developer",
-//     imgPath: "/images/logos/python.svg",
-//     width: 111,
-//     height: 135,
-//   },
-//   {
-//     name: "Backend Developer",
-//     imgPath: "/images/logos/node.png",
-//     width: 139,
-//     height: 145,
-//   },
-//   {
-//     name: "Interactive Developer",
-//     imgPath: "/images/logos/three.png",
-//     width: 129,
-//     height: 129,
-//   },
-//   {
-//     name: "Project Manager",
-//     imgPath: "/images/logos/git.svg",
-//     width: 155,
-//     height: 155,
-//   },
-// ];
-
 const techStackIcons: readonly TechStackIcon[] = [
   {
     name: "React",
     modelPath: "/models/react_logo-transformed.glb",
     scale: 1,
     rotation: [0, 0, 0],
+    imgPath: "/images/logos/react.png",
   },
   {
     name: "Next.js",
     modelPath: "/models/nextjs-icon-transformed.glb",
     scale: 0.3,
     rotation: [0, 0, 0],
+    imgPath: "/images/logos/nextjs.png",
   },
   {
     name: "Node.js",
     modelPath: "/models/node-transformed.glb",
     scale: 5,
     rotation: [0, -Math.PI / 2, 0],
+    imgPath: "/images/logos/node.png",
   },
   {
     name: "PostgreSQL",
     modelPath: "/models/postgresql-transformed.glb",
     scale: 3,
     rotation: [0, 0, 0],
+    imgPath: "/images/logos/postgresql.svg",
   },
   {
     name: "MongoDB",
     modelPath: "/models/mongodb-icon-transformed.glb",
     scale: 0.4,
     rotation: [0, 0, 0],
+    imgPath: "/images/logos/mongodb.png",
+  },
+  {
+    name: "Redis",
+    modelPath: "",
+    scale: 0.4,
+    rotation: [0, 0, 0],
+    imgPath: "/images/logos/redis.svg",
   },
 ] as const;
 
@@ -135,6 +114,7 @@ const techMeta: Record<TechName, { label: string; color: string }> = {
   "Node.js": { label: "JavaScript Runtime", color: "text-green-400" },
   PostgreSQL: { label: "Relational DB", color: "text-blue-400" },
   MongoDB: { label: "Document DB", color: "text-emerald-400" },
+  Redis: { label: "Cache Layer", color: "text-red-400" },
 };
 
 const expCards: ExpCard[] = [
@@ -355,7 +335,6 @@ export {
   counterItems,
   expCards,
   logoIconsList,
-  // techStackImgs,
   navLinks,
   performanceMetrics,
   projects,

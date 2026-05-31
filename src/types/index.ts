@@ -16,6 +16,7 @@ export type TechStackIcon = {
   modelPath: string;
   scale: number;
   rotation: readonly [number, number, number];
+  imgPath: string;
 };
 
 export type ExpCard = {
