@@ -1,4 +1,11 @@
-import ScrollAnimator from "./ScrollAnimator";
+"use client";
+
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 type Props = {
   title: string;
@@ -6,18 +13,45 @@ type Props = {
 };
 
 const TitleHeader = ({ title, sub }: Props) => {
+  const container = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      gsap.fromTo(
+        ".title-sub",
+        { opacity: 0, y: 20 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.8,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: container.current,
+            start: "top 85%",
+          },
+        },
+      );
+
+      gsap.fromTo(
+        ".title-heading",
+        { opacity: 0, y: 40 },
+        {
+          opacity: 1,
+          y: 0,
+          duration: 0.9,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: container.current,
+            start: "top 85%",
+          },
+        },
+      );
+    },
+    { scope: container },
+  );
+
   return (
-    <div className="mb-12">
-      <ScrollAnimator
-        selector=".title-sub"
-        from={{ opacity: 0, y: 20 }}
-        to={{ opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }}
-      />
-      <ScrollAnimator
-        selector=".title-heading"
-        from={{ opacity: 0, y: 40 }}
-        to={{ opacity: 1, y: 0, duration: 0.9, ease: "power3.out" }}
-      />
+    <div ref={container} className="mb-12">
       <p className="title-sub text-emerald-400 font-mono text-sm tracking-widest uppercase mb-3">
         {sub}
       </p>

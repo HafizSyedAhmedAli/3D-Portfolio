@@ -10,6 +10,9 @@ const monaSans = Mona_Sans({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: "wdrtvf8KCbZvz9YqzCIzPBnz0zXXH7gw8p8s99u9BBs"
+  },
   metadataBase: new URL(meta.url),
   title: meta.title,
   description: meta.description,
