@@ -97,8 +97,8 @@ const AustinContact = () => {
 
   return (
     <section
-      id="contact-austin"
-      className="px-5 md:px-20 py-16 md:py-20 border-t border-white/5"
+      id="appointment-austin"
+      className="px-5 md:px-20 py-16 md:py-20 border-t border-white/5 scroll-mt-10"
     >
       <div className="max-w-7xl mx-auto">
         <p className="text-emerald-400 font-mono text-xs md:text-sm tracking-widest uppercase mb-3">
@@ -130,15 +130,13 @@ const AustinContact = () => {
               src="https://calendly.com/hafizsyedahmedali12/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=09090b&text_color=777&primary_color=22c55e"
               width="100%"
               height="600"
-              style={{ minHeight: "500px" }}
-              frameBorder="0"
               title="Schedule a free consultation with Ahmed Ali"
               className="w-full"
             />
           </div>
         </div>
 
-        <div className="grid grid-cols-1 xl:grid-cols-[1fr_360px] gap-6 md:gap-8 items-start">
+        <div id="contact-austin" className="grid grid-cols-1 xl:grid-cols-[1fr_360px] gap-6 md:gap-8 items-start scroll-mt-30">
           {/* Form */}
           <div className="relative rounded-2xl border border-white/8 bg-white/2 overflow-hidden">
             <div

@@ -9,6 +9,7 @@ import type {
   CityPageWhyCard,
   CityPageSkillTag,
   CityPageHighlight,
+  AustinNavLink,
 } from "@/types";
 
 export const AUSTIN_KEYWORD = "web developer austin tx" as const;
@@ -228,4 +229,13 @@ export const austinHighlights: CityPageHighlight[] = [
   { label: "Specialty", value: "Full-Stack & AI-Powered Apps" },
   { label: "Delivery", value: "Production-ready, every time" },
   { label: "Based in", value: "Pakistan — serving Austin TX remotely" },
+];
+
+export const austinNavLinks: AustinNavLink[] = [
+  { name: "About", href: "#about-austin" },
+  { name: "Projects", href: "#projects-austin" },
+  { name: "Testimonials", href: "#testimonials-austin" },
+  { name: "Why Hire Me", href: "#hire-me-austin" },
+  { name: "Services", href: "#services-austin" },
+  { name: "Book Appointment", href: "#appointment-austin" },
 ];

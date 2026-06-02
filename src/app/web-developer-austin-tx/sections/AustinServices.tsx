@@ -8,7 +8,7 @@ const AustinServices = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="px-5 md:px-20 py-16 md:py-20 border-t border-white/5">
+    <section id="services-austin" className="px-5 md:px-20 py-16 md:py-20 border-t border-white/5 scroll-mt-10">
       <div className="max-w-7xl mx-auto">
         <p className="text-emerald-400 font-mono text-xs md:text-sm tracking-widest uppercase mb-3">
           Services

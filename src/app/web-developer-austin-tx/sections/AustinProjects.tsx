@@ -5,7 +5,7 @@ const AustinProjects = () => {
   return (
     <section
       id="projects-austin"
-      className="px-5 md:px-20 py-16 md:py-20 border-t border-white/5"
+      className="px-5 md:px-20 py-16 md:py-20 border-t border-white/5 scroll-mt-10"
     >
       <div className="max-w-7xl mx-auto">
         <p className="text-emerald-400 font-mono text-xs md:text-sm tracking-widest uppercase mb-3">

@@ -2,7 +2,7 @@ import { austinAbilityCards, austinHighlights } from "@/constants/austin";
 
 const AustinAbout = () => {
   return (
-    <section className="px-5 md:px-20 py-16 md:py-20 border-t border-white/5">
+    <section id="about-austin" className="px-5 md:px-20 py-16 md:py-20 border-t border-white/5 scroll-mt-10">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 xl:grid-cols-2 gap-10 md:gap-16 items-start mb-12 md:mb-16">
           <div>

@@ -167,6 +167,11 @@ export type CityPageService = {
   details: string[];
 };
 
+export type AustinNavLink = {
+  name: string;
+  href: string;
+};
+
 export type CityPageCityLink = {
   city: string;
   href: string;
