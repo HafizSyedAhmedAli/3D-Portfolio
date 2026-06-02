@@ -126,26 +126,62 @@ export const austinServices: CityPageService[] = [
   {
     title: "Full-Stack Web Application Development",
     desc: "End-to-end development using Next.js, Node.js, and PostgreSQL. I build the frontend, backend API, database schema, and deployment pipeline — everything you need to launch.",
+    details: [
+      "Custom SaaS platforms and customer portals",
+      "Internal business tools and dashboards",
+      "Authentication, payments, and role management",
+      "Deployment, monitoring, and maintenance",
+    ],
   },
   {
     title: "AI-Powered SaaS Development",
     desc: "I integrate LLMs, voice agents, and AI chat widgets natively into your web application. Real AI features that genuinely improve your product.",
+    details: [
+      "OpenAI and LLM integrations",
+      "AI chat assistants and copilots",
+      "Document processing and automation",
+      "Voice agents and workflow automation",
+    ],
   },
   {
     title: "API Design & Backend Engineering",
     desc: "RESTful APIs built with Express.js and Node.js, following controller-service-repository architecture. Swagger-documented, Zod-validated, and tested before delivery.",
+    details: [
+      "REST API development",
+      "Authentication and authorization",
+      "Swagger documentation",
+      "Validation and testing pipelines",
+    ],
   },
   {
     title: "Database Architecture & Optimization",
     desc: "PostgreSQL schema design with proper indexing, Redis caching layers for sub-millisecond reads, and query optimization that keeps your app fast as it scales.",
+    details: [
+      "Database schema design",
+      "Query optimization",
+      "Redis caching",
+      "Scalability planning",
+    ],
   },
   {
     title: "E-Commerce & Subscription Platforms",
     desc: "Stripe integration, subscription management, role-based access control, and admin dashboards. I have shipped this stack in production and know where the edge cases are.",
+    details: [
+      "Stripe subscriptions",
+      "Recurring billing",
+      "Customer dashboards",
+      "Admin management systems",
+    ],
   },
   {
     title: "Performance & Technical Audits",
-    desc: "I review your existing codebase, identify bottlenecks, and deliver a prioritized report with actionable fixes — covering API latency, database queries, and frontend bundle size.",
+    desc: "I review your existing codebase, identify bottlenecks, and deliver a prioritized report with actionable fixes.",
+    details: [
+      "Frontend performance reviews",
+      "Database bottleneck analysis",
+      "API latency investigation",
+      "Architecture recommendations",
+    ],
   },
 ];
 

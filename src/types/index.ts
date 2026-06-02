@@ -164,6 +164,7 @@ export type CityPageWhyCard = {
 export type CityPageService = {
   title: string;
   desc: string;
+  details: string[];
 };
 
 export type CityPageCityLink = {
