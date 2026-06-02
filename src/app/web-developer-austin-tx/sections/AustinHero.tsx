@@ -1,6 +1,5 @@
 import AustinHeroActions from "@/components/AustinHeroActions";
 import AustinProfileCard from "@/components/AustinProfileCard";
-import AustinSocialLinks from "@/components/AustinSocialLinks";
 import { bulletPoints } from "@/constants/austin";
 
 const AustinHero = () => {

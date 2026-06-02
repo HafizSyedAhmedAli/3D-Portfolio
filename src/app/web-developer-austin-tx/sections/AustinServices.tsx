@@ -38,14 +38,17 @@ const AustinServices = () => {
 
                   <button
                     onClick={() => setOpenIndex(isOpen ? null : index)}
+                    aria-expanded={isOpen}
+                    aria-controls={`service-details-${index}`}
                     className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors"
                   >
-                    Learn More
+                    {isOpen ? <span>Show Less</span> : <span>Learn More</span>}
                     <ChevronDown
                       size={16}
                       className={`transition-transform duration-300 ${
                         isOpen ? "rotate-180" : ""
                       }`}
+                      aria-hidden="true"
                     />
                   </button>
                 </div>
@@ -54,6 +57,8 @@ const AustinServices = () => {
                   className={`transition-all duration-300 overflow-hidden ${
                     isOpen ? "max-h-96" : "max-h-0"
                   }`}
+                  id={`service-details-${index}`}
+                  aria-hidden={!isOpen}
                 >
                   <div className="px-6 pb-6 border-t border-white/5 pt-5">
                     <ul className="space-y-3">

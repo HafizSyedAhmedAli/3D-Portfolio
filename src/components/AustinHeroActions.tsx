@@ -14,7 +14,7 @@ const AustinHeroActions = () => {
 
       {/* WhatsApp Action - Tinted Emerald Bordered */}
       <a
-        href={socialImgs[0]?.url || "#"}
+        href={socialImgs[0]?.url}
         target="_blank"
         rel="noreferrer"
         className="w-full flex items-center justify-center gap-2 py-4 rounded-xl border border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/20 hover:border-emerald-400 transition-all duration-300 text-emerald-400 text-sm font-semibold"

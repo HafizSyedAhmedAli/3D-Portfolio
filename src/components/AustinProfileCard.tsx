@@ -7,7 +7,7 @@ const AustinProfileCard = () => {
     <div className="flex flex-col gap-5">
       <div className="relative">
         <Image
-          src="/images/Professional Web Developer Austin TX – Full-Stack & AI-Powered Apps.png"
+          src="/images/professional-web-developer-austin-tx-full-stack-ai-powered-apps.png"
           alt="Ahmed Ali - Professional Web Developer Austin TX"
           width={640}
           height={360}
