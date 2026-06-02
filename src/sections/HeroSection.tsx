@@ -74,7 +74,7 @@ const HeroSection = () => {
                 <li key={chip}>
                   <span className="px-3 py-1.5 text-xs font-mono font-semibold rounded-md border border-white/10 bg-white/5 text-white/70 hover:border-emerald-500/50 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all duration-300 cursor-default inline-block">
                     {chip}
-                  </span>
+                  </span>{" "}
                 </li>
               ))}
             </ul>
