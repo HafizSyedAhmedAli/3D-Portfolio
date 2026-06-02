@@ -1,4 +1,5 @@
 import { austinTestimonials } from "@/constants/austin";
+import Image from "next/image";
 
 const AustinTestimonials = () => {
   return (
@@ -29,9 +30,13 @@ const AustinTestimonials = () => {
                 &ldquo;{t.review}&rdquo;
               </blockquote>
               <div className="flex items-center gap-3 pt-4 border-t border-white/5">
-                <div className="size-10 rounded-full bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-400 font-bold text-sm flex-shrink-0">
-                  {t.name[0] || "?"}
-                </div>
+                <Image
+                  src={t.imgPath}
+                  alt={t.imgAlt}
+                  width={40}
+                  height={40}
+                  className="rounded-full flex-shrink-0"
+                />
                 <div>
                   <p className="text-white font-semibold text-sm">{t.name}</p>
                   <p className="text-emerald-300 text-xs">{t.handle}</p>

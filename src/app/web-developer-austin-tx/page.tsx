@@ -72,7 +72,7 @@ const structuredData = {
   },
 };
 
-export default function WebDeveloperAustinTX() {
+export default function Home() {
   return (
     <>
       <Script

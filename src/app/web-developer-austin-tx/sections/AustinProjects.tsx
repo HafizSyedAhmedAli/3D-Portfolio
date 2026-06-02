@@ -1,4 +1,5 @@
 import { austinProjects } from "@/constants/austin";
+import Image from "next/image";
 
 const AustinProjects = () => {
   return (
@@ -23,39 +24,54 @@ const AustinProjects = () => {
           {austinProjects.map((p) => (
             <article
               key={p.title}
-              className="rounded-2xl border border-white/8 bg-white/2 hover:border-emerald-500/30 transition-all duration-300 p-6 flex flex-col"
+              className="group rounded-2xl border border-white/8 bg-white/2 hover:border-emerald-500/30 transition-all duration-300 flex flex-col overflow-hidden"
             >
-              <h3 className="text-lg font-bold text-white mb-2">{p.title}</h3>
-              <p className="text-white/55 text-sm leading-relaxed mb-4 flex-1">
-                {p.desc}
-              </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {p.tags.map((t) => (
-                  <span
-                    key={t}
-                    className="px-2 py-1 text-xs font-mono rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-400"
-                  >
-                    {t}
-                  </span>
-                ))}
+              {/* Image */}
+              <div className="relative h-52 md:h-64 overflow-hidden">
+                <Image
+                  src={p.img}
+                  alt={`Screenshot of ${p.title}`}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                  className="object-contain group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
               </div>
-              <div className="flex gap-4 pt-3 border-t border-white/5">
-                <a
-                  href={p.live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs text-emerald-400 hover:text-emerald-300 transition-colors"
-                >
-                  Live Demo →
-                </a>
-                <a
-                  href={p.gh}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-xs text-white/40 hover:text-white transition-colors"
-                >
-                  GitHub
-                </a>
+
+              {/* Content */}
+              <div className="p-6 flex flex-col flex-1">
+                <h3 className="text-lg font-bold text-white mb-2">{p.title}</h3>
+                <p className="text-white/55 text-sm leading-relaxed mb-4 flex-1">
+                  {p.desc}
+                </p>
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {p.tags.map((t) => (
+                    <span
+                      key={t}
+                      className="px-2 py-1 text-xs font-mono rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-400"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+                <div className="flex gap-4 pt-3 border-t border-white/5">
+                  <a
+                    href={p.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-emerald-400 hover:text-emerald-300 transition-colors"
+                  >
+                    Live Demo →
+                  </a>
+                  <a
+                    href={p.gh}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-xs text-white/40 hover:text-white transition-colors"
+                  >
+                    GitHub
+                  </a>
+                </div>
               </div>
             </article>
           ))}

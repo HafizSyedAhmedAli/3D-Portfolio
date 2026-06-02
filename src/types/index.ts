@@ -125,6 +125,7 @@ export type CityPageProject = {
   desc: string;
   live: string;
   gh: string;
+  img: string;
 };
 
 export type CityPageTestimonial = {
@@ -132,6 +133,8 @@ export type CityPageTestimonial = {
   handle: string;
   review: string;
   service: string;
+  imgPath: string;
+  imgAlt: string;
 };
 
 export type CityPageStat = {
@@ -171,3 +174,5 @@ export type CityPageCityLink = {
 export type CityPageAvailability = Availability;
 
 export type Service = (typeof services)[number];
+
+export type CityPageHighlight = CityPageStat;

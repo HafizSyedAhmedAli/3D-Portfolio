@@ -8,6 +8,7 @@ import type {
   CityPageTestimonial,
   CityPageWhyCard,
   CityPageSkillTag,
+  CityPageHighlight,
 } from "@/types";
 
 export const AUSTIN_KEYWORD = "web developer austin tx" as const;
@@ -51,6 +52,7 @@ export const austinProjects: CityPageProject[] = [
     desc: "Live football match discovery platform with real-time scores, league standings, Stripe subscriptions, and role-based auth.",
     live: "https://flacrongamezone.com",
     gh: "https://github.com/HafizSyedAhmedAli/Flacron-Gamezone-Local",
+    img: "/images/project1.png",
   },
   {
     title: "Relay",
@@ -58,6 +60,7 @@ export const austinProjects: CityPageProject[] = [
     desc: "Multi-tenant B2B SaaS with embeddable AI chat widgets and real-time voice agents to automate enterprise customer service.",
     live: "https://relay-demo-web.vercel.app",
     gh: "https://github.com/HafizSyedAhmedAli/Relay-Demo",
+    img: "/images/project2.png",
   },
   {
     title: "GreenCart",
@@ -65,6 +68,7 @@ export const austinProjects: CityPageProject[] = [
     desc: "High-performance full-stack marketplace with seamless product discovery, secure checkout, and efficient data sync.",
     live: "https://greencart-frontend-ebon.vercel.app",
     gh: "https://github.com/HafizSyedAhmedAli/Greencart-FULL-STACK",
+    img: "/images/project3.png",
   },
 ];
 
@@ -75,6 +79,9 @@ export const austinTestimonials: CityPageTestimonial[] = [
     review:
       "The platform was delivered on time and worked exactly as we described. Our users can follow live matches smoothly and the subscription system just works. Very professional to work with.",
     service: "Full-Stack Web Development",
+    imgPath: "/images/client1.png",
+    imgAlt:
+      "This image is a testimonial card showcasing positive feedback about a platform’s performance. The highlighted review emphasizes that the platform was delivered on time, worked exactly as promised, and provided smooth live match streaming with a reliable subscription system, underscoring both functionality and professionalism. The testimonial is attributed to Rodrigue Tchitaka with his social media handle included, which adds authenticity and credibility.",
   },
   {
     name: "Ayza Noor",
@@ -82,6 +89,9 @@ export const austinTestimonials: CityPageTestimonial[] = [
     review:
       "Ahmed Ali contributed to development tasks and performed his responsibilities diligently and was an active team member throughout the internship.",
     service: "Backend Development",
+    imgPath: "/images/client2.png",
+    imgAlt:
+      "This image is a professional endorsement highlighting Ahmed Ali’s contributions during an internship. The testimonial states that he diligently performed his responsibilities, actively participated in development tasks, and was a valuable team member throughout the experience. The feedback is attributed to Ayza Noor with the handle @fortifytechnologies, accompanied by a small circular profile picture, which adds authenticity and credibility to the statement.",
   },
 ];
 
@@ -176,3 +186,10 @@ export const services = [
   "Database Architecture",
   "Stripe & Subscriptions",
 ] as const;
+
+export const austinHighlights: CityPageHighlight[] = [
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "Full-Stack & AI-Powered Apps" },
+  { label: "Delivery", value: "Production-ready, every time" },
+  { label: "Based in", value: "Pakistan — serving Austin TX remotely" },
+];
