@@ -4,16 +4,16 @@ import { austinCityLinks, services } from "@/constants/austin";
 const AustinCityContent = () => {
   return (
     <>
-      <section className="px-5 md:px-20 py-20 border-t border-white/5">
+      <section className="px-5 md:px-20 py-16 md:py-20 border-t border-white/5">
         <div className="max-w-7xl mx-auto">
-          <p className="text-emerald-400 font-mono text-sm tracking-widest uppercase mb-3">
+          <p className="text-emerald-400 font-mono text-xs md:text-sm tracking-widest uppercase mb-3">
             Coverage
           </p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-5 md:mb-6">
             Based in Austin, Available Across All of Texas
           </h2>
 
-          <div className="space-y-4 text-white/60 leading-relaxed mb-10">
+          <div className="space-y-4 text-white/60 leading-relaxed text-sm md:text-base mb-8 md:mb-10">
             <p>
               I work remotely with businesses across the entire Austin metro —
               Round Rock, Cedar Park, Pflugerville, Georgetown, Leander, Kyle,
@@ -37,16 +37,16 @@ const AustinCityContent = () => {
             </p>
           </div>
 
-          <div className="mt-10">
-            <p className="text-white/40 text-sm font-mono mb-4">
+          <div className="mt-8 md:mt-10">
+            <p className="text-white/40 text-xs font-mono mb-3 md:mb-4">
               Also serving:
             </p>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-2 md:gap-3">
               {austinCityLinks.map((l) => (
                 <Link
                   key={l.city}
                   href={l.href}
-                  className="px-4 py-2 text-sm rounded-lg border border-white/10 text-white/50 hover:text-emerald-400 hover:border-emerald-500/40 transition-all duration-300"
+                  className="px-3 py-1.5 md:px-4 md:py-2 text-xs md:text-sm rounded-lg border border-white/10 text-white/50 hover:text-emerald-400 hover:border-emerald-500/40 transition-all duration-300"
                 >
                   Web Developer {l.city}
                 </Link>
@@ -56,15 +56,17 @@ const AustinCityContent = () => {
         </div>
       </section>
 
-      {/* ── Bottom Strip ── */}
+      {/* Bottom Strip */}
       <div className="w-full border-t border-b border-emerald-500/20 bg-emerald-500/5 py-4 px-5 md:px-20">
-        <div className="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-x-8 gap-y-2">
+        <div className="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-x-4 md:gap-x-8 gap-y-2">
           <span className="text-emerald-400 font-mono text-xs tracking-widest uppercase flex-shrink-0">
             Trusted for
           </span>
           {services.map((item, i, arr) => (
-            <span key={item} className="flex items-center gap-3">
-              <span className="text-white/60 text-sm font-medium">{item}</span>
+            <span key={item} className="flex items-center gap-2 md:gap-3">
+              <span className="text-white/60 text-xs md:text-sm font-medium">
+                {item}
+              </span>
               {i < arr.length - 1 && (
                 <span
                   className="size-1 rounded-full bg-emerald-400/40"

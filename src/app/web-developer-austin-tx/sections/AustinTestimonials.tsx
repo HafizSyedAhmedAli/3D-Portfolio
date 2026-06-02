@@ -3,20 +3,20 @@ import Image from "next/image";
 
 const AustinTestimonials = () => {
   return (
-    <section className="px-5 md:px-20 py-20 border-t border-white/5">
+    <section className="px-5 md:px-20 py-16 md:py-20 border-t border-white/5">
       <div className="max-w-7xl mx-auto">
-        <p className="text-emerald-400 font-mono text-sm tracking-widest uppercase mb-3">
+        <p className="text-emerald-400 font-mono text-xs md:text-sm tracking-widest uppercase mb-3">
           Happy Clients
         </p>
-        <h2 className="text-3xl md:text-4xl font-bold mb-12">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-10 md:mb-12">
           Don&apos;t Take My Word for It
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-6">
           {austinTestimonials.map((t) => (
             <div
               key={`${t.name}-${t.handle}`}
-              className="rounded-2xl border border-white/8 bg-white/2 p-8"
+              className="rounded-2xl border border-white/8 bg-white/2 p-6 md:p-8"
             >
               <div className="flex gap-1 mb-4">
                 {[1, 2, 3, 4, 5].map((s) => (
@@ -26,7 +26,7 @@ const AustinTestimonials = () => {
                   />
                 ))}
               </div>
-              <blockquote className="text-white/70 leading-relaxed mb-6 text-lg">
+              <blockquote className="text-white/70 leading-relaxed mb-6 text-base md:text-lg">
                 &ldquo;{t.review}&rdquo;
               </blockquote>
               <div className="flex items-center gap-3 pt-4 border-t border-white/5">
