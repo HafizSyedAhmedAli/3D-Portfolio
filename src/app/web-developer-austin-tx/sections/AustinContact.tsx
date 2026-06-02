@@ -17,6 +17,7 @@ import {
   type FormEvent,
 } from "react";
 import FloatInput from "@/components/FloatInput";
+import Script from "next/script";
 
 const AustinContact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -58,6 +59,11 @@ const AustinContact = () => {
     const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 
     if (!serviceId || !templateId || !publicKey) {
+      console.error("EmailJS configuration is missing");
+      setFeedback({
+        type: "error",
+        message: "Configuration error — please reach me directly.",
+      });
       setLoading(false);
       return;
     }
@@ -105,6 +111,29 @@ const AustinContact = () => {
           back to you within 24 hours with a free consultation.
         </p>
 
+        {/* ── Calendly Booking ── */}
+        <div className="mb-12">
+          <p className="text-emerald-400 font-mono text-sm tracking-widest uppercase mb-3">
+            Book a Free Call
+          </p>
+          <h3 className="text-2xl font-bold mb-4">
+            Schedule a Free 30-Min Consultation
+          </h3>
+          <p className="text-white/60 text-sm mb-6 max-w-xl">
+            Pick a time that works for you and let&apos;s talk about your
+            project — no commitment required.
+          </p>
+          <div className="rounded-2xl border border-white/8 overflow-hidden">
+            <iframe
+              src="https://calendly.com/hafizsyedahmedali12/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=09090b&text_color=777&primary_color=22c55e"
+              width="100%"
+              height="700"
+              frameBorder="0"
+              title="Schedule a free consultation with Ahmed Ali"
+            />
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 xl:grid-cols-[1fr_380px] gap-8 items-start">
           {/* ── Form ── */}
           <div className="relative rounded-2xl border border-white/8 bg-white/2 overflow-hidden">
@@ -131,7 +160,6 @@ const AustinContact = () => {
               ref={formRef}
               onSubmit={handleSubmit}
               className="relative p-8 flex flex-col gap-5"
-              noValidate
               aria-label="Get a quote form"
             >
               {/* Row 1 — Name + Email */}
@@ -175,7 +203,9 @@ const AustinContact = () => {
                     setForm((prev) => ({ ...prev, budget: val }))
                   }
                   disabled={loading}
+                  name="budget"
                 >
+                  <input type="hidden" name="budget" value={form.budget} />
                   <SelectTrigger
                     id="austin-budget"
                     className="h-14 w-full rounded-xl border border-white/10 bg-white/[0.03] p-4 py-7 text-sm text-white shadow-none hover:border-white/20 focus:border-emerald-500/60 focus:ring-0 [&>svg]:text-white/30"

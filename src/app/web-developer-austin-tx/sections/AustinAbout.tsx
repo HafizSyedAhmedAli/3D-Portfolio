@@ -36,9 +36,9 @@ const AustinAbout = () => {
           </div>
 
           <div className="flex flex-col gap-4">
-            {austinHighlights.map(({ label, value }) => (
+            {austinHighlights.map(({ label, value }, index) => (
               <div
-                key={label}
+                key={`${label}-${index}`}
                 className="flex items-start justify-between gap-8 p-5 rounded-xl border border-white/8 bg-white/2 hover:border-emerald-500/30 transition-all duration-300"
               >
                 <span className="text-white/40 text-sm font-mono flex-shrink-0">

@@ -4,7 +4,7 @@ import "./globals.css";
 import { siteMetadata as meta } from "@/constants";
 import { cn } from "@/lib/utils";
 
-const geist = Geist({subsets:['latin'],variable:'--font-sans'});
+const geist = Geist({ subsets: ["latin"], variable: "--font-sans" });
 
 const monaSans = Mona_Sans({
   subsets: ["latin"],
@@ -81,7 +81,16 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={cn("h-full", "antialiased", monaSans.variable, "font-sans", geist.variable)}>
+    <html
+      lang="en"
+      className={cn(
+        "h-full",
+        "antialiased",
+        monaSans.variable,
+        "font-sans",
+        geist.variable,
+      )}
+    >
       <body className="min-h-full flex flex-col">
         <script
           type="application/ld+json"
