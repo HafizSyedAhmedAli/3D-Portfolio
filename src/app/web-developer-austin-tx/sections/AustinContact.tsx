@@ -1,25 +1,33 @@
 "use client";
 
-import Image from "next/image";
+import AvailabilityPanel from "@/components/city/AvailabilityPanel";
+import FloatInput from "@/components/FloatInput";
 import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
+    Select,
+    SelectContent,
+    SelectItem,
+    SelectTrigger,
+    SelectValue,
 } from "@/components/ui/select";
+import { socialImgs } from "@/constants";
 import { austinAvailability } from "@/constants/austin";
 import emailjs from "@emailjs/browser";
-import {
-  useEffect,
-  useRef,
-  useState,
-  type ChangeEvent,
-  type FormEvent,
-} from "react";
-import FloatInput from "@/components/FloatInput";
+import Image from "next/image";
 import Script from "next/script";
-import { socialImgs } from "@/constants";
+import {
+    useEffect,
+    useRef,
+    useState,
+    type ChangeEvent,
+    type FormEvent,
+} from "react";
+
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  name: "Contact Web Developer Austin TX",
+  url: "https://syedahmedali.com/web-developer-austin-tx#contact-austin",
+};
 
 const AustinContact = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
@@ -100,6 +108,12 @@ const AustinContact = () => {
       id="appointment-austin"
       className="px-5 md:px-20 py-16 md:py-20 border-t border-white/5 scroll-mt-10"
     >
+      <Script
+        id="schema-contact"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactSchema) }}
+      />
+
       <div className="max-w-7xl mx-auto">
         <p className="text-emerald-400 font-mono text-xs md:text-sm tracking-widest uppercase mb-3">
           Ready to Build?
@@ -112,7 +126,7 @@ const AustinContact = () => {
           back to you within 24 hours with a free consultation.
         </p>
 
-        {/* Calendly */}
+        {/* Calendly embed */}
         <div className="mb-10 md:mb-12">
           <p className="text-emerald-400 font-mono text-xs md:text-sm tracking-widest uppercase mb-3">
             Book a Free Call
@@ -124,7 +138,6 @@ const AustinContact = () => {
             Pick a time that works for you and let&apos;s talk about your
             project — no commitment required.
           </p>
-          {/* Responsive iframe wrapper */}
           <div className="rounded-2xl border border-white/8 overflow-hidden w-full">
             <iframe
               src="https://calendly.com/hafizsyedahmedali12/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=09090b&text_color=777&primary_color=22c55e"
@@ -136,7 +149,10 @@ const AustinContact = () => {
           </div>
         </div>
 
-        <div id="contact-austin" className="grid grid-cols-1 xl:grid-cols-[1fr_360px] gap-6 md:gap-8 items-start scroll-mt-30">
+        <div
+          id="contact-austin"
+          className="grid grid-cols-1 xl:grid-cols-[1fr_360px] gap-6 md:gap-8 items-start scroll-mt-30"
+        >
           {/* Form */}
           <div className="relative rounded-2xl border border-white/8 bg-white/2 overflow-hidden">
             <div
@@ -145,6 +161,7 @@ const AustinContact = () => {
                 backgroundImage: `radial-gradient(circle, rgba(255,255,255,0.12) 1px, transparent 1px)`,
                 backgroundSize: "22px 22px",
               }}
+              aria-hidden="true"
             />
             <div className="relative flex items-center gap-2 px-5 md:px-6 py-4 border-b border-white/6">
               <span className="size-2.5 rounded-full bg-red-500/70" />
@@ -236,7 +253,6 @@ const AustinContact = () => {
                 onChange={handleChange}
                 disabled={loading}
               />
-
               <FloatInput
                 id="austin-message"
                 name="message"
@@ -266,9 +282,7 @@ const AustinContact = () => {
               )}
 
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 pt-2 border-t border-white/6 mt-1">
-                <span className="font-mono text-[11px] text-white/20 hidden md:block">
-                  {`> ready_to_send`}
-                </span>
+                <span className="font-mono text-[11px] text-white/20 hidden md:block">{`> ready_to_send`}</span>
                 <button
                   type="submit"
                   disabled={loading}
@@ -323,32 +337,8 @@ const AustinContact = () => {
               </a>
             </div>
 
-            <div className="rounded-xl border border-white/8 bg-white/2 p-5 md:p-6 flex flex-col gap-3 md:gap-4">
-              <p className="text-xs font-mono tracking-widest uppercase text-emerald-400/70">
-                Current Status
-              </p>
-              {austinAvailability.map(({ label, value, dot }) => (
-                <div
-                  key={label}
-                  className="flex items-center justify-between gap-4"
-                >
-                  <span className="text-sm text-white/50">{label}</span>
-                  <span
-                    className={`text-sm font-medium flex items-center gap-2 ${
-                      dot ? "text-emerald-400" : "text-white/75"
-                    }`}
-                  >
-                    {dot && (
-                      <span className="relative flex size-1.5">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-                        <span className="relative inline-flex rounded-full size-1.5 bg-emerald-400" />
-                      </span>
-                    )}
-                    {value}
-                  </span>
-                </div>
-              ))}
-            </div>
+            {/* Reuses shared server component inline via import */}
+            <AvailabilityPanel items={austinAvailability} />
           </div>
         </div>
       </div>

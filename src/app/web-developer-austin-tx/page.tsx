@@ -1,3 +1,4 @@
+// Server component — no changes to structured data or metadata
 import type { Metadata } from "next";
 import Script from "next/script";
 import AustinAbout from "./sections/AustinAbout";
@@ -37,12 +38,8 @@ export const metadata: Metadata = {
       "Looking for a web developer in austin tx? Ahmed Ali builds production-ready Next.js, Node.js & AI apps. Fast delivery, real results.",
     images: ["/opengraph-image.png"],
   },
-  alternates: {
-    canonical: "https://syedahmedali.com/web-developer-austin-tx",
-  },
+  alternates: { canonical: "https://syedahmedali.com/web-developer-austin-tx" },
 };
-
-// ── Structured Data ──────────────────────────────────────────────────────────
 
 const professionalServiceSchema = {
   "@context": "https://schema.org",
@@ -179,9 +176,7 @@ const faqSchema = {
   ],
 };
 
-// ────────────────────────────────────────────────────────────────────────────
-
-export default function Home() {
+export default function AustinPage() {
   return (
     <>
       <Script

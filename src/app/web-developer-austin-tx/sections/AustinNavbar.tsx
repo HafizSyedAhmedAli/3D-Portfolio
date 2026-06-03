@@ -63,7 +63,6 @@ const AustinNavbar = () => {
             Ahmed | <span className="text-emerald-400">Ali</span>
           </a>
 
-          {/* Desktop links */}
           <div className="hidden lg:flex items-center gap-8">
             {austinNavLinks.map(({ name, href }) => (
               <a
@@ -84,7 +83,6 @@ const AustinNavbar = () => {
               Hire Web Developer Austin TX
             </a>
 
-            {/* Hamburger */}
             <button
               onClick={() => setMenuOpen((v) => !v)}
               className="lg:hidden flex flex-col justify-center items-center w-10 h-10 gap-[5px] rounded-lg hover:bg-white/5 transition-colors duration-200 flex-shrink-0"
@@ -106,7 +104,7 @@ const AustinNavbar = () => {
         </div>
       </nav>
 
-      {/* Mobile backdrop */}
+      {/* Backdrop */}
       <div
         onClick={close}
         aria-hidden="true"
@@ -117,7 +115,7 @@ const AustinNavbar = () => {
         }`}
       />
 
-      {/* Mobile drawer */}
+      {/* Drawer */}
       <nav
         id="austin-mobile-nav"
         role="dialog"
