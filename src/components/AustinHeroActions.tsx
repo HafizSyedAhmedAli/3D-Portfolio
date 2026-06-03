@@ -11,22 +11,23 @@ const AustinHeroActions = () => (
       Get A Quote →
     </a>
 
-    <a
-      href={socialImgs[0]?.url}
-      target="_blank"
-      rel="noreferrer"
-      className="w-full flex items-center justify-center gap-2 py-4 rounded-xl border border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/20 hover:border-emerald-400 transition-all duration-300 text-emerald-400 text-sm font-semibold"
-    >
-      <Image
-        src={socialImgs[0]?.imgPath}
-        alt=""
-        aria-hidden="true"
-        width={20}
-        height={20}
-      />
-      WhatsApp Now
-    </a>
-
+    {socialImgs[0] && (
+      <a
+        href={socialImgs[0]?.url}
+        target="_blank"
+        rel="noreferrer"
+        className="w-full flex items-center justify-center gap-2 py-4 rounded-xl border border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/20 hover:border-emerald-400 transition-all duration-300 text-emerald-400 text-sm font-semibold"
+      >
+        <Image
+          src={socialImgs[0]?.imgPath}
+          alt=""
+          aria-hidden="true"
+          width={20}
+          height={20}
+        />
+        WhatsApp Now
+      </a>
+    )}
     <div className="flex items-center gap-3 my-1">
       <div className="h-px bg-white/10 flex-1" />
       <span className="text-white/30 text-xs font-mono tracking-widest uppercase">
