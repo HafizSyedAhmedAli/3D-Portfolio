@@ -32,7 +32,7 @@ const AustinSocialLinks = () => (
       </a>
 
       <a
-        href="https://syedahmedali.com"
+        href="https://www.syedahmedali.com"
         target="_blank"
         rel="noreferrer"
         className="flex items-center gap-2 px-5 py-3 rounded-xl border border-white/10 bg-white/5 hover:bg-emerald-500/10 hover:border-emerald-500/40 hover:text-emerald-400 text-white/70 text-sm font-medium transition-all duration-300"

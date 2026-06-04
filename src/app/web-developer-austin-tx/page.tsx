@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: "Web Developer Austin TX – Full-Stack & AI-Powered Apps | Ahmed Ali",
     description:
       "Looking for a web developer austin tx? Ahmed Ali builds production-ready Next.js, Node.js & AI apps. Fast delivery, real results.",
-    url: "https://syedahmedali.com/web-developer-austin-tx",
+    url: "https://www.syedahmedali.com/web-developer-austin-tx",
     type: "website",
     images: [
       {
@@ -38,7 +38,9 @@ export const metadata: Metadata = {
       "Looking for a web developer in austin tx? Ahmed Ali builds production-ready Next.js, Node.js & AI apps. Fast delivery, real results.",
     images: ["/opengraph-image.png"],
   },
-  alternates: { canonical: "https://syedahmedali.com/web-developer-austin-tx" },
+  alternates: {
+    canonical: "https://www.syedahmedali.com/web-developer-austin-tx",
+  },
 };
 
 const professionalServiceSchema = {
@@ -47,7 +49,7 @@ const professionalServiceSchema = {
   name: "Web Developer Austin TX – Ahmed Ali",
   description:
     "Full-stack web developer austin tx specializing in Next.js, Node.js, PostgreSQL and AI-powered web applications.",
-  url: "https://syedahmedali.com/web-developer-austin-tx",
+  url: "https://www.syedahmedali.com/web-developer-austin-tx",
   areaServed: {
     "@type": "City",
     name: "Austin",
@@ -57,7 +59,7 @@ const professionalServiceSchema = {
     "@type": "Person",
     name: "Ahmed Ali",
     jobTitle: "Web Developer Austin TX",
-    url: "https://syedahmedali.com",
+    url: "https://www.syedahmedali.com",
     address: {
       "@type": "PostalAddress",
       addressLocality: "Karachi",
@@ -94,13 +96,13 @@ const breadcrumbSchema = {
       "@type": "ListItem",
       position: 1,
       name: "Home",
-      item: "https://syedahmedali.com",
+      item: "https://www.syedahmedali.com",
     },
     {
       "@type": "ListItem",
       position: 2,
       name: "Web Developer Austin TX",
-      item: "https://syedahmedali.com/web-developer-austin-tx",
+      item: "https://www.syedahmedali.com/web-developer-austin-tx",
     },
   ],
 };

@@ -322,7 +322,7 @@ const siteMetadata: SiteMetadata = {
   title: "Ahmed Ali | Full-Stack Dev — Next.js, Node.js, Pakistan",
   description:
     "Full-Stack Developer shipping AI-powered products from database schema to deployed UI. Based in Karachi, Pakistan.",
-  url: "https://syedahmedali.com",
+  url: "https://www.syedahmedali.com",
   siteName: "Ahmed Ali",
   ogImage: "/opengraph-image.png",
   ogImageAlt: "Ahmed Ali | Full-Stack Developer",
@@ -339,7 +339,7 @@ const siteMetadata: SiteMetadata = {
       "max-video-preview": -1,
     },
   },
-  canonical: "https://syedahmedali.com",
+  canonical: "https://www.syedahmedali.com",
 };
 
 const techChips: string[] = [

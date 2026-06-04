@@ -3,11 +3,11 @@
 import AvailabilityPanel from "@/components/city/AvailabilityPanel";
 import FloatInput from "@/components/FloatInput";
 import {
-    Select,
-    SelectContent,
-    SelectItem,
-    SelectTrigger,
-    SelectValue,
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
 } from "@/components/ui/select";
 import { socialImgs } from "@/constants";
 import { austinAvailability } from "@/constants/austin";
@@ -15,18 +15,18 @@ import emailjs from "@emailjs/browser";
 import Image from "next/image";
 import Script from "next/script";
 import {
-    useEffect,
-    useRef,
-    useState,
-    type ChangeEvent,
-    type FormEvent,
+  useEffect,
+  useRef,
+  useState,
+  type ChangeEvent,
+  type FormEvent,
 } from "react";
 
 const contactSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
   name: "Contact Web Developer Austin TX",
-  url: "https://syedahmedali.com/web-developer-austin-tx#contact-austin",
+  url: "https://www.syedahmedali.com/web-developer-austin-tx#contact-austin",
 };
 
 const AustinContact = () => {
