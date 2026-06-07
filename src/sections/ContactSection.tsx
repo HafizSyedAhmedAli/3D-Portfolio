@@ -3,7 +3,7 @@
 import DynamicContactExperience from "@/components/DynamicContactExperience";
 import FloatInput from "@/components/FloatInput";
 import LazyCanvas from "@/components/LazyCanvas";
-import { availability } from "@/constants";
+import { availability, socialImgs } from "@/constants";
 import emailjs from "@emailjs/browser";
 import {
   useEffect,
@@ -13,8 +13,8 @@ import {
   type FormEvent,
 } from "react";
 import TitleHeader from "../components/TitleHeader";
+import Image from "next/image";
 
-/* ─── section ─── */
 const ContactSection = () => {
   const formRef = useRef<HTMLFormElement | null>(null);
   const [feedback, setFeedback] = useState<{
@@ -88,7 +88,6 @@ const ContactSection = () => {
       <div className="mt-16 grid grid-cols-1 xl:grid-cols-[1fr_420px] gap-8 items-start">
         {/* ── form ── */}
         <div className="relative rounded-2xl border border-white/8 bg-white/2 overflow-hidden">
-          {/* dot-grid texture */}
           <div
             className="absolute inset-0 pointer-events-none opacity-20"
             style={{
@@ -97,7 +96,6 @@ const ContactSection = () => {
             }}
           />
 
-          {/* terminal bar */}
           <div className="relative flex items-center gap-2 px-6 py-4 border-b border-white/6">
             <span className="size-2.5 rounded-full bg-red-500/70" />
             <span className="size-2.5 rounded-full bg-yellow-400/70" />
@@ -152,11 +150,11 @@ const ContactSection = () => {
                 role="status"
                 aria-live="polite"
                 className={`flex items-center gap-3 px-4 py-3 rounded-lg text-sm font-mono
-    ${
-      feedback.type === "success"
-        ? "bg-emerald-500/10 border border-emerald-500/30 text-emerald-300"
-        : "bg-red-500/10 border border-red-500/30 text-red-300"
-    }`}
+                  ${
+                    feedback.type === "success"
+                      ? "bg-emerald-500/10 border border-emerald-500/30 text-emerald-300"
+                      : "bg-red-500/10 border border-red-500/30 text-red-300"
+                  }`}
               >
                 <span aria-hidden="true">
                   {feedback.type === "success" ? "✓" : "✗"}
@@ -200,6 +198,88 @@ const ContactSection = () => {
               </button>
             </div>
           </form>
+
+          {/* ── Alternative Contact Options ── */}
+          <div className="flex flex-col md:flex-row gap-4 px-8 pb-8">
+            {/* Book a Call — Calendly */}
+            <a
+              href="https://calendly.com/hafizsyedahmedali12/30min"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex-1 flex items-center justify-between gap-4 px-6 py-4 rounded-2xl border border-white/8 bg-white/2 hover:border-emerald-500/30 hover:bg-emerald-500/5 transition-all duration-300"
+            >
+              <div className="flex items-center gap-2 md:gap-3">
+                <Image
+                  src="/images/logos/calendly.svg"
+                  alt="Calendly"
+                  aria-hidden="true"
+                  width={40}
+                  height={40}
+                  className="pr-2 md:pr-0"
+                />
+                <div className="flex flex-col gap-0.5">
+                  <p className="text-white/80 font-semibold text-xs md:text-sm">
+                    Book a Free 30-Min Call
+                  </p>
+                  <p className="text-white/40 text-xs font-mono">
+                    No commitment — just a conversation
+                  </p>
+                </div>
+                <svg
+                  className="size-4 text-white/30 group-hover:text-emerald-400 group-hover:translate-x-1 transition-all duration-300 shrink-0"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2.5}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
+              </div>
+            </a>
+
+            {/* WhatsApp direct */}
+            <a
+              href={socialImgs[0].url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex-1 flex items-center justify-between gap-4 px-6 py-4 rounded-2xl border border-white/8 bg-white/2 hover:border-emerald-500/30 hover:bg-emerald-500/5 transition-all duration-300"
+            >
+              <div className="flex items-center gap-3">
+                <Image
+                  src="/images/whatsapp.png"
+                  alt="WhatsApp"
+                  aria-hidden="true"
+                  width={20}
+                  height={20}
+                />
+                <div className="flex flex-col gap-0.5">
+                  <p className="text-white/80 font-semibold text-sm">
+                    Chat on WhatsApp
+                  </p>
+                  <p className="text-white/40 text-xs font-mono">
+                    Fastest way to reach me
+                  </p>
+                </div>
+              </div>
+              <svg
+                className="size-4 text-white/30 group-hover:text-emerald-400 group-hover:translate-x-1 transition-all duration-300 shrink-0"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2.5}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
 
         {/* ── right panel ── */}

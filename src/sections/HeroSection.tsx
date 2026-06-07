@@ -2,7 +2,7 @@ import Image from "next/image";
 import HeroScrollButton from "@/components/HeroScrollButton";
 import DynamicHeroModel from "@/components/DynamicHeroModel";
 import DynamicHeroAnimator from "@/components/DynamicHeroAnimator";
-import { techChips } from "@/constants";
+import { techChips, socialImgs } from "@/constants";
 
 const HeroSection = () => {
   return (
@@ -74,19 +74,39 @@ const HeroSection = () => {
                 <li key={chip}>
                   <span className="px-3 py-1.5 text-xs font-mono font-semibold rounded-md border border-white/10 bg-white/5 text-white/70 hover:border-emerald-500/50 hover:text-emerald-400 hover:bg-emerald-500/10 transition-all duration-300 cursor-default inline-block">
                     {chip}
-                  </span>{" "}
+                  </span>
                 </li>
               ))}
             </ul>
 
-            <div className="hero-cta flex items-center gap-3 mt-1 pointer-events-auto flex-wrap">
+            <div className="hero-cta flex flex-wrap items-center gap-3 mt-1 pointer-events-auto">
               <HeroScrollButton />
+
+              {/* WhatsApp Button */}
+              <a
+                href={socialImgs[0].url}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Chat on WhatsApp"
+                className="flex items-center gap-2 px-3 md:px-5 py-3.5 md:py-4 rounded-xl border border-emerald-500/30 bg-emerald-500/10 hover:bg-emerald-500/20 hover:border-emerald-400 transition-all duration-300 text-emerald-400 text-sm font-medium"
+              >
+                <Image
+                  src="/images/whatsapp.png"
+                  alt=""
+                  width={18}
+                  height={18}
+                  aria-hidden="true"
+                />
+                <span className="hidden md:inline">WhatsApp</span>
+              </a>
+
+              {/* GitHub Button */}
               <a
                 href="https://github.com/HafizSyedAhmedAli"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Visit Ahmed Ali's GitHub profile"
-                className="flex items-center gap-2 px-5 py-3.5 md:py-4 rounded-xl border border-white/10 hover:border-white/30 bg-white/5 hover:bg-white/10 transition-all duration-300 text-white/70 hover:text-white text-sm font-medium"
+                className="flex items-center gap-2 px-3 md:px-5 py-3.5 md:py-4 rounded-xl border border-white/10 hover:border-white/30 bg-white/5 hover:bg-white/10 transition-all duration-300 text-white/70 hover:text-white text-sm font-medium"
               >
                 <Image
                   src="/images/github.svg"
@@ -96,7 +116,7 @@ const HeroSection = () => {
                   aria-hidden="true"
                   className="brightness-0 invert opacity-70"
                 />
-                <span>GitHub</span>
+                <span className="hidden md:inline">GitHub</span>
               </a>
             </div>
           </div>
