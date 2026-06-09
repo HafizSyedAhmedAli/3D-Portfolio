@@ -10,10 +10,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${siteMetadata.url}/web-developer-austin-tx`,
+      url: `${siteMetadata.url}/tarteel`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.9,
+    },
+    {
+      url: `${siteMetadata.url}/web-developer-austin-tx`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
     },
   ];
 }
