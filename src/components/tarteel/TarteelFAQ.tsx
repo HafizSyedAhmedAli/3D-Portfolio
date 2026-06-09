@@ -145,7 +145,7 @@ export default function TarteelFAQ() {
             href="#contact"
             className="btn-emerald inline-block px-8 py-3 rounded-full text-sm"
           >
-            Get in Touch
+            Book a Free Trial Class
           </a>
         </TarteelAnimateOnScroll>
       </div>

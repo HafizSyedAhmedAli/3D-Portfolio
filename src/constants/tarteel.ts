@@ -132,9 +132,19 @@ export const tarteelPlans: TarteelPlan[] = [
   {
     name: "Nazra",
     arabic: "معتاد",
-    price: "$50",
-    period: "/ month",
-    desc: "Most popular ideal for students who want to complete their nazra with Tajweed Rules.",
+    pricing: {
+      west: {
+        price: "$50",
+        currency: "USD",
+        period: "/ month",
+      },
+      middleEast: {
+        price: "100",
+        currency: "SAR / AED / QAR",
+        period: "/ month",
+      },
+    },
+    desc: "Most popular — ideal for students who want to complete their Nazra with Tajweed Rules.",
     sessions: "20 sessions",
     duration: "30 min each",
     features: [
@@ -145,15 +155,25 @@ export const tarteelPlans: TarteelPlan[] = [
       "Monthly progress report",
       "Flexible scheduling",
     ],
-    cta: "Most Popular",
+    cta: "Start Learning Quran",
     highlight: false,
   },
   {
     name: "Hifz",
     arabic: "مكثف",
-    price: "$100",
-    period: "/ month",
-    desc: "For dedicated students aiming for Hifz-Quran",
+    pricing: {
+      west: {
+        price: "$100",
+        currency: "USD",
+        period: "/ month",
+      },
+      middleEast: {
+        price: "200",
+        currency: "SAR / AED / QAR",
+        period: "/ month",
+      },
+    },
+    desc: "For dedicated students aiming for Hifz-Quran.",
     sessions: "20 sessions",
     duration: "60 min each",
     features: [
@@ -166,7 +186,7 @@ export const tarteelPlans: TarteelPlan[] = [
       "Weekly progress report",
       "Hifz tracking",
     ],
-    cta: "Go Intensive",
+    cta: "Begin My Hifz Journey",
     highlight: false,
   },
 ];

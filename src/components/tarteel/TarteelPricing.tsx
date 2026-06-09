@@ -1,11 +1,13 @@
 "use client";
 
-import { tarteelPlans } from "@/constants/tarteel";
 import { Check } from "lucide-react";
 import { useState } from "react";
+import { tarteelPlans } from "@/constants/tarteel";
+import { useRegion } from "@/hooks/tarteel/useRegion";
 
-export default function TarteelPricing() {
+export default function Pricing() {
   const [hoveredPlan, setHoveredPlan] = useState<string | null>(null);
+  const region = useRegion();
 
   return (
     <section
@@ -48,7 +50,7 @@ export default function TarteelPricing() {
               fontFamily: "'DM Sans', sans-serif",
             }}
           >
-            All plans include a{" "}
+            All plans start with a{" "}
             <strong style={{ color: "var(--emerald-mid)" }}>
               free 30-minute trial
             </strong>{" "}
@@ -60,6 +62,10 @@ export default function TarteelPricing() {
         <div className="grid md:grid-cols-2 gap-8 items-start">
           {tarteelPlans.map((plan) => {
             const isHighlighted = plan.highlight || hoveredPlan === plan.name;
+            const pricing =
+              region === "middle-east"
+                ? plan.pricing.middleEast
+                : plan.pricing.west;
 
             return (
               <div
@@ -120,30 +126,48 @@ export default function TarteelPricing() {
                     )}
                   </div>
 
-                  <div className="flex items-end gap-1 mb-2">
-                    <span
-                      className="font-cormorant"
+                  {/* Price display */}
+                  <div className="mb-2">
+                    <div className="flex items-end gap-1">
+                      <span
+                        className="font-cormorant"
+                        style={{
+                          fontSize: "52px",
+                          lineHeight: 1,
+                          color: isHighlighted
+                            ? "var(--gold)"
+                            : "var(--emerald-deep)",
+                          fontWeight: 600,
+                        }}
+                      >
+                        {pricing.price}
+                      </span>
+                      <span
+                        className="mb-2 text-sm"
+                        style={{
+                          color: isHighlighted
+                            ? "rgba(245,233,196,0.5)"
+                            : "var(--text-light)",
+                        }}
+                      >
+                        {pricing.period}
+                      </span>
+                    </div>
+                    {/* Currency label */}
+                    <p
+                      className="text-xs mt-1"
                       style={{
-                        fontSize: "52px",
-                        lineHeight: 1,
                         color: isHighlighted
-                          ? "var(--gold)"
-                          : "var(--emerald-deep)",
-                        fontWeight: 600,
-                      }}
-                    >
-                      {plan.price}
-                    </span>
-                    <span
-                      className="mb-2 text-sm"
-                      style={{
-                        color: isHighlighted
-                          ? "rgba(245,233,196,0.5)"
+                          ? "rgba(201,168,76,0.6)"
                           : "var(--text-light)",
+                        fontFamily: "'DM Sans', sans-serif",
+                        letterSpacing: "0.04em",
                       }}
                     >
-                      {plan.period}
-                    </span>
+                      {region === "middle-east"
+                        ? `${pricing.currency}`
+                        : pricing.currency}
+                    </p>
                   </div>
 
                   <div className="flex gap-3 mb-4" style={{ fontSize: "13px" }}>
@@ -251,8 +275,8 @@ export default function TarteelPricing() {
             fontFamily: "'DM Sans', sans-serif",
           }}
         >
-          * Prices are indicative. Contact us for custom family packages or bulk
-          session discounts.
+          * All plans start with a free 30-minute trial. No payment until
+          you&apos;re ready. Contact us for family packages or bulk discounts.
         </p>
       </div>
     </section>

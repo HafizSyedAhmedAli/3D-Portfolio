@@ -151,7 +151,7 @@ export default function TarteelHero() {
               className="btn-gold px-8 py-3.5 rounded-full text-sm flex items-center gap-2"
             >
               <Video size={16} />
-              Book Free Trial Class
+              Start My Free Trial
             </a>
             <a
               href="#courses"
@@ -172,7 +172,7 @@ export default function TarteelHero() {
                 el.style.borderColor = "rgba(201,168,76,0.4)";
               }}
             >
-              View Courses
+              Explore Courses
             </a>
           </motion.div>
 
@@ -294,7 +294,7 @@ export default function TarteelHero() {
                 boxShadow: "0 4px 20px rgba(201,168,76,0.4)",
               }}
             >
-              Free Trial Available
+              Begin Your Journey 
             </motion.div>
           </div>
         </motion.div>

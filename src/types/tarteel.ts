@@ -34,19 +34,6 @@ export type TarteelPlatform = {
   features: string[];
 };
 
-export type TarteelPlan = {
-  name: string;
-  arabic: string;
-  price: string;
-  period: string;
-  desc: string;
-  sessions: string;
-  duration: string;
-  features: string[];
-  cta: string;
-  highlight: boolean;
-};
-
 export type TarteelTestimonial = {
   name: string;
   location: string;
@@ -66,4 +53,31 @@ export type TarteelContactMethod = {
   label: string;
   value: string;
   sub: string;
+};
+
+// Add to existing types:
+
+export type TarteelPlanPricing = {
+  west: {
+    price: string;
+    currency: string;
+    period: string;
+  };
+  middleEast: {
+    price: string;
+    currency: string;
+    period: string;
+  };
+};
+
+export type TarteelPlan = {
+  name: string;
+  arabic: string;
+  pricing: TarteelPlanPricing;
+  desc: string;
+  sessions: string;
+  duration: string;
+  features: string[];
+  cta: string;
+  highlight: boolean;
 };

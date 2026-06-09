@@ -177,7 +177,7 @@ export default function TarteelCourses() {
                       "var(--emerald-mid)")
                   }
                 >
-                  Enroll Now <ChevronRight size={14} />
+                  Book a Free Trial <ChevronRight size={14} />
                 </a>
               </div>
             </motion.div>

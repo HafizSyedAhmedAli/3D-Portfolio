@@ -70,7 +70,7 @@ export default function TarteelNavbar() {
           href="#contact"
           className="hidden md:inline-block btn-gold px-5 py-2.5 rounded-full text-sm"
         >
-          Book Free Trial
+          Get Free Trial
         </a>
 
         <button
@@ -107,7 +107,7 @@ export default function TarteelNavbar() {
             onClick={() => setMenuOpen(false)}
             className="btn-gold block text-center mt-4 px-5 py-3 rounded-full text-sm"
           >
-            Book Free Trial
+            Get Free Trial
           </a>
         </div>
       )}
