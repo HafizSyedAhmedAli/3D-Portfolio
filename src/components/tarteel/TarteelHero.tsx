@@ -2,6 +2,10 @@
 
 import { motion } from "framer-motion";
 import { Video, Star } from "lucide-react";
+import { tarteelSEOContent } from "@/constants/tarteel";
+import Image from "next/image";
+
+const { hero } = tarteelSEOContent;
 
 const fadeUp = (delay = 0) => ({
   initial: { opacity: 0, y: 30 },
@@ -23,7 +27,7 @@ export default function TarteelHero() {
   return (
     <section
       className="relative min-h-screen flex items-center overflow-hidden pattern-bg"
-      style={{ paddingTop: "80px" }}
+      style={{ paddingTop: "30px" }}
     >
       <div
         className="absolute inset-0 pointer-events-none"
@@ -65,7 +69,7 @@ export default function TarteelHero() {
               className="w-1.5 h-1.5 rounded-full animate-pulse"
               style={{ background: "var(--gold)" }}
             />
-            Live Online Classes · Zoom &amp; Google Meet
+            {hero.badge}
           </motion.div>
 
           <motion.h1
@@ -78,13 +82,13 @@ export default function TarteelHero() {
               fontWeight: 600,
             }}
           >
-            Learn the
+            {hero.h1Line1}
             <br />
             <span style={{ color: "var(--gold)", fontStyle: "italic" }}>
-              Holy Quran
+              {hero.h1Line2}
             </span>
             <br />
-            with Heart
+            {hero.h1Line3}
           </motion.h1>
 
           <motion.p
@@ -97,7 +101,7 @@ export default function TarteelHero() {
               textAlign: "left",
             }}
           >
-            تعلّم القرآن الكريم مع أفضل المعلمين
+            {hero.arabicSubtitle}
           </motion.p>
 
           <motion.p
@@ -109,17 +113,11 @@ export default function TarteelHero() {
               fontFamily: "'DM Sans', sans-serif",
             }}
           >
-            One-on-one live sessions with a certified Quran teacher. Master
-            Tajweed, begin Hifz, or explore Tafsir — all from the comfort of
-            your home, at your own pace.
+            {hero.description}
           </motion.p>
 
           <motion.div {...fadeUp(0.35)} className="flex flex-wrap gap-8 mt-8">
-            {[
-              { num: "200+", label: "Students Worldwide" },
-              { num: "5+", label: "Years Teaching" },
-              { num: "4.8★", label: "Average Rating" },
-            ].map((s) => (
+            {hero.stats.map((s) => (
               <div key={s.num}>
                 <div
                   className="font-cormorant"
@@ -190,24 +188,36 @@ export default function TarteelHero() {
               CLASSES VIA
             </span>
             <div className="flex gap-3">
-              {["🎥 Zoom", "📹 Google Meet"].map((p) => (
-                <span
-                  key={p}
-                  className="px-3 py-1 rounded-md text-xs font-medium"
-                  style={{
-                    background: "rgba(255,255,255,0.08)",
-                    color: "rgba(245,233,196,0.7)",
-                    border: "1px solid rgba(255,255,255,0.1)",
-                  }}
-                >
-                  {p}
-                </span>
-              ))}
+              {/* Zoom */}
+              <span
+                className="flex items-center gap-2 px-3 py-1 rounded-md text-xs font-medium"
+                style={{
+                  background: "rgba(255,255,255,0.08)",
+                  color: "rgba(245,233,196,0.7)",
+                  border: "1px solid rgba(255,255,255,0.1)",
+                }}
+              >
+                <Image src='/images/tarteel/zoom.svg' alt="" width={20} height={20} />
+                Zoom
+              </span>
+
+              {/* Google Meet */}
+              <span
+                className="flex items-center gap-2 px-3 py-1 rounded-md text-xs font-medium"
+                style={{
+                  background: "rgba(255,255,255,0.08)",
+                  color: "rgba(245,233,196,0.7)",
+                  border: "1px solid rgba(255,255,255,0.1)",
+                }}
+              >
+                <Image src='/images/tarteel/google-meet.svg' alt="" width={20} height={20} />
+                Google Meet
+              </span>
             </div>
           </motion.div>
         </div>
 
-        {/* Right card */}
+        {/* Right card — unchanged */}
         <motion.div
           initial={{ opacity: 0, scale: 0.92, y: 20 }}
           animate={{ opacity: 1, scale: 1, y: 0 }}
@@ -258,10 +268,10 @@ export default function TarteelHero() {
                 style={{ borderTop: "1px solid rgba(201,168,76,0.2)" }}
               >
                 {[
-                  "Quran Reading & Recitation",
-                  "Tajweed Rules",
-                  "Memorization (Hifz)",
-                  "Tafsir & Islamic Studies",
+                  "Online Quran Reading & Recitation",
+                  "Tajweed Rules Online",
+                  "Hifz Memorization Program",
+                  "Learn Quran for Kids & Adults",
                 ].map((item, i) => (
                   <motion.div
                     key={item}
@@ -294,7 +304,7 @@ export default function TarteelHero() {
                 boxShadow: "0 4px 20px rgba(201,168,76,0.4)",
               }}
             >
-              Begin Your Journey 
+              Begin Your Journey
             </motion.div>
           </div>
         </motion.div>

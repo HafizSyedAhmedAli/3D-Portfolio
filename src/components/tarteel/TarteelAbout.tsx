@@ -1,8 +1,10 @@
 "use client";
 
-import { tarteelCredentials } from "@/constants/tarteel";
+import { tarteelCredentials, tarteelSEOContent } from "@/constants/tarteel";
 import { TarteelCredential } from "@/types/tarteel";
 import { Award, BookOpen, Globe, Heart, LucideIcon } from "lucide-react";
+
+const { about } = tarteelSEOContent;
 
 const iconMap: Record<TarteelCredential["icon"], LucideIcon> = {
   Award,
@@ -16,28 +18,20 @@ export default function TarteelAbout() {
     <section id="about" className="pattern-light py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Left: Portrait Card Area */}
+          {/* Left: Portrait Card Area — unchanged */}
           <div className="relative flex justify-center w-full">
-            {/* Decorative background square - hidden on small mobile to prevent clutter */}
             <div
               className="absolute top-4 left-4 right-4 bottom-4 rounded-2xl hidden sm:block"
-              style={{
-                background: "var(--emerald-deep)",
-                opacity: 0.08,
-              }}
+              style={{ background: "var(--emerald-deep)", opacity: 0.08 }}
             />
-
-            {/* Main portrait area */}
             <div
-              className="relative rounded-2xl overflow-hidden flex items-center justify-center 
-                         w-full max-w-95 h-105 md:h-115 z-10"
+              className="relative rounded-2xl overflow-hidden flex items-center justify-center w-full max-w-95 h-105 md:h-115 z-10"
               style={{
                 background:
                   "linear-gradient(135deg, var(--emerald-deep) 0%, var(--emerald-mid) 100%)",
                 border: "1px solid rgba(201,168,76,0.3)",
               }}
             >
-              {/* Arabic pattern overlay */}
               <div
                 className="absolute inset-0 opacity-10"
                 style={{
@@ -45,7 +39,6 @@ export default function TarteelAbout() {
                     "url(\"data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill='none' stroke='%23c9a84c' stroke-width='0.8'%3E%3Cpolygon points='20,2 28,8 30,17 26,25 20,28 14,25 10,17 12,8'/%3E%3C/g%3E%3C/svg%3E\")",
                 }}
               />
-
               <div className="text-center relative z-10 p-6 md:p-8">
                 <div
                   className="font-amiri mb-2 md:mb-4 leading-none"
@@ -79,8 +72,6 @@ export default function TarteelAbout() {
                 </div>
               </div>
             </div>
-
-            {/* Gold corner ornaments - Responsive sizing */}
             <div
               className="absolute -top-2 -left-2 w-12 h-12 md:w-16 md:h-16 z-20"
               style={{
@@ -99,7 +90,7 @@ export default function TarteelAbout() {
             />
           </div>
 
-          {/* Right: content */}
+          {/* Right: content — keyword-rich text from constants */}
           <div className="text-center md:text-left">
             <p
               className="text-xs tracking-[0.18em] uppercase mb-4"
@@ -108,7 +99,7 @@ export default function TarteelAbout() {
                 fontFamily: "'DM Sans', sans-serif",
               }}
             >
-              About Your Teacher
+              {about.label}
             </p>
             <h2
               className="font-cormorant mb-6"
@@ -119,14 +110,7 @@ export default function TarteelAbout() {
                 fontWeight: 600,
               }}
             >
-              Guiding Souls Through
-              <span
-                className="block md:inline"
-                style={{ color: "var(--gold)", fontStyle: "italic" }}
-              >
-                {" "}
-                Allah's Words
-              </span>
+              {about.heading}
             </h2>
 
             <div
@@ -139,32 +123,21 @@ export default function TarteelAbout() {
             />
 
             <div className="space-y-4 mb-10">
-              <p
-                className="text-base leading-relaxed"
-                style={{
-                  color: "var(--text-mid)",
-                  fontFamily: "'DM Sans', sans-serif",
-                }}
-              >
-                With over 5+ years of dedicated teaching, I have guided hundreds
-                of students from complete beginners to advanced learners in
-                their Quranic journey. My teaching approach combines classical
-                Islamic methods with modern online tools.
-              </p>
-              <p
-                className="text-base leading-relaxed"
-                style={{
-                  color: "var(--text-mid)",
-                  fontFamily: "'DM Sans', sans-serif",
-                }}
-              >
-                Whether you are a child just starting out or an adult returning
-                to the Quran, I provide personalised Nazra instruction tailored
-                to your pace.
-              </p>
+              {about.paragraphs.map((p, i) => (
+                <p
+                  key={i}
+                  className="text-base leading-relaxed"
+                  style={{
+                    color: "var(--text-mid)",
+                    fontFamily: "'DM Sans', sans-serif",
+                  }}
+                >
+                  {p}
+                </p>
+              ))}
             </div>
 
-            {/* Credentials Grid */}
+            {/* Credentials Grid — unchanged */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {tarteelCredentials.map(({ icon: iconKey, text }) => {
                 const Icon = iconMap[iconKey];

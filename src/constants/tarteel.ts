@@ -8,6 +8,8 @@ import type {
   TarteelTestimonial,
   TarteelFAQ,
   TarteelContactMethod,
+  TarteelSiteMetadata,
+  TarteelSEOContent,
 } from "@/types/tarteel";
 
 export const tarteelNavLinks: TarteelNavLink[] = [
@@ -293,3 +295,41 @@ export const tarteelContactMethods: TarteelContactMethod[] = [
     sub: "Pakistan Standard Time",
   },
 ];
+
+export const tarteelMetadata: TarteelSiteMetadata = {
+  title:
+    "Tarteel | Online Quran Classes – Tajweed, Hifz & Nazra with Certified Teacher",
+  description:
+    "Learn Quran online with a certified Hafiz teacher. One-on-one live classes via Zoom & Google Meet. Tajweed, Hifz, and Nazra for all ages. Free 30-minute trial class.",
+  url: "https://www.syedahmedali.com/tarteel",
+  ogImage: "/tarteel-opengraph-image.png",
+  ogImageAlt: "Tarteel – Online Quran Classes with Certified Teacher",
+  canonical: "https://www.syedahmedali.com/tarteel",
+};
+
+export const tarteelSEOContent: TarteelSEOContent = {
+  hero: {
+    badge: "Live Online Quran Classes · Zoom & Google Meet",
+    h1Line1: "Learn the",
+    h1Line2: "Holy Quran",
+    h1Line3: "Online",
+    arabicSubtitle: "تعلّم القرآن الكريم مع أفضل المعلمين",
+    description:
+      "One-on-one sessions with a certified online Quran teacher. Master Tajweed, begin Hifz, or start Nazra from the comfort of your home at your own pace, for all ages.",
+    stats: [
+      { num: "200+", label: "Students Worldwide" },
+      { num: "5+", label: "Years Teaching" },
+      { num: "4.8★", label: "Average Rating" },
+    ],
+    platforms: ["Zoom", "Google Meet"],
+  },
+  about: {
+    label: "Your Online Quran Teacher",
+    heading:
+      "Certified Quran Teacher Online, Tajweed, Hifz & Nazra for All Ages",
+    paragraphs: [
+      "With over 5 years of experience as an online Quran teacher, I have helped hundreds of students worldwide learn Quran online — from complete beginners to advanced learners working toward Hifz.",
+      "Whether you are a child taking their first Quran classes online, an adult returning to Tajweed, or a dedicated student pursuing the Hifz program, every session is personalised to your level and pace.",
+    ],
+  },
+};

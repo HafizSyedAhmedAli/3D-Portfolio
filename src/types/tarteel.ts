@@ -81,3 +81,34 @@ export type TarteelPlan = {
   cta: string;
   highlight: boolean;
 };
+
+export type TarteelSiteMetadata = {
+  title: string;
+  description: string;
+  url: string;
+  ogImage: string;
+  ogImageAlt: string;
+  canonical: string;
+};
+
+export type TarteelHeroContent = {
+  badge: string;
+  h1Line1: string;
+  h1Line2: string;
+  h1Line3: string;
+  arabicSubtitle: string;
+  description: string;
+  stats: { num: string; label: string }[];
+  platforms: string[];
+};
+
+export type TarteelAboutContent = {
+  label: string;
+  heading: string;
+  paragraphs: string[];
+};
+
+export type TarteelSEOContent = {
+  hero: TarteelHeroContent;
+  about: TarteelAboutContent;
+};
