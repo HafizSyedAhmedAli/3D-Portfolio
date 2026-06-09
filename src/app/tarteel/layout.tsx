@@ -7,6 +7,9 @@ import { tarteelMetadata as meta } from "@/constants/tarteel";
 export const metadata: Metadata = {
   title: meta.title,
   description: meta.description,
+  icons: {
+    icon: "/images/tarteel/tarteel-favicon.png",
+  },
   openGraph: {
     title: meta.title,
     description: meta.description,
