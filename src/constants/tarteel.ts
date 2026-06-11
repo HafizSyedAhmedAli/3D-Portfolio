@@ -301,7 +301,7 @@ export const tarteelMetadata: TarteelSiteMetadata = {
   description:
     "One-on-one Quran classes via Zoom & Google Meet. Tajweed, Hifz, and Nazra for all ages. Free 30-min trial.",
   url: "https://www.syedahmedali.com/tarteel",
-  ogImage: "/tarteel-opengraph-image.png",
+  ogImage: "/tarteel-opengraph-image.jpg",
   ogImageAlt: "Tarteel – Online Quran Classes with Certified Teacher",
   canonical: "https://www.syedahmedali.com/tarteel",
 };
