@@ -297,10 +297,9 @@ export const tarteelContactMethods: TarteelContactMethod[] = [
 ];
 
 export const tarteelMetadata: TarteelSiteMetadata = {
-  title:
-    "Tarteel | Online Quran Classes – Tajweed, Hifz & Nazra with Certified Teacher",
+  title: "Tarteel | Online Quran Classes – Tajweed, Hifz & Nazra",
   description:
-    "Learn Quran online with a certified Hafiz teacher. One-on-one live classes via Zoom & Google Meet. Tajweed, Hifz, and Nazra for all ages. Free 30-minute trial class.",
+    "One-on-one Quran classes via Zoom & Google Meet. Tajweed, Hifz, and Nazra for all ages. Free 30-min trial.",
   url: "https://www.syedahmedali.com/tarteel",
   ogImage: "/tarteel-opengraph-image.png",
   ogImageAlt: "Tarteel – Online Quran Classes with Certified Teacher",
