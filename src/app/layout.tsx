@@ -15,6 +15,9 @@ const monaSans = Mona_Sans({
 export const metadata: Metadata = {
   verification: {
     google: "wdrtvf8KCbZvz9YqzCIzPBnz0zXXH7gw8p8s99u9BBs",
+    other: {
+      "p:domain_verify": ["95eeb6fec2876daf6e8bf833336670e1"],
+    },
   },
   metadataBase: new URL(meta.url),
   title: meta.title,
