@@ -435,12 +435,11 @@ export default function Contact() {
                         letterSpacing: "0.04em",
                       }}
                     >
-                      Email Address *
+                      Email Address
                     </label>
                     <input
                       name="email"
                       type="email"
-                      required
                       value={form.email}
                       onChange={handleChange}
                       placeholder="your@email.com"
