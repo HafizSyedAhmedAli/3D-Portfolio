@@ -1,11 +1,9 @@
-// Server component
 import AustinHeroActions from "@/components/AustinHeroActions";
 import AustinProfileCard from "@/components/ProfileCard";
-import { bulletPoints } from "@/constants/austin";
+import { dallasBulletPoints } from "@/constants/dallas";
 
-const AustinHero = () => (
+const DallasHero = () => (
   <section className="relative pt-28 md:pt-32 pb-16 md:pb-20 px-5 md:px-20 overflow-hidden">
-    {/* Background dot grid */}
     <div
       className="absolute inset-0 pointer-events-none opacity-20"
       style={{
@@ -20,7 +18,6 @@ const AustinHero = () => (
     />
 
     <div className="max-w-7xl mx-auto grid grid-cols-1 xl:grid-cols-2 gap-10 md:gap-12 items-start relative z-10">
-      {/* Left column */}
       <div>
         <div className="flex items-center gap-2 w-fit px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 mb-5 md:mb-6">
           <span className="relative flex size-2" aria-hidden="true">
@@ -32,23 +29,22 @@ const AustinHero = () => (
           </span>
         </div>
 
+        {/* H1 — exact keyword */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] tracking-tight mb-4 md:mb-6">
-          <span className="text-emerald-400">
-            Professional Web Developer Austin TX
-          </span>{" "}
-          – Full-Stack &amp; AI-Powered Apps
+          <span className="text-emerald-400">Web Developer Dallas TX</span> –
+          SaaS, AI & Full-Stack Engineering
         </h1>
 
         <p className="text-white/60 text-base md:text-lg leading-relaxed mb-5 md:mb-6 max-w-xl">
           Hi, I&apos;m Ahmed Ali —{" "}
-          <strong className="text-white">a web developer in Austin TX</strong>{" "}
-          clients trust for production-ready Next.js, Node.js, PostgreSQL, and
-          Redis applications. From SaaS platforms to AI-powered tools, I ship
-          clean code that works.
+          <strong className="text-white">a web developer in Dallas TX</strong>{" "}
+          trusted for complex SaaS products, AI integrations, and
+          enterprise-grade backends built with Next.js, Node.js, and PostgreSQL.
+          I don&apos;t just write code, I build systems that last.
         </p>
 
         <ul className="flex flex-col gap-2.5 md:gap-3 mb-7 md:mb-8 list-none">
-          {bulletPoints.map((point) => (
+          {dallasBulletPoints.map((point) => (
             <li key={point} className="flex items-start gap-3">
               <span
                 className="mt-1.5 size-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(16,185,129,0.9)] flex-shrink-0"
@@ -64,13 +60,12 @@ const AustinHero = () => (
         <AustinHeroActions />
       </div>
 
-      {/* Right column */}
       <AustinProfileCard
-        url="/images/professional-web-developer-austin-tx-full-stack-ai-powered-apps.png"
-        alt="Professional Web Developer Austin TX"
+        url="/images/web-developer-dallas-tx-saas-ai-full-stack-engineering.png"
+        alt="Web Developer Dallas TX"
       />
     </div>
   </section>
 );
 
-export default AustinHero;
+export default DallasHero;

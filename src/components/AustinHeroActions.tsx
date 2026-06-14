@@ -1,4 +1,3 @@
-// Server component — pure markup, no hooks
 import Image from "next/image";
 import { socialImgs } from "@/constants";
 

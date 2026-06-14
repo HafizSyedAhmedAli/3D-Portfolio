@@ -5,12 +5,17 @@ import StatBadge from "@/components/city/StatBadge";
 import AvailabilityPanel from "@/components/city/AvailabilityPanel";
 import AustinSocialLinks from "./AustinSocialLinks";
 
-const AustinProfileCard = () => (
+type Props = {
+  url: string;
+  alt: string;
+};
+
+const AustinProfileCard = ({ url, alt }: Props) => (
   <div className="flex flex-col gap-5">
     <div className="relative">
       <Image
-        src="/images/professional-web-developer-austin-tx-full-stack-ai-powered-apps.png"
-        alt="Ahmed Ali - Professional Web Developer Austin TX"
+        src={url}
+        alt={`Ahmed Ali - ${alt}`}
         width={640}
         height={360}
         className="w-full h-auto rounded-2xl"
