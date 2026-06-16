@@ -1,6 +1,7 @@
 import type { CityPageData } from "@/components/city/CityPageTemplate";
+import { CityPageProject, CityPageTestimonial } from "@/types";
 
-const COMMON_PROJECTS = [
+const COMMON_PROJECTS: CityPageProject[] = [
   {
     title: "Flacron Gamezone",
     tags: ["Next.js", "Express.js", "PostgreSQL", "Redis", "Stripe"],
@@ -25,9 +26,9 @@ const COMMON_PROJECTS = [
     gh: "https://github.com/HafizSyedAhmedAli/Greencart-FULL-STACK",
     img: "/images/project3.png",
   },
-] as const;
+];
 
-const COMMON_TESTIMONIALS = [
+const COMMON_TESTIMONIALS: CityPageTestimonial[] = [
   {
     name: "RODRIGUE TCHITAKA",
     handle: "@rodrigue-tchitaka",
