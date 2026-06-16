@@ -376,6 +376,7 @@ function CityContactForm({
               height="600"
               title={`Schedule a free consultation with Ahmed Ali – Web Developer ${cityName} TX`}
               className="w-full"
+              loading="lazy"
             />
           </div>
         </div>
@@ -639,7 +640,12 @@ export default function CityPageTemplate({ data }: { data: CityPageData }) {
             <AustinHeroActions />
           </div>
 
-          <ProfileCard url={data.profileImageUrl} alt={data.profileImageAlt} />
+          <ProfileCard
+            url={data.profileImageUrl}
+            alt={data.profileImageAlt}
+            stats={data.stats}
+            availability={data.availability}
+          />
         </div>
       </section>
 

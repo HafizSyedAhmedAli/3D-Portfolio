@@ -3,13 +3,16 @@ import AvailabilityPanel from "@/components/city/AvailabilityPanel";
 import StatBadge from "@/components/city/StatBadge";
 import Image from "next/image";
 import AustinSocialLinks from "./AustinSocialLinks";
+import type { CityPageAvailability, CityPageStat } from "@/types";
 
 type Props = {
   url: string;
   alt: string;
+  stats: CityPageStat[];
+  availability: CityPageAvailability[];
 };
 
-const AustinProfileCard = ({ url, alt }: Props) => (
+const AustinProfileCard = ({ url, alt, stats, availability }: Props) => (
   <div className="flex flex-col gap-5">
     <div className="relative">
       <Image
@@ -26,12 +29,12 @@ const AustinProfileCard = ({ url, alt }: Props) => (
     </div>
 
     <div className="grid grid-cols-3 gap-3">
-      {austinStats.map((s) => (
+      {stats.map((s) => (
         <StatBadge key={s.label} {...s} />
       ))}
     </div>
 
-    <AvailabilityPanel items={austinAvailability} />
+    <AvailabilityPanel items={availability} />
     <AustinSocialLinks />
   </div>
 );
