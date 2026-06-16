@@ -1,8 +1,7 @@
 // Server component — no hooks
-import Image from "next/image";
-import { austinAvailability, austinStats } from "@/constants/austin";
-import StatBadge from "@/components/city/StatBadge";
 import AvailabilityPanel from "@/components/city/AvailabilityPanel";
+import StatBadge from "@/components/city/StatBadge";
+import Image from "next/image";
 import AustinSocialLinks from "./AustinSocialLinks";
 
 type Props = {
