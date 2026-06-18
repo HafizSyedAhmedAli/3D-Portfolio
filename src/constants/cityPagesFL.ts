@@ -286,7 +286,7 @@ export const tampaPageData: CityPageData = {
 
   h1Line1: "Web Developer Tampa FL",
   h1Line2: "– HealthTech, Cybersecurity & Full-Stack",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Tampa FL</strong> healthtech startups, cybersecurity firms, and enterprise companies trust to build secure, production-ready applications. Next.js, Node.js, PostgreSQL, and Redis — security-first from commit one.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Tampa FL</strong> that healthtech startups, cybersecurity firms, and enterprise companies trust to build secure, production-ready applications. Next.js, Node.js, PostgreSQL, and Redis — security-first from commit one.`,
   bulletPoints: [
     "Security-first Next.js, Node.js & PostgreSQL applications",
     "HIPAA-aware architecture with proper auth, encryption, and access control",
@@ -481,7 +481,7 @@ export const miamiPageData: CityPageData = {
 
   h1Line1: "Web Developer Miami FL",
   h1Line2: "– SaaS, Fintech & International Platforms",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Miami FL</strong> startups, fintech companies, and international SaaS founders trust to ship fast without cutting corners. Next.js, Node.js, PostgreSQL, and Redis — built for Miami's high-velocity, globally-minded tech market.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Miami FL</strong> that startups, fintech companies, and international SaaS founders trust to ship fast without cutting corners. Next.js, Node.js, PostgreSQL, and Redis — built for Miami's high-velocity, globally-minded tech market.`,
   bulletPoints: [
     "Full-stack Next.js, Node.js & PostgreSQL applications",
     "International SaaS, multilingual platforms, and LatAm-facing products",
@@ -680,7 +680,7 @@ export const orlandoPageData: CityPageData = {
 
   h1Line1: "Web Developer Orlando FL",
   h1Line2: "– Hospitality Tech, SaaS & Full-Stack Apps",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Orlando FL</strong> hospitality companies, SaaS startups, and experience-driven businesses trust to ship polished, production-ready applications. Next.js, Node.js, PostgreSQL, and Redis — built for Orlando's high-volume, experience-first economy.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Orlando FL</strong> that hospitality companies, SaaS startups, and experience-driven businesses trust to ship polished, production-ready applications. Next.js, Node.js, PostgreSQL, and Redis — built for Orlando's high-volume, experience-first economy.`,
   bulletPoints: [
     "Production-ready Next.js, Node.js & PostgreSQL applications",
     "Booking systems, hospitality dashboards, and experience platforms",
