@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.9,
     },
+    // Texas pages
     {
       url: `${siteMetadata.url}/web-developer-austin-tx`,
       lastModified: new Date(),
@@ -33,6 +34,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    // California pages
     {
       url: `${siteMetadata.url}/web-developer-sacramento-ca`,
       lastModified: new Date(),
@@ -47,6 +49,31 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${siteMetadata.url}/web-developer-san-francisco-ca`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    // Florida pages
+    {
+      url: `${siteMetadata.url}/web-developer-jacksonville-fl`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${siteMetadata.url}/web-developer-tampa-fl`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${siteMetadata.url}/web-developer-miami-fl`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${siteMetadata.url}/web-developer-orlando-fl`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

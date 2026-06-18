@@ -26,6 +26,7 @@ export type CityPageData = {
   keyword: string;
   cityName: string;
   citySlug: string;
+  cityState: string;
   profileImageUrl: string;
   profileImageAlt: string;
   h1Line1: string;
@@ -317,6 +318,7 @@ export default function CityPageTemplate({ data }: { data: CityPageData }) {
         contactSubtitle={data.contactSubtitle}
         availability={data.availability}
         cityName={data.cityName}
+        cityState={data.cityState}
       />
 
       {/* ── Footer ── */}
@@ -329,7 +331,7 @@ export default function CityPageTemplate({ data }: { data: CityPageData }) {
             Ahmed | <span className="text-emerald-400">Ali</span>
           </Link>
           <p className="text-white/20 text-xs font-mono">
-            Web Developer {data.cityName} TX · Full-Stack Developer · AI-Powered
+            Web Developer {data.cityName} {data.cityState} · Full-Stack Developer · AI-Powered
             Apps
           </p>
           <p className="text-white/20 text-xs font-mono">

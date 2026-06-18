@@ -28,6 +28,7 @@ type Props = {
   contactSubtitle: string;
   availability: CityPageAvailability[];
   cityName: string;
+  cityState: string;
 };
 
 export default function CityContactForm({
@@ -37,6 +38,7 @@ export default function CityContactForm({
   contactSubtitle,
   availability,
   cityName,
+  cityState
 }: Props) {
   const formRef = useRef<HTMLFormElement | null>(null);
   const [loading, setLoading] = useState(false);
@@ -141,8 +143,8 @@ export default function CityContactForm({
               src="https://calendly.com/hafizsyedahmedali12/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=09090b&text_color=777&primary_color=22c55e"
               width="100%"
               height="600"
-              title={`Schedule a free consultation with Ahmed Ali – Web Developer ${cityName} TX`}
-              className="w-full"
+              title={`Schedule a free consultation with Ahmed Ali – Web Developer ${cityName} ${cityState}`}
+              className="w-full invert hue-rotate-180"
               loading="lazy"
             />
           </div>
@@ -245,7 +247,7 @@ export default function CityContactForm({
               <FloatInput
                 id={`${contactId}-city`}
                 name="city"
-                label={`Your city (e.g. ${cityName} TX)`}
+                label={`Your city (e.g. ${cityName} ${cityState})`}
                 value={form.city}
                 onChange={handleChange}
                 disabled={loading}

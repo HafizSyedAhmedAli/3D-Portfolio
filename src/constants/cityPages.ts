@@ -78,6 +78,7 @@ const COMMON_SERVICES_STRIP = [
 export const austinPageData: CityPageData = {
   keyword: "web developer austin tx",
   cityName: "Austin",
+  cityState: "TX",
   citySlug: "austin",
   profileImageUrl:
     "/images/professional-web-developer-austin-tx-full-stack-ai-powered-apps.png",
@@ -269,6 +270,7 @@ export const austinPageData: CityPageData = {
 export const dallasPageData: CityPageData = {
   keyword: "web developer dallas tx",
   cityName: "Dallas",
+  cityState: "TX",
   citySlug: "dallas",
   profileImageUrl:
     "/images/web-developer-dallas-tx-saas-ai-full-stack-engineering.png",
@@ -460,6 +462,7 @@ export const dallasPageData: CityPageData = {
 export const houstonPageData: CityPageData = {
   keyword: "web developer houston tx",
   cityName: "Houston",
+  cityState: "TX",
   citySlug: "houston",
   profileImageUrl:
     "/images/web-developer-houston-tx-enterprise-backends-ai-apps.png",
@@ -651,6 +654,7 @@ export const houstonPageData: CityPageData = {
 export const sacramentoPageData: CityPageData = {
   keyword: "web developer sacramento ca",
   cityName: "Sacramento",
+  cityState: "CA",
   citySlug: "sacramento",
   profileImageUrl:
     "/images/web-developer-sacramento-ca-full-stack-ai-nextjs.png",
@@ -841,6 +845,7 @@ export const sacramentoPageData: CityPageData = {
 export const losAngelesPageData: CityPageData = {
   keyword: "web developer los angeles ca",
   cityName: "Los Angeles",
+  cityState: "CA",
   citySlug: "los-angeles",
   profileImageUrl:
     "/images/web-developer-los-angeles-ca-saas-ai-full-stack.png",
@@ -1031,6 +1036,7 @@ export const losAngelesPageData: CityPageData = {
 export const sanFranciscoPageData: CityPageData = {
   keyword: "web developer san francisco ca",
   cityName: "San Francisco",
+  cityState: "CA",
   citySlug: "san-francisco",
   profileImageUrl:
     "/images/web-developer-san-francisco-ca-enterprise-ai-saas.png",
