@@ -8,16 +8,16 @@ import ProjectCard from "@/components/city/ProjectCard";
 import TestimonialCard from "@/components/city/TestimonialCard";
 import WhyCard from "@/components/city/WhyCard";
 import type {
-    AustinNavLink,
-    CityPageAbilityCard,
-    CityPageAvailability,
-    CityPageCityLink,
-    CityPageHighlight,
-    CityPageProject,
-    CityPageService,
-    CityPageStat,
-    CityPageTestimonial,
-    CityPageWhyCard,
+  AustinNavLink,
+  CityPageAbilityCard,
+  CityPageAvailability,
+  CityPageCityLink,
+  CityPageHighlight,
+  CityPageProject,
+  CityPageService,
+  CityPageStat,
+  CityPageTestimonial,
+  CityPageWhyCard,
 } from "@/types";
 import Link from "next/link";
 
@@ -58,6 +58,13 @@ export type CityPageData = {
   navCTALabel: string;
   contactId: string;
   appointmentId: string;
+  faqTitle: string;
+  faqs: {
+    question: string;
+    answer: string;
+  }[];
+  localSeoTitle: string;
+  localSeoParagraphs: string[];
 };
 
 export default function CityPageTemplate({ data }: { data: CityPageData }) {
@@ -288,6 +295,51 @@ export default function CityPageTemplate({ data }: { data: CityPageData }) {
         </div>
       </section>
 
+      {/* ── FAQ ── */}
+      <section className="px-5 md:px-20 py-16 md:py-20 border-t border-white/5">
+        <div className="max-w-4xl mx-auto">
+          <p className="text-emerald-400 font-mono text-xs md:text-sm tracking-widest uppercase mb-3">
+            FAQ
+          </p>
+
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-10">
+            {data.faqTitle}
+          </h2>
+
+          <div className="space-y-5">
+            {data.faqs.map((faq) => (
+              <div
+                key={faq.question}
+                className="p-5 rounded-xl border border-white/10"
+              >
+                <h3 className="font-semibold text-lg mb-2">{faq.question}</h3>
+
+                <p className="text-white/60 leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── Local SEO Content ── */}
+      <section className="px-5 md:px-20 py-16 md:py-20 border-t border-white/5">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-emerald-400 font-mono text-xs md:text-sm tracking-widest uppercase mb-3">
+            Local Expertise
+          </p>
+
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">
+            {data.localSeoTitle}
+          </h2>
+
+          <div className="space-y-5 text-white/60 leading-relaxed">
+            {data.localSeoParagraphs.map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Services strip ── */}
       <div className="w-full border-t border-b border-emerald-500/20 bg-emerald-500/5 py-4 px-5 md:px-20">
         <div className="max-w-7xl mx-auto flex flex-wrap justify-center items-center gap-x-4 md:gap-x-8 gap-y-2">
@@ -331,8 +383,8 @@ export default function CityPageTemplate({ data }: { data: CityPageData }) {
             Ahmed | <span className="text-emerald-400">Ali</span>
           </Link>
           <p className="text-white/20 text-xs font-mono">
-            Web Developer {data.cityName} {data.cityState} · Full-Stack Developer · AI-Powered
-            Apps
+            Web Developer {data.cityName} {data.cityState} · Full-Stack
+            Developer · AI-Powered Apps
           </p>
           <p className="text-white/20 text-xs font-mono">
             &copy; {new Date().getFullYear()} Ahmed Ali
