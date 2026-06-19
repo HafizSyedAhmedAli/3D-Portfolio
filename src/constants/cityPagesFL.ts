@@ -253,7 +253,11 @@ export const jacksonvillePageData: CityPageData = {
     "Have a project that needs enterprise-grade reliability? Describe it below and I'll respond within 24 hours with a free consultation.",
 
   availability: [...COMMON_AVAILABILITY],
-  stats: [...COMMON_STATS],
+  stats: [
+    { label: "Fintech Systems", value: "Audit-Ready" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
 
   navLinks: [
     { name: "About", href: "#about-jacksonville" },
@@ -520,7 +524,11 @@ export const tampaPageData: CityPageData = {
     "Building something that demands security and reliability? Describe your project and I'll respond within 24 hours with a free consultation.",
 
   availability: [...COMMON_AVAILABILITY],
-  stats: [...COMMON_STATS],
+  stats: [
+    { label: "Security-First", value: "By Default" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
 
   navLinks: [
     { name: "About", href: "#about-tampa" },
@@ -790,7 +798,11 @@ export const miamiPageData: CityPageData = {
     "Building something for Miami's global market? Tell me what you need and I'll respond within 24 hours with a free consultation.",
 
   availability: [...COMMON_AVAILABILITY],
-  stats: [...COMMON_STATS],
+  stats: [
+    { label: "LatAm-Ready", value: "Multi-Region" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
 
   navLinks: [
     { name: "About", href: "#about-miami" },
@@ -1059,7 +1071,11 @@ export const orlandoPageData: CityPageData = {
     "Building something for Orlando's experience economy or B2B market? Describe your project and I'll respond within 24 hours with a free consultation.",
 
   availability: [...COMMON_AVAILABILITY],
-  stats: [...COMMON_STATS],
+  stats: [
+    { label: "High-Traffic Apps", value: "Redis-Backed" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
 
   navLinks: [
     { name: "About", href: "#about-orlando" },

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import CityPageTemplate from "@/components/city/CityPageTemplate";
-import { austinPageData } from "@/constants/cityPages";
 import { generateCitySchemas } from "@/lib/seo/generateCitySchemas";
+import { austinPageData } from "@/constants/cityPagesTX";
 
 export const metadata: Metadata = {
   title: "Web Developer Austin TX | Next.js, Node.js & AI Apps | Ahmed Ali",

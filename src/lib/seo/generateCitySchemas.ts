@@ -16,8 +16,17 @@ function cityUrl(baseUrl: string, slug: string) {
 // Simple geo map (extend later if needed)
 const CITY_GEO: Record<string, { lat: number; lng: number }> = {
   austin: { lat: 30.2672, lng: -97.7431 },
-  "new-york": { lat: 40.7128, lng: -74.006 },
+  dallas: { lat: 32.7767, lng: -96.797 },
+  houston: { lat: 29.7604, lng: -95.3698 },
+  sacramento: { lat: 38.5816, lng: -121.4944 },
+  "los-angeles": { lat: 34.0522, lng: -118.2437 },
+  "san-francisco": { lat: 37.7749, lng: -122.4194 },
+  jacksonville: { lat: 30.3322, lng: -81.6557 },
+  tampa: { lat: 27.9506, lng: -82.4572 },
+  miami: { lat: 25.7617, lng: -80.1918 },
+  orlando: { lat: 28.5383, lng: -81.3792 },
   rochester: { lat: 43.1566, lng: -77.6088 },
+  "new-york": { lat: 40.7128, lng: -74.006 },
 };
 
 export function generateCitySchemas(

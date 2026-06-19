@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import CityPageTemplate from "@/components/city/CityPageTemplate";
-import { losAngelesPageData } from "@/constants/cityPages";
+import { losAngelesPageData } from "@/constants/cityPagesCA";
 import { generateCitySchemas } from "@/lib/seo/generateCitySchemas";
 
 export const metadata: Metadata = {
