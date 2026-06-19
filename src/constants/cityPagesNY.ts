@@ -58,12 +58,6 @@ const COMMON_AVAILABILITY = [
   { label: "Availability", value: "Immediate start", dot: false },
 ] as const;
 
-const COMMON_STATS = [
-  { label: "Response Time", value: "< 24hrs" },
-  { label: "Projects Live", value: "3+" },
-  { label: "On-Time Rate", value: "100%" },
-] as const;
-
 const COMMON_SERVICES_STRIP = [
   "Full-Stack Development",
   "Web Development",
@@ -73,10 +67,7 @@ const COMMON_SERVICES_STRIP = [
   "Stripe & Subscriptions",
 ] as const;
 
-// ─── Rochester ──────────────────────────────────────────────────────────────
-// SEO angle: manufacturing operations, optics/imaging legacy, inventory accuracy,
-// production dashboards, and dependable internal tools.
-// This page intentionally uses a different positioning than the New York page.
+// ─── Rochester NY ──────────────────────────────────────────────────────────
 
 export const rochesterPageData: CityPageData = {
   keyword: "web developer rochester ny",
@@ -170,8 +161,7 @@ export const rochesterPageData: CityPageData = {
     },
   ],
 
-  faqTitle: "Frequently Asked Questions",
-
+  faqTitle: "Frequently Asked Questions — Web Developer Rochester NY",
   faqs: [
     {
       question: "Do you build manufacturing software in Rochester NY?",
@@ -179,30 +169,40 @@ export const rochesterPageData: CityPageData = {
         "Yes. I build custom manufacturing dashboards, inventory systems, production tracking tools, and operational software for Rochester businesses.",
     },
     {
-      question: "Can you improve an existing web application?",
+      question:
+        "Can you improve an existing web application for a Rochester company?",
       answer:
         "Yes. I can audit, optimize, and extend existing applications built with React, Next.js, Node.js, PostgreSQL, and other modern technologies.",
     },
     {
-      question: "Do you work remotely with Rochester companies?",
+      question: "Do you work remotely with Rochester NY companies?",
       answer:
-        "Yes. I work remotely with businesses across Rochester and Upstate New York while maintaining direct communication throughout the project.",
+        "Yes. I work remotely with businesses across Rochester and Upstate New York — including Buffalo, Syracuse, and Albany — while maintaining direct communication throughout the project.",
     },
     {
-      question: "How quickly can a project start?",
+      question:
+        "Can you build AI-powered tools for Rochester manufacturing companies?",
       answer:
-        "Most projects can begin within a few days after requirements and scope are finalized.",
+        "Yes. I integrate AI features including document processing, workflow automation, reporting pipelines, and intelligent data extraction into manufacturing and operational software.",
+    },
+    {
+      question: "How quickly can a Rochester project start?",
+      answer:
+        "Most projects can begin within a few days after requirements and scope are finalized. I respond to all inquiries within 24 hours.",
+    },
+    {
+      question:
+        "How does your pricing compare to Rochester web development agencies?",
+      answer:
+        "Significantly lower — because you work directly with the developer writing your code, not an agency adding account management layers. Rochester businesses get the same engineering quality without the markup.",
     },
   ],
 
   localSeoTitle:
     "Web Development Services for Rochester's Manufacturing and Technology Sector",
-
   localSeoParagraphs: [
-    "Rochester has a long history of manufacturing, imaging technology, and precision engineering. Businesses operating in these industries often require software that prioritizes reliability, reporting accuracy, and operational visibility.",
-
+    "Rochester has a long history of manufacturing, imaging technology, and precision engineering — shaped by companies like Kodak, Xerox, and Paychex. Businesses operating in these industries often require software that prioritizes reliability, reporting accuracy, and operational visibility.",
     "As a web developer serving Rochester NY, I build custom dashboards, inventory systems, workflow automation tools, and full-stack applications that help teams manage critical business processes more efficiently.",
-
     "Whether your company operates in manufacturing, logistics, distribution, imaging technology, or professional services, I can develop software tailored to your specific workflow requirements while maintaining scalability and long-term maintainability.",
   ],
 
@@ -272,18 +272,19 @@ export const rochesterPageData: CityPageData = {
 
   coverageH2: "Serving Rochester, the Metro, and the Greater Upstate Region",
   coverageParagraphs: [
-    `I work remotely with businesses across the Rochester metro — Brighton, Henrietta, Greece, Webster, Pittsford, Victor, Irondequoit, and nearby communities. If you're searching for a <strong class="text-white">web developer rochester ny</strong>, you get the same direct communication and production standard regardless of where your office is located.`,
+    `I work remotely with businesses across the Rochester metro — Brighton, Henrietta, Greece, Webster, Pittsford, Victor, Irondequoit, and nearby communities. If you're searching for a <strong class="text-white">web developer rochester ny</strong>, you get the same direct communication and production standard regardless of where your office is located. I also serve businesses searching for a <a href="/web-developer-new-york-ny" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in New York NY</a> across the broader state market.`,
     "Rochester businesses often need software that is practical first: inventory counts that stay correct, dashboards that are easy to read, and workflows that do not break under real-world use. My approach fits that environment because I focus on reliability, maintainability, and clean data structures from the start.",
-    "I also support companies across Upstate New York, including Syracuse, Buffalo, and Albany, so remote collaboration is simple even when your team sits outside the immediate Rochester area.",
+    `I also support companies across Upstate New York, including Syracuse, Buffalo, and Albany. If you need a web developer rochester ny who can also handle projects further afield — same developer, same standards, no agency overhead. See my work as a <a href="/web-developer-new-york-ny" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in New York NY</a> for context on what I deliver across the state.`,
   ],
-
   cityLinks: [
     { city: "New York NY", href: "/web-developer-new-york-ny" },
+    { city: "Buffalo NY", href: "/web-developer-buffalo-ny" },
+    { city: "Syracuse NY", href: "/web-developer-syracuse-ny" },
+    { city: "Albany NY", href: "/web-developer-albany-ny" },
     { city: "Austin TX", href: "/web-developer-austin-tx" },
     { city: "Dallas TX", href: "/web-developer-dallas-tx" },
     { city: "Houston TX", href: "/web-developer-houston-tx" },
     { city: "Tampa FL", href: "/web-developer-tampa-fl" },
-    { city: "Miami FL", href: "/web-developer-miami-fl" },
   ],
   servicesStrip: COMMON_SERVICES_STRIP,
 
@@ -293,18 +294,9 @@ export const rochesterPageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    {
-      label: "Manufacturing Tools",
-      value: "Custom Built",
-    },
-    {
-      label: "Response Time",
-      value: "<24hrs",
-    },
-    {
-      label: "Project Start",
-      value: "Immediate",
-    },
+    { label: "Manufacturing Tools", value: "Custom Built" },
+    { label: "Response Time", value: "<24hrs" },
+    { label: "Project Start", value: "Immediate" },
   ],
 
   navLinks: [
@@ -318,12 +310,36 @@ export const rochesterPageData: CityPageData = {
   navCTALabel: "Hire Web Developer Rochester NY",
   contactId: "contact-rochester",
   appointmentId: "appointment-rochester",
+
+  industries: [
+    {
+      name: "Manufacturing & Industrial",
+      desc: "Rochester's industrial legacy drives demand for production tracking, quality control dashboards, and operational software built for factory environments.",
+    },
+    {
+      name: "Optics & Imaging Technology",
+      desc: "With a heritage from Kodak and Xerox, Rochester's optics sector needs precision data platforms, R&D tools, and imaging software infrastructure.",
+    },
+    {
+      name: "Logistics & Distribution",
+      desc: "Rochester's central Upstate New York location makes it a distribution hub. I build inventory systems, fleet tools, and supply chain dashboards.",
+    },
+    {
+      name: "Healthcare & Life Sciences",
+      desc: "Rochester's medical sector, anchored by University of Rochester Medical Center, needs secure patient portals and clinical-grade platforms.",
+    },
+    {
+      name: "Education Technology",
+      desc: "The University of Rochester and RIT drive EdTech demand. I build LMS platforms, student portals, and research-grade web applications.",
+    },
+    {
+      name: "Professional Services",
+      desc: "Rochester's legal, accounting, and consulting firms need secure client portals, document management systems, and practice management tools.",
+    },
+  ],
 };
 
 // ─── New York NY ────────────────────────────────────────────────────────────
-// SEO angle: fintech precision, media/publishing platforms, high-traffic SaaS,
-// and direct engineering without agency overhead.
-// This page deliberately targets different search intent than Rochester.
 
 export const newYorkPageData: CityPageData = {
   keyword: "web developer new york ny",
@@ -416,8 +432,7 @@ export const newYorkPageData: CityPageData = {
     },
   ],
 
-  faqTitle: "Frequently Asked Questions",
-
+  faqTitle: "Frequently Asked Questions — Web Developer New York NY",
   faqs: [
     {
       question: "What web development services do you offer in New York NY?",
@@ -430,14 +445,14 @@ export const newYorkPageData: CityPageData = {
         "Yes. I work with startups, SaaS businesses, media companies, and growing technology teams that need scalable, production-ready software without the overhead of a traditional agency.",
     },
     {
-      question: "Can you build AI-powered web applications?",
+      question: "Can you build AI-powered web applications for NYC companies?",
       answer:
         "Yes. I integrate AI features including chat assistants, document processing, workflow automation, voice agents, and custom AI-powered tools directly into web applications.",
     },
     {
       question: "Do you work remotely with businesses in New York?",
       answer:
-        "Yes. I work remotely with clients throughout Manhattan, Brooklyn, Queens, the Bronx, Staten Island, and the wider New York metropolitan area while maintaining direct communication throughout the project.",
+        "Yes. I work remotely with clients throughout Manhattan, Brooklyn, Queens, the Bronx, Staten Island, Jersey City, and Long Island while maintaining direct communication throughout the project.",
     },
     {
       question: "How does your pricing compare to New York agencies?",
@@ -453,12 +468,9 @@ export const newYorkPageData: CityPageData = {
 
   localSeoTitle:
     "Web Development for New York Startups, SaaS Companies, and Fintech Teams",
-
   localSeoParagraphs: [
     "New York is home to some of the world's fastest-growing startups, fintech companies, media organizations, and SaaS businesses. These companies require software that can scale while maintaining performance and reliability.",
-
     "As a web developer serving New York NY, I build custom SaaS platforms, fintech dashboards, AI-powered applications, customer portals, and internal business systems using modern technologies including Next.js, Node.js, PostgreSQL, and Redis.",
-
     "Whether you're launching a startup MVP, expanding an existing platform, or modernizing internal tools, I provide direct access to experienced full-stack development without agency overhead.",
   ],
 
@@ -528,12 +540,15 @@ export const newYorkPageData: CityPageData = {
 
   coverageH2: "Serving All Five Boroughs and the Wider Tri-State Area",
   coverageParagraphs: [
-    `Businesses searching for a <strong class="text-white">web developer in New York NY</strong> usually want someone who can match the city's pace without the city's overhead. I work remotely across Manhattan, Brooklyn, Queens, the Bronx, and Staten Island, plus Jersey City, Hoboken, and Long Island.`,
+    `Businesses searching for a <strong class="text-white">web developer in New York NY</strong> usually want someone who can match the city's pace without the city's overhead. I work remotely across Manhattan, Brooklyn, Queens, the Bronx, and Staten Island, plus Jersey City, Hoboken, and Long Island. I also serve companies searching for a <a href="/web-developer-rochester-ny" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Rochester NY</a> across Upstate New York.`,
     "New York's tech and finance world moves fast, and the software behind it needs to do the same. I keep projects lean by staying close to the code myself, which removes the delays that often come with agencies and multi-layered account management.",
-    `I also support the broader Tri-State and Upstate New York market. If you need a <strong class="text-white">web developer new york ny</strong> companies can trust for long-term work, you get the same standards and the same direct line of communication whether the project is in Manhattan, Rochester, or elsewhere.`,
+    `I also support the broader Tri-State and Upstate New York market. If you need a <strong class="text-white">web developer new york ny</strong> companies can trust for long-term work, you get the same standards and the same direct line of communication whether the project is in Manhattan, Rochester, or elsewhere. Check out my work as a <a href="/web-developer-rochester-ny" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Rochester NY</a> to see what I deliver across the state.`,
   ],
   cityLinks: [
     { city: "Rochester NY", href: "/web-developer-rochester-ny" },
+    { city: "Buffalo NY", href: "/web-developer-buffalo-ny" },
+    { city: "Jersey City NJ", href: "/web-developer-jersey-city-nj" },
+    { city: "Newark NJ", href: "/web-developer-newark-nj" },
     { city: "San Francisco CA", href: "/web-developer-san-francisco-ca" },
     { city: "Los Angeles CA", href: "/web-developer-los-angeles-ca" },
     { city: "Miami FL", href: "/web-developer-miami-fl" },
@@ -547,18 +562,9 @@ export const newYorkPageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    {
-      label: "SaaS Platforms",
-      value: "Production Ready",
-    },
-    {
-      label: "Response Time",
-      value: "<24hrs",
-    },
-    {
-      label: "Project Start",
-      value: "Immediate",
-    },
+    { label: "SaaS Platforms", value: "Production Ready" },
+    { label: "Response Time", value: "<24hrs" },
+    { label: "Project Start", value: "Immediate" },
   ],
 
   navLinks: [
@@ -572,4 +578,31 @@ export const newYorkPageData: CityPageData = {
   navCTALabel: "Hire Web Developer New York NY",
   contactId: "contact-new-york",
   appointmentId: "appointment-new-york",
+
+  industries: [
+    {
+      name: "Fintech & Financial Services",
+      desc: "Wall Street and NYC's massive financial sector needs precision fintech dashboards, trading tools, compliance platforms, and payment infrastructure.",
+    },
+    {
+      name: "Media & Publishing",
+      desc: "NYC's media industry — from digital newspapers to streaming platforms — needs content management systems, editorial tools, and high-traffic web infrastructure.",
+    },
+    {
+      name: "Healthcare & Life Sciences",
+      desc: "New York's healthcare sector, anchored by NYU Langone and Mount Sinai, needs secure patient platforms, clinical SaaS, and health-tech applications.",
+    },
+    {
+      name: "E-Commerce & Retail",
+      desc: "NYC is the fashion and retail capital of the US. I build e-commerce platforms, inventory management tools, and retail SaaS products.",
+    },
+    {
+      name: "Real Estate & PropTech",
+      desc: "New York's real estate market is the world's most complex. I build property platforms, listing tools, and real estate SaaS applications.",
+    },
+    {
+      name: "AI & Enterprise SaaS",
+      desc: "NYC is the East Coast's AI and enterprise software hub. I build multi-tenant SaaS platforms, AI-powered applications, and enterprise tools.",
+    },
+  ],
 };

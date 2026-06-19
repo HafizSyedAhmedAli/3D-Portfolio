@@ -17,7 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     // Texas pages
     {
-      url: `${siteMetadata.url}/web-developer-austin-tx`,
+      url: `${siteMetadata.url}/web-developer-austin-tx`,//
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

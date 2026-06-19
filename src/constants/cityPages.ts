@@ -231,9 +231,9 @@ export const austinPageData: CityPageData = {
 
   coverageH2: "Based in Austin, Available Across All of Texas",
   coverageParagraphs: [
-    `I work remotely with businesses across the entire Austin metro — Round Rock, Cedar Park, Pflugerville, Georgetown, Leander, Kyle, Buda, San Marcos, and beyond. If you're searching for a <strong class="text-white">web developer austin tx</strong>, distance is never a barrier. You get the same quality whether you're on South Congress or out in the Hill Country.`,
+    `I work remotely with businesses across the entire Austin metro — Round Rock, Cedar Park, Pflugerville, Georgetown, Leander, Kyle, Buda, San Marcos, and beyond. If you're searching for a <strong class="text-white">web developer austin tx</strong>, distance is never a barrier. You get the same quality whether you're on South Congress or out in the Hill Country. I also serve businesses looking for a <a href="/web-developer-dallas-tx" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Dallas TX</a> and across the wider Texas market.`,
     "Austin is one of the fastest-growing tech hubs in the US. From the Domain to Downtown, startups and established companies need developers who know modern stacks. My expertise in Next.js, TypeScript, Node.js, PostgreSQL, and Redis puts your project on the same level as what top Austin tech companies ship internally.",
-    "I also cover the wider Texas market. Whether you're in Dallas, Houston, San Antonio, Fort Worth, Plano, or Frisco — remote collaboration means you get the same quality, just without the Austin agency price tag.",
+    `I also cover the wider Texas market. Whether you're in Dallas, Houston, San Antonio, Fort Worth, Plano, or Frisco — remote collaboration means you get the same quality, just without the Austin agency price tag. If you need a <a href="/web-developer-houston-tx" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Houston TX</a>, the same standards apply.`,
   ],
   cityLinks: [
     { city: "Dallas TX", href: "/web-developer-dallas-tx" },
@@ -242,6 +242,8 @@ export const austinPageData: CityPageData = {
     { city: "Fort Worth TX", href: "/web-developer-fort-worth-tx" },
     { city: "Plano TX", href: "/web-developer-plano-tx" },
     { city: "Frisco TX", href: "/web-developer-frisco-tx" },
+    { city: "Round Rock TX", href: "/web-developer-round-rock-tx" },
+    { city: "San Marcos TX", href: "/web-developer-san-marcos-tx" },
   ],
   servicesStrip: COMMON_SERVICES_STRIP,
 
@@ -263,6 +265,74 @@ export const austinPageData: CityPageData = {
   navCTALabel: "Hire Web Developer Austin TX",
   contactId: "contact-austin",
   appointmentId: "appointment-austin",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Austin TX",
+  faqs: [
+    {
+      question: "What full-stack web development services do you offer in Austin TX?",
+      answer:
+        "I offer end-to-end full-stack development using Next.js, Node.js, and PostgreSQL — covering frontend, backend API, database schema, and deployment pipeline. This includes custom SaaS platforms, customer portals, internal business tools, authentication systems, payment integration, and ongoing maintenance.",
+    },
+    {
+      question: "Can you build AI-powered SaaS applications for Austin businesses?",
+      answer:
+        "Yes. I integrate LLMs, voice agents, and AI chat widgets natively into web applications — including OpenAI integrations, AI chat assistants, document processing pipelines, and voice automation. I have shipped a live multi-tenant B2B SaaS with embeddable AI chat widgets and real-time voice agents.",
+    },
+    {
+      question: "Do you work remotely with Austin TX clients?",
+      answer:
+        "Yes. I work fully remotely with businesses across the Austin metro and wider Texas market — including Dallas, Houston, San Antonio, Fort Worth, Plano, and Frisco. I respond within 24 hours and offer a free 30-minute consultation call.",
+    },
+    {
+      question: "How quickly can you start a new project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all inquiries within 24 hours and can begin most projects within a few days of alignment on scope and requirements.",
+    },
+    {
+      question: "Do you build e-commerce and subscription platforms for Austin TX?",
+      answer:
+        "Yes. I have shipped full Stripe subscription systems in production — including recurring billing, webhook handling, customer dashboards, and admin billing portals. My live football platform Flacron Gamezone uses this exact stack and serves real paying users.",
+    },
+    {
+      question: "How does your pricing compare to Austin web development agencies?",
+      answer:
+        "Significantly lower — because you work directly with the developer, not an agency with layers of account managers. You get the same engineering quality without the overhead markup. Every engagement starts with a free 30-minute consultation.",
+    },
+  ],
+
+  localSeoTitle: "Web Development Expertise for Austin TX Businesses",
+  localSeoParagraphs: [
+    "Austin's technology sector has grown into one of the most competitive in the United States, with major companies like Dell, Apple, Google, Tesla, and hundreds of funded startups all operating in the metro area. Businesses here need software development that matches the pace and ambition of the market.",
+    "As a web developer serving Austin TX, I build custom SaaS platforms, AI-powered applications, enterprise backends, and customer-facing web products using Next.js, Node.js, PostgreSQL, and Redis. The same stack that Austin's best engineering teams rely on internally.",
+    "Whether you're a seed-stage startup in East Austin, a scale-up in the Domain, or an established company Downtown, I deliver production-grade software with direct communication and no agency overhead.",
+  ],
+
+  industries: [
+    {
+      name: "Technology & SaaS",
+      desc: "Austin is the Silicon Hills. I build scalable SaaS platforms, developer tools, and AI-powered products for Austin's growing tech sector.",
+    },
+    {
+      name: "E-Commerce & Retail",
+      desc: "From Stripe-powered storefronts to inventory management systems, I build the full-stack infrastructure Austin retailers need.",
+    },
+    {
+      name: "Healthcare Technology",
+      desc: "Secure, HIPAA-aware web platforms for Austin's expanding health-tech and medical services companies.",
+    },
+    {
+      name: "Real Estate & PropTech",
+      desc: "Property listing platforms, booking systems, and CRM integrations for Austin's booming real estate market.",
+    },
+    {
+      name: "Clean Energy & Sustainability",
+      desc: "Operational dashboards, monitoring platforms, and data pipelines for Austin's clean energy and sustainability companies.",
+    },
+    {
+      name: "Education Technology",
+      desc: "LMS platforms, student portals, and AI-powered learning tools for Austin's EdTech startups and educational institutions.",
+    },
+  ],
 };
 
 // ─── Dallas ───────────────────────────────────────────────────────────────────
@@ -306,7 +376,7 @@ export const dallasPageData: CityPageData = {
     },
     {
       icon: "📦",
-      title: "Monorepo & Modular Code",
+      title: "Modular Code",
       desc: "Reusable modules, shared types, and consistent patterns across your entire codebase — no spaghetti.",
     },
     {
@@ -423,17 +493,19 @@ export const dallasPageData: CityPageData = {
 
   coverageH2: "Web Developer Dallas TX — Serving All of DFW",
   coverageParagraphs: [
-    `As a <strong class="text-white">web developer dallas tx</strong> clients reach out to, I cover the entire Dallas-Fort Worth metroplex remotely — including Plano, Frisco, Irving, Garland, McKinney, Allen, Richardson, Carrollton, Lewisville, and beyond. You get the same quality product whether you're in Uptown Dallas or out in the suburbs.`,
+    `As a <strong class="text-white">web developer dallas tx</strong> clients reach out to, I cover the entire Dallas-Fort Worth metroplex remotely — including Plano, Frisco, Irving, Garland, McKinney, Allen, Richardson, Carrollton, Lewisville, and beyond. You get the same quality product whether you're in Uptown Dallas or out in the suburbs. Businesses searching for a <a href="/web-developer-austin-tx" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Austin TX</a> can expect the same direct service.`,
     "Dallas is one of the most competitive tech markets in the United States. From the Telecom Corridor in Richardson to the start-up scene in Deep Ellum, businesses here need developers who can ship fast without cutting corners. My expertise in Next.js, TypeScript, PostgreSQL, Redis, and AI integration means your product is built to compete at that level.",
-    `I also cover the broader Texas market. If you need a <strong class="text-white">web developer dallas tx</strong> who can also handle projects in Austin, Houston, or San Antonio — same developer, same standards, same direct communication. No agency markup.`,
+    `I also cover the broader Texas market. If you need a <strong class="text-white">web developer dallas tx</strong> who can also handle projects in Austin, Houston, or San Antonio — same developer, same standards, same direct communication. If you're specifically looking for a <a href="/web-developer-houston-tx" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Houston TX</a>, I cover that too.`,
   ],
   cityLinks: [
     { city: "Austin TX", href: "/web-developer-austin-tx" },
     { city: "Houston TX", href: "/web-developer-houston-tx" },
-    { city: "San Antonio TX", href: "/web-developer-san-antonio-tx" },
     { city: "Fort Worth TX", href: "/web-developer-fort-worth-tx" },
     { city: "Plano TX", href: "/web-developer-plano-tx" },
     { city: "Frisco TX", href: "/web-developer-frisco-tx" },
+    { city: "Arlington TX", href: "/web-developer-arlington-tx" },
+    { city: "Irving TX", href: "/web-developer-irving-tx" },
+    { city: "McKinney TX", href: "/web-developer-mckinney-tx" },
   ],
   servicesStrip: COMMON_SERVICES_STRIP,
 
@@ -455,6 +527,74 @@ export const dallasPageData: CityPageData = {
   navCTALabel: "Hire Web Developer Dallas TX",
   contactId: "contact-dallas",
   appointmentId: "appointment-dallas",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Dallas TX",
+  faqs: [
+    {
+      question: "What web development services do you offer Dallas TX businesses?",
+      answer:
+        "I offer full-stack web development using Next.js, Node.js, and PostgreSQL for Dallas TX clients. Services include custom SaaS platforms, AI integrations, payment systems, backend APIs, database architecture, and technical audits — all delivered remotely with the same quality as an in-house developer.",
+    },
+    {
+      question: "Can you build AI-powered web apps for Dallas companies?",
+      answer:
+        "Yes. I integrate LLMs, voice agents, and AI chat widgets into web applications for Dallas clients. I have shipped a live multi-tenant SaaS with embeddable AI chat and real-time voice automation — this is production-proven, not experimental.",
+    },
+    {
+      question: "Do you work remotely with Dallas TX clients?",
+      answer:
+        "Yes, fully remote. I serve Dallas and the wider DFW metro — including Plano, Frisco, Irving, Garland, McKinney, Allen, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "How do you handle database design for Dallas web projects?",
+      answer:
+        "I use PostgreSQL with proper schema design, indexing strategy, and Redis caching for high-throughput reads. Every database I design targets sub-150ms API response times and is built to scale without requiring a rewrite.",
+    },
+    {
+      question: "Can you integrate Stripe payments for a Dallas business?",
+      answer:
+        "Yes. I have shipped full Stripe subscription systems in production — including recurring billing, webhook handling, customer dashboards, and admin billing portals. My Flacron Gamezone platform uses this exact stack with real paying users.",
+    },
+    {
+      question: "How quickly can you start a Dallas TX web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Dallas TX inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development Services for Dallas TX's Growing Tech Economy",
+  localSeoParagraphs: [
+    "Dallas-Fort Worth is the fourth-largest metropolitan area in the United States and one of the fastest-growing technology markets in the country. From the Telecom Corridor in Richardson to the financial services district in Downtown Dallas, the demand for reliable, scalable web development has never been higher.",
+    "As a web developer serving Dallas TX, I build custom SaaS platforms, enterprise backends, AI-powered applications, and full-stack web products that meet the quality standard DFW's competitive market demands.",
+    "Dallas companies from startups to established enterprises choose direct developer engagement over agencies to eliminate overhead, reduce communication latency, and get better engineering output for their budget.",
+  ],
+
+  industries: [
+    {
+      name: "Financial Services & Fintech",
+      desc: "Dallas is a major financial hub. I build secure, audit-ready banking platforms, fintech dashboards, and payment systems for DFW's financial sector.",
+    },
+    {
+      name: "Telecommunications",
+      desc: "Home to AT&T's headquarters, Dallas has deep telecom roots. I build portals, internal tools, and operational platforms for the telecom industry.",
+    },
+    {
+      name: "Healthcare & Life Sciences",
+      desc: "From medical records systems to patient portals, I build HIPAA-aware healthcare platforms for Dallas's expanding medical technology sector.",
+    },
+    {
+      name: "Logistics & Supply Chain",
+      desc: "Dallas's central location makes it a logistics hub. I build inventory systems, fleet management dashboards, and supply chain tools.",
+    },
+    {
+      name: "Real Estate & PropTech",
+      desc: "DFW is one of the hottest real estate markets in the US. I build property platforms, listing systems, and CRM integrations for Dallas real estate companies.",
+    },
+    {
+      name: "Retail & E-Commerce",
+      desc: "Dallas is a major retail center. I build Stripe-powered storefronts, inventory systems, and customer portals for DFW retailers.",
+    },
+  ],
 };
 
 // ─── Houston ──────────────────────────────────────────────────────────────────
@@ -615,17 +755,19 @@ export const houstonPageData: CityPageData = {
 
   coverageH2: "Web Developer Houston TX — Covering Greater Houston",
   coverageParagraphs: [
-    `As a <strong class="text-white">web developer houston tx</strong> businesses hire, I work remotely across the entire Greater Houston area — Sugar Land, The Woodlands, Pearland, Katy, Pasadena, Baytown, League City, and beyond. Whether you're in the Energy Corridor, Downtown, or the Texas Medical Center, remote collaboration means you get the same output without paying Houston agency rates.`,
+    `As a <strong class="text-white">web developer houston tx</strong> businesses hire, I work remotely across the entire Greater Houston area — Sugar Land, The Woodlands, Pearland, Katy, Pasadena, Baytown, League City, and beyond. Whether you're in the Energy Corridor, Downtown, or the Texas Medical Center, remote collaboration means you get the same output without paying Houston agency rates. I also serve companies searching for a <a href="/web-developer-dallas-tx" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Dallas TX</a> across the wider Texas market.`,
     "Houston is one of the largest and most economically diverse cities in the country. From energy companies needing operational dashboards to healthcare tech startups building patient portals, the demands here are real and the stakes are high. My expertise in Next.js, Node.js, PostgreSQL, Redis, and AI integration delivers software that holds up in those environments.",
-    `I also cover the wider Texas market. If you need a <strong class="text-white">web developer houston tx</strong> who can work across Austin and Dallas projects too — same developer, same standards, no agency overhead.`,
+    `I also cover the wider Texas market. If you need a <strong class="text-white">web developer houston tx</strong> who can work across Austin and Dallas projects too — same developer, same standards, no agency overhead. Check out my work as a <a href="/web-developer-austin-tx" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Austin TX</a> for reference.`,
   ],
   cityLinks: [
     { city: "Austin TX", href: "/web-developer-austin-tx" },
     { city: "Dallas TX", href: "/web-developer-dallas-tx" },
-    { city: "San Antonio TX", href: "/web-developer-san-antonio-tx" },
     { city: "Fort Worth TX", href: "/web-developer-fort-worth-tx" },
-    { city: "Plano TX", href: "/web-developer-plano-tx" },
-    { city: "Frisco TX", href: "/web-developer-frisco-tx" },
+    { city: "Sugar Land TX", href: "/web-developer-sugar-land-tx" },
+    { city: "The Woodlands TX", href: "/web-developer-the-woodlands-tx" },
+    { city: "Pearland TX", href: "/web-developer-pearland-tx" },
+    { city: "Katy TX", href: "/web-developer-katy-tx" },
+    { city: "Pasadena TX", href: "/web-developer-pasadena-tx" },
   ],
   servicesStrip: COMMON_SERVICES_STRIP,
 
@@ -647,6 +789,74 @@ export const houstonPageData: CityPageData = {
   navCTALabel: "Hire Web Developer Houston TX",
   contactId: "contact-houston",
   appointmentId: "appointment-houston",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Houston TX",
+  faqs: [
+    {
+      question: "What web development services do you offer Houston TX businesses?",
+      answer:
+        "I offer full-stack web development for Houston TX clients using Next.js, Node.js, and PostgreSQL. Services include enterprise backend systems, AI integrations, Stripe payment platforms, custom SaaS, technical audits, and API engineering — all delivered remotely with the reliability of an in-house developer.",
+    },
+    {
+      question: "Can you build enterprise-grade web applications for Houston companies?",
+      answer:
+        "Yes. I specialize in production-grade systems built for scale — PostgreSQL with proper indexing, Redis caching, layered backend architecture, and TypeScript throughout. My live projects serve real users and handle real transactions, which is the standard I deliver for every Houston client.",
+    },
+    {
+      question: "Do you work remotely with Houston TX clients?",
+      answer:
+        "Yes, fully remote. I serve Houston and the wider Greater Houston area — including Sugar Land, The Woodlands, Pearland, Katy, Pasadena, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any project begins.",
+    },
+    {
+      question: "How do you approach API design for Houston web projects?",
+      answer:
+        "I build RESTful APIs using Express.js and Node.js following a strict controller-service-repository pattern. All APIs are Swagger-documented, Zod-validated, and tested before delivery. This makes your backend maintainable, auditable, and ready for third-party integration.",
+    },
+    {
+      question: "Can you integrate AI features into an existing Houston business application?",
+      answer:
+        "Yes. I integrate LLM-powered chat assistants, voice agents, document processing pipelines, and automation workflows into existing or new applications. My Relay SaaS project — a live multi-tenant platform with embedded AI chat and real-time voice agents — demonstrates exactly this capability.",
+    },
+    {
+      question: "How quickly can you start a new Houston TX web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Houston TX inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Houston's Energy, Healthcare & Tech Sectors",
+  localSeoParagraphs: [
+    "Houston is the energy capital of the world and home to the largest medical center on earth — the Texas Medical Center. These industries, along with Houston's growing technology sector, create demand for sophisticated, reliable web software that can handle complex data and high transaction volumes.",
+    "As a web developer serving Houston TX, I build enterprise backends, energy sector operational dashboards, healthcare platforms, and AI-powered SaaS applications using Next.js, Node.js, PostgreSQL, and Redis.",
+    "Houston businesses that need production-grade reliability choose direct developer engagement to eliminate agency overhead and get the engineering quality their sector demands.",
+  ],
+
+  industries: [
+    {
+      name: "Energy & Oil and Gas",
+      desc: "Houston is the energy capital of the world. I build operational dashboards, monitoring systems, and data pipelines for energy companies.",
+    },
+    {
+      name: "Healthcare & Medical Technology",
+      desc: "With the Texas Medical Center nearby, I build secure patient portals, medical record systems, and healthcare SaaS platforms.",
+    },
+    {
+      name: "Petrochemical & Manufacturing",
+      desc: "I build inventory management, quality control, and production tracking systems for Houston's industrial sector.",
+    },
+    {
+      name: "Aerospace & Defense",
+      desc: "Houston's NASA and aerospace corridor needs reliable, documented software. I build the kind of systems those industries trust.",
+    },
+    {
+      name: "Port & Logistics",
+      desc: "The Port of Houston drives massive logistics demand. I build supply chain management, tracking, and operational tools.",
+    },
+    {
+      name: "Financial Services",
+      desc: "Houston's growing financial sector needs secure, audit-ready platforms. I build banking tools, fintech dashboards, and payment systems.",
+    },
+  ],
 };
 
 // ─── Sacramento ───────────────────────────────────────────────────────────────
@@ -807,16 +1017,19 @@ export const sacramentoPageData: CityPageData = {
 
   coverageH2: "Web Developer Sacramento CA — Serving Greater Sacramento",
   coverageParagraphs: [
-    `As a <strong class="text-white">web developer in Sacramento CA</strong>, I work remotely across the entire Greater Sacramento area — Elk Grove, Roseville, Folsom, Rancho Cordova, Davis, Woodland, West Sacramento, and beyond. Whether you're building a civic tech tool near the Capitol or a startup in Midtown, remote collaboration means you get production-grade software without the downtown agency price tag.`,
+    `As a <strong class="text-white">web developer in Sacramento CA</strong>, I work remotely across the entire Greater Sacramento area — Elk Grove, Roseville, Folsom, Rancho Cordova, Davis, Woodland, West Sacramento, and beyond. Whether you're building a civic tech tool near the Capitol or a startup in Midtown, remote collaboration means you get production-grade software without the downtown agency price tag. Businesses needing a <a href="/web-developer-san-francisco-ca" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in San Francisco CA</a> can also reach out — same standards apply.`,
     "Sacramento is evolving from a government hub into a genuine tech market. From health-tech companies near UC Davis Medical Center to logistics-tech startups in the River District, the demand for reliable, scalable web development has never been higher. My expertise in Next.js, Node.js, PostgreSQL, Redis, and AI integration meets that demand directly.",
-    `I also serve the broader California market. If you need a <strong class="text-white">web developer sacramento ca</strong> who can also handle projects in Los Angeles or San Francisco — same developer, same standards, no agency overhead.`,
+    `I also serve the broader California market. If you need a <strong class="text-white">web developer sacramento ca</strong> who can also handle projects in Los Angeles or San Francisco — same developer, same standards, no agency overhead. See my work as a <a href="/web-developer-los-angeles-ca" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Los Angeles CA</a>.`,
   ],
   cityLinks: [
     { city: "Los Angeles CA", href: "/web-developer-los-angeles-ca" },
     { city: "San Francisco CA", href: "/web-developer-san-francisco-ca" },
+    { city: "Fresno CA", href: "/web-developer-fresno-ca" },
+    { city: "Stockton CA", href: "/web-developer-stockton-ca" },
+    { city: "Elk Grove CA", href: "/web-developer-elk-grove-ca" },
+    { city: "Roseville CA", href: "/web-developer-roseville-ca" },
     { city: "Austin TX", href: "/web-developer-austin-tx" },
     { city: "Dallas TX", href: "/web-developer-dallas-tx" },
-    { city: "Houston TX", href: "/web-developer-houston-tx" },
   ],
   servicesStrip: COMMON_SERVICES_STRIP,
 
@@ -838,6 +1051,74 @@ export const sacramentoPageData: CityPageData = {
   navCTALabel: "Hire Web Developer Sacramento CA",
   contactId: "contact-sacramento",
   appointmentId: "appointment-sacramento",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Sacramento CA",
+  faqs: [
+    {
+      question: "What web development services do you offer Sacramento CA businesses?",
+      answer:
+        "I offer full-stack web development for Sacramento CA clients using Next.js, Node.js, and PostgreSQL. Services include custom SaaS platforms, AI integrations, Stripe payment systems, backend API engineering, database architecture, and technical audits — all delivered remotely with the reliability of an in-house developer.",
+    },
+    {
+      question: "Can you build AI-powered web apps for Sacramento companies?",
+      answer:
+        "Yes. I integrate LLMs, voice agents, and AI chat widgets into web applications for Sacramento clients. I have shipped a live multi-tenant SaaS with embeddable AI chat and real-time voice automation — this is production-proven, not experimental.",
+    },
+    {
+      question: "Do you work remotely with Sacramento CA clients?",
+      answer:
+        "Yes, fully remote. I serve Sacramento and the wider Greater Sacramento area — including Elk Grove, Roseville, Folsom, Rancho Cordova, Davis, Woodland, and West Sacramento. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Can you build government technology platforms for Sacramento clients?",
+      answer:
+        "Yes. Sacramento's economy is heavily tied to state government operations. I build audit-ready, well-documented web platforms with proper access controls, logging, and clean architecture suited to government and public sector requirements.",
+    },
+    {
+      question: "How do you handle database design for Sacramento web projects?",
+      answer:
+        "I use PostgreSQL with proper schema design, indexing strategy, and Redis caching for high-throughput reads. Every database I design targets sub-150ms API response times and is built to scale without requiring a rewrite.",
+    },
+    {
+      question: "How quickly can you start a Sacramento CA web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Sacramento CA inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Sacramento's Government, Health & Tech Sectors",
+  localSeoParagraphs: [
+    "Sacramento serves as California's state capital, making it home to government agencies, regulatory bodies, and the contractors and technology companies that serve them. This creates unique demand for reliable, well-documented, and audit-ready web software.",
+    "As a web developer serving Sacramento CA, I build government-adjacent platforms, healthcare applications, civic technology tools, and SaaS products using Next.js, Node.js, PostgreSQL, and Redis — with the documentation and reliability standards those sectors require.",
+    "Sacramento's growing technology sector, centered around the Midtown startup scene and the UC Davis research corridor, also creates demand for modern SaaS platforms and AI-powered applications — exactly what I specialize in.",
+  ],
+
+  industries: [
+    {
+      name: "Government & Civic Technology",
+      desc: "Sacramento's identity as California's capital drives demand for government platforms, public portals, and civic tech tools built with auditability in mind.",
+    },
+    {
+      name: "Healthcare & Life Sciences",
+      desc: "UC Davis Health and the broader medical corridor create demand for patient portals, clinical platforms, and health-tech SaaS products.",
+    },
+    {
+      name: "Agriculture & AgTech",
+      desc: "The Central Valley is California's agricultural heartland. I build farm management systems, supply chain tools, and agtech platforms.",
+    },
+    {
+      name: "Legal & Professional Services",
+      desc: "Sacramento's legal and lobbying sector needs secure document management, client portals, and practice management platforms.",
+    },
+    {
+      name: "Logistics & Distribution",
+      desc: "Sacramento's position as a Northern California hub drives logistics demand. I build inventory systems, routing tools, and distribution dashboards.",
+    },
+    {
+      name: "Education & EdTech",
+      desc: "Sacramento's universities and school districts create demand for LMS platforms, student portals, and educational technology products.",
+    },
+  ],
 };
 
 // ─── Los Angeles ──────────────────────────────────────────────────────────────
@@ -998,16 +1279,19 @@ export const losAngelesPageData: CityPageData = {
 
   coverageH2: "Web Developer Los Angeles CA — Covering All of LA County",
   coverageParagraphs: [
-    `As a <strong class="text-white">web developer in Los Angeles CA</strong>, I work fully remotely across the entire LA metro — Santa Monica, Culver City, West Hollywood, Burbank, Pasadena, Long Beach, Torrance, El Segundo, Inglewood, and beyond. Whether you're a startup in Silicon Beach or a media company in Burbank, you get the same production-grade output without the Westside agency markup.`,
+    `As a <strong class="text-white">web developer in Los Angeles CA</strong>, I work fully remotely across the entire LA metro — Santa Monica, Culver City, West Hollywood, Burbank, Pasadena, Long Beach, Torrance, El Segundo, Inglewood, and beyond. Whether you're a startup in Silicon Beach or a media company in Burbank, you get the same production-grade output without the Westside agency markup. I also serve companies looking for a <a href="/web-developer-san-francisco-ca" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in San Francisco CA</a> — same standards, same direct line.`,
     "Los Angeles is the second-largest tech market in the United States and the undisputed home of entertainment technology, creator economy infrastructure, and digital media. The demands here — high concurrency, fast iteration, AI integration — are exactly what my stack is built for. Next.js for server-rendered frontends, Node.js and PostgreSQL for reliable backends, Redis for speed, and LLM integrations for intelligent features.",
-    `I also serve the broader California market. If you need a <strong class="text-white">web developer los angeles ca</strong> who can also work across San Francisco and Sacramento projects — same developer, same direct communication, no overhead.`,
+    `I also serve the broader California market. If you need a <strong class="text-white">web developer los angeles ca</strong> who can also work across San Francisco and Sacramento projects — same developer, same direct communication, no overhead. See my work as a <a href="/web-developer-sacramento-ca" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Sacramento CA</a> for reference.`,
   ],
   cityLinks: [
     { city: "San Francisco CA", href: "/web-developer-san-francisco-ca" },
     { city: "Sacramento CA", href: "/web-developer-sacramento-ca" },
+    { city: "San Diego CA", href: "/web-developer-san-diego-ca" },
+    { city: "Long Beach CA", href: "/web-developer-long-beach-ca" },
+    { city: "Anaheim CA", href: "/web-developer-anaheim-ca" },
+    { city: "Santa Ana CA", href: "/web-developer-santa-ana-ca" },
     { city: "Austin TX", href: "/web-developer-austin-tx" },
     { city: "Dallas TX", href: "/web-developer-dallas-tx" },
-    { city: "Houston TX", href: "/web-developer-houston-tx" },
   ],
   servicesStrip: COMMON_SERVICES_STRIP,
 
@@ -1029,6 +1313,74 @@ export const losAngelesPageData: CityPageData = {
   navCTALabel: "Hire Web Developer Los Angeles CA",
   contactId: "contact-los-angeles",
   appointmentId: "appointment-los-angeles",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Los Angeles CA",
+  faqs: [
+    {
+      question: "What web development services do you offer Los Angeles CA businesses?",
+      answer:
+        "I offer full-stack web development for Los Angeles CA clients using Next.js, Node.js, and PostgreSQL. Services include custom SaaS platforms, AI integrations, creator tech tools, Stripe billing, backend API engineering, and technical audits — delivered remotely at the quality LA's tech market demands.",
+    },
+    {
+      question: "Can you build AI-powered SaaS for Los Angeles startups?",
+      answer:
+        "Yes. I integrate LLMs, voice agents, and AI chat widgets into web applications for LA startups and companies. I have shipped a live multi-tenant SaaS with embeddable AI chat and real-time voice automation — production-proven, not experimental.",
+    },
+    {
+      question: "Do you work with entertainment and creator tech companies in LA?",
+      answer:
+        "Yes. LA's digital economy is built on content, streaming, and creator platforms. I build the full-stack infrastructure that powers those products — from content management systems and creator dashboards to subscription billing and AI-powered features.",
+    },
+    {
+      question: "Do you work remotely with Los Angeles CA clients?",
+      answer:
+        "Yes, fully remote. I serve Los Angeles and the wider LA metro — Santa Monica, Culver City, West Hollywood, Burbank, Pasadena, Long Beach, El Segundo, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "How does your pricing compare to Los Angeles web development agencies?",
+      answer:
+        "Significantly lower — because you work directly with the developer, not an agency with layers of account managers and project managers. You get Bay Area and LA-quality engineering without the overhead markup. Every engagement starts with a free 30-minute consultation.",
+    },
+    {
+      question: "How quickly can you start a Los Angeles CA web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Los Angeles CA inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Los Angeles's Entertainment, Tech & Creator Economy",
+  localSeoParagraphs: [
+    "Los Angeles is the entertainment capital of the world and a rising force in technology. From Silicon Beach startups in Santa Monica to media companies in Burbank and fintech in Century City, LA's digital economy demands web software that is fast, scalable, and intelligently designed.",
+    "As a web developer serving Los Angeles CA, I build creator economy platforms, entertainment tech infrastructure, SaaS applications, and AI-powered web products using Next.js, Node.js, PostgreSQL, and Redis.",
+    "LA founders and product teams choose direct developer engagement to move faster, communicate more clearly, and get production-grade software without the overhead of large agencies.",
+  ],
+
+  industries: [
+    {
+      name: "Entertainment & Media",
+      desc: "LA is the global entertainment hub. I build streaming platforms, content management systems, and media infrastructure for entertainment companies.",
+    },
+    {
+      name: "Creator Economy & Influencer Tech",
+      desc: "From creator dashboards to monetization platforms, I build the tools powering LA's massive creator economy.",
+    },
+    {
+      name: "Fashion & E-Commerce",
+      desc: "LA's fashion industry needs powerful e-commerce platforms. I build Stripe-powered storefronts, inventory systems, and designer brand portals.",
+    },
+    {
+      name: "Fintech & Payments",
+      desc: "Century City and Downtown LA's financial sector needs secure payment platforms, compliance-ready systems, and fintech dashboards.",
+    },
+    {
+      name: "Healthcare Technology",
+      desc: "LA's sprawling healthcare market needs secure patient portals, telehealth platforms, and medical-grade web applications.",
+    },
+    {
+      name: "Real Estate & PropTech",
+      desc: "LA has one of the most expensive real estate markets globally. I build property platforms, listing tools, and real estate SaaS products.",
+    },
+  ],
 };
 
 // ─── San Francisco ────────────────────────────────────────────────────────────
@@ -1195,16 +1547,19 @@ export const sanFranciscoPageData: CityPageData = {
 
   coverageH2: "Web Developer San Francisco CA — Serving the Full Bay Area",
   coverageParagraphs: [
-    `As a <strong class="text-white">web developer in San Francisco CA</strong>, I work fully remote across the entire Bay Area — SoMa, the Mission, Oakland, Berkeley, San Jose, Palo Alto, Mountain View, Sunnyvale, Santa Clara, Fremont, and beyond. Bay Area companies have always understood that the best engineers aren't always local — remote collaboration is the default here, and I operate to that standard.`,
+    `As a <strong class="text-white">web developer in San Francisco CA</strong>, I work fully remote across the entire Bay Area — SoMa, the Mission, Oakland, Berkeley, San Jose, Palo Alto, Mountain View, Sunnyvale, Santa Clara, Fremont, and beyond. Bay Area companies have always understood that the best engineers aren't always local — remote collaboration is the default here, and I operate to that standard. I also serve businesses searching for a <a href="/web-developer-los-angeles-ca" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Los Angeles CA</a> — same quality, same direct line.`,
     "San Francisco is the global center of technology innovation. The engineering expectations here — clean architecture, proper TypeScript, AI-native thinking, production-grade reliability — are exactly what I build to by default. From seed-stage startups in SoMa to Series B companies in the Financial District, the stack I bring is the same stack your senior engineers would choose.",
-    `I also serve California-wide. If you need a <strong class="text-white">web developer san francisco ca</strong> who can coordinate across Los Angeles and Sacramento engagements too — same developer, same direct communication, same engineering standards. No agency overhead, no confusion.`,
+    `I also serve California-wide. If you need a <strong class="text-white">web developer san francisco ca</strong> who can coordinate across Los Angeles and Sacramento engagements too — same developer, same direct communication, same engineering standards. No agency overhead, no confusion. See my work as a <a href="/web-developer-sacramento-ca" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Sacramento CA</a>.`,
   ],
   cityLinks: [
     { city: "Los Angeles CA", href: "/web-developer-los-angeles-ca" },
     { city: "Sacramento CA", href: "/web-developer-sacramento-ca" },
+    { city: "San Jose CA", href: "/web-developer-san-jose-ca" },
+    { city: "Oakland CA", href: "/web-developer-oakland-ca" },
+    { city: "Berkeley CA", href: "/web-developer-berkeley-ca" },
+    { city: "Palo Alto CA", href: "/web-developer-palo-alto-ca" },
     { city: "Austin TX", href: "/web-developer-austin-tx" },
     { city: "Dallas TX", href: "/web-developer-dallas-tx" },
-    { city: "Houston TX", href: "/web-developer-houston-tx" },
   ],
   servicesStrip: COMMON_SERVICES_STRIP,
 
@@ -1226,4 +1581,72 @@ export const sanFranciscoPageData: CityPageData = {
   navCTALabel: "Hire Web Developer San Francisco CA",
   contactId: "contact-san-francisco",
   appointmentId: "appointment-san-francisco",
+
+  faqTitle: "Frequently Asked Questions — Web Developer San Francisco CA",
+  faqs: [
+    {
+      question: "What web development services do you offer San Francisco CA businesses?",
+      answer:
+        "I offer enterprise-grade full-stack web development for San Francisco CA clients using Next.js, Node.js, and PostgreSQL. Services include multi-tenant SaaS platforms, AI and LLM integrations, Stripe subscription systems, backend API engineering, database architecture, and technical audits — all delivered remotely at the quality level the Bay Area demands.",
+    },
+    {
+      question: "Can you build enterprise AI-powered SaaS for San Francisco startups?",
+      answer:
+        "Yes. I architect and integrate AI features at the system level — LLMs, retrieval-augmented generation, voice agents, and embedded AI chat widgets. I have shipped a live multi-tenant enterprise SaaS with AI chat and real-time voice automation currently serving real users.",
+    },
+    {
+      question: "How does your engineering quality compare to San Francisco agencies?",
+      answer:
+        "I build to the same standards SF engineering teams expect — TypeScript throughout, clean layered architecture, Swagger documentation, Zod validation, Redis caching, and PostgreSQL optimization. The difference is you work directly with the developer, eliminating agency overhead and communication layers.",
+    },
+    {
+      question: "Do you work remotely with San Francisco and Bay Area clients?",
+      answer:
+        "Yes, fully remote. I serve San Francisco and the full Bay Area — Oakland, Berkeley, San Jose, Palo Alto, Mountain View, Sunnyvale, Santa Clara, and Fremont. Bay Area companies have always understood the value of remote engineering talent. I respond within 24 hours and offer a free 30-minute consultation.",
+    },
+    {
+      question: "What makes your architecture suitable for Series A and Series B companies?",
+      answer:
+        "Clean separation of concerns in controller-service-repository layers, TypeScript throughout, proper database indexing, Redis caching, and full Swagger documentation mean your engineering team can confidently extend and maintain what I build. No hero code, no tribal knowledge dependencies.",
+    },
+    {
+      question: "How quickly can you start a San Francisco CA web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all San Francisco CA inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements — no six-week agency waitlists.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for San Francisco's Enterprise & AI-First Companies",
+  localSeoParagraphs: [
+    "San Francisco and the Bay Area represent the highest concentration of technology talent and investment in the world. Companies here — from pre-seed AI startups in SoMa to Series C enterprise SaaS companies in the Financial District — demand engineering quality that matches their ambition.",
+    "As a web developer serving San Francisco CA, I build enterprise SaaS platforms, AI-powered applications, and full-stack web products at the quality level Bay Area engineering teams expect — TypeScript throughout, proper architecture, full documentation.",
+    "The Bay Area has always valued direct access to engineering talent over agency overhead. I operate with the same async-first, documentation-heavy, results-oriented approach that SF's best engineering teams use internally.",
+  ],
+
+  industries: [
+    {
+      name: "Artificial Intelligence & ML",
+      desc: "SF is the global AI capital. I build AI-powered SaaS platforms, LLM integrations, RAG pipelines, and intelligent automation tools.",
+    },
+    {
+      name: "Enterprise SaaS",
+      desc: "The Bay Area's SaaS market is the world's largest. I build multi-tenant, enterprise-grade platforms with the architecture VCs and engineering teams expect.",
+    },
+    {
+      name: "Fintech & Payments",
+      desc: "From Stripe integrations to complex financial platforms, I build the payment infrastructure SF's fintech ecosystem depends on.",
+    },
+    {
+      name: "Biotech & Health Tech",
+      desc: "SF's biotech corridor and health-tech scene need secure, compliant web platforms. I build with data sensitivity and access control as defaults.",
+    },
+    {
+      name: "Developer Tools & Infrastructure",
+      desc: "The Bay Area is home to the world's developer tools companies. I build platforms, dashboards, and infrastructure for developer-facing products.",
+    },
+    {
+      name: "Climate Tech & Clean Energy",
+      desc: "SF's growing climate tech sector needs monitoring dashboards, data pipelines, and operational platforms. I build them to enterprise standards.",
+    },
+  ],
 };

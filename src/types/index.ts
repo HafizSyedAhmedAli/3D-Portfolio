@@ -178,3 +178,8 @@ export type CityPageCityLink = {
 export type CityPageAvailability = Availability;
 
 export type CityPageHighlight = CityPageStat;
+
+export type CityPageIndustry = {
+  name: string;
+  desc: string;
+};
