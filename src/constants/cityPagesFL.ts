@@ -80,6 +80,10 @@ export const jacksonvillePageData: CityPageData = {
   cityName: "Jacksonville",
   cityState: "FL",
   citySlug: "jacksonville",
+
+  metaTitle: "Web Developer Jacksonville FL | Fintech, Enterprise & Full-Stack | Ahmed Ali",
+  metaDescription: "Looking for a web developer jacksonville fl? Ahmed Ali builds production-grade Next.js, Node.js & AI-powered apps for Jacksonville businesses. Fintech, enterprise backends, real results.",
+
   profileImageUrl:
     "/images/web-developer-jacksonville-fl-enterprise-fintech-full-stack.png",
   profileImageAlt: "Web Developer Jacksonville FL – Enterprise & Fintech Apps",
@@ -352,6 +356,10 @@ export const tampaPageData: CityPageData = {
   cityName: "Tampa",
   cityState: "FL",
   citySlug: "tampa",
+
+  metaTitle: "Web Developer Tampa FL | HealthTech, Cybersecurity & Full-Stack | Ahmed Ali",
+  metaDescription: "Looking for a web developer tampa fl? Ahmed Ali builds secure, production-ready Next.js, Node.js & AI-powered apps for Tampa businesses. HealthTech, cybersecurity, real results.",
+
   profileImageUrl:
     "/images/web-developer-tampa-fl-healthtech-cybersecurity-full-stack.png",
   profileImageAlt: "Web Developer Tampa FL – HealthTech & Cybersecurity Apps",
@@ -623,6 +631,10 @@ export const miamiPageData: CityPageData = {
   cityName: "Miami",
   cityState: "FL",
   citySlug: "miami",
+
+  metaTitle: "Web Developer Miami FL | SaaS, Fintech & International Platforms | Ahmed Ali",
+  metaDescription: "Looking for a web developer miami fl? Ahmed Ali builds production-ready Next.js, Node.js & AI-powered apps for Miami startups and fintech companies. LatAm-ready, fast delivery.",
+
   profileImageUrl:
     "/images/web-developer-miami-fl-saas-fintech-latam-full-stack.png",
   profileImageAlt: "Web Developer Miami FL – SaaS, Fintech & LatAm Platforms",
@@ -896,6 +908,10 @@ export const orlandoPageData: CityPageData = {
   cityName: "Orlando",
   cityState: "FL",
   citySlug: "orlando",
+
+  metaTitle: "Web Developer Orlando FL | Hospitality Tech, SaaS & Full-Stack | Ahmed Ali",
+  metaDescription: "Looking for a web developer orlando fl? Ahmed Ali builds production-ready Next.js, Node.js & AI-powered apps for Orlando businesses. Hospitality tech, SaaS platforms, real results.",
+
   profileImageUrl:
     "/images/web-developer-orlando-fl-hospitality-saas-full-stack.png",
   profileImageAlt: "Web Developer Orlando FL – Hospitality Tech & SaaS Apps",

@@ -74,6 +74,10 @@ export const rochesterPageData: CityPageData = {
   cityName: "Rochester",
   cityState: "NY",
   citySlug: "rochester",
+
+  metaTitle: "Web Developer Rochester NY – Manufacturing Tech & Full-Stack Apps | Ahmed Ali",
+  metaDescription: "Looking for a web developer rochester ny? Ahmed Ali builds production-grade Next.js, Node.js & AI-powered apps for Rochester's manufacturing, optics, and imaging-tech sector. Fast delivery, real results.",
+
   profileImageUrl:
     "/images/web-developer-rochester-ny-manufacturing-tech-full-stack.png",
   profileImageAlt:
@@ -346,6 +350,10 @@ export const newYorkPageData: CityPageData = {
   cityName: "New York",
   cityState: "NY",
   citySlug: "new-york",
+
+  metaTitle: "Web Developer New York NY – Fintech, Media & Full-Stack Apps | Ahmed Ali",
+  metaDescription: "Looking for a web developer in New York NY? Ahmed Ali builds production-grade Next.js, Node.js & AI-powered apps for NYC fintech, media, and SaaS companies. Fast delivery, real results.",
+
   profileImageUrl:
     "/images/web-developer-new-york-ny-fintech-media-full-stack.png",
   profileImageAlt:

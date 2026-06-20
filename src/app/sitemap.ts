@@ -86,7 +86,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${siteMetadata.url}/web-developer-new-york-ny`,
+      url: `${siteMetadata.url}/web-developer-new-york-ny`, 
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

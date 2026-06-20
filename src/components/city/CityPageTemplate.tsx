@@ -66,6 +66,8 @@ export type CityPageData = {
   localSeoTitle: string;
   localSeoParagraphs: string[];
   industries: CityPageIndustry[];
+  metaTitle: string;
+  metaDescription: string;
 };
 
 export default function CityPageTemplate({ data }: { data: CityPageData }) {

@@ -74,6 +74,10 @@ export const sacramentoPageData: CityPageData = {
   cityName: "Sacramento",
   cityState: "CA",
   citySlug: "sacramento",
+
+  metaTitle: "Web Developer Sacramento CA | Next.js, Node.js & AI Apps | Ahmed Ali",
+  metaDescription: "Looking for a web developer in Sacramento CA? Ahmed Ali builds production-ready Next.js, Node.js & AI-powered apps for Sacramento businesses. Fast delivery, real results.",
+
   profileImageUrl:
     "/images/web-developer-sacramento-ca-full-stack-ai-nextjs.png",
   profileImageAlt: "Web Developer Sacramento CA",
@@ -344,6 +348,10 @@ export const losAngelesPageData: CityPageData = {
   cityName: "Los Angeles",
   cityState: "CA",
   citySlug: "los-angeles",
+
+  metaTitle: "Web Developer Los Angeles CA | SaaS, AI & Full-Stack Apps | Ahmed Ali",
+  metaDescription: "Looking for a web developer in Los Angeles CA? Ahmed Ali builds production-ready Next.js, Node.js & AI-powered apps for LA businesses. Fast delivery, real results.",
+
   profileImageUrl:
     "/images/web-developer-los-angeles-ca-saas-ai-full-stack.png",
   profileImageAlt: "Web Developer Los Angeles CA",
@@ -614,6 +622,10 @@ export const sanFranciscoPageData: CityPageData = {
   cityName: "San Francisco",
   cityState: "CA",
   citySlug: "san-francisco",
+
+  metaTitle: "Web Developer San Francisco CA | Enterprise SaaS & AI Engineering | Ahmed Ali",
+  metaDescription: "Looking for a web developer in San Francisco CA? Ahmed Ali builds production-grade Next.js, Node.js & AI-powered applications for SF and Bay Area businesses.",
+
   profileImageUrl:
     "/images/web-developer-san-francisco-ca-enterprise-ai-saas.png",
   profileImageAlt: "Web Developer San Francisco CA",

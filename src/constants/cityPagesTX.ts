@@ -1,71 +1,4 @@
 import type { CityPageData } from "@/components/city/CityPageTemplate";
-import { CityPageProject, CityPageTestimonial } from "@/types";
-
-const COMMON_PROJECTS: CityPageProject[] = [
-  {
-    title: "Flacron Gamezone",
-    tags: ["Next.js", "Express.js", "PostgreSQL", "Redis", "Stripe"],
-    desc: "Live football match discovery platform with real-time scores, league standings, Stripe subscriptions, and role-based auth.",
-    live: "https://flacrongamezone.com",
-    gh: "https://github.com/HafizSyedAhmedAli/Flacron-Gamezone-Local",
-    img: "/images/project1.png",
-  },
-  {
-    title: "Relay",
-    tags: ["Next.js", "Convex", "VAPI"],
-    desc: "Multi-tenant B2B SaaS with embeddable AI chat widgets and real-time voice agents to automate enterprise customer service.",
-    live: "https://relay-demo-web.vercel.app",
-    gh: "https://github.com/HafizSyedAhmedAli/Relay-Demo",
-    img: "/images/project2.png",
-  },
-  {
-    title: "GreenCart",
-    tags: ["React", "Express.js", "MongoDB"],
-    desc: "High-performance full-stack marketplace with seamless product discovery, secure checkout, and efficient data sync.",
-    live: "https://greencart-frontend-ebon.vercel.app",
-    gh: "https://github.com/HafizSyedAhmedAli/Greencart-FULL-STACK",
-    img: "/images/project3.png",
-  },
-];
-
-const COMMON_TESTIMONIALS: CityPageTestimonial[] = [
-  {
-    name: "RODRIGUE TCHITAKA",
-    handle: "@rodrigue-tchitaka",
-    review:
-      "The platform was delivered on time and worked exactly as we described. Our users can follow live matches smoothly and the subscription system just works. Very professional to work with.",
-    service: "Full-Stack Web Development",
-    imgPath: "/images/client1.png",
-    imgAlt:
-      "Testimonial from Rodrigue Tchitaka praising on-time delivery, smooth live match streaming, and a reliable subscription system built by Ahmed Ali.",
-  },
-  {
-    name: "Ayza Noor",
-    handle: "@fortifytechnologies",
-    review:
-      "Ahmed Ali contributed to development tasks and performed his responsibilities diligently and was an active team member throughout the internship.",
-    service: "Backend Development",
-    imgPath: "/images/client2.png",
-    imgAlt:
-      "Professional endorsement from Ayza Noor at Fortify Technologies praising Ahmed Ali's diligence and contributions.",
-  },
-];
-
-const COMMON_AVAILABILITY = [
-  { label: "Status", value: "Open to work", dot: true },
-  { label: "Response time", value: "Within 24 hours", dot: false },
-  { label: "Consultation", value: "Free 30 min call", dot: false },
-  { label: "Availability", value: "Immediate start", dot: false },
-] as const;
-
-const COMMON_SERVICES_STRIP = [
-  "Full-Stack Development",
-  "Web Development",
-  "AI-Powered SaaS",
-  "API Engineering",
-  "Database Architecture",
-  "Stripe & Subscriptions",
-] as const;
 
 // ─── Austin ───────────────────────────────────────────────────────────────────
 
@@ -74,6 +7,11 @@ export const austinPageData: CityPageData = {
   cityName: "Austin",
   cityState: "TX",
   citySlug: "austin",
+
+  metaTitle: "Web Developer Austin TX | Next.js, Node.js & AI Apps | Ahmed Ali",
+  metaDescription:
+    "Looking for a web developer austin tx? Ahmed Ali builds production-ready Next.js, Node.js & AI-powered apps. Fast delivery, clean code, real results.",
+
   profileImageUrl:
     "/images/professional-web-developer-austin-tx-full-stack-ai-powered-apps.png",
   profileImageAlt: "Professional Web Developer Austin TX",
@@ -344,6 +282,10 @@ export const dallasPageData: CityPageData = {
   cityName: "Dallas",
   cityState: "TX",
   citySlug: "dallas",
+
+  metaTitle: "Web Developer Dallas TX | Next.js, Node.js & AI Apps | Ahmed Ali",
+  metaDescription: "Looking for a web developer dallas tx? Ahmed Ali builds production-ready Next.js, Node.js & AI-powered apps for Dallas businesses. Fast delivery, clean code, real results.",
+
   profileImageUrl:
     "/images/web-developer-dallas-tx-saas-ai-full-stack-engineering.png",
   profileImageAlt: "Web Developer Dallas TX",
@@ -612,6 +554,10 @@ export const houstonPageData: CityPageData = {
   cityName: "Houston",
   cityState: "TX",
   citySlug: "houston",
+
+  metaTitle: "Web Developer Houston TX – Enterprise Backends & AI Apps | Ahmed Ali",
+  metaDescription: "Looking for a web developer houston tx? Ahmed Ali builds production-grade Next.js, Node.js & AI-powered applications for Houston businesses. Fast delivery, real results.",
+
   profileImageUrl:
     "/images/web-developer-houston-tx-enterprise-backends-ai-apps.png",
   profileImageAlt: "Web Developer Houston TX",
