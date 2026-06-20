@@ -1,4 +1,5 @@
 import type { CityPageData } from "@/components/city/CityPageTemplate";
+import { COMMON_AVAILABILITY, COMMON_PROJECTS, COMMON_SERVICES_STRIP, COMMON_TESTIMONIALS } from "./cityPagesCommon";
 
 // ─── Austin ───────────────────────────────────────────────────────────────────
 
