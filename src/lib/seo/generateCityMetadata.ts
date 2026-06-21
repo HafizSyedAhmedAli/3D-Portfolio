@@ -53,7 +53,7 @@ export function generateCityMetadata(data: CityPageData): Metadata {
           url: ogImage,
           width: 1200,
           height: 630,
-          alt: `Web Developer ${data.cityName} – Ahmed Ali`,
+          alt: `Web Developer ${data.cityName}${data.cityState !== "UK" ? ` ${data.cityState}` : ""} – Ahmed Ali`,
         },
       ],
     },
