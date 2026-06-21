@@ -2,19 +2,28 @@ import type { CityPageData } from "@/components/city/CityPageTemplate";
 
 type Schema = {
   id: string;
-  data: Record<string, any>;
+  data: Record<string, unknown>;
 };
 
 type Options = {
   baseUrl?: string;
 };
 
-function cityUrl(baseUrl: string, slug: string) {
-  return `${baseUrl}/web-developer-${slug}`;
+/**
+ * Builds the canonical path segment for a city page.
+ * US: web-developer-{slug}-{state}  e.g. web-developer-austin-tx
+ * UK: web-developer-{slug}          e.g. web-developer-manchester
+ */
+function cityPath(data: CityPageData): string {
+  if (data.cityState === "UK") {
+    return `web-developer-${data.citySlug}`;
+  }
+  return `web-developer-${data.citySlug}-${data.cityState.toLowerCase()}`;
 }
 
-// Simple geo map (extend later if needed)
+// Geo coordinates — extend this map as new cities are added.
 const CITY_GEO: Record<string, { lat: number; lng: number }> = {
+  // ── US ────────────────────────────────────────────────────────────
   austin: { lat: 30.2672, lng: -97.7431 },
   dallas: { lat: 32.7767, lng: -96.797 },
   houston: { lat: 29.7604, lng: -95.3698 },
@@ -27,6 +36,13 @@ const CITY_GEO: Record<string, { lat: number; lng: number }> = {
   orlando: { lat: 28.5383, lng: -81.3792 },
   rochester: { lat: 43.1566, lng: -77.6088 },
   "new-york": { lat: 40.7128, lng: -74.006 },
+  philadelphia: { lat: 39.9526, lng: -75.1652 },
+  // ── UK ────────────────────────────────────────────────────────────
+  newcastle: { lat: 54.9783, lng: -1.6174 },
+  glasgow: { lat: 55.8642, lng: -4.2518 },
+  nottingham: { lat: 52.9548, lng: -1.1581 },
+  bournemouth: { lat: 50.7192, lng: -1.8808 },
+  manchester: { lat: 53.4808, lng: -2.2426 },
 };
 
 export function generateCitySchemas(
@@ -34,11 +50,16 @@ export function generateCitySchemas(
   options?: Options,
 ): Schema[] {
   const baseUrl = options?.baseUrl ?? "https://www.syedahmedali.com";
-  const url = cityUrl(baseUrl, data.citySlug);
+  const path = cityPath(data);
+  const url = `${baseUrl}/${path}`;
 
   const geo = CITY_GEO[data.citySlug];
 
-  const cityEntity = `${data.cityName} ${data.cityState}`;
+  // Human-readable label: "Austin TX" or just "Manchester" for UK
+  const cityEntity =
+    data.cityState === "UK"
+      ? data.cityName
+      : `${data.cityName} ${data.cityState}`;
 
   return [
     // ─────────────────────────────
@@ -79,7 +100,7 @@ export function generateCitySchemas(
     },
 
     // ─────────────────────────────
-    // 2. LOCAL BUSINESS (LEVEL 2 BOOST)
+    // 2. LOCAL BUSINESS
     // ─────────────────────────────
     {
       id: `${data.citySlug}-local-business`,
@@ -88,7 +109,7 @@ export function generateCitySchemas(
         "@type": "LocalBusiness",
         name: `Ahmed Ali – Web Developer ${cityEntity}`,
         url,
-        image: `${baseUrl}/opengraph/web-developer-${data.citySlug}.png`,
+        image: `${baseUrl}/opengraph/${path}.png`,
         priceRange: "$$",
         areaServed: cityEntity,
         ...(geo && {
@@ -169,7 +190,7 @@ export function generateCitySchemas(
       : []),
 
     // ─────────────────────────────
-    // 6. INTERNAL SEO GRAPH (LEVEL 2 CORE FEATURE)
+    // 6. INTERNAL SEO GRAPH
     // ─────────────────────────────
     {
       id: `${data.citySlug}-internal-links`,
