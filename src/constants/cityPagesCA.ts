@@ -1,71 +1,6 @@
 import type { CityPageData } from "@/components/city/CityPageTemplate";
 import type { CityPageProject, CityPageTestimonial } from "@/types";
-
-const COMMON_PROJECTS: CityPageProject[] = [
-  {
-    title: "Flacron Gamezone",
-    tags: ["Next.js", "Express.js", "PostgreSQL", "Redis", "Stripe"],
-    desc: "Live football match discovery platform with real-time scores, league standings, Stripe subscriptions, and role-based auth.",
-    live: "https://flacrongamezone.com",
-    gh: "https://github.com/HafizSyedAhmedAli/Flacron-Gamezone-Local",
-    img: "/images/project1.png",
-  },
-  {
-    title: "Relay",
-    tags: ["Next.js", "Convex", "VAPI"],
-    desc: "Multi-tenant B2B SaaS with embeddable AI chat widgets and real-time voice agents to automate enterprise customer service.",
-    live: "https://relay-demo-web.vercel.app",
-    gh: "https://github.com/HafizSyedAhmedAli/Relay-Demo",
-    img: "/images/project2.png",
-  },
-  {
-    title: "GreenCart",
-    tags: ["React", "Express.js", "MongoDB"],
-    desc: "High-performance full-stack marketplace with seamless product discovery, secure checkout, and efficient data sync.",
-    live: "https://greencart-frontend-ebon.vercel.app",
-    gh: "https://github.com/HafizSyedAhmedAli/Greencart-FULL-STACK",
-    img: "/images/project3.png",
-  },
-];
-
-const COMMON_TESTIMONIALS: CityPageTestimonial[] = [
-  {
-    name: "RODRIGUE TCHITAKA",
-    handle: "@rodrigue-tchitaka",
-    review:
-      "The platform was delivered on time and worked exactly as we described. Our users can follow live matches smoothly and the subscription system just works. Very professional to work with.",
-    service: "Full-Stack Web Development",
-    imgPath: "/images/client1.png",
-    imgAlt:
-      "Testimonial from Rodrigue Tchitaka praising on-time delivery, smooth live match streaming, and a reliable subscription system built by Ahmed Ali.",
-  },
-  {
-    name: "Ayza Noor",
-    handle: "@fortifytechnologies",
-    review:
-      "Ahmed Ali contributed to development tasks and performed his responsibilities diligently and was an active team member throughout the internship.",
-    service: "Backend Development",
-    imgPath: "/images/client2.png",
-    imgAlt:
-      "Professional endorsement from Ayza Noor at Fortify Technologies praising Ahmed Ali's diligence and contributions.",
-  },
-];
-
-const COMMON_AVAILABILITY = [
-  { label: "Status", value: "Open to work", dot: true },
-  { label: "Response time", value: "Within 24 hours", dot: false },
-  { label: "Consultation", value: "Free 30 min call", dot: false },
-  { label: "Availability", value: "Immediate start", dot: false },
-] as const;
-
-const COMMON_SERVICES_STRIP = [
-  "Full-Stack Development",
-  "Web Development",
-  "AI-Powered SaaS",
-  "API Engineering",
-  "Database Architecture",
-  "Stripe & Subscriptions",
-] as const;
+import { COMMON_AVAILABILITY, COMMON_PROJECTS, COMMON_SERVICES_STRIP, COMMON_TESTIMONIALS } from "./cityPagesCommon";
 
 // ─── Sacramento ───────────────────────────────────────────────────────────────
 
@@ -75,8 +10,9 @@ export const sacramentoPageData: CityPageData = {
   cityState: "CA",
   citySlug: "sacramento",
 
-  metaTitle: "Web Developer Sacramento CA | Next.js, Node.js & AI Apps | Ahmed Ali",
-  metaDescription: "Looking for a web developer in Sacramento CA? Ahmed Ali builds production-ready Next.js, Node.js & AI-powered apps for Sacramento businesses. Fast delivery, real results.",
+  metaTitle: "Web Developer Sacramento CA | Next.js & AI | Ahmed Ali",
+  metaDescription:
+    "Need a Sacramento CA web developer? Ahmed Ali builds scalable Next.js, Node.js & AI apps. Fast delivery, real results.",
 
   profileImageUrl:
     "/images/web-developer-sacramento-ca-full-stack-ai-nextjs.png",
@@ -349,8 +285,9 @@ export const losAngelesPageData: CityPageData = {
   cityState: "CA",
   citySlug: "los-angeles",
 
-  metaTitle: "Web Developer Los Angeles CA | SaaS, AI & Full-Stack Apps | Ahmed Ali",
-  metaDescription: "Looking for a web developer in Los Angeles CA? Ahmed Ali builds production-ready Next.js, Node.js & AI-powered apps for LA businesses. Fast delivery, real results.",
+  metaTitle: "Web Developer Los Angeles CA | SaaS & AI Apps | Ahmed Ali",
+  metaDescription:
+    "Need a Los Angeles CA web developer? Ahmed Ali builds custom SaaS, Next.js & AI apps for LA businesses. Real results.",
 
   profileImageUrl:
     "/images/web-developer-los-angeles-ca-saas-ai-full-stack.png",
@@ -623,8 +560,9 @@ export const sanFranciscoPageData: CityPageData = {
   cityState: "CA",
   citySlug: "san-francisco",
 
-  metaTitle: "Web Developer San Francisco CA | Enterprise SaaS & AI Engineering | Ahmed Ali",
-  metaDescription: "Looking for a web developer in San Francisco CA? Ahmed Ali builds production-grade Next.js, Node.js & AI-powered applications for SF and Bay Area businesses.",
+  metaTitle: "Web Developer San Francisco CA | AI & SaaS Apps | Ahmed Ali",
+  metaDescription:
+    "Need a San Francisco CA web developer? Ahmed Ali builds scalable Next.js, Node & AI apps for Bay Area businesses.",
 
   profileImageUrl:
     "/images/web-developer-san-francisco-ca-enterprise-ai-saas.png",

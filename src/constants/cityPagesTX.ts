@@ -9,9 +9,9 @@ export const austinPageData: CityPageData = {
   cityState: "TX",
   citySlug: "austin",
 
-  metaTitle: "Web Developer Austin TX | Next.js, Node.js & AI Apps | Ahmed Ali",
+  metaTitle: "Web Developer Austin TX | Ahmed Ali - Next.js & AI Apps",
   metaDescription:
-    "Looking for a web developer austin tx? Ahmed Ali builds production-ready Next.js, Node.js & AI-powered apps. Fast delivery, clean code, real results.",
+    "Top web developer in Austin, TX. Ahmed Ali builds scalable Next.js, Node.js & AI-powered apps with production-ready code.",
 
   profileImageUrl:
     "/images/professional-web-developer-austin-tx-full-stack-ai-powered-apps.png",
@@ -284,8 +284,8 @@ export const dallasPageData: CityPageData = {
   cityState: "TX",
   citySlug: "dallas",
 
-  metaTitle: "Web Developer Dallas TX | Next.js, Node.js & AI Apps | Ahmed Ali",
-  metaDescription: "Looking for a web developer dallas tx? Ahmed Ali builds production-ready Next.js, Node.js & AI-powered apps for Dallas businesses. Fast delivery, clean code, real results.",
+  metaTitle: "Web Developer Dallas TX | Next.js, Node & AI | Ahmed Ali",
+  metaDescription: "Need a Dallas TX web developer? Ahmed Ali builds production-ready Next.js, Node.js & AI apps. Clean code, fast delivery.",
 
   profileImageUrl:
     "/images/web-developer-dallas-tx-saas-ai-full-stack-engineering.png",
@@ -556,8 +556,8 @@ export const houstonPageData: CityPageData = {
   cityState: "TX",
   citySlug: "houston",
 
-  metaTitle: "Web Developer Houston TX – Enterprise Backends & AI Apps | Ahmed Ali",
-  metaDescription: "Looking for a web developer houston tx? Ahmed Ali builds production-grade Next.js, Node.js & AI-powered applications for Houston businesses. Fast delivery, real results.",
+  metaTitle: "Web Developer Houston TX | Enterprise Backends | Ahmed Ali",
+  metaDescription: "Need a Houston TX web developer? Ahmed Ali builds enterprise Next.js, Node.js & AI apps. Fast delivery, real results.",
 
   profileImageUrl:
     "/images/web-developer-houston-tx-enterprise-backends-ai-apps.png",

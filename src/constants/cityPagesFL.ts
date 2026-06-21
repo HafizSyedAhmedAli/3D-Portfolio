@@ -1,77 +1,5 @@
 import type { CityPageData } from "@/components/city/CityPageTemplate";
-import type { CityPageProject, CityPageTestimonial } from "@/types";
-
-const COMMON_PROJECTS: CityPageProject[] = [
-  {
-    title: "Flacron Gamezone",
-    tags: ["Next.js", "Express.js", "PostgreSQL", "Redis", "Stripe"],
-    desc: "Live football match discovery platform with real-time scores, league standings, Stripe subscriptions, and role-based auth.",
-    live: "https://flacrongamezone.com",
-    gh: "https://github.com/HafizSyedAhmedAli/Flacron-Gamezone-Local",
-    img: "/images/project1.png",
-  },
-  {
-    title: "Relay",
-    tags: ["Next.js", "Convex", "VAPI"],
-    desc: "Multi-tenant B2B SaaS with embeddable AI chat widgets and real-time voice agents to automate enterprise customer service.",
-    live: "https://relay-demo-web.vercel.app",
-    gh: "https://github.com/HafizSyedAhmedAli/Relay-Demo",
-    img: "/images/project2.png",
-  },
-  {
-    title: "GreenCart",
-    tags: ["React", "Express.js", "MongoDB"],
-    desc: "High-performance full-stack marketplace with seamless product discovery, secure checkout, and efficient data sync.",
-    live: "https://greencart-frontend-ebon.vercel.app",
-    gh: "https://github.com/HafizSyedAhmedAli/Greencart-FULL-STACK",
-    img: "/images/project3.png",
-  },
-];
-
-const COMMON_TESTIMONIALS: CityPageTestimonial[] = [
-  {
-    name: "RODRIGUE TCHITAKA",
-    handle: "@rodrigue-tchitaka",
-    review:
-      "The platform was delivered on time and worked exactly as we described. Our users can follow live matches smoothly and the subscription system just works. Very professional to work with.",
-    service: "Full-Stack Web Development",
-    imgPath: "/images/client1.png",
-    imgAlt:
-      "Testimonial from Rodrigue Tchitaka praising on-time delivery and a reliable subscription system built by Ahmed Ali.",
-  },
-  {
-    name: "Ayza Noor",
-    handle: "@fortifytechnologies",
-    review:
-      "Ahmed Ali contributed to development tasks and performed his responsibilities diligently and was an active team member throughout the internship.",
-    service: "Backend Development",
-    imgPath: "/images/client2.png",
-    imgAlt:
-      "Professional endorsement from Ayza Noor at Fortify Technologies praising Ahmed Ali's contributions.",
-  },
-];
-
-const COMMON_AVAILABILITY = [
-  { label: "Status", value: "Open to work", dot: true },
-  { label: "Response time", value: "Within 24 hours", dot: false },
-  { label: "Consultation", value: "Free 30 min call", dot: false },
-  { label: "Availability", value: "Immediate start", dot: false },
-] as const;
-
-const COMMON_STATS = [
-  { label: "Response Time", value: "< 24hrs" },
-  { label: "Projects Live", value: "3+" },
-  { label: "On-Time Rate", value: "100%" },
-] as const;
-
-const COMMON_SERVICES_STRIP = [
-  "Full-Stack Development",
-  "Web Development",
-  "AI-Powered SaaS",
-  "API Engineering",
-  "Database Architecture",
-  "Stripe & Subscriptions",
-] as const;
+import { COMMON_AVAILABILITY, COMMON_PROJECTS, COMMON_SERVICES_STRIP, COMMON_TESTIMONIALS } from "./cityPagesCommon";
 
 // ─── Jacksonville FL ──────────────────────────────────────────────────────────
 
@@ -81,8 +9,9 @@ export const jacksonvillePageData: CityPageData = {
   cityState: "FL",
   citySlug: "jacksonville",
 
-  metaTitle: "Web Developer Jacksonville FL | Fintech, Enterprise & Full-Stack | Ahmed Ali",
-  metaDescription: "Looking for a web developer jacksonville fl? Ahmed Ali builds production-grade Next.js, Node.js & AI-powered apps for Jacksonville businesses. Fintech, enterprise backends, real results.",
+  metaTitle: "Web Developer Jacksonville FL | Fintech & AI | Ahmed Ali",
+  metaDescription:
+    "Need a Jacksonville FL web developer? Ahmed Ali builds custom Next.js, Node.js & AI apps for fintech. Real results.",
 
   profileImageUrl:
     "/images/web-developer-jacksonville-fl-enterprise-fintech-full-stack.png",
@@ -357,8 +286,9 @@ export const tampaPageData: CityPageData = {
   cityState: "FL",
   citySlug: "tampa",
 
-  metaTitle: "Web Developer Tampa FL | HealthTech, Cybersecurity & Full-Stack | Ahmed Ali",
-  metaDescription: "Looking for a web developer tampa fl? Ahmed Ali builds secure, production-ready Next.js, Node.js & AI-powered apps for Tampa businesses. HealthTech, cybersecurity, real results.",
+  metaTitle: "Web Developer Tampa FL | HealthTech & Security | Ahmed Ali",
+  metaDescription:
+    "Need a Tampa FL web developer? Ahmed Ali builds secure, AI-powered Next.js & Node.js apps for healthcare. Real results.",
 
   profileImageUrl:
     "/images/web-developer-tampa-fl-healthtech-cybersecurity-full-stack.png",
@@ -632,8 +562,9 @@ export const miamiPageData: CityPageData = {
   cityState: "FL",
   citySlug: "miami",
 
-  metaTitle: "Web Developer Miami FL | SaaS, Fintech & International Platforms | Ahmed Ali",
-  metaDescription: "Looking for a web developer miami fl? Ahmed Ali builds production-ready Next.js, Node.js & AI-powered apps for Miami startups and fintech companies. LatAm-ready, fast delivery.",
+  metaTitle: "Web Developer Miami FL | SaaS, Fintech & AI | Ahmed Ali",
+  metaDescription:
+    "Need a Miami FL web developer? Ahmed Ali builds scalable Next.js, Node.js & AI apps. Fintech & LatAm-ready expertise.",
 
   profileImageUrl:
     "/images/web-developer-miami-fl-saas-fintech-latam-full-stack.png",
@@ -909,8 +840,9 @@ export const orlandoPageData: CityPageData = {
   cityState: "FL",
   citySlug: "orlando",
 
-  metaTitle: "Web Developer Orlando FL | Hospitality Tech, SaaS & Full-Stack | Ahmed Ali",
-  metaDescription: "Looking for a web developer orlando fl? Ahmed Ali builds production-ready Next.js, Node.js & AI-powered apps for Orlando businesses. Hospitality tech, SaaS platforms, real results.",
+  metaTitle: "Web Developer Orlando FL | Hospitality & SaaS | Ahmed Ali",
+  metaDescription:
+    "Need an Orlando FL web developer? Ahmed Ali builds custom Hospitality tech, SaaS & AI apps. Fast delivery, real results.",
 
   profileImageUrl:
     "/images/web-developer-orlando-fl-hospitality-saas-full-stack.png",
