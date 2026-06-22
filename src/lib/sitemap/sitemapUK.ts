@@ -35,13 +35,13 @@ export const sitemapUK: MetadataRoute.Sitemap = [
     priority: 0.8,
   },
   {
-    url: `${base}/web-developer-london`,
+    url: `${base}/web-developer-london`, // Index this on Google
     lastModified: new Date("2026-06-19"),
     changeFrequency: "monthly",
     priority: 0.9,
   },
   {
-    url: `${base}/web-developer-birmingham`,
+    url: `${base}/web-developer-birmingham`, // Index this on Google
     lastModified: new Date("2026-06-19"),
     changeFrequency: "monthly",
     priority: 0.8,
