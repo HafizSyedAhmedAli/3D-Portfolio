@@ -43,6 +43,11 @@ const CITY_GEO: Record<string, { lat: number; lng: number }> = {
   nottingham: { lat: 52.9548, lng: -1.1581 },
   bournemouth: { lat: 50.7192, lng: -1.8808 },
   manchester: { lat: 53.4808, lng: -2.2426 },
+  london: { lat: 51.5074, lng: -0.1278 },
+  birmingham: { lat: 52.4862, lng: -1.8904 },
+  leeds: { lat: 53.8008, lng: -1.5491 },
+  bristol: { lat: 51.4545, lng: -2.5879 },
+  wolverhampton: { lat: 52.5862, lng: -2.1289 },
 };
 
 export function generateCitySchemas(

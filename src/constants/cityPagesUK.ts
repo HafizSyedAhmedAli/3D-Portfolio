@@ -1371,3 +1371,1353 @@ export const manchesterPageData: CityPageData = {
     },
   ],
 };
+
+// ─── London ───────────────────────────────────────────────────────────────────
+
+export const londonPageData: CityPageData = {
+  keyword: "web developer london",
+  cityName: "London",
+  cityState: "UK",
+  citySlug: "london",
+
+  metaTitle: "Web Developer London | Next.js, AI & SaaS | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in London? Ahmed Ali builds scalable Next.js, Node.js & AI apps for London businesses. Real results.",
+
+  profileImageUrl: "/images/web-developer-london-uk-saas-ai-full-stack.png",
+  profileImageAlt: "Web Developer London UK – SaaS & AI Apps",
+
+  h1Line1: "Web Developer London",
+  h1Line2: "– Enterprise SaaS, Fintech & AI-Powered Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in London</strong> startups, scale-ups, and enterprise teams trust to ship production-grade software. Next.js, Node.js, PostgreSQL, and Redis — at the engineering standard the world's most competitive tech market demands.`,
+  bulletPoints: [
+    "Enterprise-grade Next.js, Node.js & PostgreSQL applications",
+    "AI-powered SaaS platforms with real users and real revenue",
+    "TypeScript throughout — clean architecture, zero shortcuts",
+    "Bay Area quality without the London agency price tag",
+  ],
+
+  aboutH2: "A London Web Developer Who Builds to the City's Exacting Standard",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds production-grade software at the level London's engineering culture demands. This is the most competitive tech market in Europe. Companies here don't accept prototypes dressed as products, and neither do I.",
+    "My work covers the entire stack: controller-service-repository backends in Node.js and Express, optimized PostgreSQL schemas designed for scale, Redis caching targeting sub-150ms API responses, and server-rendered Next.js frontends with TypeScript throughout. Swagger-documented, Zod-validated, handover-ready.",
+    "Three live production applications — a real-time football platform with Stripe billing, a multi-tenant enterprise SaaS with embedded AI and voice agents, and a full-stack marketplace — demonstrate the standard every London client receives from the first commit.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    { label: "Specialty", value: "Enterprise SaaS, Fintech & AI Apps" },
+    { label: "Delivery", value: "London-grade quality, direct communication" },
+    { label: "Based in", value: "Pakistan — serving London remotely" },
+  ],
+  abilityCards: [
+    {
+      icon: "🏙️",
+      title: "City-Standard Architecture",
+      desc: "Clean layered backends, TypeScript monorepos, and separation of concerns that survive London's fast-moving team and requirement changes.",
+    },
+    {
+      icon: "💷",
+      title: "Fintech Precision",
+      desc: "Transaction-safe PostgreSQL schemas, audit logging, and error boundaries for London's world-leading financial services sector.",
+    },
+    {
+      icon: "🤖",
+      title: "AI as a Product Feature",
+      desc: "LLMs, voice agents, and RAG pipelines built into your architecture from day one — not added as a pitch-deck afterthought.",
+    },
+    {
+      icon: "⚡",
+      title: "Performance Under Real Load",
+      desc: "Redis caching, indexed queries, and sub-150ms P99 API response times for applications that serve thousands of concurrent London users.",
+    },
+  ],
+
+  projectsH2: "Shipped Applications — Not Staging Environments",
+  projectsSubtitle:
+    "Every project below is live in production with real users and real transactions. London clients get this standard — not a polished demo that falls over under load.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "Clients Who Have Shipped Real Products With Me",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why London Businesses Choose Ahmed Ali Over Local Agencies",
+  whyCards: [
+    {
+      title: "London Engineering Standards",
+      desc: "I build to the same quality bar London's best engineering teams set internally — TypeScript, clean architecture, full documentation, zero tribal knowledge.",
+    },
+    {
+      title: "No London Agency Premium",
+      desc: "You pay for engineering output, not a Shoreditch office or layers of account management. London founders get City-standard code without the City price tag.",
+    },
+    {
+      title: "Fintech and RegTech Ready",
+      desc: "London's financial services sector has non-negotiable standards. Audit trails, access control, and compliance-aware architecture are my defaults — not upsells.",
+    },
+    {
+      title: "AI-Native from the Start",
+      desc: "I architect AI features at the system level — LLMs, voice agents, embedding pipelines. Not a bolt-on. Not a sprint-three feature.",
+    },
+    {
+      title: "Direct Access to the Developer",
+      desc: "You talk to the person writing your code. No project managers, no account relay, no translation layer between you and the engineering.",
+    },
+    {
+      title: "Immediate Availability",
+      desc: "No six-week agency waitlists. I respond within 24 hours and can begin most London projects within days of aligning on scope.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for London Businesses",
+  services: [
+    {
+      title: "Enterprise SaaS & Full-Stack Development",
+      desc: "End-to-end Next.js and Node.js SaaS platforms built for London's demanding market — multi-tenant, role-based, and architected to handle thousands of concurrent users.",
+      details: [
+        "Multi-tenant SaaS with role-based access control",
+        "Admin dashboards and customer portals",
+        "Third-party API and webhook integrations",
+        "Full deployment pipeline and post-launch support",
+      ],
+    },
+    {
+      title: "Fintech & Regulatory Technology",
+      desc: "Production-grade fintech platforms built for London's financial services sector — audit-ready, transaction-safe, and built to the standard the FCA environment demands.",
+      details: [
+        "Transaction-safe PostgreSQL schema design",
+        "Audit logging and compliance-aware architecture",
+        "Payment platform development and Stripe integration",
+        "Financial reporting and admin dashboard development",
+      ],
+    },
+    {
+      title: "AI & LLM Integration Engineering",
+      desc: "I architect AI into your London product at the system level — LLMs, retrieval-augmented generation, voice agents, and intelligent automation your users actually depend on.",
+      details: [
+        "OpenAI, Anthropic, and open-source LLM integrations",
+        "Retrieval-augmented generation (RAG) pipelines",
+        "Voice agent automation via VAPI",
+        "AI-powered document processing and summarization",
+      ],
+    },
+    {
+      title: "Backend Systems & API Engineering",
+      desc: "Production Express.js and Node.js APIs built with strict architectural layering, full Swagger documentation, and Zod validation throughout — ready for your internal team to extend.",
+      details: [
+        "RESTful API design with versioning",
+        "Authentication, authorization, and session management",
+        "Rate limiting, logging, and observability",
+        "OpenAPI / Swagger documentation",
+      ],
+    },
+    {
+      title: "Database Engineering & Performance",
+      desc: "PostgreSQL schema design for your exact query patterns, Redis caching layers, and migration management built to scale as your London user base grows.",
+      details: [
+        "Normalised schema design and query optimisation",
+        "Index strategy and performance tuning",
+        "Redis caching for high-traffic endpoints",
+        "Database migration and version control",
+      ],
+    },
+    {
+      title: "Architecture Review & Technical Audit",
+      desc: "I audit your existing London product for architectural debt, security vulnerabilities, and performance issues — then deliver a prioritised written remediation plan.",
+      details: [
+        "Full codebase and system architecture audit",
+        "Security, auth, and dependency review",
+        "API and database performance profiling",
+        "Written remediation plan with timelines",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer London — Serving All London Boroughs & the South East",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in London</strong>, I work fully remote across all London boroughs — the City, Canary Wharf, Shoreditch, Soho, South Bank, Brixton, Hackney, Islington, Camden, and beyond. London is the financial and technology capital of Europe. The engineering expectations here — clean architecture, TypeScript-first, AI-native thinking, production-grade reliability — are exactly what I build to by default, without the overhead of a London agency or the delays of a large studio. I also serve businesses looking for web developers across other UK cities including <a href="/web-developer-manchester" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">Manchester</a> and <a href="/web-developer-birmingham" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">Birmingham</a>.`,
+    "London's tech ecosystem is the most diverse in Europe — from fintech companies in Canary Wharf and Shoreditch unicorns to deep-tech startups in White City and media companies in King's Cross. Each sector has distinct development needs, and my stack covers all of them: Next.js for performant server-rendered frontends, Node.js and PostgreSQL for reliable backends, Redis for sub-millisecond caching, and LLM integrations for intelligent product features.",
+    `I also serve the broader South East market. If you need a <strong class="text-white">web developer london</strong> who can also work on projects in Bristol, Birmingham, or Leeds — same developer, same engineering standards, same direct line of communication throughout. No agency handoffs, no communication relay.`,
+  ],
+  cityLinks: [
+    { city: "Birmingham", href: "/web-developer-birmingham" },
+    { city: "Manchester", href: "/web-developer-manchester" },
+    { city: "Bristol", href: "/web-developer-bristol" },
+    { city: "Leeds", href: "/web-developer-leeds" },
+    { city: "Glasgow", href: "/web-developer-glasgow" },
+    { city: "Nottingham", href: "/web-developer-nottingham" },
+    { city: "New York NY", href: "/web-developer-new-york-ny" },
+    { city: "San Francisco CA", href: "/web-developer-san-francisco-ca" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in London Today",
+  contactSubtitle:
+    "Building something that needs City-standard engineering quality? Describe it below and I'll respond within 24 hours with a free consultation.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "London Standard", value: "Delivered" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-london" },
+    { name: "Projects", href: "#projects-london" },
+    { name: "Testimonials", href: "#testimonials-london" },
+    { name: "Why Hire Me", href: "#hire-me-london" },
+    { name: "Services", href: "#services-london" },
+    { name: "Book Appointment", href: "#appointment-london" },
+  ],
+  navCTALabel: "Hire Web Developer London",
+  contactId: "contact-london",
+  appointmentId: "appointment-london",
+
+  faqTitle: "Frequently Asked Questions — Web Developer London",
+  faqs: [
+    {
+      question: "What web development services do you offer London businesses?",
+      answer:
+        "I offer enterprise-grade full-stack web development for London clients using Next.js, Node.js, and PostgreSQL. Services include multi-tenant SaaS platforms, fintech applications, AI and LLM integrations, Stripe billing, backend API engineering, database architecture, and technical audits — all delivered remotely at the quality London's competitive market demands.",
+    },
+    {
+      question: "Can you build fintech platforms for London financial companies?",
+      answer:
+        "Yes. London's financial sector expects precision — audit-ready code, transaction-safe database design, proper access control, and compliance-aware architecture. I build to that standard by default. Every project ships with Swagger documentation, TypeScript throughout, and logging that satisfies even demanding compliance requirements.",
+    },
+    {
+      question: "How does your pricing compare to London web development agencies?",
+      answer:
+        "Significantly lower — because you work directly with the developer, not a Shoreditch studio with layers of account managers and project coordinators. London businesses get the same engineering quality without the overhead that drives London agency rates. Every engagement starts with a free 30-minute consultation.",
+    },
+    {
+      question: "Do you work remotely with London clients?",
+      answer:
+        "Yes, fully remote. I serve all London boroughs and the wider South East — the City, Canary Wharf, Shoreditch, Soho, Brixton, Hackney, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Can you build AI-powered SaaS for London startups?",
+      answer:
+        "Yes. I architect and integrate AI features at the system level — LLMs, retrieval-augmented generation, voice agents, and embedded AI chat widgets. I have shipped a live multi-tenant enterprise SaaS with AI chat and real-time voice automation currently serving real users.",
+    },
+    {
+      question: "How quickly can you start a London web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all London inquiries within 24 hours and can begin most projects within a few days of aligning on scope — no six-week agency waitlists.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for London's Finance, Tech & Creative Sectors",
+  localSeoParagraphs: [
+    "London is the largest technology hub in Europe and the world's leading financial centre. From the fintech companies in Canary Wharf and the City to the unicorn startups in Shoreditch and the media companies in King's Cross, the demand for production-grade, AI-ready web development has never been higher.",
+    "As a web developer serving London, I build enterprise SaaS platforms, fintech applications, AI-powered tools, and full-stack web products using Next.js, Node.js, PostgreSQL, and Redis — at the engineering standard London's most ambitious companies expect.",
+    "London founders and CTOs choose direct developer access over agencies to eliminate the communication overhead, reduce costs, and get software that is genuinely ready for production — not just impressive in a demo.",
+  ],
+
+  industries: [
+    {
+      name: "Fintech & Financial Services",
+      desc: "London is the world's fintech capital. I build payment platforms, trading dashboards, compliance tools, and financial SaaS for the City and Canary Wharf.",
+    },
+    {
+      name: "Enterprise SaaS",
+      desc: "London's B2B software market is Europe's largest. I build multi-tenant enterprise platforms, customer portals, and business intelligence tools.",
+    },
+    {
+      name: "Media & Publishing Technology",
+      desc: "From the BBC to digital-native publishers, London's media sector needs content platforms, CMS infrastructure, and high-traffic web architecture.",
+    },
+    {
+      name: "Legal & RegTech",
+      desc: "London's massive legal sector needs secure document management, case management systems, and regulatory technology platforms built with compliance in mind.",
+    },
+    {
+      name: "Healthcare & Life Sciences",
+      desc: "London's NHS trusts and life sciences companies need secure patient portals, clinical platforms, and health-tech SaaS built to data protection standards.",
+    },
+    {
+      name: "PropTech & Real Estate",
+      desc: "London's property market is one of the world's most active. I build property platforms, investment dashboards, and real estate SaaS for London's PropTech sector.",
+    },
+  ],
+};
+
+// ─── Birmingham ───────────────────────────────────────────────────────────────
+
+export const birminghamPageData: CityPageData = {
+  keyword: "web developer birmingham",
+  cityName: "Birmingham",
+  cityState: "UK",
+  citySlug: "birmingham",
+
+  metaTitle: "Web Developer Birmingham | Next.js, AI & SaaS | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Birmingham? Ahmed Ali builds scalable Next.js, Node.js & AI apps for Birmingham businesses. Real results.",
+
+  profileImageUrl: "/images/web-developer-birmingham-uk-saas-ai-full-stack.png",
+  profileImageAlt: "Web Developer Birmingham UK – SaaS & AI Apps",
+
+  h1Line1: "Web Developer Birmingham",
+  h1Line2: "– Full-Stack, Manufacturing Tech & AI Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Birmingham</strong> manufacturers, professional services firms, and tech startups trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for the UK's second city and its diverse industrial economy.`,
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL applications",
+    "Manufacturing operations software and industrial dashboards",
+    "AI-powered SaaS platforms deployed with real users",
+    "Direct communication — 24-hour response, no agency overhead",
+  ],
+
+  aboutH2: "A Birmingham Web Developer Built for the City's Industrial Ambition",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds reliable, maintainable software for businesses that depend on it. Birmingham is the UK's second city and one of its most economically diverse — from advanced manufacturing in Tyseley and Solihull to professional services in the Jewellery Quarter, and a growing tech startup scene in Digbeth and the city centre.",
+    "I build systems that match that ambition: clean PostgreSQL schemas designed for operational data, Redis caching for high-throughput reads, layered Node.js backends that are easy to audit, and Next.js frontends that make complex data usable. TypeScript throughout, documented before delivery, structured so your internal team can extend it.",
+    "My live portfolio — a real-time sports platform with Stripe billing, an enterprise multi-tenant SaaS with AI features, and a full-stack marketplace — demonstrates the production standard Birmingham clients receive from the start.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    { label: "Specialty", value: "Manufacturing Tech & Full-Stack SaaS" },
+    { label: "Delivery", value: "Reliable, documented, production-ready" },
+    { label: "Based in", value: "Pakistan — serving Birmingham remotely" },
+  ],
+  abilityCards: [
+    {
+      icon: "🏭",
+      title: "Industrial-Grade Data Systems",
+      desc: "PostgreSQL schemas built for manufacturing, inventory, and supply chain data that must stay accurate and traceable over time.",
+    },
+    {
+      icon: "📊",
+      title: "Operational Dashboards",
+      desc: "Real-time operational visibility tools for Birmingham's manufacturing, logistics, and professional services sectors.",
+    },
+    {
+      icon: "🤖",
+      title: "AI Workflow Automation",
+      desc: "Document processing, report generation, and intelligent workflow tools that reduce manual effort in data-heavy operations.",
+    },
+    {
+      icon: "🔒",
+      title: "Secure Architecture by Default",
+      desc: "Auth, input validation, rate limiting, and environment hardening are standard on every project — never retrofitted.",
+    },
+  ],
+
+  projectsH2: "Live Applications — Built for Birmingham's Business Demands",
+  projectsSubtitle:
+    "Every project below is deployed and handling real users, real workflows, and real data. Birmingham clients get this production standard.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "What Clients Say About the Work",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Birmingham Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Manufacturing Sector Expertise",
+      desc: "Birmingham's advanced manufacturing heritage creates demand for operational software, inventory systems, and production dashboards. I build precisely these.",
+    },
+    {
+      title: "No Agency Intermediary",
+      desc: "You work directly with the developer writing your code. No account managers, no project relay, no inflated local agency rates.",
+    },
+    {
+      title: "Full-Stack Single Owner",
+      desc: "Frontend, backend, database, and deployment all owned by one developer. Nothing gets lost between team handoffs.",
+    },
+    {
+      title: "Diverse Industry Coverage",
+      desc: "Birmingham's economy spans manufacturing, automotive, professional services, and retail. My architecture adapts to the demands of each sector.",
+    },
+    {
+      title: "Production-Ready Code",
+      desc: "TypeScript configs, error boundaries, and Swagger documentation shipped from commit one — not added as an afterthought before handover.",
+    },
+    {
+      title: "Reliable Timeline Delivery",
+      desc: "I respond within 24 hours, scope realistically, and deliver on schedule. Birmingham clients get consistent updates and no surprises.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Birmingham Businesses",
+  services: [
+    {
+      title: "Manufacturing & Operations Software",
+      desc: "Custom web applications for Birmingham's manufacturing, engineering, and supply chain sector — inventory systems, production dashboards, quality control tools, and procurement portals.",
+      details: [
+        "Inventory and stock-level tracking systems",
+        "Production and quality-control dashboards",
+        "Supplier management and procurement portals",
+        "Reporting tools with export and audit trails",
+      ],
+    },
+    {
+      title: "Full-Stack Web Application Development",
+      desc: "End-to-end Next.js and Node.js development for Birmingham businesses — frontend, backend API, database schema, and deployment pipeline from architecture to launch.",
+      details: [
+        "Custom SaaS platforms and multi-tenant portals",
+        "Internal business tools and operations dashboards",
+        "Authentication, roles, and permission systems",
+        "Full deployment with post-launch support",
+      ],
+    },
+    {
+      title: "AI-Powered Workflow Automation",
+      desc: "I embed AI capabilities into your Birmingham business application — document processing, workflow automation, chat assistants, and intelligent report generation.",
+      details: [
+        "Document parsing and data extraction pipelines",
+        "AI-assisted report generation and summarization",
+        "Embeddable AI chat widgets for SaaS products",
+        "Voice agent pipelines via VAPI",
+      ],
+    },
+    {
+      title: "Backend API & Systems Engineering",
+      desc: "Production Express.js APIs built with strict controller-service-repository layering, full Swagger documentation, and Zod validation throughout.",
+      details: [
+        "RESTful API design with versioning",
+        "Auth middleware and session management",
+        "Rate limiting, logging, and observability",
+        "OpenAPI / Swagger documentation",
+      ],
+    },
+    {
+      title: "Database Architecture & Performance",
+      desc: "PostgreSQL schema design with proper indexing and Redis caching for fast reads on high-traffic operational data paths.",
+      details: [
+        "Relational schema design for industrial data",
+        "Index strategy and query optimisation",
+        "Redis caching layer configuration",
+        "Scalability and migration planning",
+      ],
+    },
+    {
+      title: "Technical Audit & Codebase Review",
+      desc: "I review your existing Birmingham business application for performance bottlenecks, security gaps, and architectural debt — then deliver a written action plan.",
+      details: [
+        "Full codebase and architecture review",
+        "Security and authentication audit",
+        "API and database performance analysis",
+        "Written report with prioritised fixes",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Birmingham — Covering the West Midlands & Beyond",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Birmingham</strong>, I work fully remote across the entire Birmingham city region — Digbeth, Jewellery Quarter, Edgbaston, Solihull, Sutton Coldfield, West Bromwich, Wolverhampton, Coventry, and the wider West Midlands. Birmingham is the UK's second city and home to one of the most diverse industrial economies in Europe — from the automotive supply chain in Solihull to the financial services cluster in Colmore Row. I also serve businesses searching for a <a href="/web-developer-london" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in London</a> and across the wider UK market.`,
+    "Birmingham's digital economy is growing rapidly — anchored by KPMG, HSBC, and Deutsche Bank operations in the city centre, a strong advanced manufacturing corridor in the wider West Midlands, and a growing startup ecosystem in Digbeth's creative quarter. The demand for reliable full-stack development, AI-powered platforms, and modern SaaS architecture has grown significantly in recent years.",
+    `I also serve the broader Midlands and UK market. If you need a <strong class="text-white">web developer birmingham</strong> who can also coordinate projects in London, Leeds, or Manchester — same developer, same engineering standards, same direct line of communication. No agency handoffs, no relay. See my work as a <a href="/web-developer-manchester" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Manchester</a>.`,
+  ],
+  cityLinks: [
+    { city: "London", href: "/web-developer-london" },
+    { city: "Manchester", href: "/web-developer-manchester" },
+    { city: "Leeds", href: "/web-developer-leeds" },
+    { city: "Bristol", href: "/web-developer-bristol" },
+    { city: "Wolverhampton", href: "/web-developer-wolverhampton" },
+    { city: "Nottingham", href: "/web-developer-nottingham" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "New York NY", href: "/web-developer-new-york-ny" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Birmingham Today",
+  contactSubtitle:
+    "Have a project in mind? Describe it below and I'll respond within 24 hours with a free consultation — no commitment required.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "Industrial Tech", value: "Specialist" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-birmingham" },
+    { name: "Projects", href: "#projects-birmingham" },
+    { name: "Testimonials", href: "#testimonials-birmingham" },
+    { name: "Why Hire Me", href: "#hire-me-birmingham" },
+    { name: "Services", href: "#services-birmingham" },
+    { name: "Book Appointment", href: "#appointment-birmingham" },
+  ],
+  navCTALabel: "Hire Web Developer Birmingham",
+  contactId: "contact-birmingham",
+  appointmentId: "appointment-birmingham",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Birmingham",
+  faqs: [
+    {
+      question: "What web development services do you offer Birmingham businesses?",
+      answer:
+        "I offer full-stack web development for Birmingham clients using Next.js, Node.js, and PostgreSQL. Services include manufacturing operations software, SaaS platforms, AI integrations, Stripe billing, backend API engineering, database architecture, and technical audits — all delivered remotely with the reliability Birmingham's diverse industrial economy demands.",
+    },
+    {
+      question: "Can you build manufacturing software for Birmingham companies?",
+      answer:
+        "Yes. Birmingham's advanced manufacturing heritage creates specific software demands — inventory tracking, production dashboards, quality control logging, and supply chain visibility. I build exactly these systems using PostgreSQL schemas designed for operational data reliability.",
+    },
+    {
+      question: "Do you work remotely with Birmingham clients?",
+      answer:
+        "Yes, fully remote. I serve Birmingham and the wider West Midlands — Solihull, Wolverhampton, Coventry, West Bromwich, Sutton Coldfield, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Can you build AI-powered tools for Birmingham businesses?",
+      answer:
+        "Yes. I integrate AI features including document processing, workflow automation, reporting pipelines, and chat assistants into manufacturing and operational software for Birmingham clients.",
+    },
+    {
+      question: "How does your pricing compare to Birmingham web agencies?",
+      answer:
+        "Significantly lower — because you work directly with the developer building your product. No account managers, no project management markup, no agency overhead. Birmingham businesses get production-quality engineering without the local agency price tag.",
+    },
+    {
+      question: "How quickly can you start a Birmingham web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Birmingham inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Birmingham's Manufacturing, Finance & Tech Sectors",
+  localSeoParagraphs: [
+    "Birmingham is the UK's second city and one of its most economically productive — home to a world-class advanced manufacturing corridor, a major financial services cluster in Colmore Row, and a growing technology startup scene centred around Digbeth and the Innovation Birmingham campus.",
+    "As a web developer serving Birmingham, I build manufacturing operations software, enterprise SaaS platforms, fintech applications, and AI-powered tools using Next.js, Node.js, PostgreSQL, and Redis — with the reliability and documentation standards Birmingham's industrial sector demands.",
+    "Birmingham businesses choose direct developer engagement to reduce overhead, speed up delivery, and get engineering output that matches their ambition — without paying for agency layers that don't write a line of code.",
+  ],
+
+  industries: [
+    {
+      name: "Advanced Manufacturing & Engineering",
+      desc: "Birmingham's manufacturing heartland needs production tracking, inventory management, quality control dashboards, and supply chain visibility tools.",
+    },
+    {
+      name: "Automotive & Aerospace",
+      desc: "The West Midlands automotive corridor, including Solihull and Coventry, needs operational software, supplier portals, and compliance management platforms.",
+    },
+    {
+      name: "Financial Services & Professional Services",
+      desc: "Colmore Row's financial district needs secure banking platforms, professional services portals, and compliance-ready dashboards.",
+    },
+    {
+      name: "Retail & E-Commerce",
+      desc: "Birmingham's retail sector, including the Bullring and Selfridges, needs Stripe-powered storefronts, inventory tools, and customer portals.",
+    },
+    {
+      name: "Healthcare & Life Sciences",
+      desc: "Birmingham's NHS trusts and life sciences corridor need patient portals, clinical platforms, and health-tech SaaS products.",
+    },
+    {
+      name: "Education Technology",
+      desc: "University of Birmingham and Aston University drive EdTech demand. I build LMS platforms, student portals, and research-grade web applications.",
+    },
+  ],
+};
+
+// ─── Leeds ────────────────────────────────────────────────────────────────────
+
+export const leedsPageData: CityPageData = {
+  keyword: "web developer leeds",
+  cityName: "Leeds",
+  cityState: "UK",
+  citySlug: "leeds",
+
+  metaTitle: "Web Developer Leeds | Next.js, Fintech & AI | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Leeds? Ahmed Ali builds scalable Next.js, Node.js & AI apps for Leeds businesses. Real results.",
+
+  profileImageUrl: "/images/web-developer-leeds-uk-fintech-saas-full-stack.png",
+  profileImageAlt: "Web Developer Leeds UK – Fintech & SaaS Apps",
+
+  h1Line1: "Web Developer Leeds",
+  h1Line2: "– Fintech, Legal Tech & Full-Stack SaaS",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Leeds</strong> fintech companies, legal technology firms, and growing SaaS businesses trust to build production-ready software. Next.js, Node.js, PostgreSQL, and Redis — for the North's fastest-growing financial and professional services tech market.`,
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL applications",
+    "Fintech and legal technology platforms with audit-ready architecture",
+    "AI-powered SaaS platforms serving real users in production",
+    "24-hour response time — no agencies, no middlemen",
+  ],
+
+  aboutH2: "A Leeds Web Developer Built for the City's Financial Sector Ambition",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds production-grade software for businesses in demanding sectors. Leeds is the UK's third-largest financial centre and the North's most important professional services hub — home to major banks, law firms, and a rapidly growing fintech and legal technology ecosystem.",
+    "Every application I deliver is type-safe from commit one, structured in controller-service-repository layers, Swagger-documented, and backed by indexed PostgreSQL with Redis caching. For fintech and legal tech clients, that means audit trails, access controls, and data accuracy are architectural decisions baked into the system — not features added later.",
+    "My live projects — a real-time sports platform with Stripe billing, a multi-tenant enterprise SaaS with AI and voice agents, and a high-throughput marketplace — demonstrate the production standard every Leeds client receives.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    { label: "Specialty", value: "Fintech, Legal Tech & Full-Stack SaaS" },
+    { label: "Delivery", value: "Audit-ready, documented, on-time" },
+    { label: "Based in", value: "Pakistan — serving Leeds remotely" },
+  ],
+  abilityCards: [
+    {
+      icon: "💼",
+      title: "Legal & Financial Tech",
+      desc: "Audit-ready code, transaction-safe schemas, and access control architecture for Leeds's financial and legal services sector.",
+    },
+    {
+      icon: "🏗️",
+      title: "Layered Backend Design",
+      desc: "Controller, service, repository separation — independently testable, easy to audit, and ready for your compliance team to review.",
+    },
+    {
+      icon: "🤖",
+      title: "AI Integration",
+      desc: "LLMs, document processing, and intelligent automation embedded into your Leeds product — not demo prototypes added for the pitch.",
+    },
+    {
+      icon: "📋",
+      title: "Documentation Standard",
+      desc: "Swagger docs, TypeScript types, and clear README files. Your internal team can onboard without weeks of knowledge transfer.",
+    },
+  ],
+
+  projectsH2: "Production-Grade Applications for Demanding Industries",
+  projectsSubtitle:
+    "Every project below is live and handling real users, real transactions, and real business logic. Leeds clients get this standard — not polished demos.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "Clients Who Have Delivered With Me",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Leeds Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Financial Sector Standards",
+      desc: "Leeds is the UK's third-largest financial centre. I build to the standard banks, insurers, and financial services companies expect — audit trails, access control, and compliance-aware architecture by default.",
+    },
+    {
+      title: "Legal Tech Precision",
+      desc: "Leeds's growing legal technology sector needs secure document management, access-controlled portals, and reliable integrations. These are my defaults.",
+    },
+    {
+      title: "No Agency Markup",
+      desc: "You work directly with the developer. No project managers, no account relay, no overhead layers between you and the engineering.",
+    },
+    {
+      title: "Full-Stack Ownership",
+      desc: "Frontend, backend, database, and deployment managed by one developer. Nothing drops between handoffs.",
+    },
+    {
+      title: "AI-Ready Architecture",
+      desc: "LLM integrations, voice agents, and document intelligence built at the system level — not bolted on as a feature request.",
+    },
+    {
+      title: "On-Time, Every Sprint",
+      desc: "I respond within 24 hours, commit to realistic delivery timelines, and keep Leeds clients informed at every stage.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Leeds Businesses",
+  services: [
+    {
+      title: "Fintech & Financial Platform Development",
+      desc: "Production-grade financial web platforms for Leeds's banking, insurance, and fintech sector — audit-ready, transaction-safe, and built to regulatory standards.",
+      details: [
+        "Transaction-safe PostgreSQL schema design",
+        "Audit logging and compliance-aware architecture",
+        "Stripe and payment gateway integration",
+        "Financial reporting and admin dashboards",
+      ],
+    },
+    {
+      title: "Legal Technology Platforms",
+      desc: "Secure web applications for Leeds's legal services sector — case management systems, document portals, client dashboards, and practice management tools.",
+      details: [
+        "Role-based access control and data separation",
+        "Secure document management and storage",
+        "Client portal and matter management systems",
+        "Audit logging and compliance reporting",
+      ],
+    },
+    {
+      title: "Full-Stack SaaS Development",
+      desc: "End-to-end Next.js and Node.js SaaS platforms for Leeds's growing B2B software market — from architecture through to deployment and post-launch support.",
+      details: [
+        "Multi-tenant SaaS with role-based access",
+        "Customer portals and admin dashboards",
+        "Third-party API and webhook integrations",
+        "Full deployment pipeline and monitoring",
+      ],
+    },
+    {
+      title: "AI Feature Integration",
+      desc: "I embed AI into your Leeds business application — document processing, intelligent automation, chat assistants, and voice agents that users genuinely rely on.",
+      details: [
+        "OpenAI and Anthropic LLM integrations",
+        "Document summarization and extraction pipelines",
+        "Embeddable AI chat widgets for SaaS",
+        "Voice agent automation via VAPI",
+      ],
+    },
+    {
+      title: "Backend API & Systems Engineering",
+      desc: "Production Express.js APIs with controller-service-repository layering, full Swagger documentation, Zod validation, and security middleware throughout.",
+      details: [
+        "RESTful API design with versioning",
+        "JWT auth, OAuth, and role-based permissions",
+        "Rate limiting and observability",
+        "OpenAPI / Swagger documentation",
+      ],
+    },
+    {
+      title: "Technical Audit & Architecture Review",
+      desc: "I audit your existing Leeds product for structural debt, security gaps, and performance bottlenecks — then deliver a written remediation plan with prioritised fixes.",
+      details: [
+        "Full codebase and architecture review",
+        "Security and authentication audit",
+        "API and database performance analysis",
+        "Written report with prioritised action plan",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Leeds — Serving Yorkshire & the North",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Leeds</strong>, I work fully remote across the entire Leeds city region — the City Centre, Leeds Dock, Holbeck Urban Village, Chapel Allerton, Headingley, and the wider West Yorkshire area including Bradford, Halifax, Harrogate, Wakefield, and York. Leeds is the UK's third-largest financial centre and the fastest-growing major city economy outside London — driven by its financial services sector, legal cluster, and a rapidly maturing technology startup ecosystem. I also serve businesses looking for a <a href="/web-developer-manchester" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Manchester</a> across the broader North of England.`,
+    "Leeds's emergence as a UK fintech hub — with companies like Sky Betting & Gaming, Asda Financial Services, and a cluster of insurance and wealth management firms — creates specific demand for reliable, audit-ready, and well-documented web software. My approach to these projects defaults to transaction-safe schemas, access controls, and documentation that survives staff turnover.",
+    `I also serve the broader North and UK market. If you need a <strong class="text-white">web developer leeds</strong> who can also coordinate projects in London, Birmingham, or Manchester — same developer, same engineering standards, same direct communication. See my work as a <a href="/web-developer-london" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in London</a>.`,
+  ],
+  cityLinks: [
+    { city: "Manchester", href: "/web-developer-manchester" },
+    { city: "London", href: "/web-developer-london" },
+    { city: "Birmingham", href: "/web-developer-birmingham" },
+    { city: "Newcastle", href: "/web-developer-newcastle" },
+    { city: "Sheffield", href: "/web-developer-sheffield" },
+    { city: "Bradford", href: "/web-developer-bradford" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "New York NY", href: "/web-developer-new-york-ny" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Leeds Today",
+  contactSubtitle:
+    "Building something for Leeds's financial or professional services market? Describe your project and I'll respond within 24 hours with a free consultation.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "Fintech-Ready", value: "Architecture" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-leeds" },
+    { name: "Projects", href: "#projects-leeds" },
+    { name: "Testimonials", href: "#testimonials-leeds" },
+    { name: "Why Hire Me", href: "#hire-me-leeds" },
+    { name: "Services", href: "#services-leeds" },
+    { name: "Book Appointment", href: "#appointment-leeds" },
+  ],
+  navCTALabel: "Hire Web Developer Leeds",
+  contactId: "contact-leeds",
+  appointmentId: "appointment-leeds",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Leeds",
+  faqs: [
+    {
+      question: "What web development services do you offer Leeds businesses?",
+      answer:
+        "I offer full-stack web development for Leeds clients using Next.js, Node.js, and PostgreSQL. Services include fintech platforms, legal technology applications, SaaS development, AI integrations, Stripe billing, backend API engineering, and technical audits — all delivered remotely at the standard Leeds's demanding financial and legal sectors require.",
+    },
+    {
+      question: "Can you build fintech platforms for Leeds financial companies?",
+      answer:
+        "Yes. Leeds is the UK's third-largest financial centre and has specific expectations — audit-ready code, transaction-safe database design, proper access controls, and compliance-aware architecture. I build to these standards by default on every engagement.",
+    },
+    {
+      question: "Can you build legal technology platforms for Leeds law firms?",
+      answer:
+        "Yes. Leeds has one of the UK's strongest legal clusters. I build secure document management systems, matter management portals, client-facing platforms, and practice management tools with role-based access control and audit logging as architectural standards.",
+    },
+    {
+      question: "Do you work remotely with Leeds clients?",
+      answer:
+        "Yes, fully remote. I serve Leeds and the wider West Yorkshire area — Bradford, Halifax, Harrogate, Wakefield, and York. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "How does your pricing compare to Leeds web development agencies?",
+      answer:
+        "Significantly lower — because you work directly with the developer building your product. No account managers, no project management overhead, no agency markup. Leeds businesses get production-quality engineering without the layers that drive local agency costs.",
+    },
+    {
+      question: "How quickly can you start a Leeds web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Leeds inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Leeds's Finance, Legal Tech & Growing Tech Sector",
+  localSeoParagraphs: [
+    "Leeds is the UK's third-largest financial centre and one of its fastest-growing cities — home to HSBC, Sky Betting & Gaming, Squire Patton Boggs, and a rapidly expanding cluster of fintech and legal technology companies. The demand for reliable, audit-ready, and well-documented web software has grown alongside the city's financial ambitions.",
+    "As a web developer serving Leeds, I build fintech platforms, legal technology applications, enterprise SaaS products, and AI-powered tools using Next.js, Node.js, PostgreSQL, and Redis — with the compliance-aware architecture and documentation standards Leeds's regulated sectors demand.",
+    "Leeds founders and technology leaders choose direct developer access over agencies to reduce overhead, maintain clearer communication, and get engineering output that is genuinely production-ready from day one.",
+  ],
+
+  industries: [
+    {
+      name: "Fintech & Financial Services",
+      desc: "Leeds is the UK's third financial centre. I build payment platforms, wealth management tools, insurance technology, and financial compliance dashboards.",
+    },
+    {
+      name: "Legal Technology",
+      desc: "Leeds's top-tier legal cluster needs document management systems, matter portals, client-facing platforms, and legal SaaS products built to data protection standards.",
+    },
+    {
+      name: "Retail & E-Commerce",
+      desc: "Leeds's retail economy, including the Trinity Leeds development, needs Stripe-powered platforms, inventory systems, and customer portal development.",
+    },
+    {
+      name: "Healthcare & Life Sciences",
+      desc: "Leeds Teaching Hospitals and the health-tech sector need patient portals, clinical platforms, and health-tech SaaS products built with data sensitivity.",
+    },
+    {
+      name: "Media & Digital",
+      desc: "Leeds's creative and media sector — including Channel 4's national HQ — needs content platforms, digital media tools, and high-traffic web infrastructure.",
+    },
+    {
+      name: "Education Technology",
+      desc: "University of Leeds and Leeds Beckett drive EdTech demand. I build LMS platforms, student portals, and research-grade web applications.",
+    },
+  ],
+};
+
+// ─── Bristol ──────────────────────────────────────────────────────────────────
+
+export const bristolPageData: CityPageData = {
+  keyword: "web developer bristol",
+  cityName: "Bristol",
+  cityState: "UK",
+  citySlug: "bristol",
+
+  metaTitle: "Web Developer Bristol | Next.js, AI & SaaS | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Bristol? Ahmed Ali builds scalable Next.js, Node.js & AI apps for Bristol businesses. Real results.",
+
+  profileImageUrl: "/images/web-developer-bristol-uk-saas-ai-full-stack.png",
+  profileImageAlt: "Web Developer Bristol UK – SaaS & AI Apps",
+
+  h1Line1: "Web Developer Bristol",
+  h1Line2: "– Aerospace Tech, SaaS & AI-Powered Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Bristol</strong> aerospace companies, deep-tech startups, and creative tech firms trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — for the South West's most ambitious technology market.`,
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL applications",
+    "Deep-tech, aerospace, and scientific computing platforms",
+    "AI-powered SaaS platforms deployed with real users",
+    "24-hour response time — direct access, no agency overhead",
+  ],
+
+  aboutH2: "A Bristol Web Developer for the City's Unique Deep-Tech Economy",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds reliable, well-documented software for businesses that require precision. Bristol has one of the UK's most distinctive technology economies — shaped by Airbus, Rolls-Royce, the University of Bristol's quantum computing research, and a creative tech startup scene that has produced some of the UK's most interesting digital companies.",
+    "The software demands here are different from pure startup markets. Aerospace and deep-tech companies need systems that are accurate, auditable, and built to last — not just impressive at launch. I build exactly that: layered Node.js architecture, indexed PostgreSQL schemas, Redis caching for performance, and TypeScript throughout.",
+    "My live portfolio — a Stripe-powered sports platform, an enterprise multi-tenant SaaS with embedded AI, and a full-stack marketplace — demonstrates the production standard Bristol clients receive from day one.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    { label: "Specialty", value: "Deep-Tech, Aerospace & Full-Stack SaaS" },
+    { label: "Delivery", value: "Reliable, documented, precision-built" },
+    { label: "Based in", value: "Pakistan — serving Bristol remotely" },
+  ],
+  abilityCards: [
+    {
+      icon: "🚀",
+      title: "Aerospace & Deep-Tech Ready",
+      desc: "Reliable, auditable, and well-documented systems for Bristol's aerospace and advanced engineering companies.",
+    },
+    {
+      icon: "🌿",
+      title: "Clean Energy Tech",
+      desc: "Monitoring dashboards, data pipelines, and operational platforms for Bristol's leading clean energy and sustainability companies.",
+    },
+    {
+      icon: "🤖",
+      title: "AI & Scientific Computing",
+      desc: "LLM integrations, data processing pipelines, and intelligent automation for Bristol's deep-tech and research-adjacent businesses.",
+    },
+    {
+      icon: "🎨",
+      title: "Creative Tech Platforms",
+      desc: "Full-stack infrastructure for Bristol's creative technology, media, and games companies — polished frontends backed by solid architecture.",
+    },
+  ],
+
+  projectsH2: "Deployed Applications — Precision Over Polish",
+  projectsSubtitle:
+    "Every project below is live in production with real users and real data. Bristol clients get this production standard — reliable by design, not by accident.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "Feedback From Real Project Engagements",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Bristol Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Deep-Tech Awareness",
+      desc: "Bristol's aerospace, quantum computing, and clean energy sectors need software built for reliability, accuracy, and long-term maintainability. That's my default.",
+    },
+    {
+      title: "Creative Economy Ready",
+      desc: "Bristol's creative tech and games industry needs polished frontends backed by solid architecture. I deliver both in the same engagement.",
+    },
+    {
+      title: "No Agency Overhead",
+      desc: "You work directly with the developer. No account managers, no project relay, no Bristol or London agency markup on your budget.",
+    },
+    {
+      title: "Documented for Longevity",
+      desc: "Swagger docs, TypeScript types, and clear code structure mean your internal team can maintain and extend what I build for years.",
+    },
+    {
+      title: "Full-Stack Single Ownership",
+      desc: "Frontend, backend, database, and deployment owned by one developer — no handoffs, no dropped context, no integration surprises.",
+    },
+    {
+      title: "Reliable Delivery Timeline",
+      desc: "24-hour response times, realistic scoping, and on-schedule delivery. Bristol clients always know where their project stands.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Bristol Businesses",
+  services: [
+    {
+      title: "Aerospace & Deep-Tech Platform Development",
+      desc: "Reliable, documented web applications for Bristol's aerospace, engineering, and deep-tech companies — operational dashboards, data visualisation tools, and research platforms.",
+      details: [
+        "Operational and monitoring dashboards",
+        "Data visualisation and reporting platforms",
+        "Research data management systems",
+        "Audit-ready architecture and documentation",
+      ],
+    },
+    {
+      title: "Full-Stack SaaS Development",
+      desc: "End-to-end Next.js and Node.js SaaS platforms for Bristol's creative tech, software, and professional services sector — from architecture to live deployment.",
+      details: [
+        "Multi-tenant SaaS with role-based access control",
+        "Customer portals and admin dashboards",
+        "Third-party API and webhook integrations",
+        "Full deployment pipeline and post-launch support",
+      ],
+    },
+    {
+      title: "AI & Data Pipeline Integration",
+      desc: "I embed AI capabilities into your Bristol product — intelligent document processing, LLM-powered features, voice agents, and scientific data pipelines.",
+      details: [
+        "OpenAI and Anthropic LLM integrations",
+        "Scientific data processing and analysis pipelines",
+        "Embeddable AI chat widgets and automation",
+        "Voice agent pipelines via VAPI",
+      ],
+    },
+    {
+      title: "Clean Energy & Sustainability Tech",
+      desc: "Monitoring platforms, operational dashboards, and data management tools for Bristol's leading clean energy and sustainability companies.",
+      details: [
+        "Energy monitoring and data visualisation dashboards",
+        "Operational management platforms",
+        "Data pipeline and reporting infrastructure",
+        "IoT data ingestion and processing systems",
+      ],
+    },
+    {
+      title: "Backend API & Systems Engineering",
+      desc: "Production Express.js APIs with controller-service-repository layering, Swagger documentation, Zod validation, and security hardening throughout.",
+      details: [
+        "RESTful API design with versioning",
+        "Auth middleware and session management",
+        "Rate limiting, logging, and observability",
+        "OpenAPI / Swagger documentation",
+      ],
+    },
+    {
+      title: "Technical Audit & Architecture Review",
+      desc: "I review your existing Bristol application for performance bottlenecks, security gaps, and architectural debt — then deliver a clear written action plan.",
+      details: [
+        "Full codebase and architecture review",
+        "Security and authentication audit",
+        "API and database performance analysis",
+        "Written report with prioritised fixes",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Bristol — Serving the South West & Beyond",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Bristol</strong>, I work fully remote across the entire Bristol area — Clifton, Harbourside, Stokes Croft, Temple Quarter, Filton, and the wider South West including Bath, Swindon, Gloucester, Exeter, and Cardiff. Bristol is one of the UK's most distinctive tech cities — home to Airbus and Rolls-Royce's UK operations, the University of Bristol's world-leading quantum computing research, a significant clean energy sector, and a creative technology scene that has produced Aardman Animations, Ultraleap, and dozens of high-growth startups. I also serve businesses looking for a <a href="/web-developer-london" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in London</a> and <a href="/web-developer-birmingham" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">Birmingham</a>.`,
+    "What makes Bristol a fascinating development market is the combination of sectors: precision engineering companies needing auditable operational software, quantum and clean-tech startups building data-heavy platforms, creative agencies needing polished product infrastructure, and professional services companies looking to modernise internal tools.",
+    `I also serve the broader South West and UK market. If you need a <strong class="text-white">web developer bristol</strong> who can also coordinate projects in London, Manchester, or Birmingham — same developer, same engineering standards, same direct line of communication. See my work as a <a href="/web-developer-manchester" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Manchester</a>.`,
+  ],
+  cityLinks: [
+    { city: "London", href: "/web-developer-london" },
+    { city: "Birmingham", href: "/web-developer-birmingham" },
+    { city: "Manchester", href: "/web-developer-manchester" },
+    { city: "Leeds", href: "/web-developer-leeds" },
+    { city: "Bournemouth", href: "/web-developer-bournemouth" },
+    { city: "Nottingham", href: "/web-developer-nottingham" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "San Francisco CA", href: "/web-developer-san-francisco-ca" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Bristol Today",
+  contactSubtitle:
+    "Building something for Bristol's deep-tech, creative, or professional services sector? Describe it below and I'll respond within 24 hours with a free consultation.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "Deep-Tech Ready", value: "By Default" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-bristol" },
+    { name: "Projects", href: "#projects-bristol" },
+    { name: "Testimonials", href: "#testimonials-bristol" },
+    { name: "Why Hire Me", href: "#hire-me-bristol" },
+    { name: "Services", href: "#services-bristol" },
+    { name: "Book Appointment", href: "#appointment-bristol" },
+  ],
+  navCTALabel: "Hire Web Developer Bristol",
+  contactId: "contact-bristol",
+  appointmentId: "appointment-bristol",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Bristol",
+  faqs: [
+    {
+      question: "What web development services do you offer Bristol businesses?",
+      answer:
+        "I offer full-stack web development for Bristol clients using Next.js, Node.js, and PostgreSQL. Services include aerospace and deep-tech platforms, SaaS development, clean energy monitoring tools, AI integrations, Stripe billing, backend API engineering, and technical audits — all delivered remotely with the precision Bristol's technology sectors demand.",
+    },
+    {
+      question: "Can you build platforms for Bristol's aerospace and engineering companies?",
+      answer:
+        "Yes. Bristol's aerospace sector — anchored by Airbus and Rolls-Royce — needs reliable, auditable, and well-documented software. I build operational dashboards, data management systems, and engineering platforms with the accuracy and documentation standards those industries require.",
+    },
+    {
+      question: "Do you work remotely with Bristol clients?",
+      answer:
+        "Yes, fully remote. I serve Bristol and the wider South West — Bath, Swindon, Gloucester, Exeter, and Cardiff. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Can you build clean energy and sustainability platforms for Bristol companies?",
+      answer:
+        "Yes. Bristol has one of the UK's strongest clean energy sectors. I build monitoring dashboards, operational management platforms, energy data pipelines, and IoT data processing systems for sustainability-focused companies.",
+    },
+    {
+      question: "How does your pricing compare to Bristol web agencies?",
+      answer:
+        "Significantly lower — because you work directly with the developer. No account managers, no agency markup, no Bristol or Bath studio overhead. Bristol businesses get production-quality engineering without the layers that inflate agency costs.",
+    },
+    {
+      question: "How quickly can you start a Bristol web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Bristol inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Bristol's Aerospace, Deep-Tech & Creative Sectors",
+  localSeoParagraphs: [
+    "Bristol is one of the UK's most distinctive technology cities — home to Airbus and Rolls-Royce's UK operations, world-leading quantum computing research at the University of Bristol, a significant clean energy sector, and a creative technology scene that has produced Aardman, Ultraleap, and dozens of funded deep-tech startups.",
+    "As a web developer serving Bristol, I build aerospace and deep-tech platforms, clean energy monitoring tools, creative tech infrastructure, and enterprise SaaS products using Next.js, Node.js, PostgreSQL, and Redis — with the reliability and documentation standards Bristol's precision-oriented sectors demand.",
+    "Bristol's most innovative companies choose direct developer access over agencies to maintain precision in communication, reduce overhead, and get software that is genuinely built to last — not just delivered on a deadline.",
+  ],
+
+  industries: [
+    {
+      name: "Aerospace & Advanced Engineering",
+      desc: "Airbus, Rolls-Royce, and the wider Bristol aerospace cluster need reliable operational dashboards, data management systems, and engineering platforms.",
+    },
+    {
+      name: "Clean Energy & Sustainability",
+      desc: "Bristol's clean energy sector is one of the UK's strongest. I build energy monitoring, operational management, and sustainability data platforms.",
+    },
+    {
+      name: "Deep-Tech & Quantum Computing",
+      desc: "The University of Bristol's quantum research creates a cluster of deep-tech startups needing data processing platforms and scientific web applications.",
+    },
+    {
+      name: "Creative Technology & Gaming",
+      desc: "Bristol's creative tech heritage — including Aardman — creates demand for creative platforms, production tools, and media technology infrastructure.",
+    },
+    {
+      name: "Financial & Professional Services",
+      desc: "Bristol's Harbourside financial cluster needs secure banking platforms, professional services portals, and compliance-ready applications.",
+    },
+    {
+      name: "Education Technology",
+      desc: "University of Bristol and UWE Bristol drive EdTech demand. I build LMS platforms, research tools, and student-facing web applications.",
+    },
+  ],
+};
+
+// ─── Wolverhampton ────────────────────────────────────────────────────────────
+
+export const wolverhamptonPageData: CityPageData = {
+  keyword: "web developer wolverhampton",
+  cityName: "Wolverhampton",
+  cityState: "UK",
+  citySlug: "wolverhampton",
+
+  metaTitle: "Web Developer Wolverhampton | Next.js & AI | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Wolverhampton? Ahmed Ali builds scalable Next.js, Node.js & AI apps for Wolverhampton businesses. Real results.",
+
+  profileImageUrl: "/images/web-developer-wolverhampton-uk-saas-full-stack.png",
+  profileImageAlt: "Web Developer Wolverhampton UK – SaaS & Full-Stack Apps",
+
+  h1Line1: "Web Developer Wolverhampton",
+  h1Line2: "– Manufacturing, Retail Tech & Full-Stack Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Wolverhampton</strong> manufacturers, retailers, and growing businesses trust to build dependable, production-ready software. Next.js, Node.js, PostgreSQL, and Redis — for Wolverhampton's practical, results-focused business community.`,
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL applications",
+    "Manufacturing operations software and operational dashboards",
+    "AI-powered tools for workflow automation and reporting",
+    "Direct access to your developer — 24-hour response, no relay",
+  ],
+
+  aboutH2: "A Wolverhampton Web Developer Who Prioritises Reliability Over Hype",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds software that works in the real world. Wolverhampton's business community is practical and results-focused — manufacturing companies, retailers, professional services firms, and public sector organisations that need software that is accurate, stable, and easy for their teams to use.",
+    "That is precisely how I build. I create PostgreSQL schemas that stay accurate as data grows, Node.js backend services that are structured for easy maintenance, and Next.js frontends that make complex operational data usable for non-technical staff. TypeScript throughout, Swagger-documented, and built so your internal team can extend it without needing me for every change.",
+    "My live portfolio — a real-time sports platform with Stripe billing, a multi-tenant enterprise SaaS with AI features, and a full-stack marketplace — all deployed and serving real users, demonstrates the standard every Wolverhampton client receives.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    { label: "Specialty", value: "Operations Software & Full-Stack Apps" },
+    { label: "Delivery", value: "Reliable, practical, production-ready" },
+    { label: "Based in", value: "Pakistan — serving Wolverhampton remotely" },
+  ],
+  abilityCards: [
+    {
+      icon: "⚙️",
+      title: "Operational Reliability",
+      desc: "Software that stays accurate under everyday operational load — structured schemas, clean architecture, and error handling by default.",
+    },
+    {
+      icon: "📦",
+      title: "Inventory & Supply Tools",
+      desc: "Stock tracking, supplier portals, and procurement dashboards built for Wolverhampton's manufacturing and distribution sector.",
+    },
+    {
+      icon: "🤖",
+      title: "Practical AI Automation",
+      desc: "AI-assisted reporting, document processing, and workflow tools that reduce manual effort without adding instability.",
+    },
+    {
+      icon: "🏪",
+      title: "Retail & E-Commerce Platforms",
+      desc: "Stripe-powered storefronts, inventory management, and customer portals for Wolverhampton's retail and wholesale businesses.",
+    },
+  ],
+
+  projectsH2: "Software That Works — Deployed and Serving Real Users",
+  projectsSubtitle:
+    "Every project below is live in production handling real workflows and real data. Wolverhampton clients get this same standard — dependable software, not just demos.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "What Clients Say About Working With Me",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Wolverhampton Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Practical First, Technical Second",
+      desc: "Wolverhampton's business community needs software that solves real problems. I start with your operational requirements and build around them.",
+    },
+    {
+      title: "Direct Access to Your Developer",
+      desc: "No account managers, no project relay, no overhead. You talk directly to the developer writing your code — throughout the project.",
+    },
+    {
+      title: "Manufacturing Sector Experience",
+      desc: "Wolverhampton's manufacturing and engineering base has specific operational software needs. I understand them and build accordingly.",
+    },
+    {
+      title: "Full-Stack Single Owner",
+      desc: "Frontend, backend, database, and deployment handled by one developer — no handoffs, no lost context, no integration surprises at launch.",
+    },
+    {
+      title: "Transparent Delivery",
+      desc: "Clear milestones, regular updates, and documented deliverables. You always know where your project stands.",
+    },
+    {
+      title: "Built to Be Maintained",
+      desc: "TypeScript, Swagger docs, and clean code structure mean your team can extend what I build without needing me for every small change.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Wolverhampton Businesses",
+  services: [
+    {
+      title: "Manufacturing & Operations Software",
+      desc: "Custom web applications for Wolverhampton's manufacturing, engineering, and industrial sector — production dashboards, inventory systems, quality control tools, and operational reporting.",
+      details: [
+        "Inventory and stock-level tracking systems",
+        "Production and quality-control dashboards",
+        "Supplier and procurement management portals",
+        "Reporting tools with export and audit trails",
+      ],
+    },
+    {
+      title: "Retail & E-Commerce Platforms",
+      desc: "Full-stack e-commerce and retail platforms for Wolverhampton's retail and wholesale sector — Stripe-powered storefronts, inventory management, and customer portals.",
+      details: [
+        "Stripe Checkout and subscription billing",
+        "Product catalogue and inventory management",
+        "Customer account portals and order tracking",
+        "Admin sales and reporting dashboards",
+      ],
+    },
+    {
+      title: "Full-Stack Business Application Development",
+      desc: "End-to-end Next.js and Node.js applications for Wolverhampton businesses — internal tools, customer portals, and business management systems from architecture to deployment.",
+      details: [
+        "Internal business tools and operations portals",
+        "Customer-facing dashboards and portals",
+        "Authentication, roles, and permission systems",
+        "Full deployment with post-launch support",
+      ],
+    },
+    {
+      title: "AI-Powered Workflow Automation",
+      desc: "Practical AI integrations for Wolverhampton businesses — document processing, automated reporting, and workflow tools that reduce manual effort.",
+      details: [
+        "Document parsing and data extraction",
+        "AI-assisted report and summary generation",
+        "Workflow automation pipelines",
+        "Internal chat assistants and knowledge tools",
+      ],
+    },
+    {
+      title: "Backend API & Systems Engineering",
+      desc: "Production Express.js APIs with controller-service-repository layering, Swagger documentation, and security middleware throughout.",
+      details: [
+        "RESTful API design and documentation",
+        "Authentication and role-based access control",
+        "Rate limiting and input validation",
+        "OpenAPI / Swagger documentation",
+      ],
+    },
+    {
+      title: "Technical Audit & Improvement Plan",
+      desc: "I review your existing business application for bottlenecks, security gaps, and architectural issues — then deliver a written action plan with prioritised improvements.",
+      details: [
+        "Full codebase and architecture review",
+        "Security and authentication assessment",
+        "API and database performance analysis",
+        "Written report with prioritised improvements",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Wolverhampton — Serving the West Midlands",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Wolverhampton</strong>, I work fully remote across Wolverhampton and the wider West Midlands — Walsall, Dudley, West Bromwich, Bilston, Cannock, Stafford, and beyond. Wolverhampton sits at the heart of the Black Country, one of the UK's most important industrial regions — with a manufacturing base that spans automotive components, engineering, and distribution, alongside a growing public sector technology and retail presence. I also serve businesses looking for a <a href="/web-developer-birmingham" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Birmingham</a> across the broader West Midlands market.`,
+    "Wolverhampton's businesses often need software that is practical first — inventory counts that stay accurate, dashboards that production staff can actually read, and workflows that do not break under the demands of daily operations. My approach fits this environment because I build for reliability, maintainability, and operational clarity from the start.",
+    `I also serve the wider West Midlands and UK market. If you need a <strong class="text-white">web developer wolverhampton</strong> who can also coordinate projects in Birmingham, Manchester, or London — same developer, same engineering standards, same direct communication. See my work as a <a href="/web-developer-birmingham" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Birmingham</a>.`,
+  ],
+  cityLinks: [
+    { city: "Birmingham", href: "/web-developer-birmingham" },
+    { city: "London", href: "/web-developer-london" },
+    { city: "Manchester", href: "/web-developer-manchester" },
+    { city: "Leeds", href: "/web-developer-leeds" },
+    { city: "Nottingham", href: "/web-developer-nottingham" },
+    { city: "Bristol", href: "/web-developer-bristol" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "Dallas TX", href: "/web-developer-dallas-tx" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Wolverhampton Today",
+  contactSubtitle:
+    "Have a project in mind? Describe it below and I'll respond within 24 hours with a free consultation — no commitment required.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "Operational Software", value: "Specialist" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-wolverhampton" },
+    { name: "Projects", href: "#projects-wolverhampton" },
+    { name: "Testimonials", href: "#testimonials-wolverhampton" },
+    { name: "Why Hire Me", href: "#hire-me-wolverhampton" },
+    { name: "Services", href: "#services-wolverhampton" },
+    { name: "Book Appointment", href: "#appointment-wolverhampton" },
+  ],
+  navCTALabel: "Hire Web Developer Wolverhampton",
+  contactId: "contact-wolverhampton",
+  appointmentId: "appointment-wolverhampton",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Wolverhampton",
+  faqs: [
+    {
+      question: "What web development services do you offer Wolverhampton businesses?",
+      answer:
+        "I offer full-stack web development for Wolverhampton clients using Next.js, Node.js, and PostgreSQL. Services include manufacturing operations software, retail and e-commerce platforms, SaaS development, AI workflow automation, backend API engineering, and technical audits — all delivered remotely with the reliability Wolverhampton's businesses need.",
+    },
+    {
+      question: "Can you build manufacturing software for Wolverhampton companies?",
+      answer:
+        "Yes. Wolverhampton and the Black Country have a strong manufacturing heritage. I build inventory tracking systems, production dashboards, quality control tools, and supplier portals using PostgreSQL schemas designed for operational data accuracy.",
+    },
+    {
+      question: "Do you work remotely with Wolverhampton clients?",
+      answer:
+        "Yes, fully remote. I serve Wolverhampton and the wider West Midlands — Walsall, Dudley, West Bromwich, Bilston, Cannock, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Can you build e-commerce platforms for Wolverhampton retailers?",
+      answer:
+        "Yes. I build full Stripe-powered e-commerce platforms including product catalogues, inventory management, customer portals, and admin reporting dashboards. All tested in production with real paying users.",
+    },
+    {
+      question: "How does your pricing compare to local web agencies?",
+      answer:
+        "Significantly lower — because you work directly with the developer. No project managers, no account relay, no overhead markup. Wolverhampton businesses get production-quality engineering without the layers that inflate agency costs.",
+    },
+    {
+      question: "How quickly can you start a Wolverhampton web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Wolverhampton inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Wolverhampton's Manufacturing, Retail & Public Sector",
+  localSeoParagraphs: [
+    "Wolverhampton sits at the heart of the Black Country — one of the UK's most historically significant industrial regions, with a manufacturing and engineering base that continues to drive local economic activity. The city's businesses, from automotive component manufacturers to retail chains and public sector organisations, need software that is practical, reliable, and built to be used by real teams.",
+    "As a web developer serving Wolverhampton, I build manufacturing operations software, retail and e-commerce platforms, full-stack business applications, and AI-powered automation tools using Next.js, Node.js, PostgreSQL, and Redis — with the operational reliability Wolverhampton's business community demands.",
+    "Wolverhampton businesses choose direct developer access over agencies to keep communication clear, reduce costs, and get engineering output that genuinely supports their day-to-day operations.",
+  ],
+
+  industries: [
+    {
+      name: "Manufacturing & Black Country Industry",
+      desc: "Wolverhampton's manufacturing and engineering base needs production tracking, inventory management, quality control dashboards, and supplier portals.",
+    },
+    {
+      name: "Retail & Wholesale",
+      desc: "Wolverhampton's retail sector needs Stripe-powered storefronts, inventory systems, customer portals, and B2B wholesale platforms.",
+    },
+    {
+      name: "Public Sector & Local Government",
+      desc: "Wolverhampton's public sector needs reliable, well-documented web platforms, citizen portals, and operational tools built to accessibility standards.",
+    },
+    {
+      name: "Healthcare & Social Care",
+      desc: "Wolverhampton's NHS trust and social care organisations need secure patient-facing platforms, staff tools, and case management systems.",
+    },
+    {
+      name: "Automotive & Components",
+      desc: "The West Midlands automotive supply chain needs operational dashboards, quality tracking, and supplier management platforms.",
+    },
+    {
+      name: "Professional Services",
+      desc: "Wolverhampton's legal, accounting, and consulting firms need secure client portals, document management, and practice management tools.",
+    },
+  ],
+};
