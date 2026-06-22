@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { socialImgs } from "../constants";
 
 const SOCIAL_LABELS: Record<string, string> = {
@@ -7,6 +8,16 @@ const SOCIAL_LABELS: Record<string, string> = {
   linkedin: "LinkedIn",
   github: "GitHub",
 };
+
+// Flagship cities only — full roster lives at /locations
+const featuredCities = [
+  { name: "Austin TX", href: "/web-developer-austin-tx" },
+  { name: "New York NY", href: "/web-developer-new-york-ny" },
+  { name: "San Francisco CA", href: "/web-developer-san-francisco-ca" },
+  { name: "London", href: "/web-developer-london" },
+  { name: "Manchester", href: "/web-developer-manchester" },
+  { name: "Miami FL", href: "/web-developer-miami-fl" },
+];
 
 const FooterSection = () => {
   return (
@@ -84,7 +95,38 @@ const FooterSection = () => {
           </ul>
         </nav>
 
-        <div className="w-full mt-8 flex flex-col items-center gap-4">
+        {/* ── Areas I Serve — flagship subset + link to full roster ── */}
+        <div className="w-full mt-10 flex flex-col items-center gap-5">
+          <div
+            className="h-px w-full max-w-2xl bg-linear-to-r from-transparent via-white/8 to-transparent"
+            aria-hidden="true"
+          />
+          <p className="text-[10px] font-mono tracking-[0.3em] uppercase text-white/20">
+            Areas I Serve
+          </p>
+          <nav aria-label="Featured cities served">
+            <ul className="flex flex-wrap justify-center gap-2 max-w-2xl list-none">
+              {featuredCities.map((city) => (
+                <li key={city.href}>
+                  <Link
+                    href={city.href}
+                    className="px-3 py-1.5 text-[11px] rounded-lg border border-white/8 bg-white/2 text-white/40 hover:text-emerald-400 hover:border-emerald-500/40 transition-all duration-300"
+                  >
+                    {city.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <Link
+            href="/locations"
+            className="text-emerald-400/70 hover:text-emerald-400 text-xs font-mono tracking-wide transition-colors duration-300"
+          >
+            View all locations →
+          </Link>
+        </div>
+
+        <div className="w-full mt-2 flex flex-col items-center gap-4">
           <div
             className="h-px w-full bg-linear-to-r from-transparent via-white/8 to-transparent"
             aria-hidden="true"

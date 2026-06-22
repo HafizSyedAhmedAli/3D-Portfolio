@@ -21,6 +21,12 @@ const coreRoutes: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.9,
   },
+  {
+    url: `${siteMetadata.url}/locations`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  },
 ];
 
 // ─── Composed sitemap ──────────────────────────────────────────────────────────
