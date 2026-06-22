@@ -1,7 +1,4 @@
-import type {
-    CityPageProject,
-    CityPageTestimonial
-} from "@/types";
+import type { CityPageProject, CityPageTestimonial } from "@/types";
 
 export const COMMON_PROJECTS: CityPageProject[] = [
   {
@@ -39,7 +36,7 @@ export const COMMON_TESTIMONIALS: CityPageTestimonial[] = [
     service: "Full-Stack Web Development",
     imgPath: "/images/client1.png",
     imgAlt:
-      "Testimonial from Rodrigue Tchitaka praising on-time delivery, smooth live match streaming, and a reliable subscription system built by Ahmed Ali.",
+      "Testimonial from Rodrigue Tchitaka praising on-time delivery and reliable subscription system built by Ahmed Ali.",
   },
   {
     name: "Ayza Noor",

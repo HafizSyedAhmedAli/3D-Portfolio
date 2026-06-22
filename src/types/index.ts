@@ -149,7 +149,7 @@ export type CityPageSkillTag =
   | "AI/SaaS";
 
 export type CityPageAbilityCard = {
-  icon: string;
+  iconName: string; // lucide-react icon name, e.g. "Building2"
   title: string;
   desc: string;
 };
