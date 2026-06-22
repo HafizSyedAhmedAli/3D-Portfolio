@@ -23,13 +23,14 @@ export const newcastlePageData: CityPageData = {
 
   h1Line1: "Web Developer Newcastle",
   h1Line2: "– Full-Stack, SaaS & AI Apps",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Newcastle</strong> startups, digital agencies, and growing businesses trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built clean, built to scale, built to last.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Newcastle</strong> Atom Bank-adjacent fintech teams, Ouseburn Valley startups, and growing businesses trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built clean, built to scale, built to last.`,
+
   bulletPoints: [
-    "Production-ready Next.js, Node.js & PostgreSQL applications",
-    "AI-powered SaaS platforms with real users and real revenue",
-    "Clean layered backend architecture — documented, type-safe, maintainable",
-    "24-hour response time with transparent project communication",
-  ],
+  "Production-ready Next.js, Node.js & PostgreSQL applications",
+  "Fintech and digital banking tools built for Newcastle's Atom Bank-shaped tech scene",
+  "Clean layered backend architecture — documented, type-safe, maintainable",
+  "24-hour response time with transparent project communication",
+],
 
   aboutH2: "The Web Developer Newcastle Businesses Come Back To",
   aboutParagraphs: [
@@ -38,33 +39,33 @@ export const newcastlePageData: CityPageData = {
     "My live portfolio includes a football platform with Stripe subscriptions and real-time scores, a multi-tenant enterprise SaaS with embedded AI chat widgets, and a high-performance e-commerce marketplace. All deployed, all maintained, all serving real users right now.",
   ],
   highlights: [
-    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
-    { label: "Specialty", value: "Full-Stack Web & AI-Powered SaaS" },
-    { label: "Delivery", value: "Production-ready, documented, on-time" },
-    { label: "Based in", value: "Pakistan — serving Newcastle remotely" },
-  ],
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "Atom Bank · Ouseburn Valley digital cluster · Quayside" },
+  { label: "Delivery", value: "Production-ready, documented, on-time" },
+  { label: "Based in", value: "Pakistan — serving Newcastle remotely" },
+],
   abilityCards: [
-    {
-      icon: "🏗️",
-      title: "Clean System Design",
-      desc: "Controller, service, and repository layers — independently testable, easy to extend, and ready for your team to own.",
-    },
-    {
-      icon: "⚡",
-      title: "Performance by Default",
-      desc: "Redis caching, indexed PostgreSQL queries, and sub-150ms API response times. Speed is built in, not bolted on.",
-    },
-    {
-      icon: "🤖",
-      title: "AI Integration",
-      desc: "LLMs, voice agents, and AI chat widgets built directly into your product — not added as an afterthought.",
-    },
-    {
-      icon: "🔒",
-      title: "Secure from Commit One",
-      desc: "Auth, input validation, rate limiting, and environment hardening shipped by default on every project.",
-    },
-  ],
+  {
+    iconName: "Landmark",
+    title: "Digital Banking & FinTech Tools",
+    desc: "Atom Bank put Newcastle on the UK fintech map. I build digital banking interfaces, payment flows, and financial dashboards to match that standard.",
+  },
+  {
+    iconName: "Zap",
+    title: "Performance by Default",
+    desc: "Redis caching, indexed PostgreSQL queries, and sub-150ms API response times. Speed is built in, not bolted on.",
+  },
+  {
+    iconName: "BrainCircuit",
+    title: "AI Integration",
+    desc: "LLMs, voice agents, and AI chat widgets built directly into your product — not added as an afterthought.",
+  },
+  {
+    iconName: "Lock",
+    title: "Secure from Commit One",
+    desc: "Auth, input validation, rate limiting, and environment hardening shipped by default on every project.",
+  },
+],
 
   projectsH2: "Live Projects — Production Standard",
   projectsSubtitle:
@@ -76,31 +77,31 @@ export const newcastlePageData: CityPageData = {
 
   whyH2: "Why Newcastle Businesses Choose Ahmed Ali",
   whyCards: [
-    {
-      title: "Full-Stack Ownership",
-      desc: "Frontend, backend, database, and deployment — one developer who owns the entire product. No handoffs, no dropped context.",
-    },
-    {
-      title: "Digital Economy Ready",
-      desc: "Newcastle's digital sector is maturing fast. I build systems with the architecture scale-ups and digital businesses need from day one.",
-    },
-    {
-      title: "No Agency Markup",
-      desc: "You work directly with the developer writing your code. No account managers, no communication relay, no inflated rates.",
-    },
-    {
-      title: "AI-Native Development",
-      desc: "From LLM integrations to voice automation — I embed AI natively into your product so it genuinely improves your users' experience.",
-    },
-    {
-      title: "Deadline Driven",
-      desc: "I respond within 24 hours and commit to realistic timelines. Newcastle clients get consistent updates, not silence.",
-    },
-    {
-      title: "Maintainable by Design",
-      desc: "TypeScript throughout, Swagger docs included, and clean code patterns mean your team can confidently extend what I build.",
-    },
-  ],
+  {
+    title: "Atom Bank-Calibre FinTech",
+    desc: "Newcastle's reputation in digital banking was built by Atom Bank. I bring that same precision — secure auth, transaction-safe schemas, audit logging — to every fintech-adjacent project.",
+  },
+  {
+    title: "Ouseburn Valley Startup Fluency",
+    desc: "Newcastle's Ouseburn Valley and Science Central startup cluster need lean, fast-shipping development. I scope tightly and avoid the indefinite-MVP trap.",
+  },
+  {
+    title: "No Agency Markup",
+    desc: "You work directly with the developer writing your code. No account managers, no communication relay, no inflated rates.",
+  },
+  {
+    title: "AI-Native Development",
+    desc: "From LLM integrations to voice automation — I embed AI natively into your product so it genuinely improves your users' experience.",
+  },
+  {
+    title: "Deadline Driven",
+    desc: "I respond within 24 hours and commit to realistic timelines. Newcastle clients get consistent updates, not silence.",
+  },
+  {
+    title: "Maintainable by Design",
+    desc: "TypeScript throughout, Swagger docs included, and clean code patterns mean your team can confidently extend what I build.",
+  },
+],
 
   servicesH2: "Web Development Services for Newcastle Businesses",
   services: [
@@ -190,10 +191,10 @@ export const newcastlePageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    { label: "North East Clients", value: "Welcome" },
-    { label: "Response Time", value: "< 24hrs" },
-    { label: "On-Time Rate", value: "100%" },
-  ],
+  { label: "Atom Bank-Adjacent", value: "FinTech Ready" },
+  { label: "Response Time", value: "< 24hrs" },
+  { label: "On-Time Rate", value: "100%" },
+],
 
   navLinks: [
     { name: "About", href: "#about-newcastle" },
@@ -210,11 +211,10 @@ export const newcastlePageData: CityPageData = {
   faqTitle: "Frequently Asked Questions — Web Developer Newcastle",
   faqs: [
     {
-      question:
-        "What web development services do you offer Newcastle businesses?",
-      answer:
-        "I offer full-stack web development for Newcastle clients using Next.js, Node.js, and PostgreSQL. Services include custom SaaS platforms, AI integrations, Stripe payment systems, backend API engineering, database architecture, and technical audits — all delivered remotely with the reliability of an in-house developer.",
-    },
+  question: "Can you build fintech software like the kind Atom Bank pioneered in Newcastle?",
+  answer:
+    "Yes. I build digital banking interfaces, payment flows, and financial dashboards with the security and reliability standards Atom Bank helped establish in Newcastle's fintech scene — secure auth, transaction-safe schemas, and audit logging by default.",
+},
     {
       question: "Can you build AI-powered web apps for Newcastle companies?",
       answer:
@@ -226,10 +226,10 @@ export const newcastlePageData: CityPageData = {
         "Yes, fully remote. I serve Newcastle upon Tyne, Gateshead, Sunderland, Durham, Middlesbrough, and the wider North East. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
     },
     {
-      question: "How does your pricing compare to Newcastle agencies?",
-      answer:
-        "Significantly lower — because you work directly with the developer building your product. No account managers, no markup layers, no agency overhead. Newcastle businesses get production-quality engineering without the local agency price tag.",
-    },
+  question: "Do you work with Ouseburn Valley and Science Central startups?",
+  answer:
+    "Yes. Newcastle's Ouseburn Valley and Science Central startup cluster need lean, fast-shipping development without the overhead of a full agency. I scope projects tightly and ship production software on realistic timelines.",
+},
     {
       question:
         "Can you build Stripe subscription platforms for Newcastle businesses?",
@@ -246,7 +246,7 @@ export const newcastlePageData: CityPageData = {
   localSeoTitle:
     "Web Development for Newcastle's Growing Digital & Tech Sector",
   localSeoParagraphs: [
-    "Newcastle upon Tyne has established itself as one of the North East's leading digital economies — with Sage Group headquartered on the Quayside, Atom Bank operating as one of the UK's first digital banks, and a growing cluster of tech startups and digital agencies in Ouseburn and the Science Central district.",
+    "Newcastle upon Tyne has established itself as one of the North East's leading digital economies — with Sage Group headquartered on the Quayside, Atom Bank operating as one of the UK's first fully digital banks, and a growing cluster of tech startups and digital agencies in Ouseburn and the Science Central district.",
     "As a web developer serving Newcastle, I build custom SaaS platforms, AI-powered applications, fintech tools, and enterprise backends using Next.js, Node.js, PostgreSQL, and Redis — the same technologies Newcastle's leading tech companies use internally.",
     "Newcastle businesses choose direct developer access over agencies to move faster, communicate more directly, and get better engineering output for their budget — without paying Central London rates.",
   ],
@@ -296,13 +296,14 @@ export const glasgowPageData: CityPageData = {
 
   h1Line1: "Web Developer Glasgow",
   h1Line2: "– Full-Stack, SaaS & AI-Powered Apps",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Glasgow</strong> businesses, startups, and scale-ups trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for Scotland's fastest-growing digital market.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Glasgow</strong> IFSD financial firms, Merchant City startups, and Tontine-ecosystem scale-ups trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for Scotland's fastest-growing digital market.`,
+
   bulletPoints: [
-    "Production-ready Next.js, Node.js & PostgreSQL applications",
-    "AI-powered SaaS platforms deployed and serving real users",
-    "TypeScript throughout — clean architecture, zero shortcuts",
-    "Direct communication — 24-hour response, no agency relay",
-  ],
+  "Production-ready Next.js, Node.js & PostgreSQL applications",
+  "Fintech and compliance-aware platforms for Glasgow's IFSD financial corridor",
+  "TypeScript throughout — clean architecture, zero shortcuts",
+  "Direct communication — 24-hour response, no agency relay",
+],
 
   aboutH2: "The Web Developer Glasgow Businesses Actually Ship With",
   aboutParagraphs: [
@@ -310,34 +311,34 @@ export const glasgowPageData: CityPageData = {
     "I bring the complete stack: layered Node.js backends, optimized PostgreSQL schemas, Redis caching for high-throughput reads, and polished Next.js frontends with TypeScript throughout. Swagger-documented, Zod-validated, and deployable from day one.",
     "I've shipped a real-time sports platform with Stripe subscriptions, a multi-tenant enterprise SaaS with embedded AI chat and voice agents, and a full-stack marketplace. All deployed, all maintained, all serving real users. That's the production standard every Glasgow client receives.",
   ],
-  highlights: [
-    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
-    { label: "Specialty", value: "Full-Stack, SaaS & AI-Powered Apps" },
-    { label: "Delivery", value: "Production-ready, documented, on-time" },
-    { label: "Based in", value: "Pakistan — serving Glasgow remotely" },
-  ],
+ highlights: [
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "IFSD · Merchant City · Tontine startup ecosystem" },
+  { label: "Delivery", value: "Production-ready, documented, on-time" },
+  { label: "Based in", value: "Pakistan — serving Glasgow remotely" },
+],
   abilityCards: [
-    {
-      icon: "🏗️",
-      title: "Layered Architecture",
-      desc: "Controller, service, and repository layers — independently testable, maintainable, and ready for your team to own after delivery.",
-    },
-    {
-      icon: "⚡",
-      title: "Performance Engineering",
-      desc: "Redis caching, indexed PostgreSQL queries, and sub-150ms API response times designed to handle real Glasgow traffic.",
-    },
-    {
-      icon: "🤖",
-      title: "Production AI Features",
-      desc: "LLMs, voice agents, and AI chat widgets integrated natively — not demo-ware added at the last sprint.",
-    },
-    {
-      icon: "📋",
-      title: "Documentation First",
-      desc: "Swagger docs, TypeScript types, and clear README files. Your team can onboard without weeks of tribal knowledge transfer.",
-    },
-  ],
+  {
+    iconName: "Building2",
+    title: "IFSD-Grade Architecture",
+    desc: "Glasgow's International Financial Services District demands secure, auditable systems. I build layered backends that meet that bar by default.",
+  },
+  {
+    iconName: "Activity",
+    title: "Performance Engineering",
+    desc: "Redis caching, indexed PostgreSQL queries, and sub-150ms API response times designed to handle real Glasgow traffic.",
+  },
+  {
+    iconName: "BrainCircuit",
+    title: "Production AI Features",
+    desc: "LLMs, voice agents, and AI chat widgets integrated natively — not demo-ware added at the last sprint.",
+  },
+  {
+    iconName: "FileText",
+    title: "Documentation First",
+    desc: "Swagger docs, TypeScript types, and clear README files. Your team can onboard without weeks of tribal knowledge transfer.",
+  },
+],
 
   projectsH2: "Live Projects — Not Portfolio Mockups",
   projectsSubtitle:
@@ -349,31 +350,31 @@ export const glasgowPageData: CityPageData = {
 
   whyH2: "Why Glasgow Businesses Choose Ahmed Ali",
   whyCards: [
-    {
-      title: "Scotland's Commercial Capital",
-      desc: "Glasgow's IFSD, creative industries, and tech sector create diverse development needs. I build for all of them — from fintech to creative platforms to SaaS.",
-    },
-    {
-      title: "No Agency Tax",
-      desc: "No account managers, no overhead, no markup. You pay for a developer and get the developer writing your code.",
-    },
-    {
-      title: "Full-Stack Single Owner",
-      desc: "Frontend, backend, database, and deployment owned by one developer. No handoffs, no dropped context.",
-    },
-    {
-      title: "AI-Ready by Default",
-      desc: "LLM integrations, voice agents, and AI-powered features built at the architecture level — not added as a patch.",
-    },
-    {
-      title: "Proven in Production",
-      desc: "Three live products, real paying users, real transactions. Glasgow clients get the same production standard.",
-    },
-    {
-      title: "Scalable from Launch",
-      desc: "Redis caching, proper PostgreSQL indexing, and modular architecture that handles the next 10x without a rewrite.",
-    },
-  ],
+  {
+    title: "IFSD Standards by Default",
+    desc: "Glasgow's International Financial Services District sets a high bar for security and auditability. I build fintech platforms, compliance tools, and dashboards to meet it.",
+  },
+  {
+    title: "Tontine & Merchant City Startup Fluent",
+    desc: "Glasgow's Tontine and SkyPark startup ecosystem in Merchant City need fast, production-grade delivery. I ship real software, not indefinite MVPs.",
+  },
+  {
+    title: "No Agency Tax",
+    desc: "No account managers, no overhead, no markup. You pay for a developer and get the developer writing your code.",
+  },
+  {
+    title: "Full-Stack Single Owner",
+    desc: "Frontend, backend, database, and deployment owned by one developer. No handoffs, no dropped context.",
+  },
+  {
+    title: "AI-Ready by Default",
+    desc: "LLM integrations, voice agents, and AI-powered features built at the architecture level — not added as a patch.",
+  },
+  {
+    title: "Proven in Production",
+    desc: "Three live products, real paying users, real transactions. Glasgow clients get the same production standard.",
+  },
+],
 
   servicesH2: "Web Development Services for Glasgow Businesses",
   services: [
@@ -463,10 +464,10 @@ export const glasgowPageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    { label: "Scottish Clients", value: "Welcome" },
-    { label: "Response Time", value: "< 24hrs" },
-    { label: "On-Time Rate", value: "100%" },
-  ],
+  { label: "IFSD-Grade", value: "Compliance Ready" },
+  { label: "Response Time", value: "< 24hrs" },
+  { label: "On-Time Rate", value: "100%" },
+],
 
   navLinks: [
     { name: "About", href: "#about-glasgow" },
@@ -483,11 +484,10 @@ export const glasgowPageData: CityPageData = {
   faqTitle: "Frequently Asked Questions — Web Developer Glasgow",
   faqs: [
     {
-      question:
-        "What web development services do you offer Glasgow businesses?",
-      answer:
-        "I offer full-stack web development for Glasgow clients using Next.js, Node.js, and PostgreSQL. Services include custom SaaS platforms, AI integrations, Stripe payment systems, backend API engineering, database architecture, and technical audits — all delivered remotely at the quality Scotland's commercial capital demands.",
-    },
+  question: "Can you build fintech software for Glasgow's IFSD financial sector?",
+  answer:
+    "Yes. Glasgow's International Financial Services District requires audit-ready code, proper access controls, and compliance-aware architecture. I build to these standards by default for IFSD-adjacent financial clients.",
+},
     {
       question: "Can you build AI-powered apps for Glasgow companies?",
       answer:
@@ -499,10 +499,10 @@ export const glasgowPageData: CityPageData = {
         "Yes, fully remote. I serve Glasgow and the wider Scottish market — the City Centre, Merchant City, West End, Paisley, Motherwell, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
     },
     {
-      question: "How does your pricing compare to Glasgow web agencies?",
-      answer:
-        "Significantly lower — because you work directly with the developer, not a Glasgow or London agency with layers of account managers and project managers. You get the same engineering quality without the overhead markup.",
-    },
+  question: "Do you work with Glasgow startups in the Tontine or SkyPark ecosystem?",
+  answer:
+    "Yes. Glasgow's Tontine and SkyPark startup hubs in Merchant City need lean, fast-shipping engineering. I scope tightly and deliver production software, not indefinite prototypes.",
+},
     {
       question: "Can you build SaaS platforms for Glasgow startups?",
       answer:
@@ -518,7 +518,7 @@ export const glasgowPageData: CityPageData = {
   localSeoTitle:
     "Web Development for Glasgow's Finance, Creative & Tech Sectors",
   localSeoParagraphs: [
-    "Glasgow is Scotland's largest city and the country's commercial powerhouse — home to the International Financial Services District, a thriving creative industries sector, and one of the UK's fastest-growing tech startup ecosystems. The demand for modern, scalable web development is growing in lockstep with the city's digital ambitions.",
+    "Glasgow is Scotland's largest city and the country's commercial powerhouse — home to the International Financial Services District (IFSD), a thriving creative industries sector, and one of the UK's fastest-growing tech startup ecosystems centred around the Tontine and SkyPark districts in Merchant City.",
     "As a web developer serving Glasgow, I build custom SaaS platforms, AI-powered applications, fintech tools, and enterprise backends using Next.js, Node.js, PostgreSQL, and Redis — the same stack Scotland's leading technology companies are building on.",
     "Glasgow businesses choose direct developer access over agencies to move faster, reduce communication overhead, and get production-grade engineering without London agency pricing.",
   ],
@@ -568,13 +568,14 @@ export const nottinghamPageData: CityPageData = {
 
   h1Line1: "Web Developer Nottingham",
   h1Line2: "– SaaS Platforms, AI & Full-Stack Apps",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Nottingham</strong> businesses, startups, and digital teams trust to deliver production-ready software on time. Next.js, Node.js, PostgreSQL, and Redis — built for Nottingham's growing digital economy.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Nottingham</strong> businesses, gaming studios in the city's strong games cluster, and NHS-adjacent QMC health-tech teams trust to deliver production-ready software on time. Next.js, Node.js, PostgreSQL, and Redis — built for Nottingham's growing digital economy.`,
+
   bulletPoints: [
-    "Production-ready Next.js, Node.js & PostgreSQL applications",
-    "AI-powered SaaS platforms with real users and real revenue",
-    "Clean architecture — TypeScript throughout, Swagger-documented",
-    "24-hour response time with immediate project availability",
-  ],
+  "Production-ready Next.js, Node.js & PostgreSQL applications",
+  "Platforms for Nottingham's gaming industry and QMC-adjacent health-tech sector",
+  "Clean architecture — TypeScript throughout, Swagger-documented",
+  "24-hour response time with immediate project availability",
+],
 
   aboutH2: "The Web Developer Nottingham Businesses Trust to Ship",
   aboutParagraphs: [
@@ -582,34 +583,34 @@ export const nottinghamPageData: CityPageData = {
     "I bring the complete stack to every engagement: layered Node.js backend architecture, optimized PostgreSQL schemas, Redis caching for fast reads, and polished Next.js frontends. TypeScript throughout, Swagger-documented before delivery, and structured so your team can extend it confidently.",
     "My live projects — a real-time sports platform with Stripe billing, a multi-tenant AI SaaS, and a full-stack marketplace — are all deployed and serving real users right now. That's the standard every Nottingham client receives.",
   ],
-  highlights: [
-    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
-    { label: "Specialty", value: "SaaS, AI Features & Full-Stack Apps" },
-    { label: "Delivery", value: "On-time, documented, production-grade" },
-    { label: "Based in", value: "Pakistan — serving Nottingham remotely" },
-  ],
+ highlights: [
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "Creative Quarter · QMC health-tech · games industry" },
+  { label: "Delivery", value: "On-time, documented, production-grade" },
+  { label: "Based in", value: "Pakistan — serving Nottingham remotely" },
+],
   abilityCards: [
-    {
-      icon: "🎮",
-      title: "Gaming & Entertainment Tech",
-      desc: "Nottingham's games industry is one of the UK's strongest. I build the web platforms, portals, and SaaS tools that support it.",
-    },
-    {
-      icon: "🏥",
-      title: "Healthcare Aware",
-      desc: "Data access controls, audit logging, and compliance-aware architecture for Nottingham's NHS-adjacent healthcare technology companies.",
-    },
-    {
-      icon: "🤖",
-      title: "AI Integration",
-      desc: "LLMs, voice agents, and AI chat widgets integrated natively into your product — not prototypes added after launch.",
-    },
-    {
-      icon: "⚡",
-      title: "Performance First",
-      desc: "Redis caching, indexed queries, and sub-150ms API response times. Fast by default, not by accident.",
-    },
-  ],
+  {
+    iconName: "Gamepad2",
+    title: "Gaming & Entertainment Tech",
+    desc: "Nottingham's games industry is one of the UK's strongest. I build the web platforms, portals, and SaaS tools that support it.",
+  },
+  {
+    iconName: "HeartPulse",
+    title: "QMC Healthcare Aware",
+    desc: "Data access controls, audit logging, and compliance-aware architecture for Nottingham's NHS-adjacent healthcare technology companies near the QMC.",
+  },
+  {
+    iconName: "BrainCircuit",
+    title: "AI Integration",
+    desc: "LLMs, voice agents, and AI chat widgets integrated natively into your product — not prototypes added after launch.",
+  },
+  {
+    iconName: "Zap",
+    title: "Performance First",
+    desc: "Redis caching, indexed queries, and sub-150ms API response times. Fast by default, not by accident.",
+  },
+],
 
   projectsH2: "Deployed Projects — Built to Production Standard",
   projectsSubtitle:
@@ -621,31 +622,31 @@ export const nottinghamPageData: CityPageData = {
 
   whyH2: "Why Nottingham Businesses Choose Ahmed Ali",
   whyCards: [
-    {
-      title: "Midlands Market Aware",
-      desc: "Nottingham's economy spans healthcare, gaming, retail, and manufacturing. I build for all of them — with the architecture each sector's requirements demand.",
-    },
-    {
-      title: "No Agency Overhead",
-      desc: "You work directly with the developer building your product. No account managers, no overhead, no relay communication.",
-    },
-    {
-      title: "Full-Stack Owner",
-      desc: "Frontend, backend, database, and deployment owned by one developer. Nothing gets lost between team handoffs.",
-    },
-    {
-      title: "AI-Native Capability",
-      desc: "LLM integrations, voice agents, and AI chat features built as core product capabilities — not stitched on for the demo.",
-    },
-    {
-      title: "Reliable Delivery",
-      desc: "24-hour response times, realistic timelines, and on-schedule delivery. Nottingham clients always know where their project stands.",
-    },
-    {
-      title: "Clean Codebase Handover",
-      desc: "Swagger docs, TypeScript, and clear README files mean your internal team can take over without a painful transition.",
-    },
-  ],
+  {
+    title: "Games Industry Fluent",
+    desc: "Nottingham's games cluster is among the UK's strongest. I build player portals, subscription platforms, and the web infrastructure these studios depend on.",
+  },
+  {
+    title: "QMC-Adjacent Health-Tech Ready",
+    desc: "Nottingham's NHS trust network, anchored by the QMC, drives demand for compliance-aware health-tech. I build with data separation and audit logging as defaults.",
+  },
+  {
+    title: "No Agency Overhead",
+    desc: "You work directly with the developer building your product. No account managers, no overhead, no relay communication.",
+  },
+  {
+    title: "Full-Stack Owner",
+    desc: "Frontend, backend, database, and deployment owned by one developer. Nothing gets lost between team handoffs.",
+  },
+  {
+    title: "AI-Native Capability",
+    desc: "LLM integrations, voice agents, and AI chat features built as core product capabilities — not stitched on for the demo.",
+  },
+  {
+    title: "Reliable Delivery",
+    desc: "24-hour response times, realistic timelines, and on-schedule delivery. Nottingham clients always know where their project stands.",
+  },
+],
 
   servicesH2: "Web Development Services for Nottingham Businesses",
   services: [
@@ -735,10 +736,10 @@ export const nottinghamPageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    { label: "East Midlands", value: "Covered" },
-    { label: "Response Time", value: "< 24hrs" },
-    { label: "On-Time Rate", value: "100%" },
-  ],
+  { label: "Games Industry Ready", value: "Specialist" },
+  { label: "Response Time", value: "< 24hrs" },
+  { label: "On-Time Rate", value: "100%" },
+],
 
   navLinks: [
     { name: "About", href: "#about-nottingham" },
@@ -755,11 +756,10 @@ export const nottinghamPageData: CityPageData = {
   faqTitle: "Frequently Asked Questions — Web Developer Nottingham",
   faqs: [
     {
-      question:
-        "What web development services do you offer Nottingham businesses?",
-      answer:
-        "I offer full-stack web development for Nottingham clients using Next.js, Node.js, and PostgreSQL. Services include SaaS platforms, AI integrations, Stripe payment systems, backend API engineering, database architecture, and technical audits — all delivered remotely with the reliability Nottingham's growing digital sector demands.",
-    },
+  question: "Do you build platforms for Nottingham's games industry?",
+  answer:
+    "Yes. Nottingham has one of the UK's strongest gaming clusters. I build player portals, subscription systems, and SaaS tools for gaming studios using the same production-grade stack I use for enterprise clients.",
+},
     {
       question:
         "Can you build apps for Nottingham's gaming and creative tech sector?",
@@ -772,11 +772,10 @@ export const nottinghamPageData: CityPageData = {
         "Yes, fully remote. I serve Nottingham and the wider East Midlands — Derby, Leicester, Lincoln, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
     },
     {
-      question:
-        "Can you build healthcare platforms for Nottingham NHS-adjacent companies?",
-      answer:
-        "Yes. I build with data sensitivity in mind — role-based access control, data separation, and audit logging are standard architectural decisions for healthcare-adjacent clients in Nottingham.",
-    },
+  question: "Can you build health-tech software for companies near the QMC?",
+  answer:
+    "Yes. The Queen's Medical Centre anchors Nottingham's NHS-adjacent health-tech sector. I build with role-based access control, data separation, and audit logging as standard architectural decisions for clients in or near that ecosystem.",
+},
     {
       question: "How does your pricing compare to Nottingham agencies?",
       answer:
@@ -792,7 +791,7 @@ export const nottinghamPageData: CityPageData = {
   localSeoTitle:
     "Web Development for Nottingham's Gaming, Healthcare & Tech Sectors",
   localSeoParagraphs: [
-    "Nottingham has a diverse and growing digital economy anchored by a strong games industry, a significant NHS healthcare cluster, and a startup ecosystem emerging from Nottingham Trent University's Innovation Quarter and the Creative Quarter in Hockley.",
+    "Nottingham has a diverse and growing digital economy anchored by one of the UK's strongest games industry clusters, a significant NHS healthcare presence around the Queen's Medical Centre (QMC), and a startup ecosystem emerging from Nottingham Trent University's Innovation Quarter and the Creative Quarter in Hockley.",
     "As a web developer serving Nottingham, I build custom SaaS platforms, gaming industry tools, healthcare-aware applications, and full-stack web products using Next.js, Node.js, PostgreSQL, and Redis.",
     "Nottingham businesses choose direct developer engagement to cut overhead, speed up delivery, and get better engineering output for their budget — without the middlemen that local agencies typically add.",
   ],
@@ -843,13 +842,14 @@ export const bournemouthPageData: CityPageData = {
 
   h1Line1: "Web Developer Bournemouth",
   h1Line2: "– Digital Agencies, SaaS & AI Apps",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Bournemouth</strong> digital agencies, startups, and growing businesses trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for Bournemouth's vibrant and fast-moving digital sector.`,
-  bulletPoints: [
-    "Production-ready Next.js, Node.js & PostgreSQL applications",
-    "AI-powered SaaS platforms deployed with real users",
-    "Agency-quality output — direct developer access, no overhead",
-    "24-hour response time with immediate project availability",
-  ],
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Bournemouth</strong> digital agencies across the BCP digital agency cluster, Bournemouth University tech graduates, and growing businesses trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for Bournemouth's vibrant and fast-moving digital sector.`,
+
+ bulletPoints: [
+  "Production-ready Next.js, Node.js & PostgreSQL applications",
+  "White-label platforms built for Bournemouth's dense digital agency cluster",
+  "Agency-quality output — direct developer access, no overhead",
+  "24-hour response time with immediate project availability",
+],
 
   aboutH2: "The Web Developer Bournemouth's Digital Scene Relies On",
   aboutParagraphs: [
@@ -858,33 +858,33 @@ export const bournemouthPageData: CityPageData = {
     "My live portfolio includes a Stripe-powered sports platform, an enterprise multi-tenant SaaS with embedded AI and voice agents, and a high-throughput marketplace — all deployed and serving real users right now.",
   ],
   highlights: [
-    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
-    { label: "Specialty", value: "Digital Agency Tech & SaaS Platforms" },
-    { label: "Delivery", value: "Production-ready, documented, on-time" },
-    { label: "Based in", value: "Pakistan — serving Bournemouth remotely" },
-  ],
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "BCP digital agency cluster · Bournemouth University tech" },
+  { label: "Delivery", value: "Production-ready, documented, on-time" },
+  { label: "Based in", value: "Pakistan — serving Bournemouth remotely" },
+],
   abilityCards: [
-    {
-      icon: "🎨",
-      title: "Agency-Quality Output",
-      desc: "Bournemouth's digital agency scene demands polished, performant frontends. I deliver pixel-sharp Next.js UIs backed by solid architecture.",
-    },
-    {
-      icon: "🚀",
-      title: "Startup-Speed Delivery",
-      desc: "I respond within 24 hours, scope tightly, and ship production software — not indefinite MVPs that drag on for months.",
-    },
-    {
-      icon: "🤖",
-      title: "AI Features That Work",
-      desc: "LLMs, voice agents, and AI chat widgets integrated natively into your product — not demo prototypes bolted on after launch.",
-    },
-    {
-      icon: "💳",
-      title: "Payments & Subscriptions",
-      desc: "Full Stripe billing infrastructure — subscriptions, webhooks, and billing portals — battle-tested in production with real paying users.",
-    },
-  ],
+  {
+    iconName: "Palette",
+    title: "Agency-Quality Output",
+    desc: "Bournemouth's high concentration of digital agencies demands polished, performant frontends. I deliver pixel-sharp Next.js UIs backed by solid architecture.",
+  },
+  {
+    iconName: "Rocket",
+    title: "Startup-Speed Delivery",
+    desc: "I respond within 24 hours, scope tightly, and ship production software — not indefinite MVPs that drag on for months.",
+  },
+  {
+    iconName: "BrainCircuit",
+    title: "AI Features That Work",
+    desc: "LLMs, voice agents, and AI chat widgets integrated natively into your product — not demo prototypes bolted on after launch.",
+  },
+  {
+    iconName: "CreditCard",
+    title: "Payments & Subscriptions",
+    desc: "Full Stripe billing infrastructure — subscriptions, webhooks, and billing portals — battle-tested in production with real paying users.",
+  },
+],
 
   projectsH2: "Live Projects — Agency-Standard Delivery",
   projectsSubtitle:
@@ -896,31 +896,31 @@ export const bournemouthPageData: CityPageData = {
 
   whyH2: "Why Bournemouth Businesses Choose Ahmed Ali",
   whyCards: [
-    {
-      title: "Digital Agency Aware",
-      desc: "Bournemouth has one of the UK's highest concentrations of digital agencies. I understand agency workflows, white-label requirements, and client delivery timelines.",
-    },
-    {
-      title: "No Overhead",
-      desc: "You pay for a developer — you get the developer writing your code. No account managers, no project management tax, no relay communication.",
-    },
-    {
-      title: "Full-Stack Single Owner",
-      desc: "Frontend, backend, database, and deployment owned by one developer. No handoffs, no dropped context, no integration surprises.",
-    },
-    {
-      title: "AI-Ready Development",
-      desc: "From LLM chat assistants to voice automation — I architect AI features into your product natively so they genuinely improve user experience.",
-    },
-    {
-      title: "On-Time, Every Time",
-      desc: "I respond within 24 hours and commit to realistic timelines. Bournemouth clients get updates, not silence.",
-    },
-    {
-      title: "Maintainable by Design",
-      desc: "TypeScript, Swagger docs, and clean patterns mean your team — or your client's team — can extend what I build without trouble.",
-    },
-  ],
+  {
+    title: "BCP Agency Cluster Aware",
+    desc: "Bournemouth has one of the UK's highest concentrations of digital agencies. I understand white-label requirements, agency workflows, and client delivery timelines.",
+  },
+  {
+    title: "Bournemouth University Talent-Adjacent",
+    desc: "Bournemouth University's Digital Arts programmes produce strong design talent. I match that bar with engineering that holds up under real production load.",
+  },
+  {
+    title: "No Overhead",
+    desc: "You pay for a developer — you get the developer writing your code. No account managers, no project management tax, no relay communication.",
+  },
+  {
+    title: "Full-Stack Single Owner",
+    desc: "Frontend, backend, database, and deployment owned by one developer. No handoffs, no dropped context, no integration surprises.",
+  },
+  {
+    title: "AI-Ready Development",
+    desc: "From LLM chat assistants to voice automation — I architect AI features into your product natively so they genuinely improve user experience.",
+  },
+  {
+    title: "On-Time, Every Time",
+    desc: "I respond within 24 hours and commit to realistic timelines. Bournemouth clients get updates, not silence.",
+  },
+],
 
   servicesH2: "Web Development Services for Bournemouth Businesses",
   services: [
@@ -1010,10 +1010,10 @@ export const bournemouthPageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    { label: "South Coast", value: "Covered" },
-    { label: "Response Time", value: "< 24hrs" },
-    { label: "On-Time Rate", value: "100%" },
-  ],
+  { label: "BCP Agency Cluster", value: "Trusted" },
+  { label: "Response Time", value: "< 24hrs" },
+  { label: "On-Time Rate", value: "100%" },
+],
 
   navLinks: [
     { name: "About", href: "#about-bournemouth" },
@@ -1030,11 +1030,10 @@ export const bournemouthPageData: CityPageData = {
   faqTitle: "Frequently Asked Questions — Web Developer Bournemouth",
   faqs: [
     {
-      question:
-        "What web development services do you offer Bournemouth businesses?",
-      answer:
-        "I offer full-stack web development for Bournemouth clients using Next.js, Node.js, and PostgreSQL. Services include SaaS platforms, white-label agency products, AI integrations, Stripe billing, backend API engineering, and technical audits — all delivered remotely with the quality Bournemouth's digital sector demands.",
-    },
+  question: "Can you build white-label products for the BCP digital agency cluster?",
+  answer:
+    "Yes. Bournemouth, Christchurch, and Poole have one of the UK's highest concentrations of digital agencies. I build white-label SaaS platforms and reseller-ready web applications agencies can deliver to their own clients — clean, documented, and easy to rebrand.",
+},
     {
       question:
         "Can you build white-label products for Bournemouth digital agencies?",
@@ -1047,10 +1046,10 @@ export const bournemouthPageData: CityPageData = {
         "Yes, fully remote. I serve Bournemouth, Poole, Christchurch, and the wider Dorset and Hampshire area — including Southampton and Winchester. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
     },
     {
-      question: "Can you build AI-powered apps for Bournemouth companies?",
-      answer:
-        "Yes. I integrate LLMs, voice agents, and AI chat widgets into web applications for Bournemouth clients. I have shipped a live multi-tenant SaaS with embeddable AI chat and real-time voice automation — production-proven, not experimental.",
-    },
+  question: "Do you understand the design standard Bournemouth University's Digital Arts graduates set?",
+  answer:
+    "Yes. Bournemouth University's Digital Arts programmes have shaped a local design culture that expects polish. I pair that design sensibility with backend architecture that holds up under real production traffic.",
+},
     {
       question: "How does your pricing compare to Bournemouth agencies?",
       answer:
@@ -1066,7 +1065,7 @@ export const bournemouthPageData: CityPageData = {
   localSeoTitle:
     "Web Development for Bournemouth's Digital Agency & Tech Sector",
   localSeoParagraphs: [
-    "Bournemouth and the wider BCP conurbation have established themselves as one of the South of England's leading digital economies — home to a high density of digital agencies, a growing fintech presence, and Bournemouth University's internationally recognised digital programmes.",
+    "Bournemouth and the wider BCP conurbation have established themselves as one of the South of England's leading digital economies — home to one of the UK's highest densities of digital agencies, a growing fintech presence, and Bournemouth University's internationally recognised Digital Arts programmes.",
     "As a web developer serving Bournemouth, I build custom SaaS platforms, agency-grade web applications, AI-powered tools, and full-stack products using Next.js, Node.js, PostgreSQL, and Redis.",
     "Bournemouth's businesses and agencies choose direct developer access over larger London or local agencies to speed up delivery, reduce overhead, and get better engineering output for their budget.",
   ],
@@ -1116,13 +1115,14 @@ export const manchesterPageData: CityPageData = {
 
   h1Line1: "Web Developer Manchester",
   h1Line2: "– Full-Stack, SaaS & AI-Powered Apps",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Manchester</strong> startups, scale-ups, and enterprise teams trust to deliver production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for the North's most competitive digital market.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Manchester</strong> MediaCityUK production teams, Spinningfields fintech firms, and Northern Quarter startups trust to deliver production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for the North's most competitive digital market.`,
+
   bulletPoints: [
-    "Production-ready Next.js, Node.js & PostgreSQL applications",
-    "AI-powered SaaS platforms with real users and real revenue",
-    "Clean, typed, documented code — handover-ready from day one",
-    "Direct communication — 24-hour response, no agency relay",
-  ],
+  "Production-ready Next.js, Node.js & PostgreSQL applications",
+  "MediaTech infrastructure for MediaCityUK and fintech tools for Spinningfields",
+  "Clean, typed, documented code — handover-ready from day one",
+  "Direct communication — 24-hour response, no agency relay",
+],
 
   aboutH2: "The Web Developer Manchester Scale-Ups Actually Ship With",
   aboutParagraphs: [
@@ -1131,33 +1131,33 @@ export const manchesterPageData: CityPageData = {
     "Three live production applications — a real-time sports platform with Stripe billing, a multi-tenant enterprise SaaS with embedded AI and voice agents, and a full-stack marketplace — demonstrate what Manchester clients get from day one.",
   ],
   highlights: [
-    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
-    { label: "Specialty", value: "SaaS, AI Features & Full-Stack Apps" },
-    { label: "Delivery", value: "On-time, documented, production-grade" },
-    { label: "Based in", value: "Pakistan — serving Manchester remotely" },
-  ],
-  abilityCards: [
-    {
-      icon: "📡",
-      title: "MediaTech Ready",
-      desc: "Manchester's MediaCityUK drives demand for content platforms and broadcast tech. I build the full-stack infrastructure behind media products.",
-    },
-    {
-      icon: "🔌",
-      title: "API-First Architecture",
-      desc: "Every backend starts with a clean contract. Swagger-documented, Zod-validated, and versioned from commit one.",
-    },
-    {
-      icon: "🤖",
-      title: "Production AI Features",
-      desc: "Real LLM integrations, voice automation, and embedded AI widgets — not hallway-demo prototypes built in the last sprint.",
-    },
-    {
-      icon: "📊",
-      title: "Data Architecture at Scale",
-      desc: "PostgreSQL indexing strategy and Redis caching designed for the traffic your Manchester SaaS will actually see.",
-    },
-  ],
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "MediaCityUK · Spinningfields fintech · Northern Quarter" },
+  { label: "Delivery", value: "On-time, documented, production-grade" },
+  { label: "Based in", value: "Pakistan — serving Manchester remotely" },
+],
+abilityCards: [
+  {
+    iconName: "Radio",
+    title: "MediaTech Ready",
+    desc: "MediaCityUK — home to the BBC and ITV — drives demand for content platforms and broadcast tech. I build the full-stack infrastructure behind media products.",
+  },
+  {
+    iconName: "Plug",
+    title: "API-First Architecture",
+    desc: "Every backend starts with a clean contract. Swagger-documented, Zod-validated, and versioned from commit one.",
+  },
+  {
+    iconName: "BrainCircuit",
+    title: "Production AI Features",
+    desc: "Real LLM integrations, voice automation, and embedded AI widgets — not hallway-demo prototypes built in the last sprint.",
+  },
+  {
+    iconName: "Database",
+    title: "Data Architecture at Scale",
+    desc: "PostgreSQL indexing strategy and Redis caching designed for the traffic your Manchester SaaS will actually see.",
+  },
+],
 
   projectsH2: "Shipped Products — Not Portfolio Mockups",
   projectsSubtitle:
@@ -1169,31 +1169,31 @@ export const manchesterPageData: CityPageData = {
 
   whyH2: "Why Manchester Businesses Choose Ahmed Ali",
   whyCards: [
-    {
-      title: "North's Tech Capital Standards",
-      desc: "Manchester's tech scene rivals London for ambition and talent density. I build to the standards Manchester's best engineering teams expect.",
-    },
-    {
-      title: "Zero Agency Tax",
-      desc: "No middlemen, no account managers, no overhead markup. You pay for engineering — you get the engineer building your product.",
-    },
-    {
-      title: "Full-Stack in One Person",
-      desc: "Frontend, backend, database, and deployment. No handoffs, no dropped context, no surprise gaps at integration time.",
-    },
-    {
-      title: "Scales With Your Round",
-      desc: "Modular architecture, Redis caching, and PostgreSQL indexing mean you don't rewrite your backend when you close your next funding round.",
-    },
-    {
-      title: "Proven in Production",
-      desc: "Three live products, real paying users, real transactions. Manchester clients get the same production standard — no exceptions.",
-    },
-    {
-      title: "AI as a Feature, Not a Buzzword",
-      desc: "I integrate LLMs and voice agents natively into your web product so they actually improve your users' experience from launch.",
-    },
-  ],
+  {
+    title: "MediaCityUK Infrastructure Fluent",
+    desc: "MediaCityUK in Salford hosts the BBC, ITV, and a dense cluster of production companies. I build the content platforms and streaming infrastructure those teams rely on.",
+  },
+  {
+    title: "Spinningfields FinTech Standards",
+    desc: "Manchester's Spinningfields fintech corridor expects secure, audit-ready platforms. I build payment and compliance tools to that bar by default.",
+  },
+  {
+    title: "Zero Agency Tax",
+    desc: "No middlemen, no account managers, no overhead markup. You pay for engineering — you get the engineer building your product.",
+  },
+  {
+    title: "Full-Stack in One Person",
+    desc: "Frontend, backend, database, and deployment. No handoffs, no dropped context, no surprise gaps at integration time.",
+  },
+  {
+    title: "Scales With Your Round",
+    desc: "Modular architecture, Redis caching, and PostgreSQL indexing mean you don't rewrite your backend when you close your next funding round.",
+  },
+  {
+    title: "Proven in Production",
+    desc: "Three live products, real paying users, real transactions. Manchester clients get the same production standard — no exceptions.",
+  },
+],
 
   servicesH2: "Web Development Services for Manchester Businesses",
   services: [
@@ -1283,10 +1283,10 @@ export const manchesterPageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    { label: "North's Tech Capital", value: "Covered" },
-    { label: "Response Time", value: "< 24hrs" },
-    { label: "On-Time Rate", value: "100%" },
-  ],
+  { label: "MediaCityUK Ready", value: "Production" },
+  { label: "Response Time", value: "< 24hrs" },
+  { label: "On-Time Rate", value: "100%" },
+],
 
   navLinks: [
     { name: "About", href: "#about-manchester" },
@@ -1303,11 +1303,10 @@ export const manchesterPageData: CityPageData = {
   faqTitle: "Frequently Asked Questions — Web Developer Manchester",
   faqs: [
     {
-      question:
-        "What web development services do you offer Manchester businesses?",
-      answer:
-        "I offer full-stack web development for Manchester clients using Next.js, Node.js, and PostgreSQL. Services include custom SaaS platforms, AI integrations, MediaTech infrastructure, Stripe billing, backend API engineering, database architecture, and technical audits — all delivered at the quality Manchester's competitive tech market expects.",
-    },
+  question: "Do you build infrastructure for MediaCityUK companies?",
+  answer:
+    "Yes. Manchester's MediaCityUK is home to the BBC, ITV, and hundreds of media-adjacent companies. I build content management systems, streaming infrastructure, and broadcast-tech tools to support these organisations.",
+},
     {
       question: "Can you build AI-powered SaaS for Manchester startups?",
       answer:
@@ -1320,10 +1319,10 @@ export const manchesterPageData: CityPageData = {
         "Yes. Manchester's MediaCityUK is home to the BBC, ITV, and hundreds of media-adjacent companies. I build the full-stack infrastructure, content management systems, streaming platforms, and media tech tools that these organisations need.",
     },
     {
-      question: "Do you work remotely with Manchester clients?",
-      answer:
-        "Yes, fully remote. I serve Manchester and the wider Greater Manchester area — Salford, Stockport, Trafford, Oldham, Rochdale, Bolton, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
-    },
+  question: "Can you build fintech platforms for Manchester's Spinningfields corridor?",
+  answer:
+    "Yes. Manchester's Spinningfields fintech hub expects secure, audit-ready software. I build payment platforms, financial dashboards, and compliance tools designed to meet that standard.",
+},
     {
       question: "How does your pricing compare to Manchester web agencies?",
       answer:
@@ -1339,7 +1338,7 @@ export const manchesterPageData: CityPageData = {
   localSeoTitle:
     "Web Development for Manchester's Tech, Media & Finance Sectors",
   localSeoParagraphs: [
-    "Manchester is the UK's second technology hub and the North's undisputed digital capital — home to MediaCityUK, a thriving fintech corridor in Spinningfields, hundreds of funded startups in Ancoats and the Northern Quarter, and one of the UK's fastest-growing enterprise software ecosystems.",
+    "Manchester is the UK's second technology hub and the North's undisputed digital capital — home to MediaCityUK in Salford (the BBC and ITV's production base), a thriving fintech corridor in Spinningfields, and hundreds of funded startups in Ancoats and the Northern Quarter.",
     "As a web developer serving Manchester, I build custom SaaS platforms, MediaTech infrastructure, fintech applications, and AI-powered web products using Next.js, Node.js, PostgreSQL, and Redis — the same stack Manchester's best engineering teams are building on.",
     "Manchester founders and product teams choose direct developer access over agencies to move at startup speed, communicate clearly, and get production-grade engineering without the overhead layers that come with larger organisations.",
   ],
@@ -1389,13 +1388,14 @@ export const londonPageData: CityPageData = {
 
   h1Line1: "Web Developer London",
   h1Line2: "– Enterprise SaaS, Fintech & AI-Powered Apps",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in London</strong> startups, scale-ups, and enterprise teams trust to ship production-grade software. Next.js, Node.js, PostgreSQL, and Redis — at the engineering standard the world's most competitive tech market demands.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in London</strong> City of London fintech firms, Canary Wharf enterprise teams, and Shoreditch startups trust to ship production-grade software. Next.js, Node.js, PostgreSQL, and Redis — at the engineering standard the world's most competitive tech market demands.`,
+
   bulletPoints: [
-    "Enterprise-grade Next.js, Node.js & PostgreSQL applications",
-    "AI-powered SaaS platforms with real users and real revenue",
-    "TypeScript throughout — clean architecture, zero shortcuts",
-    "Bay Area quality without the London agency price tag",
-  ],
+  "Enterprise-grade Next.js, Node.js & PostgreSQL applications",
+  "Fintech-precision systems built for the City of London and Canary Wharf",
+  "TypeScript throughout — clean architecture, zero shortcuts",
+  "City-standard quality without the London agency price tag",
+],
 
   aboutH2: "A London Web Developer Who Builds to the City's Exacting Standard",
   aboutParagraphs: [
@@ -1403,34 +1403,34 @@ export const londonPageData: CityPageData = {
     "My work covers the entire stack: controller-service-repository backends in Node.js and Express, optimized PostgreSQL schemas designed for scale, Redis caching targeting sub-150ms API responses, and server-rendered Next.js frontends with TypeScript throughout. Swagger-documented, Zod-validated, handover-ready.",
     "Three live production applications — a real-time football platform with Stripe billing, a multi-tenant enterprise SaaS with embedded AI and voice agents, and a full-stack marketplace — demonstrate the standard every London client receives from the first commit.",
   ],
-  highlights: [
-    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
-    { label: "Specialty", value: "Enterprise SaaS, Fintech & AI Apps" },
-    { label: "Delivery", value: "London-grade quality, direct communication" },
-    { label: "Based in", value: "Pakistan — serving London remotely" },
-  ],
-  abilityCards: [
-    {
-      icon: "🏙️",
-      title: "City-Standard Architecture",
-      desc: "Clean layered backends, TypeScript monorepos, and separation of concerns that survive London's fast-moving team and requirement changes.",
-    },
-    {
-      icon: "💷",
-      title: "Fintech Precision",
-      desc: "Transaction-safe PostgreSQL schemas, audit logging, and error boundaries for London's world-leading financial services sector.",
-    },
-    {
-      icon: "🤖",
-      title: "AI as a Product Feature",
-      desc: "LLMs, voice agents, and RAG pipelines built into your architecture from day one — not added as a pitch-deck afterthought.",
-    },
-    {
-      icon: "⚡",
-      title: "Performance Under Real Load",
-      desc: "Redis caching, indexed queries, and sub-150ms P99 API response times for applications that serve thousands of concurrent London users.",
-    },
-  ],
+ highlights: [
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "City of London · Canary Wharf fintech · Shoreditch startups" },
+  { label: "Delivery", value: "London-grade quality, direct communication" },
+  { label: "Based in", value: "Pakistan — serving London remotely" },
+],
+abilityCards: [
+  {
+    iconName: "Building",
+    title: "City-Standard Architecture",
+    desc: "Clean layered backends, TypeScript monorepos, and separation of concerns that survive London's fast-moving teams and requirement changes.",
+  },
+  {
+    iconName: "PoundSterling",
+    title: "Fintech Precision",
+    desc: "Transaction-safe PostgreSQL schemas, audit logging, and error boundaries for the City of London and Canary Wharf's world-leading financial services sector.",
+  },
+  {
+    iconName: "BrainCircuit",
+    title: "AI as a Product Feature",
+    desc: "LLMs, voice agents, and RAG pipelines built into your architecture from day one — not added as a pitch-deck afterthought.",
+  },
+  {
+    iconName: "Activity",
+    title: "Performance Under Real Load",
+    desc: "Redis caching, indexed queries, and sub-150ms P99 API response times for applications that serve thousands of concurrent London users.",
+  },
+],
 
   projectsH2: "Shipped Applications — Not Staging Environments",
   projectsSubtitle:
@@ -1442,31 +1442,31 @@ export const londonPageData: CityPageData = {
 
   whyH2: "Why London Businesses Choose Ahmed Ali Over Local Agencies",
   whyCards: [
-    {
-      title: "London Engineering Standards",
-      desc: "I build to the same quality bar London's best engineering teams set internally — TypeScript, clean architecture, full documentation, zero tribal knowledge.",
-    },
-    {
-      title: "No London Agency Premium",
-      desc: "You pay for engineering output, not a Shoreditch office or layers of account management. London founders get City-standard code without the City price tag.",
-    },
-    {
-      title: "Fintech and RegTech Ready",
-      desc: "London's financial services sector has non-negotiable standards. Audit trails, access control, and compliance-aware architecture are my defaults — not upsells.",
-    },
-    {
-      title: "AI-Native from the Start",
-      desc: "I architect AI features at the system level — LLMs, voice agents, embedding pipelines. Not a bolt-on. Not a sprint-three feature.",
-    },
-    {
-      title: "Direct Access to the Developer",
-      desc: "You talk to the person writing your code. No project managers, no account relay, no translation layer between you and the engineering.",
-    },
-    {
-      title: "Immediate Availability",
-      desc: "No six-week agency waitlists. I respond within 24 hours and can begin most London projects within days of aligning on scope.",
-    },
-  ],
+  {
+    title: "City of London Engineering Standards",
+    desc: "I build to the same quality bar the City of London's best engineering teams set internally — TypeScript, clean architecture, full documentation, zero tribal knowledge.",
+  },
+  {
+    title: "Canary Wharf FinTech Precision",
+    desc: "Canary Wharf's financial institutions have non-negotiable standards. Audit trails, access control, and compliance-aware architecture are my defaults — not upsells.",
+  },
+  {
+    title: "Shoreditch Startup Speed Without the Premium",
+    desc: "You pay for engineering output, not a Shoreditch office or layers of account management. Shoreditch-quality output, no Shoreditch rent baked into the bill.",
+  },
+  {
+    title: "AI-Native from the Start",
+    desc: "I architect AI features at the system level — LLMs, voice agents, embedding pipelines. Not a bolt-on. Not a sprint-three feature.",
+  },
+  {
+    title: "Direct Access to the Developer",
+    desc: "You talk to the person writing your code. No project managers, no account relay, no translation layer between you and the engineering.",
+  },
+  {
+    title: "Immediate Availability",
+    desc: "No six-week agency waitlists. I respond within 24 hours and can begin most London projects within days of aligning on scope.",
+  },
+],
 
   servicesH2: "Web Development Services for London Businesses",
   services: [
@@ -1556,10 +1556,10 @@ export const londonPageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    { label: "London Standard", value: "Delivered" },
-    { label: "Response Time", value: "< 24hrs" },
-    { label: "On-Time Rate", value: "100%" },
-  ],
+  { label: "City-Grade", value: "Delivered" },
+  { label: "Response Time", value: "< 24hrs" },
+  { label: "On-Time Rate", value: "100%" },
+],
 
   navLinks: [
     { name: "About", href: "#about-london" },
@@ -1576,10 +1576,10 @@ export const londonPageData: CityPageData = {
   faqTitle: "Frequently Asked Questions — Web Developer London",
   faqs: [
     {
-      question: "What web development services do you offer London businesses?",
-      answer:
-        "I offer enterprise-grade full-stack web development for London clients using Next.js, Node.js, and PostgreSQL. Services include multi-tenant SaaS platforms, fintech applications, AI and LLM integrations, Stripe billing, backend API engineering, database architecture, and technical audits — all delivered remotely at the quality London's competitive market demands.",
-    },
+  question: "Can you build fintech platforms for City of London or Canary Wharf firms?",
+  answer:
+    "Yes. London's financial sector — concentrated in the City and Canary Wharf — expects precision: audit-ready code, transaction-safe database design, proper access control, and compliance-aware architecture. I build to that standard by default.",
+},
     {
       question: "Can you build fintech platforms for London financial companies?",
       answer:
@@ -1590,11 +1590,11 @@ export const londonPageData: CityPageData = {
       answer:
         "Significantly lower — because you work directly with the developer, not a Shoreditch studio with layers of account managers and project coordinators. London businesses get the same engineering quality without the overhead that drives London agency rates. Every engagement starts with a free 30-minute consultation.",
     },
-    {
-      question: "Do you work remotely with London clients?",
-      answer:
-        "Yes, fully remote. I serve all London boroughs and the wider South East — the City, Canary Wharf, Shoreditch, Soho, Brixton, Hackney, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
-    },
+   {
+  question: "Do you work with Shoreditch and East London startups?",
+  answer:
+    "Yes. Shoreditch's startup ecosystem needs fast, production-grade delivery without agency overhead. I scope tightly, ship real software, and skip the six-week kickoff process larger studios add.",
+},
     {
       question: "Can you build AI-powered SaaS for London startups?",
       answer:
@@ -1609,7 +1609,7 @@ export const londonPageData: CityPageData = {
 
   localSeoTitle: "Web Development for London's Finance, Tech & Creative Sectors",
   localSeoParagraphs: [
-    "London is the largest technology hub in Europe and the world's leading financial centre. From the fintech companies in Canary Wharf and the City to the unicorn startups in Shoreditch and the media companies in King's Cross, the demand for production-grade, AI-ready web development has never been higher.",
+    "London is the largest technology hub in Europe and the world's leading financial centre. From the fintech companies in the City of London and Canary Wharf to the unicorn startups in Shoreditch and the media companies in King's Cross, the demand for production-grade, AI-ready web development has never been higher.",
     "As a web developer serving London, I build enterprise SaaS platforms, fintech applications, AI-powered tools, and full-stack web products using Next.js, Node.js, PostgreSQL, and Redis — at the engineering standard London's most ambitious companies expect.",
     "London founders and CTOs choose direct developer access over agencies to eliminate the communication overhead, reduce costs, and get software that is genuinely ready for production — not just impressive in a demo.",
   ],
@@ -1659,13 +1659,14 @@ export const birminghamPageData: CityPageData = {
 
   h1Line1: "Web Developer Birmingham",
   h1Line2: "– Full-Stack, Manufacturing Tech & AI Apps",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Birmingham</strong> manufacturers, professional services firms, and tech startups trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for the UK's second city and its diverse industrial economy.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Birmingham</strong> manufacturers in the Tyseley industrial corridor, Colmore Row financial firms, and Digbeth creative-quarter startups trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for the UK's second city and its diverse industrial economy.`,
+
   bulletPoints: [
-    "Production-ready Next.js, Node.js & PostgreSQL applications",
-    "Manufacturing operations software and industrial dashboards",
-    "AI-powered SaaS platforms deployed with real users",
-    "Direct communication — 24-hour response, no agency overhead",
-  ],
+  "Production-ready Next.js, Node.js & PostgreSQL applications",
+  "Manufacturing operations software for the Tyseley and Solihull industrial corridor",
+  "AI-powered SaaS platforms deployed with real users",
+  "Direct communication — 24-hour response, no agency overhead",
+],
 
   aboutH2: "A Birmingham Web Developer Built for the City's Industrial Ambition",
   aboutParagraphs: [
@@ -1674,33 +1675,33 @@ export const birminghamPageData: CityPageData = {
     "My live portfolio — a real-time sports platform with Stripe billing, an enterprise multi-tenant SaaS with AI features, and a full-stack marketplace — demonstrates the production standard Birmingham clients receive from the start.",
   ],
   highlights: [
-    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
-    { label: "Specialty", value: "Manufacturing Tech & Full-Stack SaaS" },
-    { label: "Delivery", value: "Reliable, documented, production-ready" },
-    { label: "Based in", value: "Pakistan — serving Birmingham remotely" },
-  ],
-  abilityCards: [
-    {
-      icon: "🏭",
-      title: "Industrial-Grade Data Systems",
-      desc: "PostgreSQL schemas built for manufacturing, inventory, and supply chain data that must stay accurate and traceable over time.",
-    },
-    {
-      icon: "📊",
-      title: "Operational Dashboards",
-      desc: "Real-time operational visibility tools for Birmingham's manufacturing, logistics, and professional services sectors.",
-    },
-    {
-      icon: "🤖",
-      title: "AI Workflow Automation",
-      desc: "Document processing, report generation, and intelligent workflow tools that reduce manual effort in data-heavy operations.",
-    },
-    {
-      icon: "🔒",
-      title: "Secure Architecture by Default",
-      desc: "Auth, input validation, rate limiting, and environment hardening are standard on every project — never retrofitted.",
-    },
-  ],
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "Digbeth creative quarter · Colmore Row finance · Tyseley manufacturing" },
+  { label: "Delivery", value: "Reliable, documented, production-ready" },
+  { label: "Based in", value: "Pakistan — serving Birmingham remotely" },
+],
+abilityCards: [
+  {
+    iconName: "Factory",
+    title: "Industrial-Grade Data Systems",
+    desc: "PostgreSQL schemas built for manufacturing, inventory, and supply chain data from Birmingham's Tyseley industrial corridor that must stay accurate and traceable over time.",
+  },
+  {
+    iconName: "BarChart2",
+    title: "Operational Dashboards",
+    desc: "Real-time operational visibility tools for Birmingham's manufacturing, logistics, and Colmore Row professional services sectors.",
+  },
+  {
+    iconName: "BrainCircuit",
+    title: "AI Workflow Automation",
+    desc: "Document processing, report generation, and intelligent workflow tools that reduce manual effort in data-heavy operations.",
+  },
+  {
+    iconName: "Lock",
+    title: "Secure Architecture by Default",
+    desc: "Auth, input validation, rate limiting, and environment hardening are standard on every project — never retrofitted.",
+  },
+],
 
   projectsH2: "Live Applications — Built for Birmingham's Business Demands",
   projectsSubtitle:
@@ -1712,31 +1713,31 @@ export const birminghamPageData: CityPageData = {
 
   whyH2: "Why Birmingham Businesses Choose Ahmed Ali",
   whyCards: [
-    {
-      title: "Manufacturing Sector Expertise",
-      desc: "Birmingham's advanced manufacturing heritage creates demand for operational software, inventory systems, and production dashboards. I build precisely these.",
-    },
-    {
-      title: "No Agency Intermediary",
-      desc: "You work directly with the developer writing your code. No account managers, no project relay, no inflated local agency rates.",
-    },
-    {
-      title: "Full-Stack Single Owner",
-      desc: "Frontend, backend, database, and deployment all owned by one developer. Nothing gets lost between team handoffs.",
-    },
-    {
-      title: "Diverse Industry Coverage",
-      desc: "Birmingham's economy spans manufacturing, automotive, professional services, and retail. My architecture adapts to the demands of each sector.",
-    },
-    {
-      title: "Production-Ready Code",
-      desc: "TypeScript configs, error boundaries, and Swagger documentation shipped from commit one — not added as an afterthought before handover.",
-    },
-    {
-      title: "Reliable Timeline Delivery",
-      desc: "I respond within 24 hours, scope realistically, and deliver on schedule. Birmingham clients get consistent updates and no surprises.",
-    },
-  ],
+  {
+    title: "Tyseley Manufacturing Expertise",
+    desc: "Birmingham's Tyseley and Solihull industrial corridor creates demand for operational software, inventory systems, and production dashboards. I build precisely these.",
+  },
+  {
+    title: "Colmore Row Financial Standards",
+    desc: "Birmingham's Colmore Row financial district — home to KPMG, HSBC, and Deutsche Bank operations — expects secure, audit-ready platforms. I build to that bar by default.",
+  },
+  {
+    title: "No Agency Intermediary",
+    desc: "You work directly with the developer writing your code. No account managers, no project relay, no inflated local agency rates.",
+  },
+  {
+    title: "Full-Stack Single Owner",
+    desc: "Frontend, backend, database, and deployment all owned by one developer. Nothing gets lost between team handoffs.",
+  },
+  {
+    title: "Diverse Industry Coverage",
+    desc: "Birmingham's economy spans manufacturing, finance, and Digbeth's creative tech scene. My architecture adapts to each sector's specific demands.",
+  },
+  {
+    title: "Reliable Timeline Delivery",
+    desc: "I respond within 24 hours, scope realistically, and deliver on schedule. Birmingham clients get consistent updates and no surprises.",
+  },
+],
 
   servicesH2: "Web Development Services for Birmingham Businesses",
   services: [
@@ -1826,10 +1827,10 @@ export const birminghamPageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    { label: "Industrial Tech", value: "Specialist" },
-    { label: "Response Time", value: "< 24hrs" },
-    { label: "On-Time Rate", value: "100%" },
-  ],
+  { label: "Tyseley-Corridor Ready", value: "Specialist" },
+  { label: "Response Time", value: "< 24hrs" },
+  { label: "On-Time Rate", value: "100%" },
+],
 
   navLinks: [
     { name: "About", href: "#about-birmingham" },
@@ -1846,10 +1847,10 @@ export const birminghamPageData: CityPageData = {
   faqTitle: "Frequently Asked Questions — Web Developer Birmingham",
   faqs: [
     {
-      question: "What web development services do you offer Birmingham businesses?",
-      answer:
-        "I offer full-stack web development for Birmingham clients using Next.js, Node.js, and PostgreSQL. Services include manufacturing operations software, SaaS platforms, AI integrations, Stripe billing, backend API engineering, database architecture, and technical audits — all delivered remotely with the reliability Birmingham's diverse industrial economy demands.",
-    },
+  question: "Can you build manufacturing software for companies in Birmingham's Tyseley corridor?",
+  answer:
+    "Yes. Birmingham's Tyseley and Solihull industrial corridor creates specific software demands — inventory tracking, production dashboards, quality control logging, and supply chain visibility. I build exactly these systems using PostgreSQL schemas designed for operational data reliability.",
+},
     {
       question: "Can you build manufacturing software for Birmingham companies?",
       answer:
@@ -1861,10 +1862,10 @@ export const birminghamPageData: CityPageData = {
         "Yes, fully remote. I serve Birmingham and the wider West Midlands — Solihull, Wolverhampton, Coventry, West Bromwich, Sutton Coldfield, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
     },
     {
-      question: "Can you build AI-powered tools for Birmingham businesses?",
-      answer:
-        "Yes. I integrate AI features including document processing, workflow automation, reporting pipelines, and chat assistants into manufacturing and operational software for Birmingham clients.",
-    },
+  question: "Do you build platforms for Colmore Row financial firms?",
+  answer:
+    "Yes. Birmingham's Colmore Row financial district — home to KPMG, HSBC, and Deutsche Bank operations — expects secure, audit-ready platforms. I build compliance-aware dashboards and banking-grade systems to that standard.",
+},
     {
       question: "How does your pricing compare to Birmingham web agencies?",
       answer:
@@ -1879,7 +1880,7 @@ export const birminghamPageData: CityPageData = {
 
   localSeoTitle: "Web Development for Birmingham's Manufacturing, Finance & Tech Sectors",
   localSeoParagraphs: [
-    "Birmingham is the UK's second city and one of its most economically productive — home to a world-class advanced manufacturing corridor, a major financial services cluster in Colmore Row, and a growing technology startup scene centred around Digbeth and the Innovation Birmingham campus.",
+    "Birmingham is the UK's second city and one of its most economically productive — home to a world-class advanced manufacturing corridor in Tyseley and Solihull, a major financial services cluster in Colmore Row (KPMG, HSBC, Deutsche Bank operations), and a growing technology startup scene centred around Digbeth and the Innovation Birmingham campus.",
     "As a web developer serving Birmingham, I build manufacturing operations software, enterprise SaaS platforms, fintech applications, and AI-powered tools using Next.js, Node.js, PostgreSQL, and Redis — with the reliability and documentation standards Birmingham's industrial sector demands.",
     "Birmingham businesses choose direct developer engagement to reduce overhead, speed up delivery, and get engineering output that matches their ambition — without paying for agency layers that don't write a line of code.",
   ],
@@ -1929,13 +1930,14 @@ export const leedsPageData: CityPageData = {
 
   h1Line1: "Web Developer Leeds",
   h1Line2: "– Fintech, Legal Tech & Full-Stack SaaS",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Leeds</strong> fintech companies, legal technology firms, and growing SaaS businesses trust to build production-ready software. Next.js, Node.js, PostgreSQL, and Redis — for the North's fastest-growing financial and professional services tech market.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Leeds</strong> fintech companies in Leeds's Spinningfields-equivalent financial district, legal cluster firms, and Sky Betting & Gaming-adjacent businesses trust to build production-ready software. Next.js, Node.js, PostgreSQL, and Redis — for the North's fastest-growing financial and professional services tech market.`,
+
   bulletPoints: [
-    "Production-ready Next.js, Node.js & PostgreSQL applications",
-    "Fintech and legal technology platforms with audit-ready architecture",
-    "AI-powered SaaS platforms serving real users in production",
-    "24-hour response time — no agencies, no middlemen",
-  ],
+  "Production-ready Next.js, Node.js & PostgreSQL applications",
+  "Fintech and legal technology platforms for Leeds's financial district and legal cluster",
+  "AI-powered SaaS platforms serving real users in production",
+  "24-hour response time — no agencies, no middlemen",
+],
 
   aboutH2: "A Leeds Web Developer Built for the City's Financial Sector Ambition",
   aboutParagraphs: [
@@ -1943,34 +1945,34 @@ export const leedsPageData: CityPageData = {
     "Every application I deliver is type-safe from commit one, structured in controller-service-repository layers, Swagger-documented, and backed by indexed PostgreSQL with Redis caching. For fintech and legal tech clients, that means audit trails, access controls, and data accuracy are architectural decisions baked into the system — not features added later.",
     "My live projects — a real-time sports platform with Stripe billing, a multi-tenant enterprise SaaS with AI and voice agents, and a high-throughput marketplace — demonstrate the production standard every Leeds client receives.",
   ],
-  highlights: [
-    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
-    { label: "Specialty", value: "Fintech, Legal Tech & Full-Stack SaaS" },
-    { label: "Delivery", value: "Audit-ready, documented, on-time" },
-    { label: "Based in", value: "Pakistan — serving Leeds remotely" },
-  ],
-  abilityCards: [
-    {
-      icon: "💼",
-      title: "Legal & Financial Tech",
-      desc: "Audit-ready code, transaction-safe schemas, and access control architecture for Leeds's financial and legal services sector.",
-    },
-    {
-      icon: "🏗️",
-      title: "Layered Backend Design",
-      desc: "Controller, service, repository separation — independently testable, easy to audit, and ready for your compliance team to review.",
-    },
-    {
-      icon: "🤖",
-      title: "AI Integration",
-      desc: "LLMs, document processing, and intelligent automation embedded into your Leeds product — not demo prototypes added for the pitch.",
-    },
-    {
-      icon: "📋",
-      title: "Documentation Standard",
-      desc: "Swagger docs, TypeScript types, and clear README files. Your internal team can onboard without weeks of knowledge transfer.",
-    },
-  ],
+ highlights: [
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "Leeds financial district · legal cluster · Sky Betting corridor" },
+  { label: "Delivery", value: "Audit-ready, documented, on-time" },
+  { label: "Based in", value: "Pakistan — serving Leeds remotely" },
+],
+abilityCards: [
+  {
+    iconName: "Briefcase",
+    title: "Legal & Financial Tech",
+    desc: "Audit-ready code, transaction-safe schemas, and access control architecture for Leeds's financial district and top-tier legal services sector.",
+  },
+  {
+    iconName: "Scale",
+    title: "Layered Backend Design",
+    desc: "Controller, service, repository separation — independently testable, easy to audit, and ready for your compliance team to review.",
+  },
+  {
+    iconName: "BrainCircuit",
+    title: "AI Integration",
+    desc: "LLMs, document processing, and intelligent automation embedded into your Leeds product — not demo prototypes added for the pitch.",
+  },
+  {
+    iconName: "FileText",
+    title: "Documentation Standard",
+    desc: "Swagger docs, TypeScript types, and clear README files. Your internal team can onboard without weeks of knowledge transfer.",
+  },
+],
 
   projectsH2: "Production-Grade Applications for Demanding Industries",
   projectsSubtitle:
@@ -1982,31 +1984,31 @@ export const leedsPageData: CityPageData = {
 
   whyH2: "Why Leeds Businesses Choose Ahmed Ali",
   whyCards: [
-    {
-      title: "Financial Sector Standards",
-      desc: "Leeds is the UK's third-largest financial centre. I build to the standard banks, insurers, and financial services companies expect — audit trails, access control, and compliance-aware architecture by default.",
-    },
-    {
-      title: "Legal Tech Precision",
-      desc: "Leeds's growing legal technology sector needs secure document management, access-controlled portals, and reliable integrations. These are my defaults.",
-    },
-    {
-      title: "No Agency Markup",
-      desc: "You work directly with the developer. No project managers, no account relay, no overhead layers between you and the engineering.",
-    },
-    {
-      title: "Full-Stack Ownership",
-      desc: "Frontend, backend, database, and deployment managed by one developer. Nothing drops between handoffs.",
-    },
-    {
-      title: "AI-Ready Architecture",
-      desc: "LLM integrations, voice agents, and document intelligence built at the system level — not bolted on as a feature request.",
-    },
-    {
-      title: "On-Time, Every Sprint",
-      desc: "I respond within 24 hours, commit to realistic delivery timelines, and keep Leeds clients informed at every stage.",
-    },
-  ],
+  {
+    title: "Financial District Standards",
+    desc: "Leeds is the UK's third-largest financial centre. I build to the standard banks, insurers, and Sky Betting & Gaming-adjacent companies expect — audit trails, access control, and compliance-aware architecture by default.",
+  },
+  {
+    title: "Legal Cluster Precision",
+    desc: "Leeds's top-tier legal cluster, including firms like Squire Patton Boggs, needs secure document management and access-controlled portals. These are my defaults.",
+  },
+  {
+    title: "No Agency Markup",
+    desc: "You work directly with the developer. No project managers, no account relay, no overhead layers between you and the engineering.",
+  },
+  {
+    title: "Full-Stack Ownership",
+    desc: "Frontend, backend, database, and deployment managed by one developer. Nothing drops between handoffs.",
+  },
+  {
+    title: "AI-Ready Architecture",
+    desc: "LLM integrations, voice agents, and document intelligence built at the system level — not bolted on as a feature request.",
+  },
+  {
+    title: "On-Time, Every Sprint",
+    desc: "I respond within 24 hours, commit to realistic delivery timelines, and keep Leeds clients informed at every stage.",
+  },
+],
 
   servicesH2: "Web Development Services for Leeds Businesses",
   services: [
@@ -2095,11 +2097,11 @@ export const leedsPageData: CityPageData = {
     "Building something for Leeds's financial or professional services market? Describe your project and I'll respond within 24 hours with a free consultation.",
 
   availability: [...COMMON_AVAILABILITY],
-  stats: [
-    { label: "Fintech-Ready", value: "Architecture" },
-    { label: "Response Time", value: "< 24hrs" },
-    { label: "On-Time Rate", value: "100%" },
-  ],
+ stats: [
+  { label: "Financial-District Ready", value: "Architecture" },
+  { label: "Response Time", value: "< 24hrs" },
+  { label: "On-Time Rate", value: "100%" },
+],
 
   navLinks: [
     { name: "About", href: "#about-leeds" },
@@ -2116,10 +2118,10 @@ export const leedsPageData: CityPageData = {
   faqTitle: "Frequently Asked Questions — Web Developer Leeds",
   faqs: [
     {
-      question: "What web development services do you offer Leeds businesses?",
-      answer:
-        "I offer full-stack web development for Leeds clients using Next.js, Node.js, and PostgreSQL. Services include fintech platforms, legal technology applications, SaaS development, AI integrations, Stripe billing, backend API engineering, and technical audits — all delivered remotely at the standard Leeds's demanding financial and legal sectors require.",
-    },
+  question: "Can you build fintech platforms for Leeds's financial district?",
+  answer:
+    "Yes. Leeds is the UK's third-largest financial centre, home to HSBC and a growing fintech cluster including Sky Betting & Gaming-adjacent companies. I build audit-ready, transaction-safe systems with proper access controls to meet that standard.",
+},
     {
       question: "Can you build fintech platforms for Leeds financial companies?",
       answer:
@@ -2131,10 +2133,10 @@ export const leedsPageData: CityPageData = {
         "Yes. Leeds has one of the UK's strongest legal clusters. I build secure document management systems, matter management portals, client-facing platforms, and practice management tools with role-based access control and audit logging as architectural standards.",
     },
     {
-      question: "Do you work remotely with Leeds clients?",
-      answer:
-        "Yes, fully remote. I serve Leeds and the wider West Yorkshire area — Bradford, Halifax, Harrogate, Wakefield, and York. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
-    },
+  question: "Do you build platforms for Leeds's legal cluster firms?",
+  answer:
+    "Yes. Leeds has one of the UK's strongest legal clusters, including firms like Squire Patton Boggs. I build secure document management systems, matter management portals, and client-facing platforms with role-based access control and audit logging as standard.",
+},
     {
       question: "How does your pricing compare to Leeds web development agencies?",
       answer:
@@ -2149,7 +2151,7 @@ export const leedsPageData: CityPageData = {
 
   localSeoTitle: "Web Development for Leeds's Finance, Legal Tech & Growing Tech Sector",
   localSeoParagraphs: [
-    "Leeds is the UK's third-largest financial centre and one of its fastest-growing cities — home to HSBC, Sky Betting & Gaming, Squire Patton Boggs, and a rapidly expanding cluster of fintech and legal technology companies. The demand for reliable, audit-ready, and well-documented web software has grown alongside the city's financial ambitions.",
+    "Leeds is the UK's third-largest financial centre and one of its fastest-growing cities — home to HSBC, Sky Betting & Gaming, Squire Patton Boggs, and a rapidly expanding cluster of fintech and legal technology companies in the city's financial and legal district.",
     "As a web developer serving Leeds, I build fintech platforms, legal technology applications, enterprise SaaS products, and AI-powered tools using Next.js, Node.js, PostgreSQL, and Redis — with the compliance-aware architecture and documentation standards Leeds's regulated sectors demand.",
     "Leeds founders and technology leaders choose direct developer access over agencies to reduce overhead, maintain clearer communication, and get engineering output that is genuinely production-ready from day one.",
   ],
@@ -2199,13 +2201,14 @@ export const bristolPageData: CityPageData = {
 
   h1Line1: "Web Developer Bristol",
   h1Line2: "– Aerospace Tech, SaaS & AI-Powered Apps",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Bristol</strong> aerospace companies, deep-tech startups, and creative tech firms trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — for the South West's most ambitious technology market.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Bristol</strong> Airbus and Rolls-Royce-adjacent aerospace engineers, Temple Quarter deep-tech startups, and UWE Bristol-connected researchers trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — for the South West's most ambitious technology market.`,
+
   bulletPoints: [
-    "Production-ready Next.js, Node.js & PostgreSQL applications",
-    "Deep-tech, aerospace, and scientific computing platforms",
-    "AI-powered SaaS platforms deployed with real users",
-    "24-hour response time — direct access, no agency overhead",
-  ],
+  "Production-ready Next.js, Node.js & PostgreSQL applications",
+  "Engineering-grade platforms for the Airbus/Rolls-Royce aerospace corridor and Temple Quarter",
+  "AI-powered SaaS platforms deployed with real users",
+  "24-hour response time — direct access, no agency overhead",
+],
 
   aboutH2: "A Bristol Web Developer for the City's Unique Deep-Tech Economy",
   aboutParagraphs: [
@@ -2213,34 +2216,34 @@ export const bristolPageData: CityPageData = {
     "The software demands here are different from pure startup markets. Aerospace and deep-tech companies need systems that are accurate, auditable, and built to last — not just impressive at launch. I build exactly that: layered Node.js architecture, indexed PostgreSQL schemas, Redis caching for performance, and TypeScript throughout.",
     "My live portfolio — a Stripe-powered sports platform, an enterprise multi-tenant SaaS with embedded AI, and a full-stack marketplace — demonstrates the production standard Bristol clients receive from day one.",
   ],
-  highlights: [
-    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
-    { label: "Specialty", value: "Deep-Tech, Aerospace & Full-Stack SaaS" },
-    { label: "Delivery", value: "Reliable, documented, precision-built" },
-    { label: "Based in", value: "Pakistan — serving Bristol remotely" },
-  ],
-  abilityCards: [
-    {
-      icon: "🚀",
-      title: "Aerospace & Deep-Tech Ready",
-      desc: "Reliable, auditable, and well-documented systems for Bristol's aerospace and advanced engineering companies.",
-    },
-    {
-      icon: "🌿",
-      title: "Clean Energy Tech",
-      desc: "Monitoring dashboards, data pipelines, and operational platforms for Bristol's leading clean energy and sustainability companies.",
-    },
-    {
-      icon: "🤖",
-      title: "AI & Scientific Computing",
-      desc: "LLM integrations, data processing pipelines, and intelligent automation for Bristol's deep-tech and research-adjacent businesses.",
-    },
-    {
-      icon: "🎨",
-      title: "Creative Tech Platforms",
-      desc: "Full-stack infrastructure for Bristol's creative technology, media, and games companies — polished frontends backed by solid architecture.",
-    },
-  ],
+ highlights: [
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "Airbus/Rolls-Royce corridor · Temple Quarter · UWE deep-tech" },
+  { label: "Delivery", value: "Reliable, documented, precision-built" },
+  { label: "Based in", value: "Pakistan — serving Bristol remotely" },
+],
+abilityCards: [
+  {
+    iconName: "Plane",
+    title: "Aerospace & Deep-Tech Ready",
+    desc: "Reliable, auditable, and well-documented systems for Bristol's Airbus and Rolls-Royce-adjacent aerospace and advanced engineering companies.",
+  },
+  {
+    iconName: "Leaf",
+    title: "Clean Energy Tech",
+    desc: "Monitoring dashboards, data pipelines, and operational platforms for Bristol's leading clean energy and sustainability companies.",
+  },
+  {
+    iconName: "BrainCircuit",
+    title: "AI & Scientific Computing",
+    desc: "LLM integrations, data processing pipelines, and intelligent automation for Bristol's UWE-adjacent deep-tech and research-driven businesses.",
+  },
+  {
+    iconName: "Palette",
+    title: "Creative Tech Platforms",
+    desc: "Full-stack infrastructure for Bristol's Temple Quarter creative technology, media, and games companies — polished frontends backed by solid architecture.",
+  },
+],
 
   projectsH2: "Deployed Applications — Precision Over Polish",
   projectsSubtitle:
@@ -2252,31 +2255,31 @@ export const bristolPageData: CityPageData = {
 
   whyH2: "Why Bristol Businesses Choose Ahmed Ali",
   whyCards: [
-    {
-      title: "Deep-Tech Awareness",
-      desc: "Bristol's aerospace, quantum computing, and clean energy sectors need software built for reliability, accuracy, and long-term maintainability. That's my default.",
-    },
-    {
-      title: "Creative Economy Ready",
-      desc: "Bristol's creative tech and games industry needs polished frontends backed by solid architecture. I deliver both in the same engagement.",
-    },
-    {
-      title: "No Agency Overhead",
-      desc: "You work directly with the developer. No account managers, no project relay, no Bristol or London agency markup on your budget.",
-    },
-    {
-      title: "Documented for Longevity",
-      desc: "Swagger docs, TypeScript types, and clear code structure mean your internal team can maintain and extend what I build for years.",
-    },
-    {
-      title: "Full-Stack Single Ownership",
-      desc: "Frontend, backend, database, and deployment owned by one developer — no handoffs, no dropped context, no integration surprises.",
-    },
-    {
-      title: "Reliable Delivery Timeline",
-      desc: "24-hour response times, realistic scoping, and on-schedule delivery. Bristol clients always know where their project stands.",
-    },
-  ],
+  {
+    title: "Airbus/Rolls-Royce Corridor Awareness",
+    desc: "Bristol's aerospace sector, anchored by Airbus and Rolls-Royce's UK operations, needs software built for reliability, accuracy, and long-term maintainability. That's my default.",
+  },
+  {
+    title: "Temple Quarter & UWE Deep-Tech Fluency",
+    desc: "Bristol's Temple Quarter and UWE-connected deep-tech scene need data-heavy platforms built with scientific rigor. I deliver that alongside polished frontends.",
+  },
+  {
+    title: "No Agency Overhead",
+    desc: "You work directly with the developer. No account managers, no project relay, no Bristol or London agency markup on your budget.",
+  },
+  {
+    title: "Documented for Longevity",
+    desc: "Swagger docs, TypeScript types, and clear code structure mean your internal team can maintain and extend what I build for years.",
+  },
+  {
+    title: "Full-Stack Single Ownership",
+    desc: "Frontend, backend, database, and deployment owned by one developer — no handoffs, no dropped context, no integration surprises.",
+  },
+  {
+    title: "Reliable Delivery Timeline",
+    desc: "24-hour response times, realistic scoping, and on-schedule delivery. Bristol clients always know where their project stands.",
+  },
+],
 
   servicesH2: "Web Development Services for Bristol Businesses",
   services: [
@@ -2366,10 +2369,10 @@ export const bristolPageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    { label: "Deep-Tech Ready", value: "By Default" },
-    { label: "Response Time", value: "< 24hrs" },
-    { label: "On-Time Rate", value: "100%" },
-  ],
+  { label: "Aerospace-Corridor Ready", value: "By Default" },
+  { label: "Response Time", value: "< 24hrs" },
+  { label: "On-Time Rate", value: "100%" },
+],
 
   navLinks: [
     { name: "About", href: "#about-bristol" },
@@ -2386,10 +2389,10 @@ export const bristolPageData: CityPageData = {
   faqTitle: "Frequently Asked Questions — Web Developer Bristol",
   faqs: [
     {
-      question: "What web development services do you offer Bristol businesses?",
-      answer:
-        "I offer full-stack web development for Bristol clients using Next.js, Node.js, and PostgreSQL. Services include aerospace and deep-tech platforms, SaaS development, clean energy monitoring tools, AI integrations, Stripe billing, backend API engineering, and technical audits — all delivered remotely with the precision Bristol's technology sectors demand.",
-    },
+  question: "Can you build platforms for Bristol's Airbus and Rolls-Royce-adjacent aerospace companies?",
+  answer:
+    "Yes. Bristol's aerospace sector — anchored by Airbus and Rolls-Royce's UK operations — needs reliable, auditable, and well-documented software. I build operational dashboards, data management systems, and engineering platforms with the accuracy those industries require.",
+},
     {
       question: "Can you build platforms for Bristol's aerospace and engineering companies?",
       answer:
@@ -2401,10 +2404,10 @@ export const bristolPageData: CityPageData = {
         "Yes, fully remote. I serve Bristol and the wider South West — Bath, Swindon, Gloucester, Exeter, and Cardiff. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
     },
     {
-      question: "Can you build clean energy and sustainability platforms for Bristol companies?",
-      answer:
-        "Yes. Bristol has one of the UK's strongest clean energy sectors. I build monitoring dashboards, operational management platforms, energy data pipelines, and IoT data processing systems for sustainability-focused companies.",
-    },
+  question: "Do you build deep-tech platforms for Temple Quarter or UWE-connected startups?",
+  answer:
+    "Yes. Bristol's Temple Quarter and UWE Bristol's research corridor produce a cluster of deep-tech startups needing data processing platforms and scientific web applications. I build with that data accuracy and scientific rigor in mind.",
+},
     {
       question: "How does your pricing compare to Bristol web agencies?",
       answer:
@@ -2419,7 +2422,7 @@ export const bristolPageData: CityPageData = {
 
   localSeoTitle: "Web Development for Bristol's Aerospace, Deep-Tech & Creative Sectors",
   localSeoParagraphs: [
-    "Bristol is one of the UK's most distinctive technology cities — home to Airbus and Rolls-Royce's UK operations, world-leading quantum computing research at the University of Bristol, a significant clean energy sector, and a creative technology scene that has produced Aardman, Ultraleap, and dozens of funded deep-tech startups.",
+    "Bristol is one of the UK's most distinctive technology cities — home to Airbus and Rolls-Royce's UK aerospace operations, the Temple Quarter innovation district, world-leading quantum computing research connected to UWE Bristol, and a creative technology scene that has produced Aardman, Ultraleap, and dozens of funded deep-tech startups.",
     "As a web developer serving Bristol, I build aerospace and deep-tech platforms, clean energy monitoring tools, creative tech infrastructure, and enterprise SaaS products using Next.js, Node.js, PostgreSQL, and Redis — with the reliability and documentation standards Bristol's precision-oriented sectors demand.",
     "Bristol's most innovative companies choose direct developer access over agencies to maintain precision in communication, reduce overhead, and get software that is genuinely built to last — not just delivered on a deadline.",
   ],
@@ -2469,13 +2472,14 @@ export const wolverhamptonPageData: CityPageData = {
 
   h1Line1: "Web Developer Wolverhampton",
   h1Line2: "– Manufacturing, Retail Tech & Full-Stack Apps",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Wolverhampton</strong> manufacturers, retailers, and growing businesses trust to build dependable, production-ready software. Next.js, Node.js, PostgreSQL, and Redis — for Wolverhampton's practical, results-focused business community.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Wolverhampton</strong> manufacturers in the Black Country industrial belt, Wolverhampton city centre retailers, and growing businesses trust to build dependable, production-ready software. Next.js, Node.js, PostgreSQL, and Redis — for Wolverhampton's practical, results-focused business community.`,
+
   bulletPoints: [
-    "Production-ready Next.js, Node.js & PostgreSQL applications",
-    "Manufacturing operations software and operational dashboards",
-    "AI-powered tools for workflow automation and reporting",
-    "Direct access to your developer — 24-hour response, no relay",
-  ],
+  "Production-ready Next.js, Node.js & PostgreSQL applications",
+  "Manufacturing operations software for the Black Country's automotive component industry",
+  "AI-powered tools for workflow automation and reporting",
+  "Direct access to your developer — 24-hour response, no relay",
+],
 
   aboutH2: "A Wolverhampton Web Developer Who Prioritises Reliability Over Hype",
   aboutParagraphs: [
@@ -2484,33 +2488,33 @@ export const wolverhamptonPageData: CityPageData = {
     "My live portfolio — a real-time sports platform with Stripe billing, a multi-tenant enterprise SaaS with AI features, and a full-stack marketplace — all deployed and serving real users, demonstrates the standard every Wolverhampton client receives.",
   ],
   highlights: [
-    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
-    { label: "Specialty", value: "Operations Software & Full-Stack Apps" },
-    { label: "Delivery", value: "Reliable, practical, production-ready" },
-    { label: "Based in", value: "Pakistan — serving Wolverhampton remotely" },
-  ],
-  abilityCards: [
-    {
-      icon: "⚙️",
-      title: "Operational Reliability",
-      desc: "Software that stays accurate under everyday operational load — structured schemas, clean architecture, and error handling by default.",
-    },
-    {
-      icon: "📦",
-      title: "Inventory & Supply Tools",
-      desc: "Stock tracking, supplier portals, and procurement dashboards built for Wolverhampton's manufacturing and distribution sector.",
-    },
-    {
-      icon: "🤖",
-      title: "Practical AI Automation",
-      desc: "AI-assisted reporting, document processing, and workflow tools that reduce manual effort without adding instability.",
-    },
-    {
-      icon: "🏪",
-      title: "Retail & E-Commerce Platforms",
-      desc: "Stripe-powered storefronts, inventory management, and customer portals for Wolverhampton's retail and wholesale businesses.",
-    },
-  ],
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "Black Country manufacturing · Wolverhampton city centre" },
+  { label: "Delivery", value: "Reliable, practical, production-ready" },
+  { label: "Based in", value: "Pakistan — serving Wolverhampton remotely" },
+],
+abilityCards: [
+  {
+    iconName: "Cog",
+    title: "Operational Reliability",
+    desc: "Software that stays accurate under everyday operational load in the Black Country's manufacturing base — structured schemas, clean architecture, and error handling by default.",
+  },
+  {
+    iconName: "Package",
+    title: "Inventory & Supply Tools",
+    desc: "Stock tracking, supplier portals, and procurement dashboards built for Wolverhampton's automotive component and distribution sector.",
+  },
+  {
+    iconName: "Bot",
+    title: "Practical AI Automation",
+    desc: "AI-assisted reporting, document processing, and workflow tools that reduce manual effort without adding instability.",
+  },
+  {
+    iconName: "ShoppingBag",
+    title: "Retail & E-Commerce Platforms",
+    desc: "Stripe-powered storefronts, inventory management, and customer portals for Wolverhampton city centre's retail and wholesale businesses.",
+  },
+],
 
   projectsH2: "Software That Works — Deployed and Serving Real Users",
   projectsSubtitle:
@@ -2522,31 +2526,31 @@ export const wolverhamptonPageData: CityPageData = {
 
   whyH2: "Why Wolverhampton Businesses Choose Ahmed Ali",
   whyCards: [
-    {
-      title: "Practical First, Technical Second",
-      desc: "Wolverhampton's business community needs software that solves real problems. I start with your operational requirements and build around them.",
-    },
-    {
-      title: "Direct Access to Your Developer",
-      desc: "No account managers, no project relay, no overhead. You talk directly to the developer writing your code — throughout the project.",
-    },
-    {
-      title: "Manufacturing Sector Experience",
-      desc: "Wolverhampton's manufacturing and engineering base has specific operational software needs. I understand them and build accordingly.",
-    },
-    {
-      title: "Full-Stack Single Owner",
-      desc: "Frontend, backend, database, and deployment handled by one developer — no handoffs, no lost context, no integration surprises at launch.",
-    },
-    {
-      title: "Transparent Delivery",
-      desc: "Clear milestones, regular updates, and documented deliverables. You always know where your project stands.",
-    },
-    {
-      title: "Built to Be Maintained",
-      desc: "TypeScript, Swagger docs, and clean code structure mean your team can extend what I build without needing me for every small change.",
-    },
-  ],
+  {
+    title: "Black Country Manufacturing Fluency",
+    desc: "Wolverhampton sits at the heart of the Black Country's automotive component and engineering base. I understand its specific operational software needs and build accordingly.",
+  },
+  {
+    title: "Direct Access to Your Developer",
+    desc: "No account managers, no project relay, no overhead. You talk directly to the developer writing your code — throughout the project.",
+  },
+  {
+    title: "Practical First, Technical Second",
+    desc: "Wolverhampton's business community needs software that solves real problems. I start with your operational requirements and build around them.",
+  },
+  {
+    title: "Full-Stack Single Owner",
+    desc: "Frontend, backend, database, and deployment handled by one developer — no handoffs, no lost context, no integration surprises at launch.",
+  },
+  {
+    title: "Transparent Delivery",
+    desc: "Clear milestones, regular updates, and documented deliverables. You always know where your project stands.",
+  },
+  {
+    title: "Built to Be Maintained",
+    desc: "TypeScript, Swagger docs, and clean code structure mean your team can extend what I build without needing me for every small change.",
+  },
+],
 
   servicesH2: "Web Development Services for Wolverhampton Businesses",
   services: [
@@ -2636,10 +2640,10 @@ export const wolverhamptonPageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    { label: "Operational Software", value: "Specialist" },
-    { label: "Response Time", value: "< 24hrs" },
-    { label: "On-Time Rate", value: "100%" },
-  ],
+  { label: "Black Country Ready", value: "Specialist" },
+  { label: "Response Time", value: "< 24hrs" },
+  { label: "On-Time Rate", value: "100%" },
+],
 
   navLinks: [
     { name: "About", href: "#about-wolverhampton" },
@@ -2656,10 +2660,10 @@ export const wolverhamptonPageData: CityPageData = {
   faqTitle: "Frequently Asked Questions — Web Developer Wolverhampton",
   faqs: [
     {
-      question: "What web development services do you offer Wolverhampton businesses?",
-      answer:
-        "I offer full-stack web development for Wolverhampton clients using Next.js, Node.js, and PostgreSQL. Services include manufacturing operations software, retail and e-commerce platforms, SaaS development, AI workflow automation, backend API engineering, and technical audits — all delivered remotely with the reliability Wolverhampton's businesses need.",
-    },
+  question: "Can you build manufacturing software for Black Country automotive component companies?",
+  answer:
+    "Yes. Wolverhampton sits at the heart of the Black Country's automotive component and engineering base. I build inventory tracking systems, production dashboards, quality control tools, and supplier portals using PostgreSQL schemas designed for operational data accuracy.",
+},
     {
       question: "Can you build manufacturing software for Wolverhampton companies?",
       answer:
@@ -2671,10 +2675,10 @@ export const wolverhamptonPageData: CityPageData = {
         "Yes, fully remote. I serve Wolverhampton and the wider West Midlands — Walsall, Dudley, West Bromwich, Bilston, Cannock, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
     },
     {
-      question: "Can you build e-commerce platforms for Wolverhampton retailers?",
-      answer:
-        "Yes. I build full Stripe-powered e-commerce platforms including product catalogues, inventory management, customer portals, and admin reporting dashboards. All tested in production with real paying users.",
-    },
+  question: "Do you build e-commerce platforms for Wolverhampton city centre retailers?",
+  answer:
+    "Yes. I build full Stripe-powered e-commerce platforms including product catalogues, inventory management, customer portals, and admin reporting dashboards for Wolverhampton's retail and wholesale businesses — all tested in production with real paying users.",
+},
     {
       question: "How does your pricing compare to local web agencies?",
       answer:
@@ -2689,7 +2693,7 @@ export const wolverhamptonPageData: CityPageData = {
 
   localSeoTitle: "Web Development for Wolverhampton's Manufacturing, Retail & Public Sector",
   localSeoParagraphs: [
-    "Wolverhampton sits at the heart of the Black Country — one of the UK's most historically significant industrial regions, with a manufacturing and engineering base that continues to drive local economic activity. The city's businesses, from automotive component manufacturers to retail chains and public sector organisations, need software that is practical, reliable, and built to be used by real teams.",
+    "Wolverhampton sits at the heart of the Black Country — one of the UK's most historically significant industrial regions, with an automotive component and engineering manufacturing base that continues to drive local economic activity around the city centre.",
     "As a web developer serving Wolverhampton, I build manufacturing operations software, retail and e-commerce platforms, full-stack business applications, and AI-powered automation tools using Next.js, Node.js, PostgreSQL, and Redis — with the operational reliability Wolverhampton's business community demands.",
     "Wolverhampton businesses choose direct developer access over agencies to keep communication clear, reduce costs, and get engineering output that genuinely supports their day-to-day operations.",
   ],

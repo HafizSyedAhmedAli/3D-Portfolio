@@ -25,13 +25,14 @@ export const rochesterPageData: CityPageData = {
 
   h1Line1: "Web Developer Rochester NY",
   h1Line2: "– Manufacturing Tech, Inventory Systems & Full-Stack Apps",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Rochester NY</strong> manufacturers, operations teams, and imaging-tech companies trust for dependable software. I build Next.js, Node.js, PostgreSQL, and Redis applications that prioritize accuracy, traceability, and long-term reliability.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Rochester NY</strong> manufacturers, operations teams, and imaging-tech companies near the University of Rochester and the Kodak/Xerox optics corridor trust for dependable software. I build Next.js, Node.js, PostgreSQL, and Redis applications that prioritize accuracy, traceability, and long-term reliability.`,
+
   bulletPoints: [
-    "Custom dashboards for manufacturing, inventory, and operations",
-    "Production-ready Next.js, Node.js, PostgreSQL & Redis systems",
-    "AI automation for reporting, workflow, and document processing",
-    "Direct communication, fast turnaround, and no agency markup",
-  ],
+  "Custom dashboards for manufacturing, inventory, and operations",
+  "Built for Rochester's precision-optics heritage — the engineering standard Kodak and Xerox set decades ago",
+  "AI automation for reporting, workflow, and document processing",
+  "Direct communication, fast turnaround, and no agency markup",
+],
 
   aboutH2:
     "The Web Developer Rochester NY Businesses Hire for Reliable Operations",
@@ -41,33 +42,33 @@ export const rochesterPageData: CityPageData = {
     "I've already shipped live products with real users, including a sports platform with real-time data and Stripe billing, an AI-powered SaaS platform, and a full-stack e-commerce marketplace. That same production discipline carries over to Rochester web development projects that need to run cleanly every day.",
   ],
   highlights: [
-    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
-    { label: "Specialty", value: "Manufacturing & Operational Software" },
-    { label: "Delivery", value: "Accurate, documented, production-ready" },
-    { label: "Based in", value: "Pakistan — serving Rochester NY remotely" },
-  ],
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "Kodak/Xerox optics corridor & U of R Medical Center" },
+  { label: "Delivery", value: "Accurate, documented, production-ready" },
+  { label: "Based in", value: "Pakistan — serving Rochester NY remotely" },
+],
   abilityCards: [
-    {
-      icon: "🔬",
-      title: "Precision Data Handling",
-      desc: "PostgreSQL schemas built for production, inventory, and reporting data that must stay accurate and consistent over time.",
-    },
-    {
-      icon: "📦",
-      title: "Inventory & Supply Chain Tools",
-      desc: "Real-time stock tracking, reorder triggers, and supplier dashboards designed for dependable operational use.",
-    },
-    {
-      icon: "🤖",
-      title: "Workflow Automation",
-      desc: "AI-assisted reporting and document processing that reduces manual entry without adding unstable shortcuts.",
-    },
-    {
-      icon: "⚙️",
-      title: "Built for Auditability",
-      desc: "Clean architecture, clear documentation, and maintainable code so your internal team can verify and extend everything later.",
-    },
-  ],
+  {
+    iconName: "Microscope",
+    title: "Precision Data Handling",
+    desc: "PostgreSQL schemas built for production, inventory, and reporting data that must stay accurate and consistent over time — the standard Rochester's optics industry set decades ago.",
+  },
+  {
+    iconName: "Package",
+    title: "Inventory & Supply Chain Tools",
+    desc: "Real-time stock tracking, reorder triggers, and supplier dashboards designed for dependable operational use.",
+  },
+  {
+    iconName: "Bot",
+    title: "Workflow Automation",
+    desc: "AI-assisted reporting and document processing that reduces manual entry without adding unstable shortcuts.",
+  },
+  {
+    iconName: "ShieldCheck",
+    title: "Built for Auditability",
+    desc: "Clean architecture, clear documentation, and maintainable code so your internal team can verify and extend everything later.",
+  },
+],
 
   projectsH2: "Operational Software, Shipped and Running",
   projectsSubtitle:
@@ -79,39 +80,39 @@ export const rochesterPageData: CityPageData = {
 
   whyH2: "Why Hire This Rochester Web Developer",
   whyCards: [
-    {
-      title: "Industrial-Grade Accuracy",
-      desc: "I design data systems the way Rochester businesses expect: structured, indexed, and resilient under everyday operational load.",
-    },
-    {
-      title: "Full-Stack Ownership",
-      desc: "Frontend, backend, database, and deployment are handled by one developer, which means fewer handoffs and less lost context.",
-    },
-    {
-      title: "Production-Ready Code",
-      desc: "Type-safe configs, error boundaries, and logging are part of the build from day one, not something added after launch.",
-    },
-    {
-      title: "Fast, Predictable Turnaround",
-      desc: "You get clear communication, quick responses, and delivery that stays on schedule without agency delays.",
-    },
-    {
-      title: "Live Projects With Real Usage",
-      desc: "Flacron, Relay, and GreenCart are live applications serving real users, which proves I ship working software, not just mockups.",
-    },
-    {
-      title: "Transparent Process",
-      desc: "Milestones, updates, and documented deliverables keep the project easy to follow from start to finish.",
-    },
-  ],
+  {
+    title: "Rochester's Imaging Heritage, Modern Stack",
+    desc: "Kodak and Xerox built Rochester's reputation for precision optics and engineering rigor. I design data systems with that same discipline: structured, indexed, and resilient under everyday operational load.",
+  },
+  {
+    title: "University of Rochester Medical Center Aware",
+    desc: "URMC and the surrounding health-tech corridor need clean data separation and audit-ready logging. I build to that standard by default for Rochester clients operating near or alongside healthcare.",
+  },
+  {
+    title: "Full-Stack Ownership",
+    desc: "Frontend, backend, database, and deployment are handled by one developer, which means fewer handoffs and less lost context.",
+  },
+  {
+    title: "Production-Ready Code",
+    desc: "Type-safe configs, error boundaries, and logging are part of the build from day one, not something added after launch.",
+  },
+  {
+    title: "Fast, Predictable Turnaround",
+    desc: "You get clear communication, quick responses, and delivery that stays on schedule without agency delays.",
+  },
+  {
+    title: "Live Projects With Real Usage",
+    desc: "Flacron, Relay, and GreenCart are live applications serving real users, which proves I ship working software, not just mockups.",
+  },
+],
 
   faqTitle: "Frequently Asked Questions — Web Developer Rochester NY",
   faqs: [
     {
-      question: "Do you build manufacturing software in Rochester NY?",
-      answer:
-        "Yes. I build custom manufacturing dashboards, inventory systems, production tracking tools, and operational software for Rochester businesses.",
-    },
+  question: "Do you build software for Rochester's imaging and optics companies?",
+  answer:
+    "Yes. Rochester's identity as a precision optics and imaging hub — shaped by Kodak and Xerox — creates demand for software with the same rigor: accurate data handling, traceable workflows, and clean audit trails. I build custom dashboards, inventory systems, and production tracking tools to that standard.",
+},
     {
       question:
         "Can you improve an existing web application for a Rochester company?",
@@ -124,11 +125,10 @@ export const rochesterPageData: CityPageData = {
         "Yes. I work remotely with businesses across Rochester and Upstate New York — including Buffalo, Syracuse, and Albany — while maintaining direct communication throughout the project.",
     },
     {
-      question:
-        "Can you build AI-powered tools for Rochester manufacturing companies?",
-      answer:
-        "Yes. I integrate AI features including document processing, workflow automation, reporting pipelines, and intelligent data extraction into manufacturing and operational software.",
-    },
+  question: "Can you build software for companies near the University of Rochester Medical Center?",
+  answer:
+    "Yes. URMC anchors a growing health-tech cluster in the Rochester area. I build with data separation, access control, and audit logging as defaults for companies operating in or alongside that healthcare ecosystem — the same discipline I bring to manufacturing and operational software.",
+},
     {
       question: "How quickly can a Rochester project start?",
       answer:
@@ -145,7 +145,7 @@ export const rochesterPageData: CityPageData = {
   localSeoTitle:
     "Web Development Services for Rochester's Manufacturing and Technology Sector",
   localSeoParagraphs: [
-    "Rochester has a long history of manufacturing, imaging technology, and precision engineering — shaped by companies like Kodak, Xerox, and Paychex. Businesses operating in these industries often require software that prioritizes reliability, reporting accuracy, and operational visibility.",
+    "Rochester's manufacturing and imaging legacy was built by Kodak, Xerox, and Paychex — companies that demanded precision, traceability, and engineering rigor long before 'software quality' became a buzzword. The University of Rochester and URMC add a strong health-tech dimension to the local economy. Businesses operating in these industries often require software that prioritizes reliability, reporting accuracy, and operational visibility.",
     "As a web developer serving Rochester NY, I build custom dashboards, inventory systems, workflow automation tools, and full-stack applications that help teams manage critical business processes more efficiently.",
     "Whether your company operates in manufacturing, logistics, distribution, imaging technology, or professional services, I can develop software tailored to your specific workflow requirements while maintaining scalability and long-term maintainability.",
   ],
@@ -238,10 +238,10 @@ export const rochesterPageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    { label: "Manufacturing Tools", value: "Custom Built" },
-    { label: "Response Time", value: "<24hrs" },
-    { label: "Project Start", value: "Immediate" },
-  ],
+  { label: "Optics-Corridor Ready", value: "Custom Built" },
+  { label: "Response Time", value: "<24hrs" },
+  { label: "Project Start", value: "Immediate" },
+],
 
   navLinks: [
     { name: "About", href: "#about-rochester" },
@@ -302,13 +302,14 @@ export const newYorkPageData: CityPageData = {
 
   h1Line1: "Web Developer New York NY",
   h1Line2: "– Fintech, Media & High-Performance Full-Stack Apps",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in New York NY</strong> fintech startups, media brands, and SaaS teams trust for production-ready Next.js, Node.js, PostgreSQL, and Redis applications. I build software for a market that expects speed, polish, and accuracy.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in New York NY</strong> fintech startups on Wall Street, media brands in SoHo, and Silicon Alley SaaS teams trust for production-ready Next.js, Node.js, PostgreSQL, and Redis applications. I build software for a market that expects speed, polish, and accuracy.`,
+
   bulletPoints: [
-    "Production-ready Next.js, Node.js, PostgreSQL & Redis applications",
-    "Fintech-grade data accuracy and audit-ready architecture",
-    "AI-powered SaaS platforms with real, live users",
-    "Direct communication, fast delivery, and no agency markup",
-  ],
+  "Production-ready Next.js, Node.js, PostgreSQL & Redis applications",
+  "Fintech-grade data accuracy for Wall Street and Flatiron District startups",
+  "AI-powered SaaS platforms with real, live users",
+  "Direct communication, fast delivery, and no agency markup",
+],
 
   aboutH2: "The Web Developer New York NY Teams Call When Quality Matters",
   aboutParagraphs: [
@@ -316,34 +317,34 @@ export const newYorkPageData: CityPageData = {
     "I use clean layered architecture, optimized PostgreSQL schemas, Redis caching, and polished Next.js frontends to deliver apps that feel mature from day one. The code is documented, type-safe, and structured so an internal engineering team can take it over without a painful handoff.",
     "I've already shipped live products with real users, including a sports platform with Stripe subscriptions and real-time feeds, a multi-tenant SaaS with AI chat and voice agents, and a full-stack marketplace. That same production mindset is what I bring to New York web development projects.",
   ],
-  highlights: [
-    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
-    { label: "Specialty", value: "Fintech, Media & Full-Stack SaaS" },
-    { label: "Delivery", value: "Production-ready, every time" },
-    { label: "Based in", value: "Pakistan — serving New York NY remotely" },
-  ],
+ highlights: [
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "Wall Street fintech · SoHo media · Silicon Alley SaaS" },
+  { label: "Delivery", value: "Production-ready, every time" },
+  { label: "Based in", value: "Pakistan — serving New York NY remotely" },
+],
   abilityCards: [
-    {
-      icon: "💹",
-      title: "Fintech-Grade Accuracy",
-      desc: "Transaction-safe PostgreSQL schemas and careful error handling for systems where data must be right the first time.",
-    },
-    {
-      icon: "📰",
-      title: "Media & Publishing Platforms",
-      desc: "Content-heavy web apps built to handle traffic spikes, dynamic content, and fast editorial workflows.",
-    },
-    {
-      icon: "⚡",
-      title: "Performance First",
-      desc: "Redis caching, indexed queries, and efficient API design keep pages and dashboards responsive under load.",
-    },
-    {
-      icon: "🚀",
-      title: "Ship-Ready by Default",
-      desc: "Every project is built to launch cleanly with environments, logging, and error boundaries already in place.",
-    },
-  ],
+  {
+    iconName: "TrendingUp",
+    title: "Fintech-Grade Accuracy",
+    desc: "Transaction-safe PostgreSQL schemas and careful error handling for systems where data must be right the first time — the bar Wall Street's technology vendors are held to.",
+  },
+  {
+    iconName: "Newspaper",
+    title: "Media & Publishing Platforms",
+    desc: "Content-heavy web apps built to handle traffic spikes, dynamic content, and fast editorial workflows for NYC's digital media sector.",
+  },
+  {
+    iconName: "Zap",
+    title: "Performance First",
+    desc: "Redis caching, indexed queries, and efficient API design keep pages and dashboards responsive under load.",
+  },
+  {
+    iconName: "Rocket",
+    title: "Ship-Ready by Default",
+    desc: "Every project is built to launch cleanly with environments, logging, and error boundaries already in place.",
+  },
+],
 
   projectsH2: "Live in Production, Built for Real Users",
   projectsSubtitle:
@@ -355,39 +356,39 @@ export const newYorkPageData: CityPageData = {
 
   whyH2: "Why New York Companies Work With Me",
   whyCards: [
-    {
-      title: "Full-Stack Expertise",
-      desc: "I handle frontend, backend, database, and deployment, so you do not lose time coordinating multiple contractors.",
-    },
-    {
-      title: "No Manhattan Overhead",
-      desc: "You pay for engineering output, not a Midtown office or a layered agency structure.",
-    },
-    {
-      title: "AI-Ready Development",
-      desc: "I integrate LLMs, voice agents, and AI chat features in a way that supports real product goals, not just demos.",
-    },
-    {
-      title: "Production-Ready Code",
-      desc: "From the first commit, the codebase is built to be reliable, maintainable, and ready for release.",
-    },
-    {
-      title: "Fast Turnaround",
-      desc: "Communication stays clear and response times stay fast, which matters in a city where teams move quickly.",
-    },
-    {
-      title: "Proven Live Projects",
-      desc: "Flacron, Relay, and GreenCart are live and working right now, which proves I ship functioning software.",
-    },
-  ],
+  {
+    title: "Wall Street-Grade Precision",
+    desc: "Financial firms downtown and in the Flatiron District expect transaction-safe schemas and audit-ready logs. I build to that standard by default, not as an upsell.",
+  },
+  {
+    title: "Silicon Alley Speed",
+    desc: "NYC's Silicon Alley startup scene moves fast. I scope tightly, ship production code, and avoid the indefinite-MVP trap that slows down funded teams.",
+  },
+  {
+    title: "Full-Stack Expertise",
+    desc: "I handle frontend, backend, database, and deployment, so you do not lose time coordinating multiple contractors.",
+  },
+  {
+    title: "No Manhattan Overhead",
+    desc: "You pay for engineering output, not a Midtown office or a layered agency structure.",
+  },
+  {
+    title: "AI-Ready Development",
+    desc: "I integrate LLMs, voice agents, and AI chat features in a way that supports real product goals, not just demos.",
+  },
+  {
+    title: "Proven Live Projects",
+    desc: "Flacron, Relay, and GreenCart are live and working right now, which proves I ship functioning software.",
+  },
+],
 
   faqTitle: "Frequently Asked Questions — Web Developer New York NY",
   faqs: [
     {
-      question: "What web development services do you offer in New York NY?",
-      answer:
-        "I build full-stack web applications using Next.js, Node.js, PostgreSQL, and Redis. Services include SaaS platforms, fintech dashboards, customer portals, internal business tools, API development, and AI-powered applications.",
-    },
+  question: "Can you build fintech-grade software for Wall Street and Flatiron District companies?",
+  answer:
+    "Yes. I build transaction-safe PostgreSQL schemas, audit logging, and webhook-driven reconciliation flows to the standard New York's financial sector expects — whether the client is downtown on Wall Street or in the Flatiron District fintech cluster.",
+},
     {
       question: "Do you work with New York startups and SaaS companies?",
       answer:
@@ -399,10 +400,10 @@ export const newYorkPageData: CityPageData = {
         "Yes. I integrate AI features including chat assistants, document processing, workflow automation, voice agents, and custom AI-powered tools directly into web applications.",
     },
     {
-      question: "Do you work remotely with businesses in New York?",
-      answer:
-        "Yes. I work remotely with clients throughout Manhattan, Brooklyn, Queens, the Bronx, Staten Island, Jersey City, and Long Island while maintaining direct communication throughout the project.",
-    },
+  question: "Do you work with Silicon Alley startups and media companies in SoHo?",
+  answer:
+    "Yes. I work with Silicon Alley SaaS startups, NYC media brands, and growing technology teams that need scalable, production-ready software without the overhead of a traditional agency or a six-week kickoff process.",
+},
     {
       question: "How does your pricing compare to New York agencies?",
       answer:
@@ -418,7 +419,7 @@ export const newYorkPageData: CityPageData = {
   localSeoTitle:
     "Web Development for New York Startups, SaaS Companies, and Fintech Teams",
   localSeoParagraphs: [
-    "New York is home to some of the world's fastest-growing startups, fintech companies, media organizations, and SaaS businesses. These companies require software that can scale while maintaining performance and reliability.",
+    "New York is home to Wall Street's financial giants, the Silicon Alley startup corridor stretching from Union Square to the Flatiron District, and a media industry anchored by publishers and digital-native brands across SoHo and downtown. These companies require software that can scale while maintaining the performance and reliability New York's markets demand.",
     "As a web developer serving New York NY, I build custom SaaS platforms, fintech dashboards, AI-powered applications, customer portals, and internal business systems using modern technologies including Next.js, Node.js, PostgreSQL, and Redis.",
     "Whether you're launching a startup MVP, expanding an existing platform, or modernizing internal tools, I provide direct access to experienced full-stack development without agency overhead.",
   ],
@@ -511,10 +512,10 @@ export const newYorkPageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    { label: "SaaS Platforms", value: "Production Ready" },
-    { label: "Response Time", value: "<24hrs" },
-    { label: "Project Start", value: "Immediate" },
-  ],
+  { label: "Wall Street-Grade", value: "Audit-Ready" },
+  { label: "Response Time", value: "<24hrs" },
+  { label: "Project Start", value: "Immediate" },
+],
 
   navLinks: [
     { name: "About", href: "#about-new-york" },

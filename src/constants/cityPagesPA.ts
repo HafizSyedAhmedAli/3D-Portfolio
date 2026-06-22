@@ -24,13 +24,14 @@ export const philadelphiaPageData: CityPageData = {
 
   h1Line1: "Web Developer Philadelphia PA",
   h1Line2: "– Healthcare Tech, Fintech & Full-Stack Apps",
-  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Philadelphia PA</strong> healthcare organizations, fintech companies, and enterprise businesses trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for the reliability and compliance standards Philly's market demands.`,
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Philadelphia PA</strong> Penn Medicine and Jefferson Health-adjacent healthcare companies, fintech firms near the Navy Yard, and enterprise businesses trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for the reliability and compliance standards Philly's market demands.`,
+
   bulletPoints: [
-    "Production-grade Next.js, Node.js & PostgreSQL systems",
-    "Healthcare-aware architecture with proper access control and audit trails",
-    "AI-powered SaaS platforms serving real users in production",
-    "24-hour response time — no agencies, no middlemen",
-  ],
+  "Production-grade Next.js, Node.js & PostgreSQL systems",
+  "Healthcare-aware architecture built for Penn Medicine and CHOP-adjacent companies",
+  "AI-powered SaaS platforms serving real users in production",
+  "24-hour response time — no agencies, no middlemen",
+],
 
   aboutH2:
     "The Web Developer Philadelphia PA Healthcare & Finance Companies Choose",
@@ -40,33 +41,33 @@ export const philadelphiaPageData: CityPageData = {
     "My live portfolio spans a real-time sports platform with Stripe billing, a multi-tenant enterprise SaaS with embedded AI and voice agents, and a full-stack marketplace. These are deployed and serving real users — the same production standard every Philadelphia client receives.",
   ],
   highlights: [
-    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
-    { label: "Specialty", value: "Healthcare Tech & Enterprise Backends" },
-    { label: "Delivery", value: "Compliant, documented, on-time" },
-    { label: "Based in", value: "Pakistan — serving Philadelphia PA remotely" },
-  ],
+  { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+  { label: "Specialty", value: "Penn Medicine · Navy Yard fintech · Drexel/Temple corridor" },
+  { label: "Delivery", value: "Compliant, documented, on-time" },
+  { label: "Based in", value: "Pakistan — serving Philadelphia PA remotely" },
+],
   abilityCards: [
-    {
-      icon: "🏥",
-      title: "Healthcare-Aware Development",
-      desc: "Access control, data separation, and audit logging built into the architecture for Philadelphia's massive healthcare and life sciences sector.",
-    },
-    {
-      icon: "🏦",
-      title: "Fintech-Grade Reliability",
-      desc: "Transaction-safe PostgreSQL schemas, proper error handling, and audit trails for Philly's growing financial technology companies.",
-    },
-    {
-      icon: "🤖",
-      title: "AI Integration",
-      desc: "LLMs, voice agents, and intelligent automation integrated natively — not bolted on as a demo feature after launch.",
-    },
-    {
-      icon: "📋",
-      title: "Documentation First",
-      desc: "Swagger docs, TypeScript types, and clean README files shipped with every project — your team can onboard from day one.",
-    },
-  ],
+  {
+    iconName: "HeartPulse",
+    title: "Healthcare-Aware Development",
+    desc: "Access control, data separation, and audit logging built into the architecture for Penn Medicine, Jefferson Health, and CHOP-adjacent companies.",
+  },
+  {
+    iconName: "Landmark",
+    title: "Fintech-Grade Reliability",
+    desc: "Transaction-safe PostgreSQL schemas, proper error handling, and audit trails for Philly's growing financial technology companies near the Navy Yard.",
+  },
+  {
+    iconName: "BrainCircuit",
+    title: "AI Integration",
+    desc: "LLMs, voice agents, and intelligent automation integrated natively — not bolted on as a demo feature after launch.",
+  },
+  {
+    iconName: "FileText",
+    title: "Documentation First",
+    desc: "Swagger docs, TypeScript types, and clean README files shipped with every project — your team can onboard from day one.",
+  },
+],
 
   projectsH2: "Deployed Applications — Philadelphia-Level Standards",
   projectsSubtitle:
@@ -78,31 +79,31 @@ export const philadelphiaPageData: CityPageData = {
 
   whyH2: "Why Philadelphia PA Businesses Choose Ahmed Ali",
   whyCards: [
-    {
-      title: "Healthcare Sector Aware",
-      desc: "Philadelphia is home to Penn Medicine, Jefferson Health, and CHOP. I build with data sensitivity, role-based access, and audit trails as architecture defaults.",
-    },
-    {
-      title: "University & Research Ready",
-      desc: "Penn, Drexel, Temple, and Jefferson drive significant demand for research platforms, data tools, and education technology. I build systems that meet those requirements.",
-    },
-    {
-      title: "No Agency Overhead",
-      desc: "You work directly with the developer writing your code. No account managers, no relay race communication, no inflated agency rates.",
-    },
-    {
-      title: "Full-Stack Single Owner",
-      desc: "Frontend, backend, database, and deployment owned by one developer. Nothing gets lost between team handoffs or dropped at integration time.",
-    },
-    {
-      title: "Enterprise-Scale from Day One",
-      desc: "Layered architecture, Redis caching, and proper PostgreSQL indexing mean your system handles growth without a painful rewrite at 10x.",
-    },
-    {
-      title: "Clean Handover Ready",
-      desc: "Swagger documentation, TypeScript throughout, and clear README files mean your internal team can take ownership without a steep ramp-up.",
-    },
-  ],
+  {
+    title: "Healthcare Sector Aware",
+    desc: "Philadelphia is home to Penn Medicine, Jefferson Health, and CHOP. I build with data sensitivity, role-based access, and audit trails as architecture defaults.",
+  },
+  {
+    title: "University & Research Ready",
+    desc: "Penn, Drexel, Temple, and Jefferson drive significant demand for research platforms, data tools, and education technology. I build systems that meet those requirements.",
+  },
+  {
+    title: "No Agency Overhead",
+    desc: "You work directly with the developer writing your code. No account managers, no relay race communication, no inflated agency rates.",
+  },
+  {
+    title: "Full-Stack Single Owner",
+    desc: "Frontend, backend, database, and deployment owned by one developer. Nothing gets lost between team handoffs or dropped at integration time.",
+  },
+  {
+    title: "Enterprise-Scale from Day One",
+    desc: "Layered architecture, Redis caching, and proper PostgreSQL indexing mean your system handles growth without a painful rewrite at 10x.",
+  },
+  {
+    title: "Clean Handover Ready",
+    desc: "Swagger documentation, TypeScript throughout, and clear README files mean your internal team can take ownership without a steep ramp-up.",
+  },
+],
 
   servicesH2: "Web Development Services for Philadelphia PA Businesses",
   services: [
@@ -192,10 +193,10 @@ export const philadelphiaPageData: CityPageData = {
 
   availability: [...COMMON_AVAILABILITY],
   stats: [
-    { label: "Healthcare-Aware", value: "Architecture" },
-    { label: "Response Time", value: "< 24hrs" },
-    { label: "On-Time Rate", value: "100%" },
-  ],
+  { label: "Penn Medicine-Aware", value: "Architecture" },
+  { label: "Response Time", value: "< 24hrs" },
+  { label: "On-Time Rate", value: "100%" },
+],
 
   navLinks: [
     { name: "About", href: "#about-philadelphia" },
@@ -211,12 +212,11 @@ export const philadelphiaPageData: CityPageData = {
 
   faqTitle: "Frequently Asked Questions — Web Developer Philadelphia PA",
   faqs: [
-    {
-      question:
-        "What web development services do you offer Philadelphia PA businesses?",
-      answer:
-        "I offer full-stack web development for Philadelphia PA clients using Next.js, Node.js, and PostgreSQL. Services include healthcare platform development, fintech applications, AI integrations, Stripe billing systems, backend API engineering, and technical audits — delivered remotely at the quality Philadelphia's demanding market expects.",
-    },
+   {
+  question: "Can you build healthcare applications for companies near Penn Medicine or CHOP?",
+  answer:
+    "Yes. I build with data sensitivity in mind — role-based access control, data separation, audit logging, and compliance-aware architecture are standards in every project I deliver for companies operating near Penn Medicine, Jefferson Health, or CHOP.",
+},
     {
       question:
         "Can you build healthcare web applications for Philadelphia organizations?",
@@ -229,11 +229,10 @@ export const philadelphiaPageData: CityPageData = {
         "Yes, fully remote. I serve Philadelphia and the wider Greater Philadelphia area — Center City, University City, Fishtown, King of Prussia, Conshohocken, and Cherry Hill. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
     },
     {
-      question:
-        "Can you build fintech platforms for Philadelphia financial companies?",
-      answer:
-        "Yes. I build fintech-grade systems with transaction-safe database design, audit logging, webhook-driven reconciliation flows, and admin billing dashboards. Philadelphia's growing fintech corridor — from Center City to the Navy Yard — has demanding standards and I build to them.",
-    },
+  question: "Can you build fintech platforms for Navy Yard companies?",
+  answer:
+    "Yes. Philadelphia's Navy Yard innovation district hosts a growing cluster of fintech and enterprise software companies. I build transaction-safe systems with audit logging and admin billing dashboards to the standard those clients expect.",
+},
     {
       question:
         "How do you handle database design for Philadelphia web projects?",
@@ -250,7 +249,7 @@ export const philadelphiaPageData: CityPageData = {
   localSeoTitle:
     "Web Development for Philadelphia's Healthcare, Education & Tech Sectors",
   localSeoParagraphs: [
-    "Philadelphia is home to one of the greatest concentrations of healthcare institutions and research universities in the United States — Penn Medicine, Jefferson Health, CHOP, Drexel University, Temple University, and the University of Pennsylvania all operate within the city's boundaries. This creates enormous demand for reliable, compliant, and well-documented web software.",
+    "Philadelphia is home to one of the greatest concentrations of healthcare institutions and research universities in the United States — Penn Medicine, Jefferson Health, CHOP, Drexel University, Temple University, and the University of Pennsylvania all operate within the city's boundaries. The Navy Yard innovation district adds a growing fintech and enterprise software cluster to that mix, creating demand for reliable, compliant, and well-documented web software.",
     "As a web developer serving Philadelphia PA, I build healthcare platforms, life sciences tools, education technology applications, and enterprise SaaS products using Next.js, Node.js, PostgreSQL, and Redis — with the documentation and compliance standards those sectors require.",
     "Philadelphia's Navy Yard innovation district and the growing startup ecosystem along the Market-Frankford corridor are also creating significant demand for modern SaaS platforms and AI-powered applications — exactly what I specialize in.",
   ],
