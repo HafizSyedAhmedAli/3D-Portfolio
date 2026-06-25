@@ -30,6 +30,11 @@ import {
   leedsPageData,
   bristolPageData,
   wolverhamptonPageData,
+  leicesterPageData,
+  miltonKeynesPageData,
+  oxfordPageData,
+  sheffieldPageData,
+  yorkPageData,
 } from "@/constants/cityPagesUK";
 import type { CityPageData } from "@/components/city/CityPageTemplate";
 
@@ -99,6 +104,11 @@ const regions: RegionGroup[] = [
       nottinghamPageData,
       bournemouthPageData,
       wolverhamptonPageData,
+      miltonKeynesPageData,
+      yorkPageData,
+      oxfordPageData,
+      leicesterPageData,
+      sheffieldPageData,
     ],
   },
 ];

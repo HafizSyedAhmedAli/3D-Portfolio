@@ -48,6 +48,11 @@ const CITY_GEO: Record<string, { lat: number; lng: number }> = {
   leeds: { lat: 53.8008, lng: -1.5491 },
   bristol: { lat: 51.4545, lng: -2.5879 },
   wolverhampton: { lat: 52.5862, lng: -2.1289 },
+  "milton-keynes": { lat: 52.0406, lng: -0.7594 },
+  york: { lat: 53.9599, lng: -1.0873 },
+  oxford: { lat: 51.752, lng: -1.2577 },
+  leicester: { lat: 52.6369, lng: -1.1398 },
+  sheffield: { lat: 53.3811, lng: -1.4701 },
 };
 
 export function generateCitySchemas(

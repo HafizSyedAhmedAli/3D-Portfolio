@@ -35,13 +35,13 @@ export const sitemapUK: MetadataRoute.Sitemap = [
     priority: 0.8,
   },
   {
-    url: `${base}/web-developer-london`, // Index this on Google
+    url: `${base}/web-developer-london`,
     lastModified: new Date("2026-06-19"),
     changeFrequency: "monthly",
     priority: 0.9,
   },
   {
-    url: `${base}/web-developer-birmingham`, // Index this on Google
+    url: `${base}/web-developer-birmingham`,
     lastModified: new Date("2026-06-19"),
     changeFrequency: "monthly",
     priority: 0.8,
@@ -61,6 +61,36 @@ export const sitemapUK: MetadataRoute.Sitemap = [
   {
     url: `${base}/web-developer-wolverhampton`,
     lastModified: new Date("2026-06-19"),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${base}/web-developer-milton-keynes`,
+    lastModified: new Date("2026-06-25"),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${base}/web-developer-york`,
+    lastModified: new Date("2026-06-25"),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${base}/web-developer-oxford`,
+    lastModified: new Date("2026-06-25"),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${base}/web-developer-leicester`,
+    lastModified: new Date("2026-06-25"),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${base}/web-developer-sheffield`,
+    lastModified: new Date("2026-06-25"),
     changeFrequency: "monthly",
     priority: 0.8,
   },
