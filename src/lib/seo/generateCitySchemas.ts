@@ -53,6 +53,11 @@ const CITY_GEO: Record<string, { lat: number; lng: number }> = {
   oxford: { lat: 51.752, lng: -1.2577 },
   leicester: { lat: 52.6369, lng: -1.1398 },
   sheffield: { lat: 53.3811, lng: -1.4701 },
+  colchester: { lat: 51.8959, lng: 0.8919 },
+  southampton: { lat: 50.9097, lng: -1.4044 },
+  plymouth: { lat: 50.3755, lng: -4.1427 },
+  derby: { lat: 52.9225, lng: -1.4746 },
+  norwich: { lat: 52.6309, lng: 1.2974 },
 };
 
 export function generateCitySchemas(

@@ -94,4 +94,34 @@ export const sitemapUK: MetadataRoute.Sitemap = [
     changeFrequency: "monthly",
     priority: 0.8,
   },
+  {
+    url: `${base}/web-developer-colchester`,
+    lastModified: new Date("2026-06-27"),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${base}/web-developer-southampton`,
+    lastModified: new Date("2026-06-27"),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${base}/web-developer-plymouth`,
+    lastModified: new Date("2026-06-27"),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${base}/web-developer-derby`,
+    lastModified: new Date("2026-06-27"),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
+  {
+    url: `${base}/web-developer-norwich`,
+    lastModified: new Date("2026-06-27"),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  },
 ];

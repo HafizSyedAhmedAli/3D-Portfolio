@@ -4177,3 +4177,1358 @@ export const sheffieldPageData: CityPageData = {
     },
   ],
 };
+
+// ─── Colchester ───────────────────────────────────────────────────────────────
+
+export const colchesterPageData: CityPageData = {
+  keyword: "web developer colchester",
+  cityName: "Colchester",
+  cityState: "UK",
+  citySlug: "colchester",
+
+  metaTitle: "Web Developer Colchester | Next.js, AI & SaaS | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Colchester? Ahmed Ali builds scalable Next.js, Node.js & AI-powered apps for Colchester businesses. Fast delivery, real results.",
+
+  profileImageUrl:
+    "/images/web-developer-colchester-uk-saas-full-stack.png",
+  profileImageAlt: "Web Developer Colchester UK – SaaS & Full-Stack Apps",
+
+  h1Line1: "Web Developer Colchester",
+  h1Line2: "– Full-Stack, SaaS & AI-Powered Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Colchester</strong> businesses, SMEs, and growing digital teams trust to deliver production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for Colchester's expanding technology and defence sector.`,
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL applications",
+    "AI-powered SaaS platforms with real users and real revenue",
+    "Clean architecture — TypeScript throughout, Swagger-documented",
+    "24-hour response time — direct developer access, no agencies",
+  ],
+
+  aboutH2: "The Web Developer Colchester Businesses Choose for Reliable Software",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds software that performs under real conditions. Colchester is one of the UK's fastest-growing cities, with a thriving SME community, a significant MOD and defence presence, and the University of Essex producing a steady stream of technology talent. Businesses here need software that is dependable, well-structured, and built to be maintained — not just impressive at launch.",
+    "Every project I deliver is type-safe from commit one, structured in controller-service-repository layers, Swagger-documented, and backed by optimised PostgreSQL schemas with Redis caching. Whether you're a Colchester SME modernising internal operations, a defence-adjacent contractor needing secure tooling, or a startup building an MVP — the production standard is the same.",
+    "My live portfolio includes a Stripe-powered sports platform, a multi-tenant enterprise SaaS with embedded AI and voice agents, and a full-stack marketplace. All deployed, all handling real users — the same output every Colchester client receives.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    { label: "Specialty", value: "Full-Stack Web & AI-Powered SaaS" },
+    { label: "Delivery", value: "Production-ready, documented, on-time" },
+    { label: "Based in", value: "Pakistan — serving Colchester remotely" },
+  ],
+  abilityCards: [
+    {
+      iconName: "Shield",
+      title: "Defence & Compliance Aware",
+      desc: "Colchester's MOD presence means many businesses need software built with security, auditability, and documentation standards in mind — defaults I apply to every project.",
+    },
+    {
+      iconName: "Building2",
+      title: "SME & Growth Business Focus",
+      desc: "Colchester's economy is driven by SMEs. I build internal tools, operational dashboards, and customer-facing platforms that scale with your business.",
+    },
+    {
+      iconName: "Bot",
+      title: "AI Integration",
+      desc: "LLMs, voice agents, and intelligent automation built natively into your product — not demo prototypes added after the fact.",
+    },
+    {
+      iconName: "Zap",
+      title: "Performance First",
+      desc: "Redis caching, indexed PostgreSQL, and sub-150ms API response times designed to handle real production load.",
+    },
+  ],
+
+  projectsH2: "Live Projects — Deployed and Serving Real Users",
+  projectsSubtitle:
+    "Every project below is in production with real users and real business logic. This is the standard Colchester clients receive.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "What Real Clients Say",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Colchester Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Security & Documentation by Default",
+      desc: "Colchester's defence and government-adjacent businesses need audit-ready, well-documented software. I deliver TypeScript, Swagger docs, and clean architecture as standard.",
+    },
+    {
+      title: "No Agency Overhead",
+      desc: "You work directly with the developer building your product. No account managers, no communication relay, no inflated agency rates.",
+    },
+    {
+      title: "Full-Stack Ownership",
+      desc: "Frontend, backend, database, and deployment owned by one developer. Nothing gets lost between handoffs.",
+    },
+    {
+      title: "SME-Scale Systems",
+      desc: "I build software that matches the budget and ambitions of Colchester's growing business community — without cutting corners on quality.",
+    },
+    {
+      title: "AI-Ready Development",
+      desc: "LLM integrations, voice agents, and AI chat features built as core product capabilities from the start.",
+    },
+    {
+      title: "Reliable Delivery",
+      desc: "24-hour response time, realistic timelines, and on-schedule delivery. Colchester clients always know where their project stands.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Colchester Businesses",
+  services: [
+    {
+      title: "Full-Stack Web Application Development",
+      desc: "End-to-end Next.js and Node.js development for Colchester businesses — frontend, backend API, database schema, and deployment pipeline all covered.",
+      details: [
+        "Custom SaaS platforms and multi-tenant portals",
+        "Internal business tools and operations dashboards",
+        "Authentication, roles, and permission systems",
+        "Full deployment pipeline with post-launch support",
+      ],
+    },
+    {
+      title: "Defence & Government-Adjacent Software",
+      desc: "Secure, audit-ready web platforms for Colchester's defence and government contractor community — with documentation, access control, and compliance standards built in.",
+      details: [
+        "Role-based access control and audit logging",
+        "Secure API design and authentication",
+        "Compliance-aware database architecture",
+        "Full documentation and handover package",
+      ],
+    },
+    {
+      title: "AI Feature Integration",
+      desc: "I embed AI capabilities into your Colchester business application — chat assistants, document automation, voice agents, and intelligent workflow triggers.",
+      details: [
+        "OpenAI and Anthropic LLM integrations",
+        "Embeddable AI chat widgets for SaaS",
+        "Voice agent pipelines via VAPI",
+        "Document summarization and processing",
+      ],
+    },
+    {
+      title: "Backend API & Systems Engineering",
+      desc: "Production Express.js APIs in controller-service-repository layers, Swagger-documented, Zod-validated, and security-hardened before delivery.",
+      details: [
+        "RESTful API design with versioning",
+        "Auth middleware, roles, and session management",
+        "Rate limiting, logging, and observability",
+        "OpenAPI / Swagger documentation",
+      ],
+    },
+    {
+      title: "Database Architecture & Performance",
+      desc: "PostgreSQL schema design with proper indexing and Redis caching for sub-millisecond reads on high-traffic data paths.",
+      details: [
+        "Relational schema design and normalization",
+        "Index optimization and query tuning",
+        "Redis caching layer configuration",
+        "Scalability and migration planning",
+      ],
+    },
+    {
+      title: "Technical Audit & Codebase Review",
+      desc: "I review your existing application for performance bottlenecks, security gaps, and architectural debt — then deliver a clear written action plan.",
+      details: [
+        "Full codebase and architecture review",
+        "Security and authentication audit",
+        "API and database performance analysis",
+        "Written report with prioritized fixes",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Colchester — Covering Essex & the East of England",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Colchester</strong>, I work fully remote across Colchester, Chelmsford, Ipswich, Braintree, Witham, Clacton-on-Sea, and the wider Essex and East Anglia region. Colchester is the UK's oldest recorded town and one of Essex's fastest-growing cities — with a significant MOD Garrison, the University of Essex at Wivenhoe Park, and a thriving SME economy spanning retail, professional services, and technology. I also serve businesses searching for a <a href="/web-developer-norwich" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Norwich</a> across the East of England.`,
+    "Colchester's business community is more digitally ambitious than its size suggests. From defence-adjacent contractors on the garrison periphery to ecommerce businesses in the town centre and SaaS startups emerging from the University of Essex — the demand for reliable, production-grade web development is growing fast.",
+    `I also serve the wider South East and East of England market. If you need a <strong class="text-white">web developer colchester</strong> who can also coordinate projects in Southampton, Norwich, or Derby — same developer, same direct communication, same production standards. See my work as a <a href="/web-developer-southampton" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Southampton</a>.`,
+  ],
+  cityLinks: [
+    { city: "Southampton", href: "/web-developer-southampton" },
+    { city: "Norwich", href: "/web-developer-norwich" },
+    { city: "Manchester", href: "/web-developer-manchester" },
+    { city: "Nottingham", href: "/web-developer-nottingham" },
+    { city: "Derby", href: "/web-developer-derby" },
+    { city: "Plymouth", href: "/web-developer-plymouth" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "New York NY", href: "/web-developer-new-york-ny" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Colchester Today",
+  contactSubtitle:
+    "Describe your project and I'll respond within 24 hours with a free consultation — no commitment required.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "Essex Clients", value: "Welcome" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-colchester" },
+    { name: "Projects", href: "#projects-colchester" },
+    { name: "Testimonials", href: "#testimonials-colchester" },
+    { name: "Why Hire Me", href: "#hire-me-colchester" },
+    { name: "Services", href: "#services-colchester" },
+    { name: "Book Appointment", href: "#appointment-colchester" },
+  ],
+  navCTALabel: "Hire Web Developer Colchester",
+  contactId: "contact-colchester",
+  appointmentId: "appointment-colchester",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Colchester",
+  faqs: [
+    {
+      question: "What web development services do you offer Colchester businesses?",
+      answer:
+        "I offer full-stack web development for Colchester clients using Next.js, Node.js, and PostgreSQL. Services include custom SaaS platforms, AI integrations, Stripe payment systems, backend API engineering, database architecture, and technical audits — delivered remotely with the reliability Colchester's growing business community demands.",
+    },
+    {
+      question: "Can you build secure software for Colchester's defence and government sector?",
+      answer:
+        "Yes. I build with security and auditability in mind — role-based access control, input validation, rate limiting, environment hardening, and full Swagger documentation are standard on every project. For defence-adjacent clients in Colchester, I can also build with audit logging and data separation as architectural defaults.",
+    },
+    {
+      question: "Do you work remotely with Colchester clients?",
+      answer:
+        "Yes, fully remote. I serve Colchester and the wider Essex area — Chelmsford, Ipswich, Braintree, Witham, and Clacton-on-Sea. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Can you build AI-powered applications for Colchester businesses?",
+      answer:
+        "Yes. I integrate LLMs, voice agents, and AI chat widgets into web applications for Colchester clients. I have shipped a live multi-tenant SaaS with embeddable AI chat and real-time voice automation — production-proven, not experimental.",
+    },
+    {
+      question: "How does your pricing compare to Colchester or London agencies?",
+      answer:
+        "Significantly lower — because you work directly with the developer, not an agency with account managers and overhead. Colchester businesses get production-quality engineering without the London or local agency premium.",
+    },
+    {
+      question: "How quickly can you start a Colchester web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Colchester inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Colchester's Defence, SME & University Tech Sector",
+  localSeoParagraphs: [
+    "Colchester combines a significant MOD Garrison presence, the University of Essex, and one of Essex's most active SME communities into a technology market that punches well above its size. Businesses here need software that is reliable, secure, and properly documented — characteristics that are architectural decisions in my work, not afterthoughts.",
+    "As a web developer serving Colchester, I build full-stack web applications, secure business tools, AI-powered SaaS platforms, and operational dashboards using Next.js, Node.js, PostgreSQL, and Redis — with the security and documentation standards Colchester's defence and government-adjacent sector expects.",
+    "Colchester's growing digital economy — from the tech startups emerging around the University of Essex to the established SMEs in the town centre and the Colchester Business Park — creates real demand for modern, scalable web development. I serve all of it with the same production standard.",
+  ],
+
+  industries: [
+    {
+      name: "Defence & Government Technology",
+      desc: "Colchester Garrison and MOD presence creates demand for secure, audit-ready, and well-documented web platforms. I build to those standards by default.",
+    },
+    {
+      name: "SME & Professional Services",
+      desc: "Colchester's thriving SME community needs internal tools, client portals, and operational platforms. I build systems that scale with growing businesses.",
+    },
+    {
+      name: "Education Technology",
+      desc: "The University of Essex drives EdTech demand. I build LMS platforms, student portals, and research-grade web applications for Colchester's academic sector.",
+    },
+    {
+      name: "Retail & E-Commerce",
+      desc: "Colchester's retail sector needs Stripe-powered storefronts, inventory management, and customer-facing web applications built for real traffic.",
+    },
+    {
+      name: "Healthcare & Life Sciences",
+      desc: "Colchester's NHS trust and health sector need secure patient platforms, clinical tools, and health-tech SaaS applications.",
+    },
+    {
+      name: "Logistics & Distribution",
+      desc: "Essex's strategic location makes it a logistics hub. I build inventory tracking, fleet management, and supply chain dashboards for the distribution sector.",
+    },
+  ],
+};
+
+// ─── Southampton ──────────────────────────────────────────────────────────────
+
+export const southamptonPageData: CityPageData = {
+  keyword: "web developer southampton",
+  cityName: "Southampton",
+  cityState: "UK",
+  citySlug: "southampton",
+
+  metaTitle: "Web Developer Southampton | Next.js, AI & SaaS | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Southampton? Ahmed Ali builds scalable Next.js, Node.js & AI apps for maritime, logistics & SaaS businesses. Real results.",
+
+  profileImageUrl:
+    "/images/web-developer-southampton-uk-maritime-saas-full-stack.png",
+  profileImageAlt: "Web Developer Southampton UK – Maritime Tech & SaaS Apps",
+
+  h1Line1: "Web Developer Southampton",
+  h1Line2: "– Maritime Tech, SaaS & Full-Stack Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Southampton</strong> maritime businesses, logistics companies, and digital startups trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for Southampton's port-driven, internationally connected economy.`,
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL applications",
+    "Maritime logistics platforms, cargo management, and operational dashboards",
+    "AI-powered SaaS with real users and real revenue",
+    "Direct developer access — 24-hour response, no agency overhead",
+  ],
+
+  aboutH2: "The Web Developer Southampton Port Businesses & SaaS Teams Choose",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds software that holds up under real operational demands. Southampton is one of the UK's most economically significant port cities — home to the country's busiest cruise terminal, major cargo operations, a thriving maritime services sector, and two universities generating strong digital talent. The software businesses here need is operational-grade: reliable, well-documented, and built for high-throughput data.",
+    "Every application I deliver is structured in clean layers, type-safe throughout, Swagger-documented before handover, and backed by indexed PostgreSQL schemas with Redis caching for sub-150ms API response times. For Southampton's maritime and logistics clients, that means data accuracy, system reliability, and audit trails are built into the architecture — not added later.",
+    "My live portfolio — a real-time sports platform with Stripe billing, a multi-tenant AI SaaS, and a full-stack marketplace — demonstrates the production standard every Southampton client receives from day one.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    { label: "Specialty", value: "Maritime Tech & Operational SaaS" },
+    { label: "Delivery", value: "Production-ready, documented, on-time" },
+    { label: "Based in", value: "Pakistan — serving Southampton remotely" },
+  ],
+  abilityCards: [
+    {
+      iconName: "Anchor",
+      title: "Maritime & Port Technology",
+      desc: "Cargo tracking dashboards, vessel management portals, and logistics platforms built for Southampton's port economy and maritime services sector.",
+    },
+    {
+      iconName: "Package",
+      title: "Logistics & Supply Chain",
+      desc: "High-throughput inventory tracking, shipment management, and supply chain dashboards designed for the data volumes Southampton's port generates.",
+    },
+    {
+      iconName: "Bot",
+      title: "AI Integration",
+      desc: "LLMs, document automation, and intelligent workflow tools built natively into your maritime or logistics application.",
+    },
+    {
+      iconName: "Zap",
+      title: "High-Throughput Architecture",
+      desc: "Redis caching, PostgreSQL indexing, and connection pooling for platforms processing thousands of records per hour.",
+    },
+  ],
+
+  projectsH2: "Live Projects — Built for Production Volume",
+  projectsSubtitle:
+    "Every project below is deployed and serving real users with real business logic. Southampton clients get this same production standard.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "Clients Who Have Shipped With Me",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Southampton Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Port Economy Aware",
+      desc: "Southampton's maritime and logistics sector needs software built for high data volumes, operational reliability, and clear audit trails. These are architectural defaults in my work.",
+    },
+    {
+      title: "No Agency Overhead",
+      desc: "You work directly with the developer building your product. No account managers, no relay communication, no inflated rates.",
+    },
+    {
+      title: "Full-Stack Ownership",
+      desc: "Frontend, backend, database, and deployment owned by one developer. No handoffs, no dropped context at integration time.",
+    },
+    {
+      title: "AI-Native Capability",
+      desc: "Document processing automation, intelligent workflow tools, and AI chat features built as real product capabilities for Southampton's maritime businesses.",
+    },
+    {
+      title: "Scales With Demand",
+      desc: "Redis caching, proper PostgreSQL indexing, and modular architecture mean your system handles peak port operational load without degrading.",
+    },
+    {
+      title: "Deadline Reliable",
+      desc: "24-hour response times, realistic timelines, and on-schedule delivery. Southampton clients always know where their project stands.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Southampton Businesses",
+  services: [
+    {
+      title: "Maritime & Logistics Platform Development",
+      desc: "Full-stack web applications for Southampton's port economy — cargo dashboards, vessel management systems, freight tracking platforms, and operational tools built for high data volumes.",
+      details: [
+        "Cargo tracking and shipment management systems",
+        "Vessel scheduling and port operations dashboards",
+        "Freight and logistics management platforms",
+        "High-throughput PostgreSQL and Redis architecture",
+      ],
+    },
+    {
+      title: "Full-Stack Web Application Development",
+      desc: "End-to-end Next.js and Node.js development for Southampton businesses — from architecture through to deployment.",
+      details: [
+        "Custom SaaS and multi-tenant platforms",
+        "Internal business tools and admin dashboards",
+        "Authentication, roles, and permission systems",
+        "Full deployment with post-launch support",
+      ],
+    },
+    {
+      title: "AI Feature Integration",
+      desc: "I embed AI into your Southampton business application — document automation, intelligent workflow tools, chat assistants, and voice agents.",
+      details: [
+        "OpenAI and Anthropic LLM integrations",
+        "Document parsing and automation pipelines",
+        "Embeddable AI chat widgets for SaaS",
+        "Voice agent pipelines via VAPI",
+      ],
+    },
+    {
+      title: "Backend API & Systems Engineering",
+      desc: "Production Express.js APIs in controller-service-repository layers, Swagger-documented, Zod-validated, and tested before delivery.",
+      details: [
+        "RESTful API design with versioning",
+        "Auth middleware and session management",
+        "Rate limiting and security middleware",
+        "OpenAPI / Swagger documentation",
+      ],
+    },
+    {
+      title: "Database Architecture & Performance",
+      desc: "PostgreSQL schema design built for operational data volumes, with Redis caching layers for fast reads on high-traffic endpoints.",
+      details: [
+        "Schema design for logistics and operational data",
+        "Index strategy and query optimization",
+        "Redis caching configuration",
+        "Scalability and migration planning",
+      ],
+    },
+    {
+      title: "Technical Audit & Architecture Review",
+      desc: "I review your existing application for performance bottlenecks, security vulnerabilities, and architectural debt — delivering a written action plan.",
+      details: [
+        "Full codebase and architecture review",
+        "Security and authentication audit",
+        "API and database performance analysis",
+        "Written report with prioritized fixes",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Southampton — Covering Hampshire & the South Coast",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Southampton</strong>, I work fully remote across Southampton, Portsmouth, Eastleigh, Winchester, Fareham, Totton, and the wider Hampshire region. Southampton is the UK's leading cruise and cargo port city — home to DP World Southampton, the world's largest cruise ships, Ordnance Survey headquarters, and two universities. The software demands here are genuinely operational in nature. I also serve businesses searching for a <a href="/web-developer-bournemouth" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Bournemouth</a> along the South Coast.`,
+    "Southampton's technology sector spans maritime services, logistics and supply chain management, defence (driven by Portsmouth's naval presence nearby), and a growing fintech and SaaS startup scene centred around the city's two universities. Each of these sectors has distinct software requirements — and I build for all of them.",
+    `I also serve the broader South of England market. If you need a <strong class="text-white">web developer southampton</strong> who can coordinate projects in Bournemouth, Plymouth, or further — same developer, same direct communication, same standards. See my work as a <a href="/web-developer-plymouth" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Plymouth</a>.`,
+  ],
+  cityLinks: [
+    { city: "Plymouth", href: "/web-developer-plymouth" },
+    { city: "Bournemouth", href: "/web-developer-bournemouth" },
+    { city: "Colchester", href: "/web-developer-colchester" },
+    { city: "Manchester", href: "/web-developer-manchester" },
+    { city: "Nottingham", href: "/web-developer-nottingham" },
+    { city: "Derby", href: "/web-developer-derby" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "Miami FL", href: "/web-developer-miami-fl" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Southampton Today",
+  contactSubtitle:
+    "Describe your project and I'll respond within 24 hours with a free consultation — no commitment required.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "Maritime Tech", value: "Operational" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-southampton" },
+    { name: "Projects", href: "#projects-southampton" },
+    { name: "Testimonials", href: "#testimonials-southampton" },
+    { name: "Why Hire Me", href: "#hire-me-southampton" },
+    { name: "Services", href: "#services-southampton" },
+    { name: "Book Appointment", href: "#appointment-southampton" },
+  ],
+  navCTALabel: "Hire Web Developer Southampton",
+  contactId: "contact-southampton",
+  appointmentId: "appointment-southampton",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Southampton",
+  faqs: [
+    {
+      question: "What web development services do you offer Southampton businesses?",
+      answer:
+        "I offer full-stack web development for Southampton clients using Next.js, Node.js, and PostgreSQL. Services include maritime logistics platforms, SaaS applications, AI integrations, Stripe payment systems, backend API engineering, database architecture, and technical audits — delivered at the operational quality Southampton's port economy demands.",
+    },
+    {
+      question: "Can you build maritime and logistics platforms for Southampton companies?",
+      answer:
+        "Yes. I build cargo tracking systems, vessel management dashboards, freight platforms, and supply chain tools designed for the data volumes Southampton's port operations generate. High-throughput PostgreSQL schemas and Redis caching are standard in my architecture.",
+    },
+    {
+      question: "Do you work remotely with Southampton clients?",
+      answer:
+        "Yes, fully remote. I serve Southampton and the wider Hampshire area — Portsmouth, Eastleigh, Winchester, Fareham, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Can you build AI-powered tools for Southampton maritime businesses?",
+      answer:
+        "Yes. I integrate LLMs, document processing pipelines, voice agents, and intelligent automation into web applications for Southampton's maritime and logistics sector — production-proven, not experimental.",
+    },
+    {
+      question: "How does your pricing compare to Southampton agencies?",
+      answer:
+        "Significantly lower — because you work directly with the developer. No account managers, no overhead relay, no London or Southampton agency markup. You get the same engineering quality at a fraction of the cost.",
+    },
+    {
+      question: "How quickly can you start a Southampton web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Southampton inquiries within 24 hours and can begin most projects within a few days of aligning on scope.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Southampton's Maritime, Logistics & Tech Sectors",
+  localSeoParagraphs: [
+    "Southampton is the UK's leading port city — home to DP World's major container terminal, the world's busiest cruise terminal, and one of the most significant maritime services clusters in Europe. The software businesses here need is operationally demanding: high-throughput data processing, real-time tracking systems, and reliable backends that don't fail during peak port operations.",
+    "As a web developer serving Southampton, I build maritime logistics platforms, supply chain management tools, full-stack SaaS applications, and AI-powered business software using Next.js, Node.js, PostgreSQL, and Redis — architectured for the operational demands Southampton's economy generates.",
+    "Southampton's university tech scene and its growing SaaS startup community are creating additional demand for modern, scalable web development beyond the port sector. I build for all of it — same stack, same standards, same direct developer access.",
+  ],
+
+  industries: [
+    {
+      name: "Maritime & Port Technology",
+      desc: "Southampton is the UK's busiest port city. I build cargo management, vessel tracking, and port operations platforms for the maritime sector.",
+    },
+    {
+      name: "Logistics & Supply Chain",
+      desc: "Southampton's port drives massive logistics demand. I build freight management, inventory tracking, and supply chain platforms for the distribution sector.",
+    },
+    {
+      name: "Defence & Engineering",
+      desc: "With Portsmouth's naval base nearby, defence technology is significant in the region. I build secure, documented platforms for defence-adjacent businesses.",
+    },
+    {
+      name: "Healthcare & Life Sciences",
+      desc: "Southampton's NHS trust and University Hospital drive demand for patient portals, clinical platforms, and health-tech SaaS applications.",
+    },
+    {
+      name: "Education Technology",
+      desc: "University of Southampton and Solent University drive EdTech demand. I build LMS platforms, research tools, and student-facing applications.",
+    },
+    {
+      name: "Retail & E-Commerce",
+      desc: "Southampton's retail and tourism economy needs Stripe-powered storefronts, booking systems, and customer-facing web applications.",
+    },
+  ],
+};
+
+// ─── Plymouth ─────────────────────────────────────────────────────────────────
+
+export const plymouthPageData: CityPageData = {
+  keyword: "web developer plymouth",
+  cityName: "Plymouth",
+  cityState: "UK",
+  citySlug: "plymouth",
+
+  metaTitle: "Web Developer Plymouth | Next.js, Defence & AI | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Plymouth? Ahmed Ali builds scalable Next.js, Node.js & AI apps for Plymouth's defence, marine & SaaS businesses. Real results.",
+
+  profileImageUrl:
+    "/images/web-developer-plymouth-uk-defence-marine-full-stack.png",
+  profileImageAlt: "Web Developer Plymouth UK – Defence Tech & Marine Apps",
+
+  h1Line1: "Web Developer Plymouth",
+  h1Line2: "– Defence Tech, Marine & Full-Stack Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Plymouth</strong> defence contractors, marine technology companies, and digital businesses trust for production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built to the reliability standards Plymouth's defence and naval economy demands.`,
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL systems",
+    "Defence-aware architecture — secure, documented, audit-ready",
+    "AI-powered SaaS platforms with real users and real revenue",
+    "24-hour response time — direct developer, no agency middlemen",
+  ],
+
+  aboutH2: "The Web Developer Plymouth Defence & Marine Companies Trust",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds software that meets the reliability and documentation standards defence and engineering businesses demand. Plymouth is one of the UK's most strategically important naval cities — home to HMNB Devonport, Babcock International's major shipbuilding operations, and a cluster of defence contractors and marine technology companies. The software these businesses need is secure, well-documented, and audit-ready.",
+    "Every project I deliver is type-safe throughout, structured in controller-service-repository layers, Swagger-documented before handover, and designed with security as an architecture decision rather than a feature request. For Plymouth's defence and marine clients, that means access control, audit logging, and input validation are standard — not upsells.",
+    "Three live production applications — a Stripe-powered sports platform, a multi-tenant enterprise SaaS with AI features, and a full-stack marketplace — demonstrate the production standard Plymouth clients receive.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    { label: "Specialty", value: "Defence Tech & Marine Engineering Platforms" },
+    { label: "Delivery", value: "Secure, documented, on-time" },
+    { label: "Based in", value: "Pakistan — serving Plymouth remotely" },
+  ],
+  abilityCards: [
+    {
+      iconName: "ShieldCheck",
+      title: "Defence-Grade Security",
+      desc: "Auth, role-based access control, audit logging, and input validation built into the architecture from commit one — not retrofitted after launch.",
+    },
+    {
+      iconName: "Waves",
+      title: "Marine Engineering Tech",
+      desc: "Asset management platforms, maintenance scheduling systems, and operational dashboards built for Plymouth's shipbuilding and marine engineering sector.",
+    },
+    {
+      iconName: "FileText",
+      title: "Documentation First",
+      desc: "Swagger docs, TypeScript types, and full README files shipped with every project — your compliance team can audit and your next developer can extend.",
+    },
+    {
+      iconName: "Bot",
+      title: "AI Integration",
+      desc: "Intelligent document processing, workflow automation, and AI features built natively into your defence or marine application.",
+    },
+  ],
+
+  projectsH2: "Production Applications — Built to Last",
+  projectsSubtitle:
+    "These are deployed applications serving real users with real business logic. Plymouth clients get this same production standard.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "Results That Stand Behind the Work",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Plymouth Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Defence Sector Aware",
+      desc: "Plymouth's naval and defence economy demands software built with security, documentation, and auditability as defaults. That's exactly how I build.",
+    },
+    {
+      title: "No Agency Overhead",
+      desc: "You work directly with the developer writing your code. No account managers, no overhead, no communication relay.",
+    },
+    {
+      title: "Full-Stack Single Owner",
+      desc: "Frontend, backend, database, and deployment owned by one developer. Nothing gets lost between handoffs or dropped at integration.",
+    },
+    {
+      title: "Clean Handover Ready",
+      desc: "Swagger documentation, TypeScript throughout, and clear README files mean your internal team can take ownership without a painful transition.",
+    },
+    {
+      title: "Production-Grade Reliability",
+      desc: "Plymouth's defence and marine sector cannot afford systems that fail under load. Redis caching, proper PostgreSQL indexing, and clean architecture are standard.",
+    },
+    {
+      title: "Immediate Availability",
+      desc: "24-hour response and immediate project start. Plymouth clients don't wait weeks for agency onboarding before a line of code is written.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Plymouth Businesses",
+  services: [
+    {
+      title: "Defence & Naval Technology Platforms",
+      desc: "Secure, audit-ready web platforms for Plymouth's defence contractors and naval technology companies — asset management, maintenance scheduling, and operational dashboards.",
+      details: [
+        "Role-based access control and audit logging",
+        "Asset tracking and maintenance management systems",
+        "Secure API design and authentication",
+        "Full documentation and compliance-ready handover",
+      ],
+    },
+    {
+      title: "Marine Engineering Software",
+      desc: "Operational platforms for Plymouth's shipbuilding and marine engineering sector — vessel management, maintenance scheduling, parts inventory, and compliance tracking.",
+      details: [
+        "Vessel and asset management platforms",
+        "Maintenance scheduling and tracking systems",
+        "Parts inventory and procurement portals",
+        "Compliance and certification tracking",
+      ],
+    },
+    {
+      title: "Full-Stack Web Application Development",
+      desc: "End-to-end Next.js and Node.js development for Plymouth businesses — from architecture to live deployment.",
+      details: [
+        "Custom SaaS platforms and business portals",
+        "Internal operational tools and dashboards",
+        "Authentication, roles, and permissions",
+        "Full deployment with post-launch support",
+      ],
+    },
+    {
+      title: "AI Feature Integration",
+      desc: "Document processing automation, intelligent workflow tools, and AI chat features built natively into your Plymouth business application.",
+      details: [
+        "OpenAI and Anthropic LLM integrations",
+        "Document automation and processing pipelines",
+        "Voice agent integration via VAPI",
+        "Intelligent workflow automation",
+      ],
+    },
+    {
+      title: "Backend API & Systems Engineering",
+      desc: "Production Express.js APIs structured in clean layers, Swagger-documented, and security-hardened before delivery.",
+      details: [
+        "RESTful API design with versioning",
+        "Auth middleware and rate limiting",
+        "OpenAPI / Swagger documentation",
+        "Third-party integration development",
+      ],
+    },
+    {
+      title: "Technical Audit & Security Review",
+      desc: "I audit your existing codebase for security gaps, architectural debt, and performance bottlenecks — delivering a written remediation plan.",
+      details: [
+        "Security and authentication audit",
+        "Full codebase and architecture review",
+        "API and database performance analysis",
+        "Written report with prioritized fixes",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Plymouth — Covering Devon & the South West",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Plymouth</strong>, I work fully remote across Plymouth, Exeter, Torquay, Paignton, Truro, and the wider Devon and Cornwall region. Plymouth is one of the UK's most strategically significant naval cities — home to HMNB Devonport (the largest naval base in Western Europe), Babcock International's major shipbuilding operations, and Plymouth University's marine and defence research programmes. The software requirements here are distinctive: reliable, secure, and built to be maintained. I also serve businesses looking for a <a href="/web-developer-southampton" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Southampton</a> across the South Coast.`,
+    "Plymouth's technology sector extends beyond defence into a growing digital and creative industries scene — with Plymouth University producing strong digital talent and a startup ecosystem emerging around the city's waterfront regeneration. I build for both sides of Plymouth's economy: the defence-grade reliability the naval sector demands, and the startup speed the digital sector needs.",
+    `I also serve the broader South West market. If you need a <strong class="text-white">web developer plymouth</strong> who can coordinate projects in Southampton or Bristol — same developer, same direct communication, same engineering standards. See my work as a <a href="/web-developer-southampton" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Southampton</a>.`,
+  ],
+  cityLinks: [
+    { city: "Southampton", href: "/web-developer-southampton" },
+    { city: "Bournemouth", href: "/web-developer-bournemouth" },
+    { city: "Colchester", href: "/web-developer-colchester" },
+    { city: "Derby", href: "/web-developer-derby" },
+    { city: "Norwich", href: "/web-developer-norwich" },
+    { city: "Manchester", href: "/web-developer-manchester" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "New York NY", href: "/web-developer-new-york-ny" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Plymouth Today",
+  contactSubtitle:
+    "Describe your project and I'll respond within 24 hours with a free consultation — no commitment required.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "Defence-Ready", value: "Architecture" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-plymouth" },
+    { name: "Projects", href: "#projects-plymouth" },
+    { name: "Testimonials", href: "#testimonials-plymouth" },
+    { name: "Why Hire Me", href: "#hire-me-plymouth" },
+    { name: "Services", href: "#services-plymouth" },
+    { name: "Book Appointment", href: "#appointment-plymouth" },
+  ],
+  navCTALabel: "Hire Web Developer Plymouth",
+  contactId: "contact-plymouth",
+  appointmentId: "appointment-plymouth",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Plymouth",
+  faqs: [
+    {
+      question: "What web development services do you offer Plymouth businesses?",
+      answer:
+        "I offer full-stack web development for Plymouth clients using Next.js, Node.js, and PostgreSQL. Services include defence technology platforms, marine engineering software, SaaS applications, AI integrations, backend API engineering, and technical audits — all delivered with the security and documentation standards Plymouth's naval and defence sector demands.",
+    },
+    {
+      question: "Can you build secure software for Plymouth's defence and naval contractors?",
+      answer:
+        "Yes. Security is an architecture decision in my work, not a feature request. I build with role-based access control, audit logging, input validation, rate limiting, and full Swagger documentation as standard — suitable for Plymouth's defence contractor and naval technology sector.",
+    },
+    {
+      question: "Do you work remotely with Plymouth clients?",
+      answer:
+        "Yes, fully remote. I serve Plymouth and the wider Devon and Cornwall region — Exeter, Torquay, Paignton, Truro, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Can you build marine engineering platforms for Plymouth shipbuilding companies?",
+      answer:
+        "Yes. I build vessel management systems, maintenance scheduling platforms, parts inventory tools, and compliance tracking dashboards for Plymouth's shipbuilding and marine engineering sector — with the data accuracy and audit trails these industries require.",
+    },
+    {
+      question: "How does your pricing compare to Plymouth or London agencies?",
+      answer:
+        "Significantly lower — because you work directly with the developer. No account managers, no London rates, no agency overhead. Plymouth businesses get defence-grade engineering quality at a fraction of the agency cost.",
+    },
+    {
+      question: "How quickly can you start a Plymouth web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Plymouth inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Plymouth's Defence, Naval & Marine Tech Sectors",
+  localSeoParagraphs: [
+    "Plymouth is home to HMNB Devonport — the largest naval base in Western Europe — and Babcock International's major shipbuilding and marine engineering operations. This makes Plymouth one of the UK's most significant defence technology markets, with unique software requirements: secure systems, audit-ready code, and documentation that survives staff turnover and procurement scrutiny.",
+    "As a web developer serving Plymouth, I build defence technology platforms, marine engineering software, operational dashboards, and full-stack SaaS applications using Next.js, Node.js, PostgreSQL, and Redis — with security, documentation, and reliability as architectural defaults.",
+    "Plymouth's growing digital and creative sector — centred around Plymouth University and the waterfront regeneration — is also creating demand for modern SaaS platforms and AI-powered applications. I serve both sides of Plymouth's technology economy with the same production standard.",
+  ],
+
+  industries: [
+    {
+      name: "Defence & Naval Technology",
+      desc: "Devonport and Plymouth's MOD presence is one of the UK's largest. I build secure, audit-ready platforms for defence contractors and naval technology companies.",
+    },
+    {
+      name: "Marine Engineering & Shipbuilding",
+      desc: "Babcock International and Plymouth's marine engineering cluster need asset management, maintenance scheduling, and compliance tracking systems.",
+    },
+    {
+      name: "Education Technology",
+      desc: "Plymouth University's strong STEM focus drives EdTech demand. I build research platforms, student portals, and academic web applications.",
+    },
+    {
+      name: "Healthcare & NHS Technology",
+      desc: "University Hospitals Plymouth needs secure patient portals, clinical platforms, and health-tech SaaS products.",
+    },
+    {
+      name: "Tourism & Hospitality",
+      desc: "Plymouth's waterfront and coastal tourism sector needs booking systems, visitor management platforms, and hospitality tools.",
+    },
+    {
+      name: "Digital & Creative Industries",
+      desc: "Plymouth's emerging creative sector needs web platforms, agency-grade tools, and digital product development.",
+    },
+  ],
+};
+
+// ─── Derby ────────────────────────────────────────────────────────────────────
+
+export const derbyPageData: CityPageData = {
+  keyword: "web developer derby",
+  cityName: "Derby",
+  cityState: "UK",
+  citySlug: "derby",
+
+  metaTitle: "Web Developer Derby | Next.js, Aerospace & AI | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Derby? Ahmed Ali builds scalable Next.js, Node.js & AI apps for aerospace, manufacturing & SaaS. Real results.",
+
+  profileImageUrl:
+    "/images/web-developer-derby-uk-aerospace-manufacturing-full-stack.png",
+  profileImageAlt: "Web Developer Derby UK – Aerospace Tech & Manufacturing Apps",
+
+  h1Line1: "Web Developer Derby",
+  h1Line2: "– Aerospace Tech, Manufacturing & Full-Stack Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Derby</strong> aerospace companies, advanced manufacturers, and digital businesses trust to ship reliable, production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for Derby's precision engineering economy.`,
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL systems",
+    "Operational dashboards and manufacturing management platforms",
+    "AI-powered workflow automation and data intelligence tools",
+    "Direct developer access — 24-hour response, no agency overhead",
+  ],
+
+  aboutH2: "The Web Developer Derby's Engineering Businesses Actually Rely On",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds software with the same precision Derby's engineering sector demands. Derby is one of the UK's most important manufacturing cities — home to Rolls-Royce's global headquarters and aerospace operations, Toyota's UK manufacturing plant, Alstom's rail technology operations, and a cluster of precision engineering and advanced materials companies. The software here needs to be accurate, reliable, and built to be maintained over years — not months.",
+    "Every application I deliver is type-safe throughout, structured in clean layers, Swagger-documented before handover, and backed by indexed PostgreSQL schemas with Redis caching. For Derby's manufacturing and aerospace clients, that means data accuracy, system stability, and documentation that survives team changes.",
+    "My live projects — a real-time sports platform with Stripe billing, an enterprise multi-tenant AI SaaS, and a full-stack marketplace — demonstrate what Derby clients receive: production-grade software built right the first time.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    { label: "Specialty", value: "Aerospace Tech & Manufacturing Software" },
+    { label: "Delivery", value: "Precise, documented, on-time" },
+    { label: "Based in", value: "Pakistan — serving Derby remotely" },
+  ],
+  abilityCards: [
+    {
+      iconName: "Cog",
+      title: "Manufacturing Operations Software",
+      desc: "Production tracking, quality control dashboards, and operational management platforms built for Derby's precision engineering and advanced manufacturing sector.",
+    },
+    {
+      iconName: "Plane",
+      title: "Aerospace Technology Platforms",
+      desc: "Component tracking, maintenance scheduling, and technical documentation platforms for Derby's Rolls-Royce supply chain and aerospace sector.",
+    },
+    {
+      iconName: "Bot",
+      title: "AI Manufacturing Automation",
+      desc: "Predictive maintenance tools, quality control AI, and intelligent workflow automation for Derby's advanced manufacturing companies.",
+    },
+    {
+      iconName: "BarChart2",
+      title: "Data Architecture at Scale",
+      desc: "PostgreSQL schemas designed for manufacturing data — structured for query performance, data integrity, and long-term operational reliability.",
+    },
+  ],
+
+  projectsH2: "Production Applications — Precision-Built",
+  projectsSubtitle:
+    "Every project below is deployed and serving real users. Derby's engineering culture demands proof — here it is.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "Clients Who Have Shipped With Me",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Derby Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Engineering Culture Match",
+      desc: "Derby's precision engineering heritage demands software built with the same attention to detail. Clean architecture, TypeScript, and proper documentation are non-negotiable defaults.",
+    },
+    {
+      title: "No Agency Overhead",
+      desc: "You work directly with the developer writing your code. No account managers, no relay, no inflated rates.",
+    },
+    {
+      title: "Full-Stack Single Owner",
+      desc: "Frontend, backend, database, and deployment owned by one developer. Nothing gets lost between handoffs at integration time.",
+    },
+    {
+      title: "Manufacturing Data Expertise",
+      desc: "I design PostgreSQL schemas for the complex operational data manufacturing companies generate — structured for accuracy, performance, and reporting.",
+    },
+    {
+      title: "AI-Ready Development",
+      desc: "Predictive maintenance, quality control AI, and intelligent automation built natively into your manufacturing or aerospace application.",
+    },
+    {
+      title: "Long-Term Maintainability",
+      desc: "TypeScript, Swagger docs, and clean code patterns mean your team can confidently extend and maintain what I build — for years, not months.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Derby Businesses",
+  services: [
+    {
+      title: "Manufacturing & Operations Software",
+      desc: "Custom production tracking, quality control dashboards, and operational management platforms for Derby's precision engineering and advanced manufacturing sector.",
+      details: [
+        "Production tracking and quality control systems",
+        "Operational dashboards and reporting tools",
+        "Supplier and procurement portals",
+        "Maintenance scheduling and asset management",
+      ],
+    },
+    {
+      title: "Aerospace Technology Platforms",
+      desc: "Component tracking, maintenance management, and technical documentation platforms for Derby's aerospace sector and Rolls-Royce supply chain.",
+      details: [
+        "Component and parts tracking systems",
+        "Maintenance scheduling and compliance platforms",
+        "Technical documentation management",
+        "Aerospace supply chain portals",
+      ],
+    },
+    {
+      title: "Full-Stack Web Application Development",
+      desc: "End-to-end Next.js and Node.js development for Derby businesses — frontend, backend, database schema, and deployment pipeline all covered.",
+      details: [
+        "Custom SaaS platforms and business portals",
+        "Internal tools and admin dashboards",
+        "Authentication, roles, and permissions",
+        "Full deployment with post-launch support",
+      ],
+    },
+    {
+      title: "AI Feature Integration",
+      desc: "I embed AI into your Derby manufacturing or business application — predictive maintenance tools, quality control intelligence, and workflow automation.",
+      details: [
+        "OpenAI and Anthropic LLM integrations",
+        "Predictive maintenance AI pipelines",
+        "Intelligent quality control automation",
+        "Document processing and reporting automation",
+      ],
+    },
+    {
+      title: "Database Architecture & Performance",
+      desc: "PostgreSQL schema design for manufacturing data — structured for operational query performance, data integrity, and long-term scalability.",
+      details: [
+        "Schema design for industrial and manufacturing data",
+        "Index strategy and query optimization",
+        "Redis caching for dashboard performance",
+        "Scalability and migration planning",
+      ],
+    },
+    {
+      title: "Technical Audit & Architecture Review",
+      desc: "I review your existing application for bottlenecks, security gaps, and structural debt — delivering a written plan with prioritized fixes.",
+      details: [
+        "Full codebase and architecture review",
+        "Security and authentication audit",
+        "Database and API performance analysis",
+        "Written report with effort estimates",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Derby — Covering the East Midlands & Beyond",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Derby</strong>, I work fully remote across Derby, Nottingham, Leicester, Burton upon Trent, Stoke-on-Trent, and the wider East and West Midlands region. Derby's economy is built on precision — Rolls-Royce has been headquartered here for over a century, Toyota's Burnaston plant is one of the UK's most productive car factories, and Alstom's rail technology operations serve the UK's entire rail network. Software built for this environment must be equally precise. I also serve businesses looking for a <a href="/web-developer-nottingham" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Nottingham</a> across the East Midlands.`,
+    "Derby's technology sector is evolving beyond its industrial roots — with a growing digital economy emerging from Derby University, a thriving SME community, and a cluster of technology companies supporting the aerospace and rail sectors. I build for all of it: the precision operational software Derby's manufacturing economy demands, and the modern SaaS platforms its digital sector needs.",
+    `I serve the wider Midlands market. If you need a <strong class="text-white">web developer derby</strong> who can coordinate projects in Nottingham, Leicester, or Birmingham — same developer, same direct communication, same production standards. See my work as a <a href="/web-developer-nottingham" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Nottingham</a>.`,
+  ],
+  cityLinks: [
+    { city: "Nottingham", href: "/web-developer-nottingham" },
+    { city: "Leicester", href: "/web-developer-leicester" },
+    { city: "Sheffield", href: "/web-developer-sheffield" },
+    { city: "Manchester", href: "/web-developer-manchester" },
+    { city: "Colchester", href: "/web-developer-colchester" },
+    { city: "Norwich", href: "/web-developer-norwich" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "Houston TX", href: "/web-developer-houston-tx" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Derby Today",
+  contactSubtitle:
+    "Describe your project and I'll respond within 24 hours with a free consultation — no commitment required.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "Aerospace-Grade", value: "Precision" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-derby" },
+    { name: "Projects", href: "#projects-derby" },
+    { name: "Testimonials", href: "#testimonials-derby" },
+    { name: "Why Hire Me", href: "#hire-me-derby" },
+    { name: "Services", href: "#services-derby" },
+    { name: "Book Appointment", href: "#appointment-derby" },
+  ],
+  navCTALabel: "Hire Web Developer Derby",
+  contactId: "contact-derby",
+  appointmentId: "appointment-derby",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Derby",
+  faqs: [
+    {
+      question: "What web development services do you offer Derby businesses?",
+      answer:
+        "I offer full-stack web development for Derby clients using Next.js, Node.js, and PostgreSQL. Services include manufacturing operations software, aerospace technology platforms, AI integrations, SaaS applications, backend API engineering, database architecture, and technical audits — delivered with the precision Derby's engineering economy demands.",
+    },
+    {
+      question: "Can you build manufacturing software for Derby aerospace and engineering companies?",
+      answer:
+        "Yes. I build production tracking systems, quality control dashboards, component management platforms, and operational tools designed for the data accuracy requirements of Derby's aerospace, automotive, and precision engineering sector.",
+    },
+    {
+      question: "Do you work remotely with Derby clients?",
+      answer:
+        "Yes, fully remote. I serve Derby and the wider East Midlands — Nottingham, Leicester, Burton upon Trent, and beyond. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Can you integrate AI into Derby manufacturing applications?",
+      answer:
+        "Yes. I build predictive maintenance tools, quality control intelligence, and workflow automation AI features natively into manufacturing and aerospace applications for Derby clients — production-proven, not experimental.",
+    },
+    {
+      question: "How does your pricing compare to Derby or Midlands agencies?",
+      answer:
+        "Significantly lower — because you work directly with the developer. No account managers, no overhead relay, no agency markup. Derby businesses get the same engineering precision they'd expect from a senior developer at a fraction of the agency cost.",
+    },
+    {
+      question: "How quickly can you start a Derby web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Derby inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Derby's Aerospace, Manufacturing & Rail Sectors",
+  localSeoParagraphs: [
+    "Derby is the home of Rolls-Royce's global aerospace operations, Toyota's UK manufacturing plant, and Alstom's rail technology division — making it one of the UK's most significant advanced manufacturing cities. The software these companies and their supply chains need is precision-grade: accurate data schemas, reliable backends, and documentation that supports long operational lifespans.",
+    "As a web developer serving Derby, I build manufacturing operations software, aerospace technology platforms, operational dashboards, and full-stack SaaS applications using Next.js, Node.js, PostgreSQL, and Redis — architected for the data accuracy and reliability Derby's engineering sector demands.",
+    "Derby's growing digital economy — supported by Derby University and a thriving SME community — is also creating demand for modern SaaS platforms and AI-powered applications beyond the industrial sector. I serve both with the same production standards.",
+  ],
+
+  industries: [
+    {
+      name: "Aerospace & Aviation Technology",
+      desc: "Rolls-Royce's global HQ makes Derby the UK's aerospace capital. I build component tracking, maintenance platforms, and supply chain tools for the aerospace sector.",
+    },
+    {
+      name: "Automotive & Advanced Manufacturing",
+      desc: "Toyota's Burnaston plant and Derby's manufacturing cluster need production tracking, quality control, and operational dashboard systems.",
+    },
+    {
+      name: "Rail Technology",
+      desc: "Alstom's Derby operations drive rail tech demand. I build asset management, maintenance scheduling, and compliance platforms for the rail sector.",
+    },
+    {
+      name: "Logistics & Supply Chain",
+      desc: "Derby's central Midlands location makes it a logistics hub. I build inventory management, fleet tracking, and supply chain dashboards.",
+    },
+    {
+      name: "Education Technology",
+      desc: "University of Derby drives EdTech demand. I build LMS platforms, student portals, and research-grade web applications.",
+    },
+    {
+      name: "Professional Services & SaaS",
+      desc: "Derby's growing SME and professional services sector needs business tools, client portals, and SaaS platforms built for the long term.",
+    },
+  ],
+};
+
+// ─── Norwich ──────────────────────────────────────────────────────────────────
+
+export const norwichPageData: CityPageData = {
+  keyword: "web developer norwich",
+  cityName: "Norwich",
+  cityState: "UK",
+  citySlug: "norwich",
+
+  metaTitle: "Web Developer Norwich | Next.js, AgriTech & AI | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Norwich? Ahmed Ali builds scalable Next.js, Node.js & AI apps for Norwich's agritech, retail & digital businesses. Real results.",
+
+  profileImageUrl:
+    "/images/web-developer-norwich-uk-agritech-digital-full-stack.png",
+  profileImageAlt: "Web Developer Norwich UK – AgriTech & Digital Apps",
+
+  h1Line1: "Web Developer Norwich",
+  h1Line2: "– AgriTech, Retail Tech & Full-Stack Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Norwich</strong> agritech companies, retail businesses, financial services firms, and digital startups trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built for Norfolk's growing digital economy.`,
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL applications",
+    "AgriTech platforms, farm management systems, and supply chain tools",
+    "AI-powered SaaS with real users and real revenue",
+    "24-hour response — direct developer access, no agency overhead",
+  ],
+
+  aboutH2: "The Web Developer Norwich Businesses Trust for Production Software",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds software that performs under real conditions. Norwich is a genuinely distinctive technology market — home to a thriving financial services sector anchored by Aviva and Marsh McLennan, one of the UK's most agriculturally productive regions driving agritech demand, and a creative and digital economy centred around the University of East Anglia and Norwich Research Park. Software built for this market needs to cover a wide range of industries with the same production standard.",
+    "Every project I deliver is type-safe throughout, layered in clean architecture, Swagger-documented before handover, and backed by indexed PostgreSQL schemas with Redis caching. Whether you're a Norwich fintech building compliance-ready dashboards, an agritech startup managing farm data, or a retail business modernising your customer platform — the production standard never changes.",
+    "My live portfolio — a Stripe-powered sports platform, a multi-tenant AI SaaS, and a full-stack marketplace — demonstrates what Norwich clients receive from commit one.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    { label: "Specialty", value: "AgriTech, FinTech & Full-Stack SaaS" },
+    { label: "Delivery", value: "Production-ready, documented, on-time" },
+    { label: "Based in", value: "Pakistan — serving Norwich remotely" },
+  ],
+  abilityCards: [
+    {
+      iconName: "Sprout",
+      title: "AgriTech & Farm Management",
+      desc: "Farm management platforms, crop yield tracking, supply chain tools, and agricultural data systems built for Norfolk's world-leading food and farming sector.",
+    },
+    {
+      iconName: "Landmark",
+      title: "Financial Services Technology",
+      desc: "Compliance-aware dashboards, insurance technology tools, and fintech platforms for Norwich's Aviva-anchored financial services cluster.",
+    },
+    {
+      iconName: "Bot",
+      title: "AI Integration",
+      desc: "LLMs, intelligent data pipelines, and AI automation built natively into your Norwich business application.",
+    },
+    {
+      iconName: "ShoppingCart",
+      title: "Retail & E-Commerce Tech",
+      desc: "High-performance storefronts, inventory management, and customer-facing platforms for Norwich's retail and e-commerce sector.",
+    },
+  ],
+
+  projectsH2: "Live Projects — Built for Real Business Logic",
+  projectsSubtitle:
+    "Every project below is deployed, serving real users, and handling real data. Norwich clients receive this same production standard.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "What Real Clients Say",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Norwich Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Agricultural & Rural Economy Aware",
+      desc: "Norfolk is one of the UK's most agriculturally significant regions. I understand the specific data requirements of agritech — precision, traceability, and supply chain integration.",
+    },
+    {
+      title: "Financial Sector Compliance Aware",
+      desc: "Norwich's Aviva-anchored financial services cluster demands audit-ready, well-documented software. TypeScript, Swagger docs, and clean architecture are standard in my work.",
+    },
+    {
+      title: "No Agency Overhead",
+      desc: "You work directly with the developer building your product. No account managers, no relay communication, no inflated rates.",
+    },
+    {
+      title: "Full-Stack Single Owner",
+      desc: "Frontend, backend, database, and deployment owned by one developer. No handoffs, no dropped context.",
+    },
+    {
+      title: "AI-Ready Development",
+      desc: "From crop intelligence to financial automation — AI features built natively into your Norwich business application.",
+    },
+    {
+      title: "Reliable Delivery",
+      desc: "24-hour response times, realistic timelines, and on-schedule delivery. Norwich clients always know where their project stands.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Norwich Businesses",
+  services: [
+    {
+      title: "AgriTech & Farm Management Platforms",
+      desc: "Full-stack web applications for Norfolk's agricultural sector — farm management systems, crop yield tracking, supply chain traceability, and agricultural data dashboards.",
+      details: [
+        "Farm management and crop tracking systems",
+        "Agricultural supply chain and traceability platforms",
+        "Food production and quality management tools",
+        "Rural business operational dashboards",
+      ],
+    },
+    {
+      title: "Financial Services Technology",
+      desc: "Compliance-aware fintech dashboards, insurance technology tools, and financial platforms for Norwich's financial services sector — built with audit trails and documentation as defaults.",
+      details: [
+        "Compliance-ready financial dashboards",
+        "Insurance management and claims platforms",
+        "Client portals for financial services firms",
+        "Audit logging and reporting systems",
+      ],
+    },
+    {
+      title: "Full-Stack Web Application Development",
+      desc: "End-to-end Next.js and Node.js development for Norwich businesses — from architecture to deployment.",
+      details: [
+        "Custom SaaS platforms and business portals",
+        "Internal tools and admin dashboards",
+        "Authentication, roles, and permissions",
+        "Full deployment with post-launch support",
+      ],
+    },
+    {
+      title: "AI Feature Integration",
+      desc: "I embed AI into your Norwich business application — crop intelligence, financial automation, document processing, and intelligent workflow tools.",
+      details: [
+        "OpenAI and Anthropic LLM integrations",
+        "Agricultural data intelligence pipelines",
+        "Financial document automation",
+        "Voice agent integration via VAPI",
+      ],
+    },
+    {
+      title: "Database Architecture & Performance",
+      desc: "PostgreSQL schema design for complex agricultural or financial data, with Redis caching for fast reads on high-traffic endpoints.",
+      details: [
+        "Schema design for agritech and financial data",
+        "Index strategy and query optimization",
+        "Redis caching layer configuration",
+        "Scalability and migration planning",
+      ],
+    },
+    {
+      title: "Technical Audit & Architecture Review",
+      desc: "I review your existing application for bottlenecks, security gaps, and structural debt — delivering a written action plan.",
+      details: [
+        "Full codebase and architecture review",
+        "Security and authentication audit",
+        "API and database performance analysis",
+        "Written report with prioritized fixes",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Norwich — Covering Norfolk & East Anglia",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Norwich</strong>, I work fully remote across Norwich, Ipswich, Cambridge, Peterborough, King's Lynn, Great Yarmouth, and the wider Norfolk and East Anglia region. Norwich is a more diverse technology market than many expect — anchored by Aviva's major operations, the University of East Anglia, Norwich Research Park (one of the UK's leading science and research campuses), and an agricultural hinterland that drives significant agritech demand. I also serve businesses looking for a <a href="/web-developer-colchester" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Colchester</a> across the East of England.`,
+    "Norwich's creative and digital economy has also matured considerably — with a growing cluster of digital agencies, SaaS startups, and tech companies emerging from the UEA and the Cathedral Quarter. The city's relative affordability compared to Cambridge and London is attracting digital businesses that need quality engineering without the overhead.",
+    `I serve the wider East Anglia and East of England market. If you need a <strong class="text-white">web developer norwich</strong> who can coordinate projects in Colchester, Derby, or further — same developer, same direct communication, same production standards. See my work as a <a href="/web-developer-colchester" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Colchester</a>.`,
+  ],
+  cityLinks: [
+    { city: "Colchester", href: "/web-developer-colchester" },
+    { city: "Derby", href: "/web-developer-derby" },
+    { city: "Sheffield", href: "/web-developer-sheffield" },
+    { city: "Nottingham", href: "/web-developer-nottingham" },
+    { city: "Manchester", href: "/web-developer-manchester" },
+    { city: "Southampton", href: "/web-developer-southampton" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "New York NY", href: "/web-developer-new-york-ny" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Norwich Today",
+  contactSubtitle:
+    "Describe your project and I'll respond within 24 hours with a free consultation — no commitment required.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "AgriTech", value: "Prod Ready" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-norwich" },
+    { name: "Projects", href: "#projects-norwich" },
+    { name: "Testimonials", href: "#testimonials-norwich" },
+    { name: "Why Hire Me", href: "#hire-me-norwich" },
+    { name: "Services", href: "#services-norwich" },
+    { name: "Book Appointment", href: "#appointment-norwich" },
+  ],
+  navCTALabel: "Hire Web Developer Norwich",
+  contactId: "contact-norwich",
+  appointmentId: "appointment-norwich",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Norwich",
+  faqs: [
+    {
+      question: "What web development services do you offer Norwich businesses?",
+      answer:
+        "I offer full-stack web development for Norwich clients using Next.js, Node.js, and PostgreSQL. Services include agritech platforms, financial services technology, SaaS applications, AI integrations, backend API engineering, database architecture, and technical audits — all delivered at the quality Norwich's diverse business community demands.",
+    },
+    {
+      question: "Can you build agritech platforms for Norfolk's farming and food sector?",
+      answer:
+        "Yes. I build farm management systems, crop yield tracking tools, agricultural supply chain platforms, and food production management software for Norwich and Norfolk's agricultural sector — with the data accuracy and traceability these industries require.",
+    },
+    {
+      question: "Do you work remotely with Norwich clients?",
+      answer:
+        "Yes, fully remote. I serve Norwich and the wider East Anglia region — Ipswich, Cambridge, Peterborough, King's Lynn, and Great Yarmouth. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Can you build compliance-ready platforms for Norwich's financial services companies?",
+      answer:
+        "Yes. I build with audit trails, role-based access control, and full Swagger documentation as standard — suitable for Norwich's Aviva-anchored financial services sector and insurance technology companies.",
+    },
+    {
+      question: "How does your pricing compare to Norwich agencies?",
+      answer:
+        "Significantly lower — because you work directly with the developer. No account managers, no agency overhead, no markup. Norwich businesses get production-quality engineering without the local or London agency premium.",
+    },
+    {
+      question: "How quickly can you start a Norwich web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Norwich inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Norwich's AgriTech, Financial Services & Digital Sectors",
+  localSeoParagraphs: [
+    "Norwich is one of the UK's most economically distinctive cities — home to Aviva's major operations, a world-class agricultural hinterland driving significant agritech demand, the University of East Anglia, and Norwich Research Park. Each of these sectors creates distinct software requirements, and I build for all of them with the same production standard.",
+    "As a web developer serving Norwich, I build agritech platforms, financial services technology, full-stack SaaS applications, and AI-powered business tools using Next.js, Node.js, PostgreSQL, and Redis — with the data accuracy, compliance awareness, and documentation standards Norwich's business community requires.",
+    "Norwich's growing creative and digital sector — emerging from the UEA and attracting businesses from London and Cambridge — is also creating demand for modern, scalable web development. I serve the full breadth of Norwich's technology market with direct developer access and no agency overhead.",
+  ],
+
+  industries: [
+    {
+      name: "AgriTech & Food Technology",
+      desc: "Norfolk is one of the UK's most productive agricultural regions. I build farm management, crop intelligence, and food supply chain platforms for the agritech sector.",
+    },
+    {
+      name: "Financial Services & Insurance",
+      desc: "Aviva's Norwich operations anchor the city's financial sector. I build compliance-ready dashboards, insurance technology tools, and financial management platforms.",
+    },
+    {
+      name: "Healthcare & Life Sciences",
+      desc: "Norfolk and Norwich University Hospitals and Norwich Research Park drive demand for patient portals, clinical platforms, and life sciences applications.",
+    },
+    {
+      name: "Retail & E-Commerce",
+      desc: "Norwich's strong retail economy needs Stripe-powered storefronts, inventory management, and customer-facing web applications.",
+    },
+    {
+      name: "Education Technology",
+      desc: "UEA and Norwich's research institutions drive EdTech demand. I build LMS platforms, research tools, and student-facing applications.",
+    },
+    {
+      name: "Digital Agencies & Creative Tech",
+      desc: "Norwich's growing creative digital sector needs agency-grade web platforms, white-label tools, and full-stack product development.",
+    },
+  ],
+};
