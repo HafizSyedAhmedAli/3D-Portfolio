@@ -5532,3 +5532,1373 @@ export const norwichPageData: CityPageData = {
     },
   ],
 };
+
+// ─── Dundee ───────────────────────────────────────────────────────────────────
+
+export const dundeePageData: CityPageData = {
+  keyword: "web developer dundee",
+  cityName: "Dundee",
+  cityState: "UK",
+  citySlug: "dundee",
+
+  metaTitle: "Web Developer Dundee | Next.js, AI & SaaS | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Dundee? Ahmed Ali builds scalable Next.js, Node.js & AI-powered apps for Dundee businesses. Real results.",
+
+  profileImageUrl: "/images/web-developer-dundee-uk-gaming-saas-full-stack.png",
+  profileImageAlt: "Web Developer Dundee UK – Gaming & SaaS Apps",
+
+  h1Line1: "Web Developer Dundee",
+  h1Line2: "– Full-Stack, SaaS & AI Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Dundee</strong> that Abertay-adjacent gaming studios, V&A waterfront startups, and growing businesses trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built clean, built to scale, built to last.`,
+
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL applications",
+    "Interactive, performance-first builds informed by Dundee's gaming industry heritage",
+    "Clean layered backend architecture — documented, type-safe, maintainable",
+    "24-hour response time with transparent project communication",
+  ],
+
+  aboutH2: "The Web Developer Dundee Businesses Come Back To",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds software that performs in production. Dundee's economy has shifted hard toward digital and creative industries — from the games studios that trace back to the city's role in creating Grand Theft Auto, to the design-led regeneration around the V&A waterfront. Every one of those businesses needs more than a polished front page; they need systems that hold up.",
+    "I bring clean architecture, indexed PostgreSQL schemas, Redis-backed caching, and polished Next.js frontends to every engagement. TypeScript throughout, Swagger-documented before delivery, and structured so your next hire can extend it without needing a three-month handover.",
+    "My live portfolio includes a football platform with Stripe subscriptions and real-time scores, a multi-tenant enterprise SaaS with embedded AI chat widgets, and a high-performance e-commerce marketplace. All deployed, all maintained, all serving real users right now.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    {
+      label: "Specialty",
+      value: "Gaming & interactive UI · V&A waterfront · Abertay-adjacent tech",
+    },
+    { label: "Delivery", value: "Production-ready, documented, on-time" },
+    { label: "Based in", value: "Pakistan — serving Dundee remotely" },
+  ],
+  abilityCards: [
+    {
+      iconName: "Gamepad2",
+      title: "Interactive, Games-Grade UI",
+      desc: "Dundee's gaming heritage set a high bar for interactivity. I bring that same performance-first, animated interaction design to business websites.",
+    },
+    {
+      iconName: "Zap",
+      title: "Performance by Default",
+      desc: "Redis caching, indexed PostgreSQL queries, and sub-150ms API response times. Speed is built in, not bolted on.",
+    },
+    {
+      iconName: "BrainCircuit",
+      title: "AI Integration",
+      desc: "LLMs, voice agents, and AI chat widgets built directly into your product — not added as an afterthought.",
+    },
+    {
+      iconName: "Lock",
+      title: "Secure from Commit One",
+      desc: "Auth, input validation, rate limiting, and environment hardening shipped by default on every project.",
+    },
+  ],
+
+  projectsH2: "Live Projects — Production Standard",
+  projectsSubtitle:
+    "Every project below is deployed, serving real users, and handling real business logic. This is what Dundee clients get.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "Proven Results, Not Promises",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Dundee Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Fluent in Dundee's Gaming DNA",
+      desc: "Dundee is Scotland's games industry capital, home to Abertay University and studios tracing back to the original Grand Theft Auto. I build with that same interactive, performance-obsessed mindset.",
+    },
+    {
+      title: "Waterfront-Ready Digital Presence",
+      desc: "As the V&A Dundee waterfront district keeps attracting investment and tourism, your site needs to match that modern regeneration energy — not look dated next to it.",
+    },
+    {
+      title: "No Agency Markup",
+      desc: "You work directly with the developer writing your code. No account managers, no communication relay, no inflated rates.",
+    },
+    {
+      title: "AI-Native Development",
+      desc: "From LLM integrations to voice automation — I embed AI natively into your product so it genuinely improves your users' experience.",
+    },
+    {
+      title: "Deadline Driven",
+      desc: "I respond within 24 hours and commit to realistic timelines. Dundee clients get consistent updates, not silence.",
+    },
+    {
+      title: "Maintainable by Design",
+      desc: "TypeScript throughout, Swagger docs included, and clean code patterns mean your team can confidently extend what I build.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Dundee Businesses",
+  services: [
+    {
+      title: "Full-Stack Web Application Development",
+      desc: "End-to-end Next.js and Node.js development covering frontend, backend API, database schema, and deployment — everything you need to launch a production product.",
+      details: [
+        "Custom SaaS platforms and multi-tenant apps",
+        "Internal business tools and admin dashboards",
+        "Authentication, roles, and permissions",
+        "Full deployment with post-launch support",
+      ],
+    },
+    {
+      title: "AI Feature Integration",
+      desc: "I embed AI capabilities directly into your web product — chat assistants, document pipelines, voice agents, and intelligent automation that runs in production.",
+      details: [
+        "OpenAI and Claude LLM integrations",
+        "Embeddable AI chat widgets",
+        "Voice agent pipelines via VAPI",
+        "Document summarization and processing",
+      ],
+    },
+    {
+      title: "Backend API & System Engineering",
+      desc: "Clean Express.js APIs following controller-service-repository architecture, Swagger-documented, Zod-validated, and tested before delivery.",
+      details: [
+        "RESTful API design and versioning",
+        "Auth middleware and rate limiting",
+        "Third-party API integrations",
+        "OpenAPI / Swagger documentation",
+      ],
+    },
+    {
+      title: "Database Architecture & Performance",
+      desc: "PostgreSQL schema design with proper indexing strategy, combined with Redis caching for sub-millisecond reads on high-traffic data paths.",
+      details: [
+        "Relational schema design and normalization",
+        "Index optimization and query tuning",
+        "Redis caching layer configuration",
+        "Scalability and migration planning",
+      ],
+    },
+    {
+      title: "Stripe Payments & Subscriptions",
+      desc: "Full billing infrastructure — one-time payments, subscriptions, trials, webhooks, and customer management portals, all tested in production.",
+      details: [
+        "Stripe Checkout and Billing Portal",
+        "Subscription lifecycle management",
+        "Webhook handling and retry logic",
+        "Admin revenue and billing dashboard",
+      ],
+    },
+    {
+      title: "Technical Audit & Codebase Review",
+      desc: "I review your existing application for performance bottlenecks, security gaps, and architectural debt — then deliver a written action plan with prioritized fixes.",
+      details: [
+        "Full codebase and architecture review",
+        "Security and authentication audit",
+        "API and database performance analysis",
+        "Written report with effort estimates",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Dundee — Serving Tayside & Beyond",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Dundee</strong>, I work fully remote across Dundee, Angus, Perth, Fife, and the wider Tayside region. Whether you're a games studio near Abertay, a startup on the V&A waterfront, or a business modernising its operations — remote collaboration means you get production-grade software without local agency pricing. I also serve businesses looking for a <a href="/web-developer-glasgow" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Glasgow</a> across Scotland.`,
+    "Dundee's digital economy has grown steadily around its games industry roots — anchored by Abertay University's game development programmes and a cluster of interactive-media studios — alongside the design and creative-industry investment tied to the V&A waterfront regeneration. The demand for reliable full-stack development, AI-powered platforms, and modern SaaS architecture is very real here.",
+    `I also serve the wider UK market. If you need a <strong class="text-white">web developer dundee</strong> who can also work on projects in Glasgow, Newcastle, or Manchester — same developer, same direct communication, same engineering standards. See my work as a <a href="/web-developer-glasgow" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Glasgow</a>.`,
+  ],
+  cityLinks: [
+    { city: "Glasgow", href: "/web-developer-glasgow" },
+    { city: "Newcastle", href: "/web-developer-newcastle" },
+    { city: "Manchester", href: "/web-developer-manchester" },
+    { city: "Nottingham", href: "/web-developer-nottingham" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "New York NY", href: "/web-developer-new-york-ny" },
+    { city: "Los Angeles CA", href: "/web-developer-los-angeles-ca" },
+    { city: "San Francisco CA", href: "/web-developer-san-francisco-ca" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Dundee Today",
+  contactSubtitle:
+    "Describe your project and I'll respond within 24 hours with a free consultation — no commitment required.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "Games-Industry Fluent", value: "Interactive UI" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-dundee" },
+    { name: "Projects", href: "#projects-dundee" },
+    { name: "Testimonials", href: "#testimonials-dundee" },
+    { name: "Why Hire Me", href: "#hire-me-dundee" },
+    { name: "Services", href: "#services-dundee" },
+    { name: "Book Appointment", href: "#appointment-dundee" },
+  ],
+  navCTALabel: "Hire Web Developer Dundee",
+  contactId: "contact-dundee",
+  appointmentId: "appointment-dundee",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Dundee",
+  faqs: [
+    {
+      question: "Do you build sites for games or interactive-media studios?",
+      answer:
+        "Yes. Dundee's games industry heritage means clients often want more motion and interactivity than a typical business site. I use Three.js and GSAP for that when it fits the brand, alongside standard business web development.",
+    },
+    {
+      question: "Can you build AI-powered web apps for Dundee companies?",
+      answer:
+        "Yes. I integrate LLMs, voice agents, and AI chat widgets into web applications for Dundee clients. I have shipped a live multi-tenant SaaS with embeddable AI chat and real-time voice automation — production-proven, not experimental.",
+    },
+    {
+      question: "Do you work remotely with Dundee clients?",
+      answer:
+        "Yes, fully remote. I serve Dundee, Angus, Perth, Fife, and the wider Tayside region. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Do you work with startups near the V&A Dundee waterfront?",
+      answer:
+        "Yes. Early-stage businesses positioning themselves within Dundee's design and creative-industry regeneration need to look credible fast — I build for that standard.",
+    },
+    {
+      question: "Can you build Stripe subscription platforms for Dundee businesses?",
+      answer:
+        "Yes. I have shipped full Stripe subscription systems in production — recurring billing, webhook handling, customer dashboards, and admin billing portals. My Flacron Gamezone platform runs this exact stack with real paying users.",
+    },
+    {
+      question: "How quickly can you start a Dundee web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Dundee inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Dundee's Gaming & Creative Tech Sector",
+  localSeoParagraphs: [
+    "Dundee has built one of the UK's most distinctive digital economies — anchored by Abertay University's globally recognised games development programmes, a cluster of interactive-media studios tracing back to the origins of Grand Theft Auto, and the ongoing V&A Dundee waterfront regeneration attracting design and creative-industry investment.",
+    "As a web developer serving Dundee, I build custom SaaS platforms, AI-powered applications, and enterprise backends using Next.js, Node.js, PostgreSQL, and Redis — with an emphasis on the interactive, performance-first UI patterns Dundee's games heritage demands.",
+    "Dundee businesses choose direct developer access over agencies to move faster, communicate more directly, and get better engineering output for their budget — without paying Central London or Edinburgh rates.",
+  ],
+
+  industries: [
+    {
+      name: "Gaming & Interactive Media",
+      desc: "Dundee's games industry, rooted in Abertay University, needs developers fluent in interactive, performance-first UI — not just static business sites.",
+    },
+    {
+      name: "Creative & Design Agencies",
+      desc: "The V&A waterfront regeneration has drawn design-led agencies to Dundee. I build the technical products those agencies need to deliver for their clients.",
+    },
+    {
+      name: "Higher Education & EdTech",
+      desc: "Abertay University and the University of Dundee drive demand for LMS platforms, student portals, and research-grade web applications.",
+    },
+    {
+      name: "Life Sciences & Biotech",
+      desc: "Dundee's life sciences cluster, built around the University of Dundee's research strength, needs secure data platforms and research-tool development.",
+    },
+    {
+      name: "Tourism & Hospitality",
+      desc: "The V&A Dundee has driven a tourism boom. I build booking systems, visitor platforms, and hospitality-sector websites for the growing sector.",
+    },
+    {
+      name: "Retail & E-Commerce",
+      desc: "Dundee's retail economy needs Stripe-powered storefronts, inventory management, and customer portal development.",
+    },
+  ],
+};
+
+// ─── Brighton ─────────────────────────────────────────────────────────────────
+
+export const brightonPageData: CityPageData = {
+  keyword: "web developer brighton",
+  cityName: "Brighton",
+  cityState: "UK",
+  citySlug: "brighton",
+
+  metaTitle: "Web Developer Brighton | Next.js, AI & SaaS | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Brighton? Ahmed Ali builds scalable Next.js, Node.js & AI-powered apps for Brighton businesses. Real results.",
+
+  profileImageUrl: "/images/web-developer-brighton-uk-digital-saas-full-stack.png",
+  profileImageAlt: "Web Developer Brighton UK – Digital & SaaS Apps",
+
+  h1Line1: "Web Developer Brighton",
+  h1Line2: "– Full-Stack, SaaS & AI Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Brighton</strong> that Silicon Beach agencies, North Laine startups, and growing businesses trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built clean, built to scale, built to last.`,
+
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL applications",
+    "Design-led builds matched to Brighton's independent, creative business culture",
+    "Clean layered backend architecture — documented, type-safe, maintainable",
+    "24-hour response time with transparent project communication",
+  ],
+
+  aboutH2: "The Web Developer Brighton Businesses Come Back To",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds software that performs in production. Brighton's 'Silicon Beach' tech scene is one of the densest independent digital economies in the UK — clustered around North Laine and the Lanes, full of agencies and startups that care about design as much as function. Every one of those businesses needs more than a polished front page; they need systems that hold up.",
+    "I bring clean architecture, indexed PostgreSQL schemas, Redis-backed caching, and polished Next.js frontends to every engagement. TypeScript throughout, Swagger-documented before delivery, and structured so your next hire can extend it without needing a three-month handover.",
+    "My live portfolio includes a football platform with Stripe subscriptions and real-time scores, a multi-tenant enterprise SaaS with embedded AI chat widgets, and a high-performance e-commerce marketplace. All deployed, all maintained, all serving real users right now.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    {
+      label: "Specialty",
+      value: "Silicon Beach agencies · North Laine startups · Design-led builds",
+    },
+    { label: "Delivery", value: "Production-ready, documented, on-time" },
+    { label: "Based in", value: "Pakistan — serving Brighton remotely" },
+  ],
+  abilityCards: [
+    {
+      iconName: "Palette",
+      title: "Design-Led Development",
+      desc: "Brighton's Silicon Beach scene expects pixel-precise builds that match brand identity exactly, not generic templates. I build to that standard.",
+    },
+    {
+      iconName: "Zap",
+      title: "Performance by Default",
+      desc: "Redis caching, indexed PostgreSQL queries, and sub-150ms API response times. Speed is built in, not bolted on.",
+    },
+    {
+      iconName: "BrainCircuit",
+      title: "AI Integration",
+      desc: "LLMs, voice agents, and AI chat widgets built directly into your product — not added as an afterthought.",
+    },
+    {
+      iconName: "Lock",
+      title: "Secure from Commit One",
+      desc: "Auth, input validation, rate limiting, and environment hardening shipped by default on every project.",
+    },
+  ],
+
+  projectsH2: "Live Projects — Production Standard",
+  projectsSubtitle:
+    "Every project below is deployed, serving real users, and handling real business logic. This is what Brighton clients get.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "Proven Results, Not Promises",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Brighton Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Fluent in Silicon Beach",
+      desc: "Brighton's tech scene, clustered around North Laine and the Lanes, is full of independent agencies and startups that care about design as much as function. I build with that same design-led standard.",
+    },
+    {
+      title: "Competitive-Market SEO",
+      desc: "With one of the UK's densest concentrations of digital agencies, ranking in Brighton search results takes more than a nice design — I build technical SEO in from day one.",
+    },
+    {
+      title: "No Agency Markup",
+      desc: "You work directly with the developer writing your code. No account managers, no communication relay, no inflated rates.",
+    },
+    {
+      title: "AI-Native Development",
+      desc: "From LLM integrations to voice automation — I embed AI natively into your product so it genuinely improves your users' experience.",
+    },
+    {
+      title: "Deadline Driven",
+      desc: "I respond within 24 hours and commit to realistic timelines. Brighton clients get consistent updates, not silence.",
+    },
+    {
+      title: "Maintainable by Design",
+      desc: "TypeScript throughout, Swagger docs included, and clean code patterns mean your team can confidently extend what I build.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Brighton Businesses",
+  services: [
+    {
+      title: "Full-Stack Web Application Development",
+      desc: "End-to-end Next.js and Node.js development covering frontend, backend API, database schema, and deployment — everything you need to launch a production product.",
+      details: [
+        "Custom SaaS platforms and multi-tenant apps",
+        "Internal business tools and admin dashboards",
+        "Authentication, roles, and permissions",
+        "Full deployment with post-launch support",
+      ],
+    },
+    {
+      title: "AI Feature Integration",
+      desc: "I embed AI capabilities directly into your web product — chat assistants, document pipelines, voice agents, and intelligent automation that runs in production.",
+      details: [
+        "OpenAI and Claude LLM integrations",
+        "Embeddable AI chat widgets",
+        "Voice agent pipelines via VAPI",
+        "Document summarization and processing",
+      ],
+    },
+    {
+      title: "Backend API & System Engineering",
+      desc: "Clean Express.js APIs following controller-service-repository architecture, Swagger-documented, Zod-validated, and tested before delivery.",
+      details: [
+        "RESTful API design and versioning",
+        "Auth middleware and rate limiting",
+        "Third-party API integrations",
+        "OpenAPI / Swagger documentation",
+      ],
+    },
+    {
+      title: "Database Architecture & Performance",
+      desc: "PostgreSQL schema design with proper indexing strategy, combined with Redis caching for sub-millisecond reads on high-traffic data paths.",
+      details: [
+        "Relational schema design and normalization",
+        "Index optimization and query tuning",
+        "Redis caching layer configuration",
+        "Scalability and migration planning",
+      ],
+    },
+    {
+      title: "Stripe Payments & Subscriptions",
+      desc: "Full billing infrastructure — one-time payments, subscriptions, trials, webhooks, and customer management portals, all tested in production.",
+      details: [
+        "Stripe Checkout and Billing Portal",
+        "Subscription lifecycle management",
+        "Webhook handling and retry logic",
+        "Admin revenue and billing dashboard",
+      ],
+    },
+    {
+      title: "Technical Audit & Codebase Review",
+      desc: "I review your existing application for performance bottlenecks, security gaps, and architectural debt — then deliver a written action plan with prioritized fixes.",
+      details: [
+        "Full codebase and architecture review",
+        "Security and authentication audit",
+        "API and database performance analysis",
+        "Written report with effort estimates",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Brighton — Serving Sussex & Beyond",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Brighton</strong>, I work fully remote across Brighton and Hove, Lewes, Worthing, and the wider Sussex region. Whether you're a design agency in North Laine, a startup near the seafront, or a business scaling up — remote collaboration means you get production-grade software without local agency pricing. I also serve businesses looking for a <a href="/web-developer-london" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in London</a> across the South East.`,
+    "Brighton's digital economy — often called 'Silicon Beach' — is one of the UK's densest independent tech clusters, built around North Laine, the Lanes, and a steady flow of University of Sussex graduates into local startups and agencies. The demand for reliable full-stack development, AI-powered platforms, and modern SaaS architecture is very real here.",
+    `I also serve the wider UK market. If you need a <strong class="text-white">web developer brighton</strong> who can also work on projects in London, Oxford, or Southampton — same developer, same direct communication, same engineering standards. See my work as a <a href="/web-developer-london" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in London</a>.`,
+  ],
+  cityLinks: [
+    { city: "London", href: "/web-developer-london" },
+    { city: "Oxford", href: "/web-developer-oxford" },
+    { city: "Southampton", href: "/web-developer-southampton" },
+    { city: "Bournemouth", href: "/web-developer-bournemouth" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "New York NY", href: "/web-developer-new-york-ny" },
+    { city: "Los Angeles CA", href: "/web-developer-los-angeles-ca" },
+    { city: "San Francisco CA", href: "/web-developer-san-francisco-ca" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Brighton Today",
+  contactSubtitle:
+    "Describe your project and I'll respond within 24 hours with a free consultation — no commitment required.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "Silicon Beach Ready", value: "Design-Led" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-brighton" },
+    { name: "Projects", href: "#projects-brighton" },
+    { name: "Testimonials", href: "#testimonials-brighton" },
+    { name: "Why Hire Me", href: "#hire-me-brighton" },
+    { name: "Services", href: "#services-brighton" },
+    { name: "Book Appointment", href: "#appointment-brighton" },
+  ],
+  navCTALabel: "Hire Web Developer Brighton",
+  contactId: "contact-brighton",
+  appointmentId: "appointment-brighton",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Brighton",
+  faqs: [
+    {
+      question: "Do you specialize in sites for creative agencies or independent brands?",
+      answer:
+        "Yes. A lot of my work is with design-conscious clients who need the build quality to match a strong visual identity, which fits well with Brighton's Silicon Beach creative business culture.",
+    },
+    {
+      question: "How do you handle competition in Brighton's crowded digital market?",
+      answer:
+        "I focus on technical SEO fundamentals — clean metadata, schema markup, fast load times — that a lot of design-first agencies skip, which is often the actual difference-maker in Brighton search rankings.",
+    },
+    {
+      question: "Do you work remotely with Brighton clients?",
+      answer:
+        "Yes, fully remote. I serve Brighton and Hove, Lewes, Worthing, and the wider Sussex region. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Can you integrate booking, e-commerce, or membership features?",
+      answer:
+        "Yes. I build custom backends with Stripe, PostgreSQL, and authentication when a Brighton business needs more than a static brochure site.",
+    },
+    {
+      question: "Can you build AI-powered web apps for Brighton companies?",
+      answer:
+        "Yes. I integrate LLMs, voice agents, and AI chat widgets into web applications for Brighton clients. I have shipped a live multi-tenant SaaS with embeddable AI chat and real-time voice automation — production-proven, not experimental.",
+    },
+    {
+      question: "How quickly can you start a Brighton web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Brighton inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Brighton's Silicon Beach Digital Economy",
+  localSeoParagraphs: [
+    "Brighton has earned its 'Silicon Beach' nickname with one of the UK's densest concentrations of independent digital agencies and startups, clustered around North Laine and the Lanes, fed by a steady stream of University of Sussex and University of Brighton graduates.",
+    "As a web developer serving Brighton, I build custom SaaS platforms, AI-powered applications, and enterprise backends using Next.js, Node.js, PostgreSQL, and Redis — with the design-led polish Brighton's creative business culture expects.",
+    "Brighton businesses choose direct developer access over agencies to move faster, communicate more directly, and get better engineering output for their budget — without paying Central London rates for a short commute down the coast.",
+  ],
+
+  industries: [
+    {
+      name: "Digital & Creative Agencies",
+      desc: "Brighton's North Laine cluster is one of the UK's densest independent agency scenes. I build the technical products those agencies need to deliver for their clients.",
+    },
+    {
+      name: "E-Commerce & DTC Brands",
+      desc: "Brighton's strong independent retail and DTC culture needs Stripe-powered storefronts, inventory management, and customer portal development.",
+    },
+    {
+      name: "Media & Entertainment",
+      desc: "Home to the Brighton Digital Festival and a strong media sector, the city needs streaming, ticketing, and content-platform development.",
+    },
+    {
+      name: "Higher Education & EdTech",
+      desc: "The University of Sussex and University of Brighton drive demand for LMS platforms, student portals, and research-grade web applications.",
+    },
+    {
+      name: "Hospitality & Tourism",
+      desc: "Brighton's seafront tourism economy needs booking systems, visitor platforms, and hospitality-sector web development.",
+    },
+    {
+      name: "FinTech & Startups",
+      desc: "A growing fintech and SaaS startup presence in Brighton needs lean, fast-shipping MVP development without full agency overhead.",
+    },
+  ],
+};
+
+// ─── Exeter ───────────────────────────────────────────────────────────────────
+
+export const exeterPageData: CityPageData = {
+  keyword: "web developer exeter",
+  cityName: "Exeter",
+  cityState: "UK",
+  citySlug: "exeter",
+
+  metaTitle: "Web Developer Exeter | Next.js, AI & SaaS | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Exeter? Ahmed Ali builds scalable Next.js, Node.js & AI-powered apps for Exeter businesses. Real results.",
+
+  profileImageUrl: "/images/web-developer-exeter-uk-science-park-saas-full-stack.png",
+  profileImageAlt: "Web Developer Exeter UK – Science Park & SaaS Apps",
+
+  h1Line1: "Web Developer Exeter",
+  h1Line2: "– Full-Stack, SaaS & AI Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Exeter</strong> that Exeter Science Park companies, data-driven teams, and growing businesses trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built clean, built to scale, built to last.`,
+
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL applications",
+    "Growth-ready architecture built for Exeter's expanding science and tech sector",
+    "Clean layered backend architecture — documented, type-safe, maintainable",
+    "24-hour response time with transparent project communication",
+  ],
+
+  aboutH2: "The Web Developer Exeter Businesses Come Back To",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds software that performs in production. Exeter's tech and science sector is expanding quickly — anchored by Exeter Science Park, the University of Exeter, and data-driven institutions like the Met Office. Every one of those businesses needs more than a polished front page; they need systems that hold up.",
+    "I bring clean architecture, indexed PostgreSQL schemas, Redis-backed caching, and polished Next.js frontends to every engagement. TypeScript throughout, Swagger-documented before delivery, and structured so your next hire can extend it without needing a three-month handover.",
+    "My live portfolio includes a football platform with Stripe subscriptions and real-time scores, a multi-tenant enterprise SaaS with embedded AI chat widgets, and a high-performance e-commerce marketplace. All deployed, all maintained, all serving real users right now.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    {
+      label: "Specialty",
+      value: "Exeter Science Park · Data-driven platforms · Growth-ready builds",
+    },
+    { label: "Delivery", value: "Production-ready, documented, on-time" },
+    { label: "Based in", value: "Pakistan — serving Exeter remotely" },
+  ],
+  abilityCards: [
+    {
+      iconName: "TrendingUp",
+      title: "Growth-Ready Architecture",
+      desc: "Exeter's tech sector is expanding fast. I build sites and systems structured to scale as your business grows, instead of needing a rebuild in a year.",
+    },
+    {
+      iconName: "Zap",
+      title: "Performance by Default",
+      desc: "Redis caching, indexed PostgreSQL queries, and sub-150ms API response times. Speed is built in, not bolted on.",
+    },
+    {
+      iconName: "BrainCircuit",
+      title: "AI Integration",
+      desc: "LLMs, voice agents, and AI chat widgets built directly into your product — not added as an afterthought.",
+    },
+    {
+      iconName: "Lock",
+      title: "Secure from Commit One",
+      desc: "Auth, input validation, rate limiting, and environment hardening shipped by default on every project.",
+    },
+  ],
+
+  projectsH2: "Live Projects — Production Standard",
+  projectsSubtitle:
+    "Every project below is deployed, serving real users, and handling real business logic. This is what Exeter clients get.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "Proven Results, Not Promises",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Exeter Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Built for a Growing Tech Corridor",
+      desc: "Exeter's tech and science sector — anchored by Exeter Science Park and the University of Exeter — is expanding quickly. I build sites that scale with that growth.",
+    },
+    {
+      title: "Data-Driven Sensibility",
+      desc: "With institutions like the Met Office headquartered here, Exeter has a strong technical and data culture. I bring that same rigor to performance metrics, analytics, and Core Web Vitals.",
+    },
+    {
+      title: "No Agency Markup",
+      desc: "You work directly with the developer writing your code. No account managers, no communication relay, no inflated rates.",
+    },
+    {
+      title: "AI-Native Development",
+      desc: "From LLM integrations to voice automation — I embed AI natively into your product so it genuinely improves your users' experience.",
+    },
+    {
+      title: "Deadline Driven",
+      desc: "I respond within 24 hours and commit to realistic timelines. Exeter clients get consistent updates, not silence.",
+    },
+    {
+      title: "Maintainable by Design",
+      desc: "TypeScript throughout, Swagger docs included, and clean code patterns mean your team can confidently extend what I build.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Exeter Businesses",
+  services: [
+    {
+      title: "Full-Stack Web Application Development",
+      desc: "End-to-end Next.js and Node.js development covering frontend, backend API, database schema, and deployment — everything you need to launch a production product.",
+      details: [
+        "Custom SaaS platforms and multi-tenant apps",
+        "Internal business tools and admin dashboards",
+        "Authentication, roles, and permissions",
+        "Full deployment with post-launch support",
+      ],
+    },
+    {
+      title: "AI Feature Integration",
+      desc: "I embed AI capabilities directly into your web product — chat assistants, document pipelines, voice agents, and intelligent automation that runs in production.",
+      details: [
+        "OpenAI and Claude LLM integrations",
+        "Embeddable AI chat widgets",
+        "Voice agent pipelines via VAPI",
+        "Document summarization and processing",
+      ],
+    },
+    {
+      title: "Backend API & System Engineering",
+      desc: "Clean Express.js APIs following controller-service-repository architecture, Swagger-documented, Zod-validated, and tested before delivery.",
+      details: [
+        "RESTful API design and versioning",
+        "Auth middleware and rate limiting",
+        "Third-party API integrations",
+        "OpenAPI / Swagger documentation",
+      ],
+    },
+    {
+      title: "Database Architecture & Performance",
+      desc: "PostgreSQL schema design with proper indexing strategy, combined with Redis caching for sub-millisecond reads on high-traffic data paths.",
+      details: [
+        "Relational schema design and normalization",
+        "Index optimization and query tuning",
+        "Redis caching layer configuration",
+        "Scalability and migration planning",
+      ],
+    },
+    {
+      title: "Stripe Payments & Subscriptions",
+      desc: "Full billing infrastructure — one-time payments, subscriptions, trials, webhooks, and customer management portals, all tested in production.",
+      details: [
+        "Stripe Checkout and Billing Portal",
+        "Subscription lifecycle management",
+        "Webhook handling and retry logic",
+        "Admin revenue and billing dashboard",
+      ],
+    },
+    {
+      title: "Technical Audit & Codebase Review",
+      desc: "I review your existing application for performance bottlenecks, security gaps, and architectural debt — then deliver a written action plan with prioritized fixes.",
+      details: [
+        "Full codebase and architecture review",
+        "Security and authentication audit",
+        "API and database performance analysis",
+        "Written report with effort estimates",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Exeter — Serving Devon & Beyond",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Exeter</strong>, I work fully remote across Exeter, Exmouth, Plymouth, Torbay, and the wider Devon region. Whether you're a growth-stage company at Exeter Science Park, a research-adjacent startup, or a business modernising its operations — remote collaboration means you get production-grade software without local agency pricing. I also serve businesses looking for a <a href="/web-developer-plymouth" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Plymouth</a> across the South West.`,
+    "Exeter's tech and science sector has grown quickly — anchored by Exeter Science Park, the University of Exeter's research output, and the data-driven institutions like the Met Office headquartered in the city. The demand for reliable full-stack development, AI-powered platforms, and modern SaaS architecture is very real here.",
+    `I also serve the wider UK market. If you need a <strong class="text-white">web developer exeter</strong> who can also work on projects in Plymouth, Southampton, or Bristol — same developer, same direct communication, same engineering standards. See my work as a <a href="/web-developer-plymouth" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Plymouth</a>.`,
+  ],
+  cityLinks: [
+    { city: "Plymouth", href: "/web-developer-plymouth" },
+    { city: "Bristol", href: "/web-developer-bristol" },
+    { city: "Southampton", href: "/web-developer-southampton" },
+    { city: "Bournemouth", href: "/web-developer-bournemouth" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "New York NY", href: "/web-developer-new-york-ny" },
+    { city: "Los Angeles CA", href: "/web-developer-los-angeles-ca" },
+    { city: "San Francisco CA", href: "/web-developer-san-francisco-ca" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Exeter Today",
+  contactSubtitle:
+    "Describe your project and I'll respond within 24 hours with a free consultation — no commitment required.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "Science Park Fluent", value: "Data-Driven" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-exeter" },
+    { name: "Projects", href: "#projects-exeter" },
+    { name: "Testimonials", href: "#testimonials-exeter" },
+    { name: "Why Hire Me", href: "#hire-me-exeter" },
+    { name: "Services", href: "#services-exeter" },
+    { name: "Book Appointment", href: "#appointment-exeter" },
+  ],
+  navCTALabel: "Hire Web Developer Exeter",
+  contactId: "contact-exeter",
+  appointmentId: "appointment-exeter",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Exeter",
+  faqs: [
+    {
+      question: "Do you work with businesses connected to Exeter Science Park?",
+      answer:
+        "Yes. I've worked with early-stage and growth-stage companies that need a technically credible web presence, which is common among Exeter's science and research-adjacent businesses.",
+    },
+    {
+      question: "Can you build something more than a basic brochure website?",
+      answer:
+        "Absolutely. I build full-stack applications with databases, authentication, and payments when Exeter clients need actual functionality, not just a static site.",
+    },
+    {
+      question: "Do you work remotely with Exeter clients?",
+      answer:
+        "Yes, fully remote. I serve Exeter, Exmouth, Plymouth, Torbay, and the wider Devon region. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Can you build AI-powered web apps for Exeter companies?",
+      answer:
+        "Yes. I integrate LLMs, voice agents, and AI chat widgets into web applications for Exeter clients. I have shipped a live multi-tenant SaaS with embeddable AI chat and real-time voice automation — production-proven, not experimental.",
+    },
+    {
+      question: "Can you build Stripe subscription platforms for Exeter businesses?",
+      answer:
+        "Yes. I have shipped full Stripe subscription systems in production — recurring billing, webhook handling, customer dashboards, and admin billing portals. My Flacron Gamezone platform runs this exact stack with real paying users.",
+    },
+    {
+      question: "How quickly can you start an Exeter web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Exeter inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Exeter's Growing Science & Tech Sector",
+  localSeoParagraphs: [
+    "Exeter has built a fast-growing tech and science economy — anchored by Exeter Science Park, the University of Exeter's research output, and data-driven institutions like the Met Office, headquartered in the city.",
+    "As a web developer serving Exeter, I build custom SaaS platforms, AI-powered applications, and enterprise backends using Next.js, Node.js, PostgreSQL, and Redis — the same technologies growth-stage Exeter companies rely on internally.",
+    "Exeter businesses choose direct developer access over agencies to move faster, communicate more directly, and get better engineering output for their budget — without paying Bristol or London rates.",
+  ],
+
+  industries: [
+    {
+      name: "Science & Research Tech",
+      desc: "Exeter Science Park and the University of Exeter drive demand for research platforms, data dashboards, and technically credible web presences.",
+    },
+    {
+      name: "Environmental & Climate Data",
+      desc: "With the Met Office headquartered in Exeter, the city has a strong data culture. I build dashboards and data-visualization platforms for climate and environmental teams.",
+    },
+    {
+      name: "Healthcare & Life Sciences",
+      desc: "Exeter's NHS trusts and life sciences companies need secure patient platforms, clinical dashboards, and health-tech SaaS products.",
+    },
+    {
+      name: "Higher Education & EdTech",
+      desc: "The University of Exeter drives demand for LMS platforms, student portals, and research-grade web applications.",
+    },
+    {
+      name: "Agritech & Rural Business",
+      desc: "Devon's strong agricultural economy needs modern booking, inventory, and e-commerce platforms for rural and agritech businesses.",
+    },
+    {
+      name: "Retail & E-Commerce",
+      desc: "Exeter's growing retail economy needs Stripe-powered storefronts, inventory management, and customer portal development.",
+    },
+  ],
+};
+
+// ─── Cambridge ────────────────────────────────────────────────────────────────
+
+export const cambridgePageData: CityPageData = {
+  keyword: "web developer cambridge",
+  cityName: "Cambridge",
+  cityState: "UK",
+  citySlug: "cambridge",
+
+  metaTitle: "Web Developer Cambridge | Next.js, AI & SaaS | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Cambridge? Ahmed Ali builds scalable Next.js, Node.js & AI-powered apps for Cambridge businesses. Real results.",
+
+  profileImageUrl: "/images/web-developer-cambridge-uk-silicon-fen-saas-full-stack.png",
+  profileImageAlt: "Web Developer Cambridge UK – Silicon Fen SaaS Apps",
+
+  h1Line1: "Web Developer Cambridge",
+  h1Line2: "– Full-Stack, SaaS & AI Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Cambridge</strong> that Silicon Fen deep-tech startups, biotech spinouts, and growing businesses trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built clean, built to scale, built to last.`,
+
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL applications",
+    "Investor-ready builds for Cambridge's deep-tech and biotech startup scene",
+    "Clean layered backend architecture — documented, type-safe, maintainable",
+    "24-hour response time with transparent project communication",
+  ],
+
+  aboutH2: "The Web Developer Cambridge Businesses Come Back To",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds software that performs in production. Cambridge is home to one of Europe's densest tech clusters — 'Silicon Fen' — spun out of the University and companies like ARM. Every one of those businesses needs more than a polished front page; they need systems that hold up under real technical scrutiny.",
+    "I bring clean architecture, indexed PostgreSQL schemas, Redis-backed caching, and polished Next.js frontends to every engagement. TypeScript throughout, Swagger-documented before delivery, and structured so your next hire can extend it without needing a three-month handover.",
+    "My live portfolio includes a football platform with Stripe subscriptions and real-time scores, a multi-tenant enterprise SaaS with embedded AI chat widgets, and a high-performance e-commerce marketplace. All deployed, all maintained, all serving real users right now.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    {
+      label: "Specialty",
+      value: "Silicon Fen deep-tech · Biotech spinouts · Investor-ready sites",
+    },
+    { label: "Delivery", value: "Production-ready, documented, on-time" },
+    { label: "Based in", value: "Pakistan — serving Cambridge remotely" },
+  ],
+  abilityCards: [
+    {
+      iconName: "Cpu",
+      title: "Deep-Tech Storytelling",
+      desc: "Cambridge startups often need to communicate complex, technical products clearly to investors and customers. I focus on clean information architecture that makes complicated products understandable.",
+    },
+    {
+      iconName: "Zap",
+      title: "Performance by Default",
+      desc: "Redis caching, indexed PostgreSQL queries, and sub-150ms API response times. Speed is built in, not bolted on.",
+    },
+    {
+      iconName: "BrainCircuit",
+      title: "AI Integration",
+      desc: "LLMs, voice agents, and AI chat widgets built directly into your product — not added as an afterthought.",
+    },
+    {
+      iconName: "ShieldCheck",
+      title: "Investor-Ready Polish",
+      desc: "With Cambridge's concentration of VC-backed companies, your site is often the first thing an investor checks. I make sure it reads as credible and current.",
+    },
+  ],
+
+  projectsH2: "Live Projects — Production Standard",
+  projectsSubtitle:
+    "Every project below is deployed, serving real users, and handling real business logic. This is what Cambridge clients get.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "Proven Results, Not Promises",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Cambridge Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Silicon Fen-Grade Standards",
+      desc: "Cambridge is home to one of Europe's densest tech clusters, spun out of the University and companies like ARM. I build to a standard that holds up next to that level of technical scrutiny.",
+    },
+    {
+      title: "Deep-Tech and Biotech Fluency",
+      desc: "Cambridge startups often need to communicate complex, technical products clearly. I focus on clean information architecture that makes complicated products understandable.",
+    },
+    {
+      title: "No Agency Markup",
+      desc: "You work directly with the developer writing your code. No account managers, no communication relay, no inflated rates.",
+    },
+    {
+      title: "AI-Native Development",
+      desc: "From LLM integrations to voice automation — I embed AI natively into your product so it genuinely improves your users' experience.",
+    },
+    {
+      title: "Deadline Driven",
+      desc: "I respond within 24 hours and commit to realistic timelines. Cambridge clients get consistent updates, not silence.",
+    },
+    {
+      title: "Maintainable by Design",
+      desc: "TypeScript throughout, Swagger docs included, and clean code patterns mean your team can confidently extend what I build.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Cambridge Businesses",
+  services: [
+    {
+      title: "Full-Stack Web Application Development",
+      desc: "End-to-end Next.js and Node.js development covering frontend, backend API, database schema, and deployment — everything you need to launch a production product.",
+      details: [
+        "Custom SaaS platforms and multi-tenant apps",
+        "Internal business tools and admin dashboards",
+        "Authentication, roles, and permissions",
+        "Full deployment with post-launch support",
+      ],
+    },
+    {
+      title: "AI Feature Integration",
+      desc: "I embed AI capabilities directly into your web product — chat assistants, document pipelines, voice agents, and intelligent automation that runs in production.",
+      details: [
+        "OpenAI and Claude LLM integrations",
+        "Embeddable AI chat widgets",
+        "Voice agent pipelines via VAPI",
+        "Document summarization and processing",
+      ],
+    },
+    {
+      title: "Backend API & System Engineering",
+      desc: "Clean Express.js APIs following controller-service-repository architecture, Swagger-documented, Zod-validated, and tested before delivery.",
+      details: [
+        "RESTful API design and versioning",
+        "Auth middleware and rate limiting",
+        "Third-party API integrations",
+        "OpenAPI / Swagger documentation",
+      ],
+    },
+    {
+      title: "Database Architecture & Performance",
+      desc: "PostgreSQL schema design with proper indexing strategy, combined with Redis caching for sub-millisecond reads on high-traffic data paths.",
+      details: [
+        "Relational schema design and normalization",
+        "Index optimization and query tuning",
+        "Redis caching layer configuration",
+        "Scalability and migration planning",
+      ],
+    },
+    {
+      title: "Stripe Payments & Subscriptions",
+      desc: "Full billing infrastructure — one-time payments, subscriptions, trials, webhooks, and customer management portals, all tested in production.",
+      details: [
+        "Stripe Checkout and Billing Portal",
+        "Subscription lifecycle management",
+        "Webhook handling and retry logic",
+        "Admin revenue and billing dashboard",
+      ],
+    },
+    {
+      title: "Technical Audit & Codebase Review",
+      desc: "I review your existing application for performance bottlenecks, security gaps, and architectural debt — then deliver a written action plan with prioritized fixes.",
+      details: [
+        "Full codebase and architecture review",
+        "Security and authentication audit",
+        "API and database performance analysis",
+        "Written report with effort estimates",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Cambridge — Serving Silicon Fen & Beyond",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Cambridge</strong>, I work fully remote across Cambridge, Ely, Huntingdon, Newmarket, and the wider Cambridgeshire region. Whether you're a deep-tech spinout near the Science Park, a biotech startup, or a VC-backed scale-up — remote collaboration means you get production-grade software without local agency pricing. I also serve businesses looking for a <a href="/web-developer-oxford" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Oxford</a> across the golden triangle.`,
+    "Cambridge's 'Silicon Fen' tech cluster is one of Europe's most concentrated, spun out of the University of Cambridge and anchored by companies like ARM, alongside a dense biotech and deep-tech startup ecosystem. The demand for reliable full-stack development, AI-powered platforms, and modern SaaS architecture is very real here.",
+    `I also serve the wider UK market. If you need a <strong class="text-white">web developer cambridge</strong> who can also work on projects in Oxford, London, or Milton Keynes — same developer, same direct communication, same engineering standards. See my work as a <a href="/web-developer-oxford" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Oxford</a>.`,
+  ],
+  cityLinks: [
+    { city: "Oxford", href: "/web-developer-oxford" },
+    { city: "London", href: "/web-developer-london" },
+    { city: "Milton Keynes", href: "/web-developer-milton-keynes" },
+    { city: "Norwich", href: "/web-developer-norwich" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "New York NY", href: "/web-developer-new-york-ny" },
+    { city: "Los Angeles CA", href: "/web-developer-los-angeles-ca" },
+    { city: "San Francisco CA", href: "/web-developer-san-francisco-ca" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Cambridge Today",
+  contactSubtitle:
+    "Describe your project and I'll respond within 24 hours with a free consultation — no commitment required.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "Silicon Fen Fluent", value: "Deep-Tech" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-cambridge" },
+    { name: "Projects", href: "#projects-cambridge" },
+    { name: "Testimonials", href: "#testimonials-cambridge" },
+    { name: "Why Hire Me", href: "#hire-me-cambridge" },
+    { name: "Services", href: "#services-cambridge" },
+    { name: "Book Appointment", href: "#appointment-cambridge" },
+  ],
+  navCTALabel: "Hire Web Developer Cambridge",
+  contactId: "contact-cambridge",
+  appointmentId: "appointment-cambridge",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Cambridge",
+  faqs: [
+    {
+      question: "Do you work with early-stage Cambridge startups?",
+      answer:
+        "Yes. A large part of my work is building MVPs and investor-facing sites for early-stage companies, which fits well with Cambridge's dense Silicon Fen startup ecosystem.",
+    },
+    {
+      question: "Can you help explain a complex or technical product to non-technical visitors?",
+      answer:
+        "That's a core part of the job for Cambridge clients. I focus heavily on information architecture and messaging clarity, not just visual design, for deep-tech and biotech products.",
+    },
+    {
+      question: "Do you build the full product, or just the marketing site?",
+      answer:
+        "Both. I build marketing sites and full SaaS products with real backends, which suits Cambridge founders who need an MVP, not just a landing page.",
+    },
+    {
+      question: "Do you work remotely with Cambridge clients?",
+      answer:
+        "Yes, fully remote. I serve Cambridge, Ely, Huntingdon, Newmarket, and the wider Cambridgeshire region. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Can you build AI-powered web apps for Cambridge companies?",
+      answer:
+        "Yes. I integrate LLMs, voice agents, and AI chat widgets into web applications for Cambridge clients. I have shipped a live multi-tenant SaaS with embeddable AI chat and real-time voice automation — production-proven, not experimental.",
+    },
+    {
+      question: "How quickly can you start a Cambridge web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Cambridge inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Cambridge's Silicon Fen Startup Ecosystem",
+  localSeoParagraphs: [
+    "Cambridge is home to 'Silicon Fen' — one of Europe's densest tech and biotech clusters, spun out of the University of Cambridge and anchored by companies like ARM, alongside a fast-growing base of VC-backed deep-tech and life-sciences startups.",
+    "As a web developer serving Cambridge, I build custom SaaS platforms, AI-powered applications, and enterprise backends using Next.js, Node.js, PostgreSQL, and Redis — with the information-architecture discipline deep-tech and biotech products demand.",
+    "Cambridge businesses choose direct developer access over agencies to move faster, communicate more directly, and get better engineering output for their budget — without paying London rates for a short train ride north.",
+  ],
+
+  industries: [
+    {
+      name: "Deep-Tech & Semiconductors",
+      desc: "Cambridge's ARM-anchored deep-tech cluster needs developers who can clearly communicate complex technical products to investors and customers.",
+    },
+    {
+      name: "Biotech & Life Sciences",
+      desc: "Cambridge's dense biotech spinout ecosystem needs secure data platforms, research portals, and investor-ready web presences.",
+    },
+    {
+      name: "VC-Backed Startups",
+      desc: "With Cambridge's concentration of VC-backed companies, I build MVPs and investor-facing sites that hold up under technical due diligence.",
+    },
+    {
+      name: "Higher Education & EdTech",
+      desc: "The University of Cambridge drives demand for LMS platforms, student portals, and research-grade web applications.",
+    },
+    {
+      name: "Publishing & Academic Tech",
+      desc: "Cambridge's academic publishing sector needs content platforms, subscription systems, and research-tool development.",
+    },
+    {
+      name: "Retail & E-Commerce",
+      desc: "Cambridge's retail and tourism economy needs Stripe-powered storefronts, inventory management, and customer portal development.",
+    },
+  ],
+};
+
+// ─── Cheltenham ───────────────────────────────────────────────────────────────
+
+export const cheltenhamPageData: CityPageData = {
+  keyword: "web developer cheltenham",
+  cityName: "Cheltenham",
+  cityState: "UK",
+  citySlug: "cheltenham",
+
+  metaTitle: "Web Developer Cheltenham | Next.js, AI & SaaS | Ahmed Ali",
+  metaDescription:
+    "Need a web developer in Cheltenham? Ahmed Ali builds scalable, secure Next.js, Node.js & AI-powered apps for Cheltenham businesses. Real results.",
+
+  profileImageUrl: "/images/web-developer-cheltenham-uk-cyber-security-saas-full-stack.png",
+  profileImageAlt: "Web Developer Cheltenham UK – Cyber Security & SaaS Apps",
+
+  h1Line1: "Web Developer Cheltenham",
+  h1Line2: "– Full-Stack, SaaS & AI Apps",
+  heroSubtitle: `Hi, I'm Ahmed Ali — <strong class="text-white">a web developer in Cheltenham</strong> that Cyber Valley firms, professional services businesses, and growing companies trust to ship production-ready software. Next.js, Node.js, PostgreSQL, and Redis — built clean, built to scale, built to last.`,
+
+  bulletPoints: [
+    "Production-ready Next.js, Node.js & PostgreSQL applications",
+    "Security-conscious builds informed by Cheltenham's cyber security industry",
+    "Clean layered backend architecture — documented, type-safe, maintainable",
+    "24-hour response time with transparent project communication",
+  ],
+
+  aboutH2: "The Web Developer Cheltenham Businesses Come Back To",
+  aboutParagraphs: [
+    "I'm Ahmed Ali — a full-stack developer who builds software that performs in production. Cheltenham sits at the center of the UK's cyber security industry, anchored by GCHQ and the surrounding 'Cyber Valley' corridor. Every one of those businesses needs more than a polished front page; they need systems that hold up to real scrutiny.",
+    "I bring clean architecture, indexed PostgreSQL schemas, Redis-backed caching, and polished Next.js frontends to every engagement. TypeScript throughout, Swagger-documented before delivery, and structured so your next hire can extend it without needing a three-month handover.",
+    "My live portfolio includes a football platform with Stripe subscriptions and real-time scores, a multi-tenant enterprise SaaS with embedded AI chat widgets, and a high-performance e-commerce marketplace. All deployed, all maintained, all serving real users right now.",
+  ],
+  highlights: [
+    { label: "Stack", value: "Next.js · Node.js · PostgreSQL · Redis" },
+    {
+      label: "Specialty",
+      value: "Cyber Valley security practices · Professional services · Regency polish",
+    },
+    { label: "Delivery", value: "Production-ready, documented, on-time" },
+    { label: "Based in", value: "Pakistan — serving Cheltenham remotely" },
+  ],
+  abilityCards: [
+    {
+      iconName: "ShieldCheck",
+      title: "Security-Conscious Builds",
+      desc: "Cheltenham's cyber security industry sets a high bar. I treat authentication, environment variable handling, and data hygiene carefully by default on every project.",
+    },
+    {
+      iconName: "Zap",
+      title: "Performance by Default",
+      desc: "Redis caching, indexed PostgreSQL queries, and sub-150ms API response times. Speed is built in, not bolted on.",
+    },
+    {
+      iconName: "BrainCircuit",
+      title: "AI Integration",
+      desc: "LLMs, voice agents, and AI chat widgets built directly into your product — not added as an afterthought.",
+    },
+    {
+      iconName: "Lock",
+      title: "Secure from Commit One",
+      desc: "Auth, input validation, rate limiting, and environment hardening shipped by default on every project.",
+    },
+  ],
+
+  projectsH2: "Live Projects — Production Standard",
+  projectsSubtitle:
+    "Every project below is deployed, serving real users, and handling real business logic. This is what Cheltenham clients get.",
+  projects: [...COMMON_PROJECTS],
+
+  testimonialsH2: "Proven Results, Not Promises",
+  testimonials: [...COMMON_TESTIMONIALS],
+
+  whyH2: "Why Cheltenham Businesses Choose Ahmed Ali",
+  whyCards: [
+    {
+      title: "Security-First Development",
+      desc: "Cheltenham sits at the center of the UK's cyber security industry, anchored by GCHQ and the surrounding Cyber Valley corridor. I build with that same security-conscious discipline as standard.",
+    },
+    {
+      title: "Professional, Understated Design",
+      desc: "Cheltenham's business culture — from its Regency architecture to its finance and professional-services firms — favors polished, trustworthy design over flashy trends. I build to match that tone.",
+    },
+    {
+      title: "No Agency Markup",
+      desc: "You work directly with the developer writing your code. No account managers, no communication relay, no inflated rates.",
+    },
+    {
+      title: "AI-Native Development",
+      desc: "From LLM integrations to voice automation — I embed AI natively into your product so it genuinely improves your users' experience.",
+    },
+    {
+      title: "Deadline Driven",
+      desc: "I respond within 24 hours and commit to realistic timelines. Cheltenham clients get consistent updates, not silence.",
+    },
+    {
+      title: "Maintainable by Design",
+      desc: "TypeScript throughout, Swagger docs included, and clean code patterns mean your team can confidently extend what I build.",
+    },
+  ],
+
+  servicesH2: "Web Development Services for Cheltenham Businesses",
+  services: [
+    {
+      title: "Full-Stack Web Application Development",
+      desc: "End-to-end Next.js and Node.js development covering frontend, backend API, database schema, and deployment — everything you need to launch a production product.",
+      details: [
+        "Custom SaaS platforms and multi-tenant apps",
+        "Internal business tools and admin dashboards",
+        "Authentication, roles, and permissions",
+        "Full deployment with post-launch support",
+      ],
+    },
+    {
+      title: "AI Feature Integration",
+      desc: "I embed AI capabilities directly into your web product — chat assistants, document pipelines, voice agents, and intelligent automation that runs in production.",
+      details: [
+        "OpenAI and Claude LLM integrations",
+        "Embeddable AI chat widgets",
+        "Voice agent pipelines via VAPI",
+        "Document summarization and processing",
+      ],
+    },
+    {
+      title: "Backend API & System Engineering",
+      desc: "Clean Express.js APIs following controller-service-repository architecture, Swagger-documented, Zod-validated, and tested before delivery.",
+      details: [
+        "RESTful API design and versioning",
+        "Auth middleware and rate limiting",
+        "Third-party API integrations",
+        "OpenAPI / Swagger documentation",
+      ],
+    },
+    {
+      title: "Database Architecture & Performance",
+      desc: "PostgreSQL schema design with proper indexing strategy, combined with Redis caching for sub-millisecond reads on high-traffic data paths.",
+      details: [
+        "Relational schema design and normalization",
+        "Index optimization and query tuning",
+        "Redis caching layer configuration",
+        "Scalability and migration planning",
+      ],
+    },
+    {
+      title: "Stripe Payments & Subscriptions",
+      desc: "Full billing infrastructure — one-time payments, subscriptions, trials, webhooks, and customer management portals, all tested in production.",
+      details: [
+        "Stripe Checkout and Billing Portal",
+        "Subscription lifecycle management",
+        "Webhook handling and retry logic",
+        "Admin revenue and billing dashboard",
+      ],
+    },
+    {
+      title: "Technical Audit & Codebase Review",
+      desc: "I review your existing application for performance bottlenecks, security gaps, and architectural debt — then deliver a written action plan with prioritized fixes.",
+      details: [
+        "Full codebase and architecture review",
+        "Security and authentication audit",
+        "API and database performance analysis",
+        "Written report with effort estimates",
+      ],
+    },
+  ],
+
+  coverageH2: "Web Developer Cheltenham — Serving Gloucestershire & Beyond",
+  coverageParagraphs: [
+    `As a <strong class="text-white">web developer in Cheltenham</strong>, I work fully remote across Cheltenham, Gloucester, Tewkesbury, and the wider Gloucestershire region. Whether you're a firm connected to the Cyber Valley corridor, a professional services business, or a company modernising its operations — remote collaboration means you get production-grade software without local agency pricing. I also serve businesses looking for a <a href="/web-developer-bristol" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Bristol</a> across the South West.`,
+    "Cheltenham's economy is shaped by its position at the center of the UK's cyber security industry — anchored by GCHQ and the wider Cyber Valley corridor of security-focused firms — alongside a strong base of finance and professional-services businesses drawn to the town's Regency character. The demand for reliable, security-conscious full-stack development is very real here.",
+    `I also serve the wider UK market. If you need a <strong class="text-white">web developer cheltenham</strong> who can also work on projects in Bristol, Oxford, or Birmingham — same developer, same direct communication, same engineering standards. See my work as a <a href="/web-developer-bristol" class="text-emerald-400 hover:text-emerald-300 underline underline-offset-2">web developer in Bristol</a>.`,
+  ],
+  cityLinks: [
+    { city: "Bristol", href: "/web-developer-bristol" },
+    { city: "Oxford", href: "/web-developer-oxford" },
+    { city: "Birmingham", href: "/web-developer-birmingham" },
+    { city: "Wolverhampton", href: "/web-developer-wolverhampton" },
+    { city: "Austin TX", href: "/web-developer-austin-tx" },
+    { city: "New York NY", href: "/web-developer-new-york-ny" },
+    { city: "Los Angeles CA", href: "/web-developer-los-angeles-ca" },
+    { city: "San Francisco CA", href: "/web-developer-san-francisco-ca" },
+  ],
+  servicesStrip: COMMON_SERVICES_STRIP,
+
+  contactH2: "Hire a Web Developer in Cheltenham Today",
+  contactSubtitle:
+    "Describe your project and I'll respond within 24 hours with a free consultation — no commitment required.",
+
+  availability: [...COMMON_AVAILABILITY],
+  stats: [
+    { label: "Cyber Valley Ready", value: "Security-First" },
+    { label: "Response Time", value: "< 24hrs" },
+    { label: "On-Time Rate", value: "100%" },
+  ],
+
+  navLinks: [
+    { name: "About", href: "#about-cheltenham" },
+    { name: "Projects", href: "#projects-cheltenham" },
+    { name: "Testimonials", href: "#testimonials-cheltenham" },
+    { name: "Why Hire Me", href: "#hire-me-cheltenham" },
+    { name: "Services", href: "#services-cheltenham" },
+    { name: "Book Appointment", href: "#appointment-cheltenham" },
+  ],
+  navCTALabel: "Hire Web Developer Cheltenham",
+  contactId: "contact-cheltenham",
+  appointmentId: "appointment-cheltenham",
+
+  faqTitle: "Frequently Asked Questions — Web Developer Cheltenham",
+  faqs: [
+    {
+      question: "Do you follow secure development practices given Cheltenham's cyber industry presence?",
+      answer:
+        "Yes. I treat authentication, environment variables, and data handling carefully by default, which tends to matter more to Cheltenham clients given the town's cyber security industry.",
+    },
+    {
+      question: "Can you build a site for a finance or professional services firm?",
+      answer:
+        "Yes. I build clean, credible sites suited to professional services, which make up a large part of Cheltenham's business community alongside its cyber security sector.",
+    },
+    {
+      question: "Do you work remotely with Cheltenham clients?",
+      answer:
+        "Yes, fully remote. I serve Cheltenham, Gloucester, Tewkesbury, and the wider Gloucestershire region. I respond within 24 hours and offer a free 30-minute consultation before any engagement.",
+    },
+    {
+      question: "Do you offer ongoing support after launch?",
+      answer:
+        "Yes, I offer post-launch support and maintenance retainers for Cheltenham clients who want updates and monitoring handled reliably.",
+    },
+    {
+      question: "Can you build AI-powered web apps for Cheltenham companies?",
+      answer:
+        "Yes. I integrate LLMs, voice agents, and AI chat widgets into web applications for Cheltenham clients. I have shipped a live multi-tenant SaaS with embeddable AI chat and real-time voice automation — production-proven, not experimental.",
+    },
+    {
+      question: "How quickly can you start a Cheltenham web project?",
+      answer:
+        "I am currently open to work with immediate availability. I respond to all Cheltenham inquiries within 24 hours and can begin most projects within a few days of aligning on scope and requirements.",
+    },
+  ],
+
+  localSeoTitle: "Web Development for Cheltenham's Cyber Security & Professional Services Sector",
+  localSeoParagraphs: [
+    "Cheltenham sits at the heart of the UK's cyber security industry — anchored by GCHQ and a dense corridor of security-focused firms often called 'Cyber Valley' — alongside a strong base of finance and professional-services businesses.",
+    "As a web developer serving Cheltenham, I build custom SaaS platforms, AI-powered applications, and enterprise backends using Next.js, Node.js, PostgreSQL, and Redis — with the security-conscious discipline Cheltenham's cyber sector expects.",
+    "Cheltenham businesses choose direct developer access over agencies to move faster, communicate more directly, and get better engineering output for their budget — without paying Bristol or London rates.",
+  ],
+
+  industries: [
+    {
+      name: "Cyber Security & Defence",
+      desc: "Cheltenham's Cyber Valley corridor, anchored by GCHQ, needs developers who treat security as a default, not an afterthought.",
+    },
+    {
+      name: "Finance & Professional Services",
+      desc: "Cheltenham's finance and professional-services firms need clean, credible, trustworthy web presences that match their Regency-town polish.",
+    },
+    {
+      name: "Data & Analytics",
+      desc: "The cyber and defence sector's data-heavy culture creates demand for dashboards, secure data platforms, and analytics tools.",
+    },
+    {
+      name: "Events & Hospitality",
+      desc: "Home to the Cheltenham Festival and a strong events calendar, the town needs booking systems and hospitality-sector web development.",
+    },
+    {
+      name: "Higher Education & EdTech",
+      desc: "Cheltenham's colleges and nearby University of Gloucestershire drive demand for LMS platforms and student portals.",
+    },
+    {
+      name: "Retail & E-Commerce",
+      desc: "Cheltenham's Promenade retail economy needs Stripe-powered storefronts, inventory management, and customer portal development.",
+    },
+  ],
+};

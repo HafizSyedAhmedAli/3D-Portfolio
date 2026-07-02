@@ -40,6 +40,11 @@ import {
   norwichPageData,
   plymouthPageData,
   southamptonPageData,
+  dundeePageData,
+  brightonPageData,
+  exeterPageData,
+  cambridgePageData,
+  cheltenhamPageData,
 } from "@/constants/cityPagesUK";
 import type { CityPageData } from "@/components/city/CityPageTemplate";
 
@@ -119,6 +124,11 @@ const regions: RegionGroup[] = [
       plymouthPageData,
       derbyPageData,
       norwichPageData,
+      dundeePageData,
+      brightonPageData,
+      exeterPageData,
+      cambridgePageData,
+      cheltenhamPageData
     ],
   },
 ];

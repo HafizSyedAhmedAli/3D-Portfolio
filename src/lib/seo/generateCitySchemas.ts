@@ -58,6 +58,11 @@ const CITY_GEO: Record<string, { lat: number; lng: number }> = {
   plymouth: { lat: 50.3755, lng: -4.1427 },
   derby: { lat: 52.9225, lng: -1.4746 },
   norwich: { lat: 52.6309, lng: 1.2974 },
+  dundee: { lat: 56.462, lng: -2.9707 },
+  brighton: { lat: 50.8225, lng: -0.1372 },
+  exeter: { lat: 50.7184, lng: -3.5339 },
+  cambridge: { lat: 52.2053, lng: 0.1218 },
+  cheltenham: { lat: 51.8994, lng: -2.0783 },
 };
 
 export function generateCitySchemas(
