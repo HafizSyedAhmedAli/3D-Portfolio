@@ -41,6 +41,33 @@ const ContactSection = () => {
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     if (!formRef.current) return;
+
+    // ── validate required fields before doing anything else ──
+    const trimmedName = form.name.trim();
+    const trimmedEmail = form.email.trim();
+    const trimmedMessage = form.message.trim();
+
+    if (!trimmedName || !trimmedEmail || !trimmedMessage) {
+      setFeedback({
+        type: "error",
+        message: "Please fill in all fields before sending.",
+      });
+      if (feedbackTimer.current) clearTimeout(feedbackTimer.current);
+      feedbackTimer.current = setTimeout(() => setFeedback(null), 6000);
+      return;
+    }
+
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailPattern.test(trimmedEmail)) {
+      setFeedback({
+        type: "error",
+        message: "Please enter a valid email address.",
+      });
+      if (feedbackTimer.current) clearTimeout(feedbackTimer.current);
+      feedbackTimer.current = setTimeout(() => setFeedback(null), 6000);
+      return;
+    }
+
     setLoading(true);
 
     const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;

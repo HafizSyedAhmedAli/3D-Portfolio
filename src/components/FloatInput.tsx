@@ -37,7 +37,7 @@ const FloatInput = ({
 
   return (
     <div className="relative group">
-      <span className="absolute left-0 top-0 h-full w-px bg-emerald-400 scale-y-0 group-focus-within:scale-y-100 transition-transform duration-300 origin-top rounded-full" />
+      <span className="absolute left-0 top-0 h-full w-px bg-emerald-400 scale-y-0 transition-transform duration-300 origin-top rounded-full" />
 
       {multiline ? (
         <textarea
