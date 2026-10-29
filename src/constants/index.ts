@@ -192,7 +192,7 @@ const socialImgs: SocialImg[] = [
   },
   {
     name: "linkedin",
-    url: "https://linkedin.com/in/hafiz-syed-ahmed-ali-625523307",
+    url: "www.linkedin.com/in/syed-ahmed-ali-625523307",
     imgPath: "/images/linkedin.png",
   },
   {
