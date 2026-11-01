@@ -22,21 +22,27 @@ const ArrowIcon = () => (
 
 type ProjectLinksProps = {
   liveLink?: string;
+  liveLabel?: string;
   githubLink?: string;
   title: string;
 };
 
-const ProjectLinks = ({ liveLink, githubLink, title }: ProjectLinksProps) => (
+const ProjectLinks = ({
+  liveLink,
+  liveLabel = "Live Demo",
+  githubLink,
+  title,
+}: ProjectLinksProps) => (
   <nav aria-label={`${title} links`} className="flex items-center gap-4">
     {liveLink && (
       <a
         href={liveLink}
         target="_blank"
         rel="noopener noreferrer"
-        aria-label={`View ${title} live demo`}
+        aria-label={`${liveLabel} – ${title}`}
         className="flex items-center gap-2 text-xs font-medium text-white/30 hover:text-emerald-400 transition-colors duration-300 group/link"
       >
-        <span>Live Demo</span>
+        <span>{liveLabel}</span>
         <ArrowIcon />
       </a>
     )}
@@ -125,6 +131,7 @@ const ShowcaseSection = () => {
             <div className="mt-8">
               <ProjectLinks
                 liveLink={featured.liveLink}
+                liveLabel={featured.liveLabel}
                 githubLink={featured.githubLink}
                 title={featured.title}
               />
@@ -171,6 +178,7 @@ const ShowcaseSection = () => {
                 </ul>
                 <ProjectLinks
                   liveLink={project.liveLink}
+                  liveLabel={project.liveLabel}
                   githubLink={project.githubLink}
                   title={project.title}
                 />

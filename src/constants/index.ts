@@ -204,6 +204,16 @@ const socialImgs: SocialImg[] = [
 
 const projects: Project[] = [
   {
+    id: 4,
+    title: "Vectroq",
+    liveLink: "https://vectroq.vercel.app",
+    githubLink: "https://github.com/HafizSyedAhmedAli/Vectroq",
+    desc: "Upload a house plan and get a priced Bill of Quantities with an interactive 3D view. Parses AutoCAD DXF drawings, calculates costs from approved rate sets, and exports PDF reports.",
+    tags: ["Next.js", "PostgreSQL", "Prisma", "Three.js", "Monorepo"],
+    img: "/images/project5.jpg",
+    featured: false,
+  },
+  {
     id: 1,
     title: "Flacron Gamezone",
     liveLink: "https://flacrongamezone.com",
@@ -211,7 +221,7 @@ const projects: Project[] = [
     desc: "Live football match discovery platform with real-time scores, league standings, Stripe subscriptions, and role-based auth.",
     tags: ["Next.js", "Express.js", "PostgreSQL", "Redis", "Stripe"],
     img: "/images/project1.png",
-    featured: true,
+    featured: false,
   },
   {
     id: 2,
@@ -232,6 +242,17 @@ const projects: Project[] = [
     tags: ["React", "Express.js", "MongoDB"],
     img: "/images/project3.png",
     featured: false,
+  },
+  {
+    id: 4,
+    title: "Imposter Word Game",
+    liveLink:
+      "https://play.google.com/store/apps/details?id=com.hafizsyedahmedali.imposterword",
+    liveLabel: "Get it on Google Play",
+    desc: "A pass-the-phone social deduction party game where players race to spot the imposter who doesn't know the secret word.",
+    tags: ["Next.js", "TypeScript", "Android"],
+    img: "/images/project4.png",
+    featured: true,
   },
 ];
 

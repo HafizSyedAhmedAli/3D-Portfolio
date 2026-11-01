@@ -55,6 +55,7 @@ export type Project = {
   tags: string[];
   img: string;
   liveLink?: string;
+  liveLabel?: string;
   githubLink?: string;
   featured: boolean;
 };
